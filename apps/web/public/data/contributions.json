@@ -1,0 +1,32 @@
+{
+  "schema": "mushaf-contribution-v1",
+  "note": "Antrian kontribusi (seed). Publik hanya lihat status=published. Reviewer/admin lihat & moderasi.",
+  "contributions": [
+    {
+      "id": "c-2-255-tafsir",
+      "type": "tafsir",
+      "target": { "surah": 2, "ayah": 255, "word": null },
+      "lang": "id",
+      "title": "Ayat Kursi — keagungan Allah",
+      "body": "Contoh kontribusi tafsir yang MENUNGGU moderasi. Wajib bersumber + sanad sebelum bisa di-approve.",
+      "source": { "name": "(sumber harus diisi kontributor)", "author": null, "license": "cek" },
+      "grade": null,
+      "status": "submitted",
+      "author": "u_demo_contributor",
+      "createdAt": "2026-07-06"
+    },
+    {
+      "id": "c-93-asbab",
+      "type": "asbab",
+      "target": { "surah": 93, "ayah": 1, "word": null },
+      "lang": "id",
+      "title": "Asbabun Nuzul Ad-Duha",
+      "body": "Contoh kontribusi asbabun nuzul yang MENUNGGU tinjauan reviewer. Perlu isnad + grade.",
+      "source": { "name": "(sumber + isnad harus diisi)", "author": null, "license": "cek" },
+      "grade": null,
+      "status": "in_review",
+      "author": "u_demo_contributor",
+      "createdAt": "2026-07-06"
+    }
+  ]
+}

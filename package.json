@@ -1,0 +1,25 @@
+{
+  "name": "mushaf-pipeline",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "MUSHAF Fase 1 — seed + verify + build canonical mushaf-core.db (Hafs / rasm Uthmani, 6236 ayat).",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "seed": "node pipeline/seed.mjs",
+    "verify": "node pipeline/verify.mjs",
+    "verify:surah": "node pipeline/verify-surah.mjs",
+    "seed:words": "node pipeline/seed-words.mjs",
+    "verify:words": "node pipeline/verify-words.mjs",
+    "build:db": "node pipeline/build-core-db.mjs",
+    "mint:manifest": "node pipeline/gen-mint-manifest.mjs",
+    "gen:web": "node pipeline/gen-web-data.mjs",
+    "boot:check": "node packages/mushaf-core/verify-boot.mjs",
+    "preview": "node pipeline/gen-preview.mjs",
+    "test": "node pipeline/test-integrity.mjs",
+    "all": "node pipeline/seed.mjs && node pipeline/verify.mjs && node pipeline/build-core-db.mjs && node pipeline/verify-surah.mjs && node pipeline/test-integrity.mjs && node packages/mushaf-core/verify-boot.mjs && node pipeline/gen-preview.mjs",
+    "all:web": "node pipeline/seed-words.mjs && node pipeline/verify-words.mjs && node pipeline/gen-mint-manifest.mjs && node pipeline/gen-web-data.mjs"
+  }
+}

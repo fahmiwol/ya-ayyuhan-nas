@@ -1,0 +1,53 @@
+# Ya Ayyuhan Nas — stack TERISOLASI untuk server bersama (mis. migancore).
+# Aman berdampingan dgn app lain: nama/port/network/volume unik ber-prefix "yan_".
+# - DB TIDAK di-publish ke host (internal saja).
+# - Web di-bind HANYA ke 127.0.0.1:3100 (nginx yang mem-proxy) → tak tabrakan port publik.
+# Jalankan: docker compose up -d --build   (butuh file .env — lihat .env.example)
+
+name: yaayyuhannas
+
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: yan_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-yan}
+      POSTGRES_USER: ${POSTGRES_USER:-yan}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set di .env}
+    volumes:
+      - yan_pgdata:/var/lib/postgresql/data
+    networks:
+      - yan_net
+    # TANPA "ports:" → Postgres tidak terekspos ke host (hanya jaringan internal). Paling aman.
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-yan} -d ${POSTGRES_DB:-yan}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  web:
+    build:
+      context: ./apps/web
+    container_name: yan_web
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      NODE_ENV: production
+      DATABASE_URL: postgres://${POSTGRES_USER:-yan}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-yan}
+      AUTH_SECRET: ${AUTH_SECRET:?set di .env}
+    ports:
+      # Bind localhost saja → nginx host mem-proxy ke sini. Ganti 3100 bila sudah dipakai.
+      - "127.0.0.1:${WEB_PORT:-3100}:3000"
+    networks:
+      - yan_net
+
+volumes:
+  yan_pgdata:
+    name: yan_pgdata
+
+networks:
+  yan_net:
+    name: yan_net

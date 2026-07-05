@@ -1,0 +1,28 @@
+# deps & build
+node_modules/
+**/node_modules/
+.next/
+**/.next/
+out/
+dist/
+*.tsbuildinfo
+next-env.d.ts
+
+# RAHASIA — jangan pernah commit
+.env
+.env.*
+!.env.example
+.data/
+**/.data/
+*.pem
+*.key
+
+# cache pipeline (regenerable via npm run all / all:web)
+data/raw/
+
+# logs & OS
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+scratchpad/

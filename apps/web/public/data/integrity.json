@@ -1,0 +1,111 @@
+{
+  "merkle_root": "eb13d58a3d2c94684c7d8dadf5ae757321cec3d766d828f9d4b910fc8cba7e56",
+  "algo": "sha-256",
+  "leaf_spec": "SHA256(utf8(NFC(text_uthmani)))",
+  "node_spec": "SHA256(left||right), promote odd node",
+  "riwayah": "hafs",
+  "rasm": "uthmani",
+  "count_method": "kufi",
+  "surah_count": 114,
+  "ayah_count": 6236,
+  "canonical_source": {
+    "id": "quran_com_qpc_uthmani",
+    "name": "Quran.com — QPC Uthmani (Hafs)",
+    "role": "arabic-canonical",
+    "provider": "Quran.Foundation / QUL (King Fahd Complex text)",
+    "url": "https://api.quran.com/api/v4/quran/verses/uthmani",
+    "license": "KFGQPC text — free use; audit ulang untuk komersial",
+    "version": "QUL v4 / QPC Hafs",
+    "lang": "ar"
+  },
+  "crosscheck_sources": [
+    {
+      "id": "tanzil_uthmani_alqurancloud",
+      "name": "Tanzil Uthmani (via AlQuran Cloud)",
+      "role": "arabic-crosscheck",
+      "provider": "Tanzil.net",
+      "url": "https://api.alquran.cloud/v1/quran/quran-uthmani",
+      "license": "CC BY 3.0 (verbatim OK, mengubah TIDAK boleh)",
+      "version": "Tanzil 1.1",
+      "lang": "ar"
+    },
+    {
+      "id": "kemenag_msi_equran",
+      "name": "Kemenag RI — Mushaf Standar Indonesia (via equran.id)",
+      "role": "arabic-crosscheck",
+      "provider": "Kemenag LPMQ / equran.id",
+      "url": "https://equran.id/api/v2/surat/{n}",
+      "license": "Kemenag (redistribusi perlu izin resmi) — audit",
+      "version": "equran.id v2",
+      "lang": "ar"
+    }
+  ],
+  "crosscheck_result": {
+    "note": "L3 = akar konsonan identik lintas sumber. Sisa L0/L1/L2 = beda konvensi ortografi/encoding antar-penerbit (plene vs defektif, dudukan hamza, segmentasi kata), BUKAN beda teks Quran.",
+    "tanzil": {
+      "avail": 6236,
+      "L0": 5960,
+      "L1": 6231,
+      "L2": 6231,
+      "L3": 6236
+    },
+    "kemenag": {
+      "avail": 6236,
+      "L0": 295,
+      "L1": 4834,
+      "L2": 6191,
+      "L3": 6235
+    },
+    "documented_conventions": {
+      "72:16": "nun idgham: QPC \"وَأَلَّوِ\" (nun berasimilasi jadi shadda) vs Kemenag \"وأن لو\" (nun ditulis). Bacaan sama."
+    },
+    "undocumented_diffs": 0
+  },
+  "translations": {
+    "id": {
+      "id": "kemenag_translation_id",
+      "name": "Terjemahan Kemenag (Indonesia)",
+      "role": "translation",
+      "provider": "Kemenag RI (via AlQuran Cloud id.indonesian)",
+      "url": "https://api.alquran.cloud/v1/quran/id.indonesian",
+      "license": "Kemenag (izin untuk redistribusi) — audit",
+      "version": "AlQuran Cloud id.indonesian",
+      "lang": "id"
+    },
+    "en": {
+      "id": "sahih_international_en",
+      "name": "Sahih International (English)",
+      "role": "translation",
+      "provider": "Sahih International (via AlQuran Cloud en.sahih)",
+      "url": "https://api.alquran.cloud/v1/quran/en.sahih",
+      "license": "Umumnya boleh redistribusi — audit",
+      "version": "AlQuran Cloud en.sahih",
+      "lang": "en"
+    }
+  },
+  "words": {
+    "words_arabic": {
+      "name": "Quran.com / QUL — QPC word segmentation",
+      "license": "teks Arab domain publik",
+      "url": "https://api.quran.com/api/v4"
+    },
+    "words_translation": {
+      "name": "QUL word translation (id)",
+      "license": "QUL — audit ulang",
+      "lang": "id"
+    },
+    "words_transliteration": {
+      "name": "QUL transliteration",
+      "license": "QUL — audit ulang"
+    }
+  },
+  "layered_validation": {
+    "note": "Validasi berlapis: kata -> ayat -> surah -> mushaf. Tiap kata di-hash; gabungan kata direkonstruksi & dicocokkan ke teks ayat kanonik; tiap ayat punya bukti inklusi Merkle (identitas, siap mint).",
+    "total_words": 77429,
+    "word_to_ayah_reconstruction": "100% (6236/6236)",
+    "ayah_identity_scheme": "mushaf-ayah-identity-v1",
+    "proof_depth": 13
+  },
+  "build_version": "1.0.0",
+  "built_at": "2026-07-05T17:09:40.589Z"
+}
