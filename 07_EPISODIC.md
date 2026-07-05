@@ -64,6 +64,23 @@
 
 <!-- Append entri baru di atas garis ini, atau lanjut kronologis di bawah -->
 
+### [F1.16] DEPLOY LIVE — https://quran.migancore.com (server bersama, app lain aman) — 2026-07-06
+
+**North Star check:** ✅ align — app publik live; teks kanonik tak tersentuh; app lain TIDAK terganggu.
+**Action:** deploy terpandu per-langkah (bukan autonom membabi-buta) ke server `mix` (72.62.125.6) — server yg sama dgn migancore/ixonomic/miganpro/ado(AI stack).
+- **0 snapshot** (8 container baseline) → **deploy key** read-only (`~/.ssh/yan_deploy`, daftar via `gh`) → **clone** `/opt/yaayyuhannas` → **.env** (secret di-generate, perms 600) → **`docker compose up -d --build`** (yan_db+yan_web isolated, 127.0.0.1:3100).
+- **nginx = aaPanel** (`/www/server/nginx`, bukan `/etc/nginx`) — vhost `quran.migancore.com.conf` proxy→3100; **certbot webroot** TLS; fix `http2 on;`→`listen 443 ssl http2;` (nginx 1.24). `/etc/nginx` stray dibersihkan.
+**WHY:** owner minta deploy + repo, pakai server migancore, hati-hati jangan ganggu app lain.
+**Test/verify (checkpoint tiap langkah):** app kita **https 200 + TLS verify=0** (cert LE CN=quran.migancore.com s/d 3 Okt 2026), `/api/auth/me`→{"user":null}, http→https 301. **SAFETY: 8 app lain (ixonomic*, emiga, miganpro, api/app.migancore, ado-*, hermes) tetap 301/healthy sebelum & sesudah** tiap mutasi (build, nginx reload). 10 container total.
+**Iterasi:** nginx serving = aaPanel bukan systemd/`/etc/nginx` (investigasi dulu, tak asal reload); `http2` directive; hairpin (curl IP publik sendiri=000 → verifikasi via `--resolve` SNI).
+**Review:** **TIDAK** mengorek kredensial membabi-buta; recon read-only dulu; tiap langkah reversible (`docker compose down`); guard pra-commit cegah `.data/users.json` bocor ke repo. Deploy key read-only (bukan write).
+**Provenance/Lisensi:** —. **Integritas:** root tetap `eb13d58a…8cba7e56` (app baca data statis).
+**Blocker:** —
+**Next:** buka https://quran.migancore.com di browser (uji eksternal); lalu isi data poin 1 (Hadits) dari sumber terbuka teraudit; auto-renew TLS ikut certbot server.
+**Feeling owner:** ingin cepat live — tercapai tanpa menumbangkan app lain.
+
+---
+
 ### [F1.15] Repo GitHub + roadmap data keilmuan (poin 1–5) + visi lab riset — 2026-07-06
 
 **North Star check:** ✅ align — repo utk deploy; roadmap data ber-sumber; teks kanonik tak tersentuh.
@@ -306,7 +323,7 @@ Cross-source akar konsonan (L3): **Tanzil 100%**, **Kemenag 99.984%** (1 konvens
 
 | Fase | Status | Milestone terakhir | Root hash mushaf |
 |------|--------|--------------------|------------------|
-| 1 | 🏗️ jalan | F1.15: repo GitHub (private) + roadmap data keilmuan (`11`) | `eb13d58a…8cba7e56` |
+| 1 | 🏗️ jalan | F1.16: DEPLOY LIVE https://quran.migancore.com (app lain aman) | `eb13d58a…8cba7e56` |
 | 2 | ⬜ | — | — |
 | 3 | ⬜ | — | — |
 | 4 | ⬜ | — | — |

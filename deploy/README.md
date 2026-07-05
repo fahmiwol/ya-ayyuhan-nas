@@ -108,6 +108,18 @@ sudo rm /etc/nginx/sites-enabled/yaayyuhannas && sudo nginx -t && sudo systemctl
 
 ---
 
+## DEPLOY AKTUAL — server `mix` (72.62.125.6), 2026-07-06 ✅
+
+Live: **https://quran.migancore.com** (TLS Let's Encrypt). Catatan penting server ini:
+- **nginx = aaPanel/BT** di `/www/server/nginx` (BUKAN `/etc/nginx`; `systemctl nginx` inactive).
+  - vhost: `/www/server/panel/vhost/nginx/quran.migancore.com.conf`
+  - test/reload: `/www/server/nginx/sbin/nginx -t` lalu `... -s reload`
+  - nginx **1.24.0** → pakai `listen 443 ssl http2;` (BUKAN `http2 on;` yg 1.25+).
+- **App kita:** `/opt/yaayyuhannas` · `docker compose` (yan_web+yan_db) · web `127.0.0.1:3100` · Postgres internal.
+- **Repo akses:** deploy key read-only `~/.ssh/yan_deploy` (terdaftar di GitHub). Update: `cd /opt/yaayyuhannas && GIT_SSH_COMMAND="ssh -i ~/.ssh/yan_deploy -o IdentitiesOnly=yes" git pull && docker compose up -d --build web`.
+- **TLS:** `certbot certonly --webroot -w /var/www/html -d quran.migancore.com` (acme location sudah di vhost) → auto-renew ikut certbot yg ada.
+- **Isolasi terbukti:** 8 app lain (ixonomic*, emiga, miganpro, ado-*, hermes) tetap 301/healthy sebelum & sesudah.
+
 ## Checklist keamanan (sebelum & sesudah)
 
 - [ ] Port 3100 (atau WEB_PORT) & 5432 host tidak bentrok.
