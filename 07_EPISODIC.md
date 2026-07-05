@@ -64,6 +64,23 @@
 
 <!-- Append entri baru di atas garis ini, atau lanjut kronologis di bawah -->
 
+### [F1.15] Repo GitHub + roadmap data keilmuan (poin 1–5) + visi lab riset — 2026-07-06
+
+**North Star check:** ✅ align — repo utk deploy; roadmap data ber-sumber; teks kanonik tak tersentuh.
+**Action:**
+- **GitHub repo**: `git init` + `.gitignore` (kecualikan `.data/`, `.env`, `node_modules`, `.next`, `data/raw/`), commit, **`gh repo create ya-ayyuhan-nas --private --push`** → https://github.com/fahmiwol/ya-ayyuhan-nas
+- **Roadmap data** `11_DATA_ARCHITECTURE.md`: 5 domain (1 Hadits ber-grade+sanad, 2 Dasar keislaman Iman/Islam/Ihsan + roadmap/sunnah/shalat/glossary/kajian, 3 Doa, 4 Keilmuan lintas-bidang/kitab, 5 Kisah/hikayat) — semua **wajib sumber + grade**, ter-moderasi, i18n. + **Lab riset tersembunyi** (Fase 4 sintesis → penalaran komputasional, TERPISAH dari app; guardrail: bukan AI=wahyu, provenance-first).
+**WHY:** owner minta deploy+repo; kumpulkan data terstruktur ber-sumber; kontributor paling akhir; visi sintesis Qur'an→AI/reasoning.
+**Test/verify:** repo ter-push (branch master). **GUARD keamanan bekerja**: cek pra-commit menangkap `.data/users.json` (hash password) yg keburu ke-stage gara-gara komentar inline di `.gitignore` → diperbaiki (`.data/` di-ignore), re-verify **nol rahasia** di repo (`git ls-files` bersih). Hanya template `.env.example`/Dockerfile/compose/runbook yang ada.
+**Iterasi:** `.gitignore` komentar inline → git anggap bagian pattern → pindah komentar ke baris sendiri.
+**Review:** **DEPLOY ke server produksi bersama BELUM dijalankan** — sengaja. KVM8 = Mighan+MiganCore+Ixonomic (live) + riwayat outage → deploy dipandu per-langkah dgn checkpoint (bukan autonom). SSH keys ada (galantara_deploy/hostinger_migration/id_ed25519); gh authed (fahmiwol).
+**Provenance/Lisensi:** doc 11 tegaskan audit lisensi tiap aset. **Integritas:** root tetap `eb13d58a…8cba7e56`.
+**Blocker:** deploy = butuh eksekusi terpandu (konfirmasi owner per langkah mutasi).
+**Next:** deploy terpandu via `deploy/README.md` (pre-flight read-only → build → nginx add block → verify app lain aman); lalu mulai isi data poin 1 (Hadits) dari sumber terbuka teraudit.
+**Feeling owner:** ingin gerak cepat (deploy) tapi aku jaga app lain jgn tumbang.
+
+---
+
 ### [F1.14] Sync catatan (Postgres) + Docker TERISOLASI (aman di server bersama migancore) — 2026-07-06
 
 **North Star check:** ✅ align — sync catatan (#1); teks kanonik tak tersentuh; deploy tak ganggu app lain.
@@ -289,7 +306,7 @@ Cross-source akar konsonan (L3): **Tanzil 100%**, **Kemenag 99.984%** (1 konvens
 
 | Fase | Status | Milestone terakhir | Root hash mushaf |
 |------|--------|--------------------|------------------|
-| 1 | 🏗️ jalan | F1.14: sync catatan (Postgres) + Docker terisolasi + runbook deploy | `eb13d58a…8cba7e56` |
+| 1 | 🏗️ jalan | F1.15: repo GitHub (private) + roadmap data keilmuan (`11`) | `eb13d58a…8cba7e56` |
 | 2 | ⬜ | — | — |
 | 3 | ⬜ | — | — |
 | 4 | ⬜ | — | — |
