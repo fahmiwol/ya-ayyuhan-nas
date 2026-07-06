@@ -64,6 +64,23 @@
 
 <!-- Append entri baru di atas garis ini, atau lanjut kronologis di bawah -->
 
+### [F1.19] Validasi + Menu Doa (poin 3) — 2026-07-06
+
+**North Star check:** ✅ align — validasi integritas dulu; lalu lapisan doa ber-sumber; kanonik tak tersentuh.
+**Action:**
+- **VALIDASI** (owner minta "analisa, validasi"): jalankan verify-boot (root hash), verify-surah (urutan 2-sumber), test-integrity (immutability) → semua LULUS, root tetap `eb13d58a…8cba7e56`.
+- **Menu Doa** `apps/web/public/data/doa.json` (kurasi editorial ber-dalil): kategori **Doa dari Al-Qur'an** (8, tertaut ke ayat yg sudah di-host — bukan reproduksi) + **Doa Harian/Sunnah** (8 lafaz ringkas domain-publik: makan/tidur/bangun/wc/keluar-rumah/kendaraan + sumber HR + grade). `lib/doa.ts`, `app/doa/page.tsx` (Arab+translit+arti+chip ayat+sumber+badge grade). Nav "Doa" + i18n.
+**WHY:** owner poin 3 — kumpulan doa Islam.
+**Test/verify:** validasi 3 suite LULUS. `npm run build` LULUS (134 halaman, /doa). Verifikasi live setelah redeploy.
+**Iterasi:** —.
+**Review:** IP-aman: doa Qur'ani = link ke ayat (tak reproduksi); doa harian = lafaz pendek dari hadits (domain publik) + sumber koleksi. Netral. Grade = keterangan umum (audit bila perlu).
+**Provenance/Lisensi:** Editorial CC-BY-4.0 + sumber HR per doa. **Integritas:** root tetap `eb13d58a…8cba7e56`.
+**Blocker:** —
+**Next:** redeploy + verify live; lalu poin 4 (Keilmuan/kitab) / 5 (Kisah), atau skala hadits penuh.
+**Feeling owner:** —
+
+---
+
 ### [F1.18] Menu Belajar — Dasar Keislaman (Iman·Islam·Ihsan) (poin 2) — 2026-07-06
 
 **North Star check:** ✅ align — lapisan belajar dasar, netral & ber-dalil (tertaut data yang sudah ada); teks kanonik tak tersentuh.
@@ -358,7 +375,7 @@ Cross-source akar konsonan (L3): **Tanzil 100%**, **Kemenag 99.984%** (1 konvens
 
 | Fase | Status | Milestone terakhir | Root hash mushaf |
 |------|--------|--------------------|------------------|
-| 1 | 🏗️ jalan | F1.18: menu Belajar — Dasar Keislaman (poin 2 data) | `eb13d58a…8cba7e56` |
+| 1 | 🏗️ jalan | F1.19: validasi (integritas OK) + menu Doa (poin 3 data) | `eb13d58a…8cba7e56` |
 | 2 | ⬜ | — | — |
 | 3 | ⬜ | — | — |
 | 4 | ⬜ | — | — |

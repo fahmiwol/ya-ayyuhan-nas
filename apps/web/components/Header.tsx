@@ -26,6 +26,7 @@ export function Header() {
         <Link href="/" className="hover:opacity-80">{t("nav.surah")}</Link>
         <Link href="/hadits" className="hover:opacity-80">{t("nav.hadith")}</Link>
         <Link href="/belajar" className="hover:opacity-80">{t("nav.learn")}</Link>
+        <Link href="/doa" className="hover:opacity-80">{t("nav.dua")}</Link>
         <Link href="/catatan" className="hover:opacity-80">{t("nav.notes")}</Link>
         <Link href="/integritas" className="hover:opacity-80">{t("nav.integrity")}</Link>
       </nav>

@@ -14,7 +14,7 @@ export const LOCALES: { code: Locale; label: string; dir: "ltr" | "rtl" }[] = [
 type Dict = Record<string, string>;
 const DICT: Record<Locale, Dict> = {
   id: {
-    "nav.surah": "Surah", "nav.hadith": "Hadits", "nav.learn": "Belajar", "nav.notes": "Catatan", "nav.integrity": "Integritas",
+    "nav.surah": "Surah", "nav.hadith": "Hadits", "nav.learn": "Belajar", "nav.dua": "Doa", "nav.notes": "Catatan", "nav.integrity": "Integritas",
     "brand.tagline": "Muslim & Islamic Archive",
     "home.title": "Al-Qur'an Digital",
     "home.subtitle": "{surah} surah · {ayah} ayat · riwayat {riwayah} · rasm {rasm}. Teks disalin harfiah & terverifikasi kriptografis (satu huruf pun tidak berubah).",
@@ -36,7 +36,7 @@ const DICT: Record<Locale, Dict> = {
     "catatan.subtitle": "Catatan & stabilo-mu, dikelompokkan per jenis. Privat — tersimpan di perangkat ini.",
   },
   en: {
-    "nav.surah": "Surahs", "nav.hadith": "Hadith", "nav.learn": "Learn", "nav.notes": "Notes", "nav.integrity": "Integrity",
+    "nav.surah": "Surahs", "nav.hadith": "Hadith", "nav.learn": "Learn", "nav.dua": "Du'a", "nav.notes": "Notes", "nav.integrity": "Integrity",
     "brand.tagline": "Muslim & Islamic Archive",
     "home.title": "Digital Qur'an",
     "home.subtitle": "{surah} surahs · {ayah} verses · {riwayah} narration · {rasm} script. Text copied verbatim & cryptographically verified (not one letter changed).",
@@ -58,7 +58,7 @@ const DICT: Record<Locale, Dict> = {
     "catatan.subtitle": "Your notes & highlights, grouped by type. Private — stored on this device.",
   },
   ar: {
-    "nav.surah": "السور", "nav.hadith": "الحديث", "nav.learn": "تعلَّم", "nav.notes": "الملاحظات", "nav.integrity": "الأصالة",
+    "nav.surah": "السور", "nav.hadith": "الحديث", "nav.learn": "تعلَّم", "nav.dua": "الأدعية", "nav.notes": "الملاحظات", "nav.integrity": "الأصالة",
     "brand.tagline": "أرشيف إسلامي",
     "home.title": "القرآن الرقمي",
     "home.subtitle": "{surah} سورة · {ayah} آية · رواية {riwayah} · رسم {rasm}. نص منسوخ حرفيًا ومُتحقَّق منه تشفيريًا (لا يتغير حرف واحد).",
