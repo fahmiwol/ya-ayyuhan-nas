@@ -64,6 +64,21 @@
 
 <!-- Append entri baru di atas garis ini, atau lanjut kronologis di bawah -->
 
+### [F1.26] Menu Kisah/Hikayat (poin 5) — 2026-07-06
+
+**North Star check:** ✅ align — data poin 5 (kisah) ber-sumber & tertaut ayat; kanonik tak tersentuh. **5 poin data roadmap SELESAI (fondasi).**
+**Action:** `apps/web/public/data/kisah.json` (kurasi editorial netral): **Kisah Qur'ani** (Adam, Nuh, Ibrahim, Yusuf, Musa, Ashabul Kahfi, Maryam/Isa, Sulaiman, Ayyub, Yunus) + **Kisah Sahabat/Riwayat** (Hijrah/Gua Tsur, Bilal). Tiap kisah: ringkasan + **tautan ayat** + sumber + grade. `lib/kisah.ts`, `components/KisahBrowser.tsx` (kartu klik → **slider** detail + rujukan ayat + sumber, pola Doa), `app/kisah/page.tsx`, nav "Kisah" i18n (id/en/ar).
+**WHY:** owner: lanjut sesuai urutan → poin 5 (kisah/hikayat/riwayat).
+**Test/verify:** `npm run build` LULUS (138 halaman, /kisah). Verifikasi live setelah redeploy.
+**Iterasi:** —.
+**Review:** ringkasan editorial (bukan salin kitab); ber-dalil (tautan ayat) + sumber. Dilengkapi & tinjau bertahap (eval-gate).
+**Provenance/Lisensi:** Editorial CC-BY + Al-Qur'an/sirah. **Integritas:** root tetap `eb13d58a…8cba7e56`.
+**Blocker:** —
+**Next:** 5 poin data fondasi done → skala (koleksi penuh, tafsir multi-ulama, asbab, kisah); auto-translate en/ar; formalkan Eval-Gate→moderasi (doc 10) + jalur kontributor.
+**Feeling owner:** —
+
+---
+
 ### [F1.25] Auto-translate EN→ID (bertanda mesin, valid & transparan) — 2026-07-06
 
 **North Star check:** ✅ align — semua hadits punya Indonesia (owner: auto-translate); validitas dijaga via label; kanonik tak tersentuh.
@@ -478,7 +493,7 @@ Cross-source akar konsonan (L3): **Tanzil 100%**, **Kemenag 99.984%** (1 konvens
 
 | Fase | Status | Milestone terakhir | Root hash mushaf |
 |------|--------|--------------------|------------------|
-| 1 | 🏗️ jalan | F1.25: auto-translate EN→ID (bertanda mesin, semua hadits ber-ID) | `eb13d58a…8cba7e56` |
+| 1 | 🏗️ jalan | F1.26: menu Kisah (poin 5) — 5 poin data fondasi SELESAI | `eb13d58a…8cba7e56` |
 | 2 | ⬜ | — | — |
 | 3 | ⬜ | — | — |
 | 4 | ⬜ | — | — |
