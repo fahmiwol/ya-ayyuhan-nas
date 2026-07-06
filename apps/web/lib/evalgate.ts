@@ -129,7 +129,10 @@ export function assess(input: EvalInput): TrustAssessment {
   else {
     const agg = aggregateGrades(scholars);
     if (agg) tier = agg;
-    else if (input.hasProvenance || input.source) tier = "sourced"; // ada sumber tapi belum bergrade
+    // Hadits tanpa grade = BELUM dinilai (butuh takhrij) → "unreviewed", bukan "sourced".
+    // (Grade adalah inti sebuah hadits; sekadar punya sumber tak cukup.)
+    else if (input.kind === "hadith") tier = "unreviewed";
+    else if (input.hasProvenance || input.source) tier = "sourced"; // tafsir/doa/kisah: sumber cukup
     else tier = "unreviewed";
   }
 
@@ -154,4 +157,25 @@ export function assess(input: EvalInput): TrustAssessment {
   if (machine) disclaimer = `${disclaimer ? disclaimer + " " : ""}Memuat terjemahan mesin — belum ditinjau ahli.`;
 
   return { tier, label: m.label, short: m.short, color: m.color, icon: m.icon, machine, quranic, scholars, steps, provenance: input.source, disclaimer, corroboration, collections: corr.collections, muttafaq };
+}
+
+// Terapkan keputusan tinjauan manusia (reviewer/admin) di atas hasil otomatis.
+// validated → status jadi override (atau tetap) + ditandai "ditinjau"; rejected → maudhu;
+// needs_work → tetap, ditandai sedang diperbaiki. Selalu transparan (reviewedBy tampil).
+export interface ReviewOverride { decision: "validated" | "rejected" | "needs_work"; statusOverride?: string | null; note?: string | null; reviewerName: string }
+export function applyReview(a: TrustAssessment, r: ReviewOverride): TrustAssessment {
+  let tier = a.tier;
+  if (r.decision === "validated") tier = (r.statusOverride as TrustTier) ?? (ORDER[a.tier] >= ORDER.hasan ? a.tier : "hasan");
+  else if (r.decision === "rejected") tier = "maudhu";
+  const m = META[tier];
+  const step: EvalStep = {
+    n: 8, name: "Tinjauan ahli", status: r.decision === "validated" ? "pass" : r.decision === "rejected" ? "fail" : "warn",
+    note: r.decision === "validated" ? `Ditinjau & disahkan oleh ${r.reviewerName}` : r.decision === "rejected" ? `Ditolak oleh ${r.reviewerName}` : `Perlu perbaikan (${r.reviewerName})`,
+  };
+  const steps = [...a.steps.filter((s) => s.n !== 8), step];
+  let disclaimer = a.disclaimer;
+  if (r.decision === "validated") disclaimer = r.note ?? undefined; // status sudah disahkan → buang disclaimer auto
+  else if (r.decision === "rejected") disclaimer = `Ditolak reviewer: ${r.note ?? "tidak memenuhi syarat"}`;
+  else if (r.decision === "needs_work") disclaimer = `Sedang ditinjau: ${r.note ?? "menunggu perbaikan"}`;
+  return { ...a, tier, label: m.label, short: m.short, color: m.color, icon: m.icon, steps, disclaimer, reviewedBy: r.reviewerName };
 }

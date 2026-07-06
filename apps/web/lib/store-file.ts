@@ -1,11 +1,12 @@
 // apps/web/lib/store-file.ts — backend file JSON (dev lokal, tanpa Postgres).
 import { promises as fs } from "node:fs";
 import path from "node:path";
-import type { Store, StoreUser, StoreNote } from "./store";
+import type { Store, StoreUser, StoreNote, ContentReview } from "./store";
 
 const DIR = path.join(process.cwd(), ".data");
 const USERS = path.join(DIR, "users.json");
 const NOTES = path.join(DIR, "notes.json");
+const REVIEWS = path.join(DIR, "reviews.json");
 
 async function read<T>(file: string): Promise<T[]> {
   try { return JSON.parse(await fs.readFile(file, "utf8")); } catch { return []; }
@@ -44,5 +45,15 @@ export class FileStore implements Store {
   async deleteNote(userId: string, id: string) {
     const notes = await read<StoreNote>(NOTES);
     await write(NOTES, notes.filter((n) => !(n.id === id && n.userId === userId)));
+  }
+
+  async listReviews() {
+    return (await read<ContentReview>(REVIEWS)).sort((a, b) => (a.updatedAt < b.updatedAt ? 1 : -1));
+  }
+  async upsertReview(r: ContentReview) {
+    const reviews = await read<ContentReview>(REVIEWS);
+    const i = reviews.findIndex((x) => x.ref === r.ref);
+    if (i >= 0) reviews[i] = r; else reviews.push(r);
+    await write(REVIEWS, reviews);
   }
 }

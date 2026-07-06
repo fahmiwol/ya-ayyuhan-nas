@@ -45,7 +45,7 @@ export function HadithReader({ c }: { c: HadithCollection }) {
             <li key={h.number} className="card p-4">
               <div className="mb-2 flex flex-wrap items-center gap-2 text-xs">
                 <span className="grid place-items-center rounded-full" style={{ minWidth: 26, height: 26, border: "1px solid var(--gold)", color: "var(--gold)" }}>{h.number}</span>
-                <TrustBadge a={a} />
+                <TrustBadge a={a} refId={`hadith:${c.key}:${h.number}`} />
               </div>
               <p className="arabic" style={{ fontSize: "1.5rem", lineHeight: 2 }}>{h.arabic}</p>
               {text && (

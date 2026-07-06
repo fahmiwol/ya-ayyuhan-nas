@@ -87,6 +87,25 @@
 
 ---
 
+### [F1.29] Antrean Tinjau (moderasi RBAC) + korroborasi otomatis + badge Kisah — 2026-07-06
+
+**North Star check:** ya — melengkapi Eval-Gate: dari "menilai otomatis + jujur" → "manusia (reviewer/admin) bisa mengesahkan". Ini pintu menuju kontributor (yang owner taruh paling akhir). "gas semua, hati-hati": deploy bertahap, app lain dijaga, RBAC & fail-closed.
+**FASE A (deploy #1):**
+- Korroborasi otomatis: `deriveCorroboration()` parse nama koleksi dari teks grade → `corroboration_count` + **muttafaq 'alaih** (Bukhari+Muslim) chip. Terdeteksi 11 hadits muttafaq.
+- Badge kepercayaan diperluas ke **Kisah** (asStatic di card, panel di slider).
+**FASE B (deploy #2):**
+- Store: tipe `ContentReview` + `listReviews`/`upsertReview` di PgStore (tabel `content_review` IF NOT EXISTS, PK ref) & FileStore (dev). Terisolasi, tak sentuh app_user/user_note.
+- API `POST /api/v1/reviews` (RBAC reviewer/admin via `getSessionUser`, validasi decision/tier) + `GET` (baca publik → badge tampilkan status tervalidasi).
+- Engine `applyReview()`: validated→override tier + step 8 "Tinjauan ahli"; rejected→maudhu; needs_work→ditandai. Selalu transparan (👤 Ditinjau: nama).
+- Klien: `lib/reviews.tsx` (ReviewProvider fetch sekali) + `TrustBadge refId` → override otomatis. Wire refId di hadits/tafsir/doa/kisah.
+- Halaman **/tinjau** (server-gated reviewer/admin) + `ReviewQueue` (filter perlu-tinjau/sudah/semua, form Sahkan/Perlu-perbaikan/Tolak + override + catatan). Link nav "⚖️ Tinjau" hanya utk reviewer/admin.
+- **Fix konsistensi:** hadits tanpa grade = "unreviewed" (bukan "sourced") — grade itu inti hadits; sejalan dgn dashboard. Antrean: **312 perlu tinjau**.
+**Test:** engine muttafaq (11), TSC clean berulang. Preview end-to-end sbg admin: /tinjau 312 todo; POST validated→sahih; badge hadits nawawi#1 override → ✅Sahih + "👤 Ditinjau: Fahmi Ghani" + step "Tinjauan ahli: disahkan" + catatan. 0 error konsol. `.data/` gitignored (tak bocor).
+**Provenance/aman:** reviewer decision tersimpan + reviewer name transparan ke pembaca; khilaf → "Perlu perbaikan", tak dipaksakan. App lain (ixonomic/miganpro/emiga) 301 tiap deploy.
+**Status:** ✅ selesai. Lanjutan alami: kontributor (usul konten → antrean sama), matn cross-check otomatis, ekspansi data hadits penuh.
+
+---
+
 ### [F1.28] Eval-Gate jadi NYATA: "Lapisan Kepercayaan" (status + provenance seragam) — 2026-07-06
 
 **North Star check:** ya — ini prinsip paling ditekankan owner ("jadikan cara Islam memvalidasi kebenaran sebagai eval gate", "tak boleh kontaminasi/kontradiksi"). Mengubah metodologi 12_ISLAMIC_VALIDATION.md dari DOKUMEN → KODE yang menggerbang konten. Fondasi wajib sebelum kontributor.

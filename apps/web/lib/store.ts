@@ -14,6 +14,20 @@ export interface StoreNote {
   color: string; type: string; note: string; source: unknown; ayahHash: string;
   createdAt: string; updatedAt: string;
 }
+// Keputusan tinjauan editorial (Eval-Gate) atas satu konten bernarasi.
+// Satu keputusan "berlaku" per ref (PRIMARY KEY ref) — upsert menimpa.
+export type ReviewDecision = "validated" | "rejected" | "needs_work";
+export interface ContentReview {
+  ref: string; // mis. "hadith:abudawud:42"
+  kind: string; // hadith|tafsir|doa|kisah
+  decision: ReviewDecision;
+  statusOverride: string | null; // tier override (sahih|hasan|daif|maudhu|disputed|sourced) | null
+  note: string | null;
+  reviewerId: string;
+  reviewerName: string;
+  createdAt: string;
+  updatedAt: string;
+}
 
 export interface Store {
   init(): Promise<void>;
@@ -24,6 +38,8 @@ export interface Store {
   listNotes(userId: string): Promise<StoreNote[]>;
   upsertNote(n: StoreNote): Promise<void>;
   deleteNote(userId: string, id: string): Promise<void>;
+  listReviews(): Promise<ContentReview[]>;
+  upsertReview(r: ContentReview): Promise<void>;
 }
 
 let cached: Store | null = null;

@@ -30,7 +30,7 @@ export function KisahBrowser({ categories }: { categories: KisahCategory[] }) {
                 <div className="flex flex-wrap items-center gap-2">
                   <span className="font-semibold">{s.title}</span>
                   <span className="mut rounded px-1.5 py-0.5 text-[10px] uppercase" style={{ background: "var(--bg-soft)" }}>{s.type}</span>
-                  <TrustBadge a={assessStory(s)} compact asStatic />
+                  <TrustBadge a={assessStory(s)} compact asStatic refId={`kisah:${s.title}`} />
                 </div>
                 <p className="mut mt-1 line-clamp-2 text-sm">{s.narrative}</p>
                 <div className="mut mt-1 text-xs opacity-70">Klik untuk baca →</div>
@@ -63,7 +63,7 @@ export function KisahBrowser({ categories }: { categories: KisahCategory[] }) {
                   </div>
                 </div>
               )}
-              <div className="mt-4"><TrustBadge a={assessStory(sel)} /></div>
+              <div className="mt-4"><TrustBadge a={assessStory(sel)} refId={`kisah:${sel.title}`} /></div>
               <div className="mt-3 rounded-lg border p-3" style={{ borderColor: "var(--line)" }}>
                 <div className="mut text-xs uppercase tracking-wide">Sumber</div>
                 <p className="mt-1 text-xs">📎 {sel.source}{sel.grade ? ` · ${sel.grade}` : ""}</p>

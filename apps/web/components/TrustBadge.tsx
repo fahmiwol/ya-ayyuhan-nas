@@ -1,11 +1,14 @@
 "use client";
 // Badge status kepercayaan (Eval-Gate). Konsisten di seluruh konten bernarasi.
 import { useState } from "react";
-import type { TrustAssessment } from "@/lib/evalgate";
+import { applyReview, type TrustAssessment } from "@/lib/evalgate";
+import { useReview } from "@/lib/reviews";
 import { ProvenancePanel } from "./ProvenancePanel";
 
-export function TrustBadge({ a, compact, asStatic }: { a: TrustAssessment; compact?: boolean; asStatic?: boolean }) {
+export function TrustBadge({ a: a0, compact, asStatic, refId }: { a: TrustAssessment; compact?: boolean; asStatic?: boolean; refId?: string }) {
   const [open, setOpen] = useState(false);
+  const review = useReview(refId);
+  const a = review ? applyReview(a0, review) : a0;
   const inner = (
     <>
       <span>{a.icon}</span>

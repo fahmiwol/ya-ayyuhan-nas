@@ -1,7 +1,7 @@
 // apps/web/lib/store-pg.ts — backend Postgres (produksi/Docker, scalable).
 // Skema dibuat otomatis (CREATE TABLE IF NOT EXISTS). Query ter-parameter (anti SQLi).
 import { Pool } from "pg";
-import type { Store, StoreUser, StoreNote, Role } from "./store";
+import type { Store, StoreUser, StoreNote, Role, ContentReview } from "./store";
 
 export class PgStore implements Store {
   private pool: Pool;
@@ -35,7 +35,40 @@ export class PgStore implements Store {
         PRIMARY KEY (user_id, id)
       );
       CREATE INDEX IF NOT EXISTS idx_note_user ON user_note(user_id);
+      CREATE TABLE IF NOT EXISTS content_review (
+        ref          TEXT PRIMARY KEY,
+        kind         TEXT NOT NULL,
+        decision     TEXT NOT NULL,
+        status_override TEXT,
+        note         TEXT,
+        reviewer_id  TEXT NOT NULL,
+        reviewer_name TEXT NOT NULL,
+        created_at   TIMESTAMPTZ NOT NULL DEFAULT now(),
+        updated_at   TIMESTAMPTZ NOT NULL DEFAULT now()
+      );
     `);
+  }
+
+  private toReview(r: Record<string, unknown>): ContentReview {
+    return {
+      ref: r.ref as string, kind: r.kind as string, decision: r.decision as ContentReview["decision"],
+      statusOverride: (r.status_override as string) ?? null, note: (r.note as string) ?? null,
+      reviewerId: r.reviewer_id as string, reviewerName: r.reviewer_name as string,
+      createdAt: new Date(r.created_at as string).toISOString(), updatedAt: new Date(r.updated_at as string).toISOString(),
+    };
+  }
+  async listReviews() {
+    const { rows } = await this.pool.query("SELECT * FROM content_review ORDER BY updated_at DESC");
+    return rows.map((r) => this.toReview(r));
+  }
+  async upsertReview(r: ContentReview) {
+    await this.pool.query(
+      `INSERT INTO content_review (ref,kind,decision,status_override,note,reviewer_id,reviewer_name,created_at,updated_at)
+       VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9)
+       ON CONFLICT (ref) DO UPDATE SET
+         kind=$2, decision=$3, status_override=$4, note=$5, reviewer_id=$6, reviewer_name=$7, updated_at=$9`,
+      [r.ref, r.kind, r.decision, r.statusOverride, r.note, r.reviewerId, r.reviewerName, r.createdAt, r.updatedAt]
+    );
   }
 
   private toUser(r: Record<string, unknown>): StoreUser {

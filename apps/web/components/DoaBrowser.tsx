@@ -33,7 +33,7 @@ export function DoaBrowser({ categories }: { categories: DoaCategory[] }) {
               <button key={i} onClick={() => setSel(doa)} className="card p-4 text-left transition hover:opacity-90">
                 <div className="flex flex-wrap items-center gap-2">
                   <span className="font-semibold">{doa.title}</span>
-                  <TrustBadge a={assessDoa(doa)} compact asStatic />
+                  <TrustBadge a={assessDoa(doa)} compact asStatic refId={`doa:${doa.ref || doa.title}`} />
                 </div>
                 <div className="mut mt-1 text-xs">{doa.occasion}{doa.ref ? ` · ${doa.ref}` : ""}</div>
                 <div className="mut mt-1 text-xs opacity-70">Klik untuk detail →</div>
@@ -60,7 +60,7 @@ export function DoaBrowser({ categories }: { categories: DoaCategory[] }) {
               {sel.text_ar && <p className="arabic mb-2" style={{ fontSize: "1.9rem", lineHeight: 2, textAlign: "right" }}>{sel.text_ar}</p>}
               {sel.translit && <p className="mut mb-1 italic">{sel.translit}</p>}
               <p className="leading-relaxed">{sel.meaning}</p>
-              <div className="mt-2"><TrustBadge a={assessDoa(sel)} /></div>
+              <div className="mt-2"><TrustBadge a={assessDoa(sel)} refId={`doa:${sel.ref || sel.title}`} /></div>
 
               {sel.detail?.penjelasan && (
                 <div className="mt-5"><div className="mut mb-1 text-xs uppercase tracking-wide">Penjelasan</div><p className="leading-relaxed">{sel.detail.penjelasan}</p></div>

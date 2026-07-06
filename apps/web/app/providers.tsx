@@ -5,6 +5,7 @@ import { SettingsProvider } from "@/lib/settings";
 import { NotesProvider } from "@/lib/notes";
 import { LocaleProvider } from "@/lib/i18n";
 import { AuthProvider } from "@/lib/auth";
+import { ReviewProvider } from "@/lib/reviews";
 
 export function Providers({ children }: { children: ReactNode }) {
   useEffect(() => {
@@ -17,7 +18,9 @@ export function Providers({ children }: { children: ReactNode }) {
     <LocaleProvider>
       <AuthProvider>
         <SettingsProvider>
-          <NotesProvider>{children}</NotesProvider>
+          <ReviewProvider>
+            <NotesProvider>{children}</NotesProvider>
+          </ReviewProvider>
         </SettingsProvider>
       </AuthProvider>
     </LocaleProvider>

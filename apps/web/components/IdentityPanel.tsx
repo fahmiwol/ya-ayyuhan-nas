@@ -151,7 +151,7 @@ export function IdentityPanel({ target, onClose }: { target: IdentityTarget | nu
                       <div className="flex flex-wrap items-center gap-2">
                         <b className="text-sm gold">{e.name}</b>
                         <span className="mut rounded px-1.5 py-0.5 text-[10px]" style={{ background: "var(--bg-soft)" }}>{e.lang}</span>
-                        <TrustBadge a={ta} compact />
+                        <TrustBadge a={ta} compact refId={`tafsir:${surah}:${ayah.ayah}:${e.key}`} />
                       </div>
                       <p className="mt-1 leading-relaxed" dir={isAr ? "rtl" : "ltr"} style={isAr ? { fontSize: "1.2rem" } : undefined}>{body}</p>
                       {isAr && (

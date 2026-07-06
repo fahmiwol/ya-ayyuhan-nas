@@ -3,11 +3,14 @@
 import Link from "next/link";
 import { useSettings } from "@/lib/settings";
 import { useT, LOCALES, type Locale } from "@/lib/i18n";
+import { useAuth } from "@/lib/auth";
 import { AuthButton } from "./AuthButton";
 
 export function Header() {
   const { theme, set } = useSettings();
   const { t, locale, setLocale } = useT();
+  const { user } = useAuth();
+  const canReview = user?.role === "reviewer" || user?.role === "admin";
   return (
     <header
       style={{ borderColor: "var(--line)", background: "var(--bg-soft)" }}
@@ -31,6 +34,7 @@ export function Header() {
         <Link href="/kisah" className="hover:opacity-80">{t("nav.story")}</Link>
         <Link href="/catatan" className="hover:opacity-80">{t("nav.notes")}</Link>
         <Link href="/integritas" className="hover:opacity-80">{t("nav.integrity")}</Link>
+        {canReview && <Link href="/tinjau" className="gold hover:opacity-80">⚖️ Tinjau</Link>}
       </nav>
       <div className="ml-auto flex items-center gap-2">
         <select
