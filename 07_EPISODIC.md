@@ -97,7 +97,8 @@
 **Test:** transliterator diuji di Al-Fatihah → "alhamdu lillahi rabbi al'aalamiina", "maaliki yawmi alddiini", "'iyyaka na'budu wa'iyyaka nasta'iinu" (gemination & madd benar; dagger-alif tak bocor). TSC clean. Preview: tab Tafsir Jalalain render Arab + "CARA BACA · TRANSLITERASI OTOMATIS" (suurah alfatihah…) + Arti Indonesia (mesin). ✓
 **Deploy:** 2 tahap — (1) KODE (translit client, jalan di SEMUA surah seketika) push+deploy dulu; (2) DATA `_id` (arti) commit+redeploy setelah job MT selesai.
 **Provenance:** transliterasi=turunan otomatis (bukan sumber); arti Jalalain/Muyassar=Google MT (belum ditinjau) di atas teks Jalaluddin al-Mahalli & as-Suyuti (domain publik) / al-Muyassar (KFGQPC).
-**Status:** KODE selesai + deploy. DATA arti: menyusul saat job MT rampung.
+**Status:** ✅ SELESAI & LIVE. KODE (translit) deploy dulu; job MT rampung → **6010 arti Jalalain (114 surah, 0 kosong)** commit+redeploy. Spot-check Ayat Kursi/Yasin/Al-Ikhlas/An-Nas OK. App lain tetap 301.
+**Berikut (opsional):** peningkatan mutu — sun-letter assimilation di translit (alrr→ar-r), tinjau ahli utk naikkan arti dari "mesin" ke tervalidasi, al-Muyassar juga (belum ada teksnya di data), transliterasi utk konten Arab lain (hadits/doa).
 
 ---
 
