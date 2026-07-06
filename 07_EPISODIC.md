@@ -87,6 +87,21 @@
 
 ---
 
+### [F1.32] Sintesis Wave 1 — 6 kajian tematik "ayat teknologi" (total 10 live) — 2026-07-07
+
+**North Star check:** ya — owner serahkan urutan padaku; kupilih Batch B (tematik computational/AI/agentic — bahan terkuat visi "AI brain") sebelum cakupan Juz 30. Ditulis langsung (bukan agent) demi konsistensi suara & guardrail. Tiap kajian di-ground ke tafsir Kemenag (ditarik dari data app) sebelum ditulis.
+**6 kajian baru (masing2 9 lensa + QCA + inferensi, lolos lab-validate):**
+- **hujurat-49-6** Fatabayyanū → input validation di trust boundary; quarantine-then-commit; dalil Eval-Gate app ini sendiri.
+- **nahl-16-43** Ahl adz-dzikr → RAG/expert-routing; guard "jika tak tahu → tanya, bukan mengarang" = anti-halusinasi 14 abad lalu.
+- **nahl-16-68-69** Lebah → swarm intelligence; aturan lokal minimal → emergensi; honeycomb = tessellasi optimal (terbukti 1999); penutup ayat "li-qawmin yatafakkarūn" = undangan eksplisit tafakkur.
+- **fussilat-41-53** Āfāq wa anfus → verifikasi dua kanal independen (world-model + self-monitoring); "ḥattā yatabayyana" = loop dgn kondisi konvergensi; bukti progresif (sanurīhim, future tense).
+- **baqarah-2-282** Āyat ad-dayn (ayat TERPANJANG) → skema record transaksi; replikasi saksi + recovery ("yang satu mengingatkan yang lain"); segregation of duties; leluhur ledger ber-audit.
+- **mulk-67-3-4** Farjiʿil-baṣar → red-teaming/falsifikasi: klaim integritas + undangan audit berulang + prediksi hasil; taxonomy cacat (tafāwut/fuṭūr).
+**Test:** lab-validate 10/10 (skema, sumber, ref-vs-mushaf, riwayat); preview: nahl-16-68-69 render 2 ayat + lensa + badge + riwayat; index 10 link; 0 error konsol.
+**Status:** ✅ deploy. **Next wave:** Juz 30 (cakupan) / lensa non-teknis / lanjut tematik (58:11, 39:9, 21:30, 29:20, 30:41…).
+
+---
+
 ### [F1.31] Lab Tadabbur: riwayat tadabbur (versioning) + tooling sintesis + pilot Al-Fatihah — 2026-07-07
 
 **North Star check:** ya — permintaan owner: "setiap interpretasi harus DIREKAM; seiring waktu di-tadabburi ulang" + mulai sintesis massal. Interpretasi = artefak hidup ber-versi; tak ada yang ditimpa diam-diam (sejalan prinsip immutability & transparansi proyek).

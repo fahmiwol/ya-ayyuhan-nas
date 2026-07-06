@@ -6,6 +6,12 @@
     { "id": "fatihah-1-1-7", "title": "Al-Fatihah — protokol pembuka & loop kalibrasi harian", "ref": "QS 1:1-7", "theme": "Protokol interaksi, alignment, spesifikasi via contoh, sinkronisasi global", "lenses": 9, "created": "2026-07-07" },
     { "id": "iqra-96-1-5", "title": "Iqra' — READ → ENCODE → LEARN", "ref": "QS 96:1-5", "theme": "Akuisisi pengetahuan, pembelajaran, eksternalisasi ilmu", "lenses": 9, "created": "2026-07-07" },
     { "id": "mizan-55-5-9", "title": "Ḥusbān & Mīzān — komputasi kosmik dan constraint keseimbangan", "ref": "QS 55:5-9", "theme": "Determinisme, keteraturan alam, invariant, alignment", "lenses": 9, "created": "2026-07-07" },
-    { "id": "kun-36-82", "title": "Kun Fayakūn — instansiasi deklaratif", "ref": "QS 36:82", "theme": "Penciptaan, informasi, paradigma deklaratif", "lenses": 9, "created": "2026-07-07" }
+    { "id": "kun-36-82", "title": "Kun Fayakūn — instansiasi deklaratif", "ref": "QS 36:82", "theme": "Penciptaan, informasi, paradigma deklaratif", "lenses": 9, "created": "2026-07-07" },
+    { "id": "hujurat-49-6", "title": "Fatabayyanū — gerbang verifikasi input", "ref": "QS 49:6", "theme": "Verifikasi informasi, anti-misinformation, integritas data", "lenses": 9, "created": "2026-07-07" },
+    { "id": "nahl-16-43", "title": "Ahl adz-dzikr — routing kueri ke pemegang pengetahuan", "ref": "QS 16:43", "theme": "Expert routing, retrieval, epistemic humility", "lenses": 9, "created": "2026-07-07" },
+    { "id": "nahl-16-68-69", "title": "Wahyu kepada lebah — kecerdasan kawanan", "ref": "QS 16:68-69", "theme": "Swarm intelligence, emergence, optimisasi terdistribusi", "lenses": 9, "created": "2026-07-07" },
+    { "id": "fussilat-41-53", "title": "Āfāq wa anfus — konvergensi bukti dari dua kanal sensor", "ref": "QS 41:53", "theme": "Observabilitas, verifikasi konvergen, dua kanal bukti", "lenses": 9, "created": "2026-07-07" },
+    { "id": "baqarah-2-282", "title": "Āyat ad-dayn — protokol transaksi & jejak audit", "ref": "QS 2:282", "theme": "Pencatatan transaksi, audit trail, saksi/redundansi", "lenses": 9, "created": "2026-07-07" },
+    { "id": "mulk-67-3-4", "title": "Farjiʿil-baṣar — loop pengujian mencari cacat", "ref": "QS 67:3-4", "theme": "QA/pengujian iteratif, falsifikasi, konsistensi sistem", "lenses": 9, "created": "2026-07-07" }
   ]
 }
