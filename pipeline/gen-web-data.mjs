@@ -11,7 +11,8 @@ import { DatabaseSync } from 'node:sqlite';
 const ROOT = new URL('../', import.meta.url);
 const OUT = new URL('apps/web/public/data/', ROOT);
 const SURAH_DIR = new URL('surah/', OUT);
-if (existsSync(fileURLToPath(OUT))) rmSync(fileURLToPath(OUT), { recursive: true });
+// Bersihkan HANYA subdir surah (di-regenerate). Sisakan subdir lain (hadith/, dll) & file ditimpa.
+if (existsSync(fileURLToPath(SURAH_DIR))) rmSync(fileURLToPath(SURAH_DIR), { recursive: true });
 mkdirSync(fileURLToPath(SURAH_DIR), { recursive: true });
 
 const db = new DatabaseSync(fileURLToPath(new URL('data/mushaf-core.db', ROOT)), { readOnly: true });

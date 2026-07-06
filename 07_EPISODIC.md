@@ -64,6 +64,24 @@
 
 <!-- Append entri baru di atas garis ini, atau lanjut kronologis di bawah -->
 
+### [F1.17] Menu Hadits ber-grade + sumber (poin 1) — 2026-07-06
+
+**North Star check:** ✅ align — lapisan keilmuan pertama (hadits) ber-provenance + grade; teks kanonik tak tersentuh.
+**Action:**
+- `pipeline/seed-hadith.mjs` — "built own": tarik dari **fawazahmed0/hadith-api** (LISENSI: **Public Domain/Unlicense** — bukan NC, cek ulang F1 keliru). Koleksi: **Arba'in Nawawi (42)** + **40 Hadits Qudsi (40)** lengkap + **Sunan Abu Dawud (80/5274, contoh ber-grade)**. Ara + En + (Id utk abudawud). Grade Al-Albani dll ter-capture.
+- App: `lib/hadith.ts`, `lib/types.ts` (Hadith/Grade/Collection), `app/hadits/page.tsx` (daftar koleksi) + `app/hadits/[collection]/page.tsx` (browse + **badge grade** warna: shahih=hijau/hasan=emas/dhaif=merah + grader sbg sumber). Nav "Hadits" + i18n (id/en/ar).
+- Fix `gen-web-data.mjs`: hanya bersihkan subdir `surah/` (bukan seluruh `public/data/`) → data hadith/ aman.
+**WHY:** owner poin 1 — kumpulkan hadits, menu jelas dgn status shahih/dhaif + sumber.
+**Test/verify:** `npm run build` LULUS. `next dev` + screenshot: menu Hadits (3 koleksi + sumber public-domain), Abu Dawud tampil **badge grade "Sahih/Hasan Sahih · Al-Albani"** + terjemahan Indonesia + teks Arab RTL.
+**Iterasi:** key benar = `qudsi` (bukan qudsi40); bukhari/muslim grade kosong (semua sahih); abudawud ada grade Al-Albani → dipakai contoh; abudawud dibatasi 80 (label "sebagian").
+**Review:** koleksi kecil lengkap (nawawi/qudsi) + contoh ber-grade (abudawud); **Kutub as-Sittah penuh = sprint skala berikut**. Netral: grade=metadata ber-sumber. ⚠️ terjemahan turunan audit sumber asli bila perlu.
+**Provenance/Lisensi:** fawazahmed0/hadith-api, Public Domain (Unlicense), atribusi di UI. **Integritas:** root Qur'an tetap `eb13d58a…8cba7e56`.
+**Blocker:** —
+**Next:** redeploy produksi (git pull + rebuild web); lalu skala koleksi hadits penuh / lanjut poin 2 (dasar keislaman).
+**Feeling owner:** —
+
+---
+
 ### [F1.16] DEPLOY LIVE — https://quran.migancore.com (server bersama, app lain aman) — 2026-07-06
 
 **North Star check:** ✅ align — app publik live; teks kanonik tak tersentuh; app lain TIDAK terganggu.
@@ -323,7 +341,7 @@ Cross-source akar konsonan (L3): **Tanzil 100%**, **Kemenag 99.984%** (1 konvens
 
 | Fase | Status | Milestone terakhir | Root hash mushaf |
 |------|--------|--------------------|------------------|
-| 1 | 🏗️ jalan | F1.16: DEPLOY LIVE https://quran.migancore.com (app lain aman) | `eb13d58a…8cba7e56` |
+| 1 | 🏗️ jalan | F1.17: menu Hadits ber-grade + sumber (poin 1 data) | `eb13d58a…8cba7e56` |
 | 2 | ⬜ | — | — |
 | 3 | ⬜ | — | — |
 | 4 | ⬜ | — | — |

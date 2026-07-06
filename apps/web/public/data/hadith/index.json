@@ -1,0 +1,51 @@
+{
+  "builtAt": "2026-07-06T02:14:44.118Z",
+  "provenance": {
+    "name": "fawazahmed0/hadith-api",
+    "license": "Public Domain (Unlicense)",
+    "url": "https://github.com/fawazahmed0/hadith-api",
+    "note": "Dataset public domain; audit ulang sumber asli tiap terjemahan bila perlu."
+  },
+  "collections": [
+    {
+      "key": "nawawi",
+      "name": "Forty Hadith of an-Nawawi",
+      "name_id": "Arba'in Nawawi (42 Hadits)",
+      "count": 42,
+      "total": 42,
+      "partial": false,
+      "langs": [
+        "ar",
+        "en"
+      ],
+      "graded": 0
+    },
+    {
+      "key": "qudsi",
+      "name": "Forty Hadith Qudsi",
+      "name_id": "40 Hadits Qudsi",
+      "count": 40,
+      "total": 40,
+      "partial": false,
+      "langs": [
+        "ar",
+        "en"
+      ],
+      "graded": 0
+    },
+    {
+      "key": "abudawud",
+      "name": "Sunan Abu Dawud",
+      "name_id": "Sunan Abu Dawud (contoh ber-grade)",
+      "count": 80,
+      "total": 5274,
+      "partial": true,
+      "langs": [
+        "ar",
+        "en",
+        "id"
+      ],
+      "graded": 80
+    }
+  ]
+}

@@ -3,6 +3,37 @@
 export type RevelationPlace = "makkah" | "madinah";
 export type Lang = "id" | "en";
 
+// ===== Hadits (lapisan keilmuan; ber-grade + provenance) =====
+export interface HadithGrade { by: string | null; grade: string }
+export interface Hadith {
+  number: number;
+  arabicNumber: number;
+  arabic: string;
+  tr: { en: string | null; id: string | null };
+  grades: HadithGrade[];
+}
+export interface HadithProvenance { name: string; license: string; url: string; note?: string }
+export interface HadithCollectionMeta {
+  key: string;
+  name: string;
+  name_id: string;
+  count: number;
+  total: number;
+  partial: boolean;
+  langs: string[];
+  graded: number;
+}
+export interface HadithCollection extends HadithCollectionMeta {
+  provenance: HadithProvenance;
+  sections: Record<string, string>;
+  hadiths: Hadith[];
+}
+export interface HadithIndex {
+  builtAt: string;
+  provenance: HadithProvenance;
+  collections: HadithCollectionMeta[];
+}
+
 export interface MushafMeta {
   merkle_root: string;
   algo: string;
