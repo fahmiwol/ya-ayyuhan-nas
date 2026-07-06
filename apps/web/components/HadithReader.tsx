@@ -12,11 +12,14 @@ function gradeColor(g: string): string {
   return "var(--mut)";
 }
 
-// pilih terjemahan sesuai locale toggle; tandai bila fallback ke bahasa lain
-function pickTr(tr: { en: string | null; id: string | null }, locale: string): { text: string | null; lang: string | null } {
-  const order = locale === "en" ? ["en", "id"] : ["id", "en"]; // 'ar' → utamakan id
-  for (const l of order) { const t = (tr as Record<string, string | null>)[l]; if (t) return { text: t, lang: l }; }
-  return { text: null, lang: null };
+// pilih terjemahan sesuai locale toggle; utamakan manusia, lalu mesin (bertanda), lalu bahasa lain
+function pickTr(tr: { en: string | null; id: string | null; id_auto?: string | null }, locale: string): { text: string | null; lang: string | null; mt: boolean } {
+  const order = locale === "en" ? ["en", "id", "id_auto"] : ["id", "id_auto", "en"];
+  for (const l of order) {
+    const t = (tr as Record<string, string | null | undefined>)[l];
+    if (t) return { text: t, lang: l === "id_auto" ? "id" : l, mt: l === "id_auto" };
+  }
+  return { text: null, lang: null, mt: false };
 }
 
 export function HadithReader({ c }: { c: HadithCollection }) {
@@ -36,7 +39,7 @@ export function HadithReader({ c }: { c: HadithCollection }) {
 
       <ol className="space-y-4">
         {c.hadiths.map((h) => {
-          const { text, lang } = pickTr(h.tr, locale);
+          const { text, lang, mt } = pickTr(h.tr, locale);
           return (
             <li key={h.number} className="card p-4">
               <div className="mut mb-2 flex items-center gap-2 text-xs">
@@ -47,10 +50,11 @@ export function HadithReader({ c }: { c: HadithCollection }) {
               </div>
               <p className="arabic" style={{ fontSize: "1.5rem", lineHeight: 2 }}>{h.arabic}</p>
               {text && (
-                <p className="mut mt-3 text-[0.95rem] leading-relaxed">
-                  {text}
-                  {lang && lang !== wantLang && <span className="ml-2 rounded px-1 py-0.5 text-[10px] uppercase" style={{ border: "1px solid var(--line)" }}>{lang} · terjemahan {wantLang} menyusul</span>}
-                </p>
+                <div className="mt-3">
+                  <p className="mut text-[0.95rem] leading-relaxed">{text}</p>
+                  {mt && <span className="mt-1 inline-block rounded px-1.5 py-0.5 text-[10px]" style={{ border: "1px solid var(--gold)", color: "var(--gold)" }}>🌐 terjemahan mesin — belum ditinjau ahli</span>}
+                  {!mt && lang && lang !== wantLang && <span className="ml-2 rounded px-1 py-0.5 text-[10px] uppercase" style={{ border: "1px solid var(--line)" }}>{lang}</span>}
+                </div>
               )}
             </li>
           );

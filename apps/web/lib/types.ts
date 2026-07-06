@@ -9,7 +9,7 @@ export interface Hadith {
   number: number;
   arabicNumber: number;
   arabic: string;
-  tr: { en: string | null; id: string | null };
+  tr: { en: string | null; id: string | null; id_auto?: string | null };
   grades: HadithGrade[];
 }
 export interface HadithProvenance { name: string; license: string; url: string; note?: string }

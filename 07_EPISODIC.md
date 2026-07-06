@@ -64,6 +64,21 @@
 
 <!-- Append entri baru di atas garis ini, atau lanjut kronologis di bawah -->
 
+### [F1.25] Auto-translate EN→ID (bertanda mesin, valid & transparan) — 2026-07-06
+
+**North Star check:** ✅ align — semua hadits punya Indonesia (owner: auto-translate); validitas dijaga via label; kanonik tak tersentuh.
+**Action (respons owner):** `pipeline/auto-translate-hadith.mjs` — hadits yg ada EN tapi belum ID diterjemah mesin (Google gtx → fallback MyMemory) → disimpan **field terpisah `tr.id_auto`** (TIDAK menimpa terjemahan manusia). **95 hadits** dapat MT (Nawawi 42, Qudsi 40, +gap Bukhari/Muslim/AbuDawud). `types.ts` +id_auto; `HadithReader.tsx` pilih: manusia-id → mesin-id (label **"🌐 terjemahan mesin — belum ditinjau ahli"**) → en. Ikut toggle bahasa.
+**WHY:** owner: kalau cuma dapat EN, auto-translate ke ID; tapi harus valid → MT ditandai jelas (belum tervalidasi ahli = status eval-gate).
+**Test/verify:** `npm run build` LULUS (137). DOM locale=id → Nawawi tampil terjemahan Indonesia + label "terjemahan mesin"; marker "menyusul" hilang.
+**Iterasi:** MT via 2 mesin (gtx+MyMemory) resilient; id_auto ≠ id (jaga distingsi manusia vs mesin).
+**Review:** JUJUR & VALID — MT ditandai tegas, tak disamakan terjemahan resmi; masuk eval-gate sbg "belum ditinjau". Owner/reviewer bisa promote id_auto→id setelah tinjau.
+**Provenance/Lisensi:** teks hadits domain-publik (fawazahmed0); MT = mesin (Google/MyMemory). **Integritas:** root tetap `eb13d58a…8cba7e56`.
+**Blocker:** —
+**Next:** auto-translate juga utk konten lain (belajar/doa/tafsir) saat toggle en/ar; tinjauan ahli promote MT; poin 5 kisah.
+**Feeling owner:** —
+
+---
+
 ### [F1.24] Hadits Indonesia: +Bukhari & Muslim (isi gap terjemahan) — 2026-07-06
 
 **North Star check:** ✅ align — konten hadits Indonesia (jawab "Indonesia dulu"); kanonik tak tersentuh.
@@ -463,7 +478,7 @@ Cross-source akar konsonan (L3): **Tanzil 100%**, **Kemenag 99.984%** (1 konvens
 
 | Fase | Status | Milestone terakhir | Root hash mushaf |
 |------|--------|--------------------|------------------|
-| 1 | 🏗️ jalan | F1.24: hadits Indonesia +Bukhari/Muslim (isi gap terjemahan) | `eb13d58a…8cba7e56` |
+| 1 | 🏗️ jalan | F1.25: auto-translate EN→ID (bertanda mesin, semua hadits ber-ID) | `eb13d58a…8cba7e56` |
 | 2 | ⬜ | — | — |
 | 3 | ⬜ | — | — |
 | 4 | ⬜ | — | — |

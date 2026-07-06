@@ -16,7 +16,8 @@
       "partial": false,
       "langs": [
         "ar",
-        "en"
+        "en",
+        "id-auto"
       ],
       "graded": 0
     },
@@ -29,7 +30,8 @@
       "partial": false,
       "langs": [
         "ar",
-        "en"
+        "en",
+        "id-auto"
       ],
       "graded": 0
     },
@@ -43,7 +45,8 @@
       "langs": [
         "ar",
         "en",
-        "id"
+        "id",
+        "id-auto"
       ],
       "graded": 0
     },
@@ -57,7 +60,8 @@
       "langs": [
         "ar",
         "en",
-        "id"
+        "id",
+        "id-auto"
       ],
       "graded": 0
     },
@@ -71,7 +75,8 @@
       "langs": [
         "ar",
         "en",
-        "id"
+        "id",
+        "id-auto"
       ],
       "graded": 80
     }
