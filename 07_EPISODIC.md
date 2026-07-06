@@ -87,6 +87,20 @@
 
 ---
 
+### [F1.27] Tafsir Arab bisa dibaca: transliterasi Latin + arti (mesin) — 2026-07-06
+
+**North Star check:** ya. App untuk BELAJAR agama & baca Qur'an; anggap user belum bisa baca Arab. Tafsir Arab (Jalalain/al-Muyassar) yang "plek-plekan" Arab tak berguna bagi pemula. Netralitas & immutability tetap: teks Arab TIDAK disentuh; transliterasi = turunan hitung di klien; terjemahan = mesin, DITANDAI belum ditinjau ahli (eval-gate: status MT = belum tervalidasi).
+**Action:**
+- `apps/web/lib/translit.ts` — transliterator Arab→Latin (client, konvensi Indonesia: ts/kh/dz/sy/sh/dh/th/zh/'/gh/q, vokal panjang aa/ii/uu, syaddah=konsonan ganda). Berbasis-klaster: kumpulkan semua tanda (harakat+syaddah+dagger-alif) setelah tiap huruf apa pun urutannya → gemination benar. Ditandai jelas "bantuan baca otomatis, BUKAN baku".
+- `components/IdentityPanel.tsx` — tab Tafsir: utk edisi `lang==="ar"` kini tampil **Arab → Cara baca (transliterasi) → Arti (Indonesia)**. Arti dari `texts[key+"_id"]` (mesin, label "🌐 terjemahan mesin — belum ditinjau ahli"); bila belum ada → placeholder + arahkan ke Tafsir Kemenag (id) di atas.
+- `pipeline/auto-translate-tafsir.mjs` — MT AR→ID utk edisi Arab, simpan `${edisi}_id` per ayat. Resumable, per-surah write-back, Google gtx→MyMemory. Jalan di background utk 114 surah (~6010 entri Jalalain).
+**Test:** transliterator diuji di Al-Fatihah → "alhamdu lillahi rabbi al'aalamiina", "maaliki yawmi alddiini", "'iyyaka na'budu wa'iyyaka nasta'iinu" (gemination & madd benar; dagger-alif tak bocor). TSC clean. Preview: tab Tafsir Jalalain render Arab + "CARA BACA · TRANSLITERASI OTOMATIS" (suurah alfatihah…) + Arti Indonesia (mesin). ✓
+**Deploy:** 2 tahap — (1) KODE (translit client, jalan di SEMUA surah seketika) push+deploy dulu; (2) DATA `_id` (arti) commit+redeploy setelah job MT selesai.
+**Provenance:** transliterasi=turunan otomatis (bukan sumber); arti Jalalain/Muyassar=Google MT (belum ditinjau) di atas teks Jalaluddin al-Mahalli & as-Suyuti (domain publik) / al-Muyassar (KFGQPC).
+**Status:** KODE selesai + deploy. DATA arti: menyusul saat job MT rampung.
+
+---
+
 ### [F1.26] Menu Kisah/Hikayat (poin 5) — 2026-07-06
 
 **North Star check:** ✅ align — data poin 5 (kisah) ber-sumber & tertaut ayat; kanonik tak tersentuh. **5 poin data roadmap SELESAI (fondasi).**

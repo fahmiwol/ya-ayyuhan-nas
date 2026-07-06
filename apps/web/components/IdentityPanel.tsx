@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import type { Ayah, Word, AyahProof, Annotation } from "@/lib/types";
+import { transliterateArabic } from "@/lib/translit";
 
 async function sha256Hex(hex1: string, hex2: string): Promise<string> {
   const a = hexToBytes(hex1), b = hexToBytes(hex2);
@@ -138,16 +139,36 @@ export function IdentityPanel({ target, onClose }: { target: IdentityTarget | nu
                     className="mb-3 w-full rounded-md border px-3 py-2 text-sm" style={{ background: "var(--panel)", borderColor: "var(--line)", color: "var(--txt)" }} />
                   {tafsir === null && <p className="mut">Memuat tafsir…</p>}
                   {tafsir && editions.length === 0 && <p className="mut">{tq ? "Tak ada yang cocok." : "Belum ada tafsir untuk ayat ini."}</p>}
-                  {editions.map((e) => (
+                  {editions.map((e) => {
+                    const body = tafsir?.texts[e.key] ?? "";
+                    const isAr = e.lang === "ar";
+                    const idTrans = tafsir?.texts[`${e.key}_id`]; // terjemahan mesin (jika ada)
+                    return (
                     <div key={e.key} className="mb-3 rounded-lg border p-3" style={{ borderColor: "var(--line)" }}>
                       <div className="flex items-center gap-2">
                         <b className="text-sm gold">{e.name}</b>
                         <span className="mut rounded px-1.5 py-0.5 text-[10px]" style={{ background: "var(--bg-soft)" }}>{e.lang}</span>
                       </div>
-                      <p className="mt-1 leading-relaxed" dir={e.lang === "ar" ? "rtl" : "ltr"} style={e.lang === "ar" ? { fontSize: "1.2rem" } : undefined}>{tafsir?.texts[e.key]}</p>
-                      <div className="mut mt-1 text-[10px]">Sumber: {e.source} · {e.license}</div>
+                      <p className="mt-1 leading-relaxed" dir={isAr ? "rtl" : "ltr"} style={isAr ? { fontSize: "1.2rem" } : undefined}>{body}</p>
+                      {isAr && (
+                        <div className="mt-2 rounded-md p-2" style={{ background: "var(--bg-soft)" }}>
+                          <div className="mut mb-0.5 text-[10px] uppercase tracking-wide">Cara baca · transliterasi otomatis</div>
+                          <p className="text-sm italic leading-relaxed" dir="ltr" style={{ color: "var(--txt)" }}>{transliterateArabic(body)}</p>
+                        </div>
+                      )}
+                      {isAr && (
+                        <div className="mt-2">
+                          <div className="mut mb-0.5 text-[10px] uppercase tracking-wide">Arti (Indonesia)</div>
+                          {idTrans ? (
+                            <p className="text-sm leading-relaxed">{idTrans} <span className="mut">🌐 terjemahan mesin — belum ditinjau ahli</span></p>
+                          ) : (
+                            <p className="mut text-sm">Terjemahan sedang disiapkan. Sementara, lihat <b>Tafsir Kemenag</b> (Indonesia) di atas untuk memahami maksud ayat.</p>
+                          )}
+                        </div>
+                      )}
+                      <div className="mut mt-2 text-[10px]">Sumber: {e.source} · {e.license}</div>
                     </div>
-                  ))}
+                  );})}
                   {/* Anotasi (catatan editorial) di bawah tafsir */}
                   {anns.length > 0 && (
                     <div className="mt-4">
