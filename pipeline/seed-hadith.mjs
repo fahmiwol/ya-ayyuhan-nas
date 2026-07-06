@@ -26,6 +26,8 @@ const PROVENANCE = {
 const COLLECTIONS = [
   { key: 'nawawi', label_id: 'Arba\'in Nawawi (42 Hadits)', limit: null },
   { key: 'qudsi', label_id: '40 Hadits Qudsi', limit: null },
+  { key: 'bukhari', label_id: 'Sahih Bukhari (contoh, Indonesia)', limit: 100 },
+  { key: 'muslim', label_id: 'Sahih Muslim (contoh, Indonesia)', limit: 100 },
   { key: 'abudawud', label_id: 'Sunan Abu Dawud (contoh ber-grade)', limit: 80 },
 ];
 const LANGS = ['ara', 'eng', 'ind']; // arab wajib; en/id opsional

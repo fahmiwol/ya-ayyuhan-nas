@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-07-06T02:14:44.118Z",
+  "builtAt": "2026-07-06T10:07:51.176Z",
   "provenance": {
     "name": "fawazahmed0/hadith-api",
     "license": "Public Domain (Unlicense)",
@@ -30,6 +30,34 @@
       "langs": [
         "ar",
         "en"
+      ],
+      "graded": 0
+    },
+    {
+      "key": "bukhari",
+      "name": "Sahih al Bukhari",
+      "name_id": "Sahih Bukhari (contoh, Indonesia)",
+      "count": 100,
+      "total": 7589,
+      "partial": true,
+      "langs": [
+        "ar",
+        "en",
+        "id"
+      ],
+      "graded": 0
+    },
+    {
+      "key": "muslim",
+      "name": "Sahih Muslim",
+      "name_id": "Sahih Muslim (contoh, Indonesia)",
+      "count": 100,
+      "total": 7563,
+      "partial": true,
+      "langs": [
+        "ar",
+        "en",
+        "id"
       ],
       "graded": 0
     },

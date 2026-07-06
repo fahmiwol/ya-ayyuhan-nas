@@ -64,6 +64,21 @@
 
 <!-- Append entri baru di atas garis ini, atau lanjut kronologis di bawah -->
 
+### [F1.24] Hadits Indonesia: +Bukhari & Muslim (isi gap terjemahan) — 2026-07-06
+
+**North Star check:** ✅ align — konten hadits Indonesia (jawab "Indonesia dulu"); kanonik tak tersentuh.
+**Action:** `seed-hadith.mjs` +2 koleksi otoritatif dgn **terjemahan Indonesia** (fawazahmed0 `ind-*`): **Sahih Bukhari** (contoh 100/7589) + **Sahih Muslim** (contoh 100/7563), ar+en+**id**. Kini 5 koleksi (362 hadits). Nawawi/Qudsi tetap en (dataset tak punya id → penanda jujur F1.23).
+**WHY:** owner: hadits harus Indonesia saat toggle Indonesia; gading.dev mati → pakai fawazahmed0 ind (Bukhari/Muslim punya id).
+**Test/verify:** `npm run build` LULUS (137). Verifikasi live setelah redeploy (Bukhari id).
+**Iterasi:** —.
+**Review:** Bukhari/Muslim = semua sahih (grade koleksi-level). Dibatasi contoh (100) — koleksi penuh = skala. Nawawi ID = masih perlu sumber (shortlist `13`/OpenITI).
+**Provenance/Lisensi:** fawazahmed0 (public domain), atribusi. **Integritas:** root tetap `eb13d58a…8cba7e56`.
+**Blocker:** —
+**Next:** koleksi penuh + Nawawi ID; ingest tafsir Indonesia lain (Quraish Shihab via renomureza); poin 5 kisah.
+**Feeling owner:** —
+
+---
+
 ### [F1.23] i18n konten ikut toggle + tafsir Jalalain + agent sumber global — 2026-07-06
 
 **North Star check:** ✅ align — konsistensi bahasa (UX) + perkaya tafsir + peta sumber dunia; kanonik tak tersentuh.
@@ -448,7 +463,7 @@ Cross-source akar konsonan (L3): **Tanzil 100%**, **Kemenag 99.984%** (1 konvens
 
 | Fase | Status | Milestone terakhir | Root hash mushaf |
 |------|--------|--------------------|------------------|
-| 1 | 🏗️ jalan | F1.23: i18n konten ikut toggle + tafsir Jalalain + sumber global (`13`) | `eb13d58a…8cba7e56` |
+| 1 | 🏗️ jalan | F1.24: hadits Indonesia +Bukhari/Muslim (isi gap terjemahan) | `eb13d58a…8cba7e56` |
 | 2 | ⬜ | — | — |
 | 3 | ⬜ | — | — |
 | 4 | ⬜ | — | — |
