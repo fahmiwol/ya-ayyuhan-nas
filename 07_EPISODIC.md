@@ -64,6 +64,29 @@
 
 <!-- Append entri baru di atas garis ini, atau lanjut kronologis di bawah -->
 
+### [BUG-RESOLVED ✅] Menu nav hilang di live = nginx proxy_cache + SW basi — 2026-07-06 19:1x
+
+**AKAR SEBENARNYA (bukan build/header):** container `:3100` langsung serve HTML BENAR (7 menu), tapi via nginx `:443` basi. Sebab: **aaPanel punya `proxy_cache cache_one` GLOBAL** + Next.js kirim `cache-control: s-maxage=31536000` (1 thn) utk halaman statis → nginx cache home lama ~setahun, abaikan tiap redeploy. (`--no-cache` docker rebuild TAK ngefek krn bukan build cache.)
+**FIX:** tambah `proxy_cache off; proxy_no_cache 1; proxy_cache_bypass 1;` di `location /` vhost **quran saja** (`/www/server/panel/vhost/nginx/quran.migancore.com.conf`) → nginx -t → reload. **Menu langsung muncul lengkap** (Belajar/Catatan/Doa/Hadits/Integritas/Kisah/Kitab/Surah). App lain tetap 301. Next punya cache sendiri (x-nextjs-cache HIT = normal, itu di container).
+**FIX #2 (SW):** `public/sw.js` cache-first→**network-first** + `skipWaiting` + CACHE v2 → browser tak basi tiap deploy. Perlu deploy + owner hard-reload/unregister SW sekali.
+**PELAJARAN (penting utk continuity):** deploy ke server aaPanel → **selalu matikan proxy_cache utk vhost app dinamis** (Next/SSR), krn s-maxage tinggi bikin nginx cache ~permanen. Sudah masuk `deploy/README.md`.
+**Status:** ✅ RESOLVED (menu live). Sisa: deploy SW v2 + owner clear cache browser sekali.
+
+### [BUG-history] Menu nav baru HILANG di live (header build basi) — 2026-07-06 ~19:00
+
+**Gejala:** Di https://quran.migancore.com header cuma **Surah · Catatan · Integritas**. Menu baru (Hadits/Belajar/Doa/Kitab/Kisah) TIDAK muncul — PADAHAL halamannya hidup (`/hadits`,`/kisah` dst = HTTP 200) & `apps/web/components/Header.tsx` sudah berisi semua `<Link>` + `t("nav.*")`.
+**Diagnosa (bukan cache browser):** `curl 127.0.0.1` langsung ke container → HTML nav hanya "Catatan Integritas Surah". Jadi **image/build header yang di-serve basi** (bukan SW/browser). Aneh: page baru ADA tapi header LAMA → curiga **Docker build cache** (layer `RUN npm run build` reuse lama) ATAU Next route/full-route cache di standalone ATAU `git pull` header tak ter-apply padahal file data ter-pull.
+**RENCANA FIX (jam 19.10):**
+1. Server: `cd /opt/yaayyuhannas && git log --oneline -3` + `git show HEAD:apps/web/components/Header.tsx | grep nav` → pastikan Header.tsx di server SUDAH berisi Hadits/Kisah.
+2. Kalau file server sudah benar → **rebuild bersih**: `docker compose build --no-cache web && docker compose up -d web`.
+3. Verify: `curl --resolve quran.migancore.com:443:127.0.0.1 https://quran.migancore.com/ | grep -oE "Hadits|Kisah"` harus muncul.
+4. Cek SW juga: `public/sw.js` cache-first bisa bikin browser basi → pertimbangkan versi cache/skipWaiting atau network-first utk navigasi.
+5. Setelah live benar → verify app lain (ixonomic/emiga/miganpro) tetap 301.
+**Catatan:** SW (`sw.js`) cache-first app-shell → SETELAH fix, minta owner hard-reload / unregister SW (browser mereka mungkin masih simpan versi lama).
+**Status:** OPEN — lanjut ~19:10 (owner kena limit sesi 5-jam, reset 19:09).
+
+---
+
 ### [F1.26] Menu Kisah/Hikayat (poin 5) — 2026-07-06
 
 **North Star check:** ✅ align — data poin 5 (kisah) ber-sumber & tertaut ayat; kanonik tak tersentuh. **5 poin data roadmap SELESAI (fondasi).**

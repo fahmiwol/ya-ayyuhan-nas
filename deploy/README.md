@@ -119,6 +119,9 @@ Live: **https://quran.migancore.com** (TLS Let's Encrypt). Catatan penting serve
 - **Repo akses:** deploy key read-only `~/.ssh/yan_deploy` (terdaftar di GitHub). Update: `cd /opt/yaayyuhannas && GIT_SSH_COMMAND="ssh -i ~/.ssh/yan_deploy -o IdentitiesOnly=yes" git pull && docker compose up -d --build web`.
 - **TLS:** `certbot certonly --webroot -w /var/www/html -d quran.migancore.com` (acme location sudah di vhost) → auto-renew ikut certbot yg ada.
 - **Isolasi terbukti:** 8 app lain (ixonomic*, emiga, miganpro, ado-*, hermes) tetap 301/healthy sebelum & sesudah.
+- **⚠ WAJIB: matikan proxy_cache utk vhost ini.** aaPanel punya `proxy_cache cache_one` GLOBAL. Next.js kirim `cache-control: s-maxage=31536000` utk halaman statis → nginx cache HTML lama ~SETAHUN & abaikan tiap redeploy (gejala: menu/perubahan tak muncul walau container benar). Vhost quran WAJIB ada di `location /`:
+  `proxy_cache off; proxy_no_cache 1; proxy_cache_bypass 1;`
+  (Diagnosa: `curl 127.0.0.1:3100` = benar tapi via `:443` basi → itu nginx cache, bukan build.)
 
 ## Checklist keamanan (sebelum & sesudah)
 
