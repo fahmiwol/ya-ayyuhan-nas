@@ -1,0 +1,61 @@
+{
+  "schema": "kitab-v1",
+  "title": "Perpustakaan Keilmuan",
+  "subtitle": "Kitab & karya keislaman lintas bidang",
+  "source": { "name": "Editorial (data bibliografis)", "license": "CC-BY-4.0", "note": "Daftar rujukan kitab/karya per bidang (judul, penulis, era). Netral: mencantumkan karya dari berbagai tradisi/mazhab sebagai referensi, bukan endorsement. Isi kitab yang berhak cipta tidak direproduksi; yang tersedia di app ditautkan. Dilengkapi & lewat moderasi bertahap." },
+  "fields": [
+    {
+      "key": "tafsir", "title": "Tafsir (penjelasan Al-Qur'an)",
+      "works": [
+        { "title": "Tafsir at-Tabari (Jami' al-Bayan)", "title_ar": "جامع البيان", "author": "Ibn Jarir at-Tabari", "era": "w. 310 H", "note": "Induk tafsir bil-ma'tsur (riwayat)." },
+        { "title": "Tafsir Ibn Kathir", "title_ar": "تفسير ابن كثير", "author": "Ibn Kathir", "era": "w. 774 H", "note": "Tafsir bil-ma'tsur populer." },
+        { "title": "Tafsir al-Jalalain", "title_ar": "تفسير الجلالين", "author": "al-Mahalli & as-Suyuti", "era": "abad 9 H", "note": "Ringkas; tersedia di app.", "in_app": "/surah/1" },
+        { "title": "Tafsir al-Qurtubi (al-Jami' li Ahkam)", "title_ar": "الجامع لأحكام القرآن", "author": "al-Qurtubi", "era": "w. 671 H", "note": "Menekankan hukum/fiqh ayat." },
+        { "title": "Tafsir al-Muyassar", "title_ar": "التفسير الميسر", "author": "Majma' King Fahd", "era": "modern", "note": "Ringkas & mudah." },
+        { "title": "Tafsir Kemenag RI", "title_ar": "—", "author": "LPMQ Kemenag", "era": "modern (ID)", "note": "Tafsir standar Indonesia; tersedia di app.", "in_app": "/surah/1" }
+      ]
+    },
+    {
+      "key": "hadits", "title": "Hadits (Kutub as-Sittah & lainnya)",
+      "works": [
+        { "title": "Sahih al-Bukhari", "title_ar": "صحيح البخاري", "author": "al-Bukhari", "era": "w. 256 H", "note": "Kitab paling sahih setelah Al-Qur'an (mayoritas Sunni)." },
+        { "title": "Sahih Muslim", "title_ar": "صحيح مسلم", "author": "Muslim bin al-Hajjaj", "era": "w. 261 H", "note": "Sahih kedua." },
+        { "title": "Sunan Abu Dawud", "title_ar": "سنن أبي داود", "author": "Abu Dawud", "era": "w. 275 H", "note": "Fokus hadits hukum; tersedia (contoh) di app.", "in_app": "/hadits/abudawud" },
+        { "title": "Jami' at-Tirmidzi", "title_ar": "جامع الترمذي", "author": "at-Tirmidzi", "era": "w. 279 H", "note": "Mencantumkan derajat hadits." },
+        { "title": "Sunan an-Nasa'i", "title_ar": "سنن النسائي", "author": "an-Nasa'i", "era": "w. 303 H", "note": "Ketat dalam seleksi." },
+        { "title": "Sunan Ibn Majah", "title_ar": "سنن ابن ماجه", "author": "Ibn Majah", "era": "w. 273 H", "note": "Melengkapi Kutub as-Sittah." },
+        { "title": "Arba'in an-Nawawi", "title_ar": "الأربعون النووية", "author": "an-Nawawi", "era": "w. 676 H", "note": "42 hadits pokok; tersedia di app.", "in_app": "/hadits/nawawi" },
+        { "title": "Muwatta Malik", "title_ar": "الموطأ", "author": "Imam Malik", "era": "w. 179 H", "note": "Salah satu kitab hadits/fiqh terawal." }
+      ]
+    },
+    {
+      "key": "ulum", "title": "Ulum al-Qur'an & al-Hadits",
+      "works": [
+        { "title": "al-Itqan fi Ulum al-Qur'an", "title_ar": "الإتقان", "author": "as-Suyuti", "era": "w. 911 H", "note": "Ensiklopedia ilmu Al-Qur'an." },
+        { "title": "Asbab an-Nuzul", "title_ar": "أسباب النزول", "author": "al-Wahidi", "era": "w. 468 H", "note": "Sebab turun ayat; jadi rujukan Riwayat di app." },
+        { "title": "Muqaddimah Ibn as-Salah", "title_ar": "مقدمة ابن الصلاح", "author": "Ibn as-Salah", "era": "w. 643 H", "note": "Dasar ilmu mustalah hadits." }
+      ]
+    },
+    {
+      "key": "fiqh_ushul", "title": "Fiqh & Ushul Fiqh",
+      "works": [
+        { "title": "ar-Risalah", "title_ar": "الرسالة", "author": "Imam asy-Syafi'i", "era": "w. 204 H", "note": "Peletak dasar ushul fiqh." },
+        { "title": "al-Umm", "title_ar": "الأم", "author": "Imam asy-Syafi'i", "era": "w. 204 H", "note": "Rujukan fiqh mazhab Syafi'i." },
+        { "title": "al-Mughni", "title_ar": "المغني", "author": "Ibn Qudamah", "era": "w. 620 H", "note": "Fiqh perbandingan (Hanbali)." }
+      ]
+    },
+    {
+      "key": "aqidah", "title": "Aqidah",
+      "works": [
+        { "title": "al-Aqidah ath-Thahawiyah", "title_ar": "العقيدة الطحاوية", "author": "ath-Thahawi", "era": "w. 321 H", "note": "Ringkasan aqidah yang banyak disyarah." }
+      ]
+    },
+    {
+      "key": "sirah", "title": "Sirah & Sejarah",
+      "works": [
+        { "title": "as-Sirah an-Nabawiyah", "title_ar": "السيرة النبوية", "author": "Ibn Hisham (dari Ibn Ishaq)", "era": "w. 218 H", "note": "Sirah klasik terawal." },
+        { "title": "ar-Rahiq al-Makhtum", "title_ar": "الرحيق المختوم", "author": "al-Mubarakfuri", "era": "modern", "note": "Sirah ringkas pemenang lomba OKI." }
+      ]
+    }
+  ]
+}

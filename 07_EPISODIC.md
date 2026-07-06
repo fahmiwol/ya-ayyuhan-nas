@@ -64,6 +64,23 @@
 
 <!-- Append entri baru di atas garis ini, atau lanjut kronologis di bawah -->
 
+### [F1.22] WORKPLAN + eksekusi: tafsir multi-edisi + Kitab (poin 4) + asbab — 2026-07-06
+
+**North Star check:** ✅ align — perkaya keilmuan (tafsir/kitab/asbab), semua ber-sumber + lolos eval-gate; kanonik tak tersentuh.
+
+**WORKPLAN (a+b+c) — diminta owner dijelaskan:**
+- **(a) Tafsir "banyak ulama"**: sumber = **spa5k/tafsir_api** (quran.com bulk 0/mati). Per-ayah (6236 file/edisi). Rencana: tambah **Jalalain** (ringkas, klasik) via seed background yg MERGE ke `public/data/tafsir/{n}.json` (edisi baru + tambah ke daftar editions). Ibn Kathir (panjang, ~besar) & edisi lain = skala berikut. Concurrency + resilient. Panel Tafsir sudah multi-edisi + search → langsung tampil.
+- **(b) Keilmuan/Kitab (poin 4)**: menu **Perpustakaan** — kurasi kitab/karya per-bidang (tafsir, hadits, fiqh, aqidah, ushul, sirah, bahasa, dll) + penulis/era/sumber. Data `public/data/kitab.json` (editorial ber-sumber), `lib/kitab.ts`, `app/kitab/page.tsx`, nav "Kitab" i18n.
+- **(c) Asbabun nuzul lebih banyak**: tambah entri kurasi ber-sumber ke `public/data/asbab.json` (ayat masyhur lain).
+- **Semua**: netral, ber-sumber, ⚠ audit lisensi; derajat/riwayat ikut **Eval-Gate 7-langkah** (`12_ISLAMIC_VALIDATION.md`).
+
+**Action/Hasil:** (diisi setelah eksekusi di bawah)
+**WHY:** owner minta a+b+c termasuk tafsir; workplan jelas utk continuity.
+**Test:** build + verify live tiap bagian; app lain aman.
+**Next:** integrasikan Eval-Gate ke moderasi (doc 10); poin 5 (kisah).
+
+---
+
 ### [F1.21] Doa detail slider + agent riset validasi Islam (eval-gate) — 2026-07-06
 
 **North Star check:** ✅ align — perdalam tiap doa (penjelasan/riwayat/sanad) + tegakkan metode validasi ala Islam sbg eval-gate.
