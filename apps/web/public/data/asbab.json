@@ -1,0 +1,15 @@
+{
+  "schema": "asbab-v1",
+  "title": "Asbabun Nuzul & Riwayat",
+  "source": { "name": "Editorial (ringkasan dari sumber klasik)", "license": "CC-BY-4.0", "note": "Ringkasan netral sebab/latar turunnya ayat berbasis riwayat masyhur (mis. al-Wahidi, as-Suyuti). Tidak semua ayat memiliki asbabun nuzul; ini bagian awal, dilengkapi bertahap & lewat moderasi. Derajat riwayat = keterangan umum, audit bila perlu." },
+  "items": [
+    { "surah": 2, "ayah": 144, "title": "Perpindahan kiblat ke Ka'bah", "narrative": "Nabi ﷺ kerap menengadah ke langit berharap kiblat dipindah dari Baitul Maqdis ke Ka'bah di Makkah. Turunlah ayat ini yang memerintahkan menghadap Masjidil Haram.", "source": "al-Wahidi, Asbab al-Nuzul", "grade": "masyhur" },
+    { "surah": 2, "ayah": 158, "title": "Sa'i antara Safa & Marwah", "narrative": "Sebagian sahabat ragu ber-sa'i karena dahulu ada berhala di kedua bukit itu pada masa jahiliah. Ayat ini menegaskan keduanya termasuk syiar Allah.", "source": "Riwayat Bukhari-Muslim", "grade": "sahih" },
+    { "surah": 2, "ayah": 187, "title": "Keringanan di malam Ramadan", "narrative": "Sebagian sahabat merasa berat karena mengira larangan makan/berhubungan berlaku sepanjang malam Ramadan setelah tidur. Ayat ini memberi keringanan hingga terbit fajar.", "source": "al-Wahidi; Riwayat Bukhari", "grade": "sahih" },
+    { "surah": 4, "ayah": 43, "title": "Disyariatkannya tayammum", "narrative": "Dalam sebuah perjalanan, kalung 'Aisyah hilang dan rombongan tertahan mencarinya tanpa air untuk berwudhu. Turunlah keringanan bersuci dengan tayammum.", "source": "Riwayat Bukhari-Muslim", "grade": "sahih" },
+    { "surah": 93, "ayah": 1, "title": "Wahyu sempat tertunda (Ad-Dhuha)", "narrative": "Wahyu sempat terhenti beberapa waktu sehingga sebagian orang mengolok bahwa Nabi ﷺ ditinggalkan. Turunlah surah ini menghibur bahwa Allah tidak meninggalkan beliau.", "source": "Riwayat Bukhari-Muslim", "grade": "sahih" },
+    { "surah": 108, "ayah": 1, "title": "Al-Kautsar & penghinaan lawan", "narrative": "Setelah putra Nabi ﷺ wafat, sebagian orang menyebut beliau 'abtar' (terputus keturunan/kebaikannya). Turunlah pemberian nikmat berlimpah (al-Kautsar) dan bantahan bahwa justru pembencinyalah yang terputus.", "source": "Riwayat masyhur; as-Suyuti", "grade": "masyhur" },
+    { "surah": 80, "ayah": 1, "title": "'Abasa — teguran lembut", "narrative": "Ketika Nabi ﷺ sibuk menyeru pembesar Quraisy, datang Ibnu Ummi Maktum (seorang tunanetra) meminta diajari. Ayat ini menegur agar tidak mengabaikan orang yang bersungguh-sungguh mencari petunjuk.", "source": "Riwayat Tirmidzi & lainnya", "grade": "hasan" },
+    { "surah": 5, "ayah": 3, "title": "Penyempurnaan agama (Arafah)", "narrative": "Ayat \"Hari ini telah Kusempurnakan agamamu\" turun pada hari Arafah dalam Haji Wada'. Sebagian sahabat menangis merasakan isyarat sempurnanya risalah.", "source": "Riwayat Bukhari-Muslim", "grade": "sahih" }
+  ]
+}

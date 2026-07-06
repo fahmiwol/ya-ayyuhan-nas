@@ -1,0 +1,20 @@
+{
+  "editions": [
+    {
+      "key": "kemenag",
+      "name": "Tafsir Kemenag",
+      "lang": "id",
+      "source": "Kemenag RI (via equran.id)",
+      "license": "Kemenag — izin redistribusi (audit)"
+    },
+    {
+      "key": "muyassar",
+      "name": "Tafsir al-Muyassar",
+      "lang": "ar",
+      "source": "Majma' King Fahd (via Quran.com)",
+      "license": "KFGQPC — bebas pakai (audit)"
+    }
+  ],
+  "kemenag_surah": 114,
+  "muyassar_entri": 0
+}

@@ -64,6 +64,26 @@
 
 <!-- Append entri baru di atas garis ini, atau lanjut kronologis di bawah -->
 
+### [F1.20] Panel Identitas jadi 3 tab: Identitas · Tafsir(+search) · Riwayat — 2026-07-06
+
+**North Star check:** ✅ align — perkaya lapisan keilmuan per-ayat (tafsir+asbab), ber-sumber; kanonik tak tersentuh.
+**Action (respons feedback owner di panel):**
+- Jelaskan tombol: **Salin+ID** = salin teks ayat + hash identitas; **Mint** = daftarkan identitas ayat ke ledger/chain (placeholder, fondasi siap).
+- **Tafsir** `pipeline/seed-tafsir.mjs` → **Tafsir Kemenag (id) lengkap 6236 ayat** (via equran.id) + arsitektur multi-edisi (al-Muyassar quran.com id=16 gagal/kosong → menyusul). Simpan per-surah `public/data/tafsir/{n}.json`.
+- **Asbabun nuzul/Riwayat** `public/data/asbab.json` (kurasi editorial netral, 8 ayat masyhur: kiblat/sa'i/tayammum/Ad-Dhuha/Al-Kautsar/'Abasa/dll + sumber klasik).
+- **API:** `/api/v1/ayah/[s]/[a]/tafsir` + `/riwayat`. `lib/ulum.ts`.
+- **IdentityPanel jadi 3 TAB**: Identitas (hash+proof) · **Tafsir** (edisi multi-ulama + **kolom search** + anotasi) · **Riwayat** (asbabun nuzul + sumber). Lazy-load per tab.
+**WHY:** owner minta anotasi + asbabun nuzul + banyak tafsir + search + tab riwayat.
+**Test/verify:** `npm run build` LULUS (134 halaman). API: tafsir 1:2 (Kemenag len 2126), riwayat 2:144 (1 asbab "kiblat"), 1:1 (0). DOM: panel tab ["Identitas","Tafsir","Riwayat"], search ada, "Tafsir Kemenag" termuat.
+**Iterasi:** null-narrowing lintas await di ulum → loader helper; al-Muyassar bulk shape quran.com beda (0 entri) → tunda.
+**Review:** IP: tafsir Kemenag berlisensi (atribusi + audit), tak direproduksi di chat; asbab = ringkasan editorial ber-sumber. Multi-tafsir + moderasi kontributor = lanjutan.
+**Provenance/Lisensi:** Tafsir Kemenag (equran.id) — izin redistribusi (audit); asbab editorial CC-BY. **Integritas:** root tetap `eb13d58a…8cba7e56`.
+**Blocker:** —
+**Next:** redeploy; tambah edisi tafsir (Ibn Kathir/al-Muyassar/Jalalain), lengkapi asbab, lalu poin 4/5.
+**Feeling owner:** —
+
+---
+
 ### [F1.19] Validasi + Menu Doa (poin 3) — 2026-07-06
 
 **North Star check:** ✅ align — validasi integritas dulu; lalu lapisan doa ber-sumber; kanonik tak tersentuh.
@@ -375,7 +395,7 @@ Cross-source akar konsonan (L3): **Tanzil 100%**, **Kemenag 99.984%** (1 konvens
 
 | Fase | Status | Milestone terakhir | Root hash mushaf |
 |------|--------|--------------------|------------------|
-| 1 | 🏗️ jalan | F1.19: validasi (integritas OK) + menu Doa (poin 3 data) | `eb13d58a…8cba7e56` |
+| 1 | 🏗️ jalan | F1.20: panel 3 tab (Identitas/Tafsir+search/Riwayat) + tafsir Kemenag | `eb13d58a…8cba7e56` |
 | 2 | ⬜ | — | — |
 | 3 | ⬜ | — | — |
 | 4 | ⬜ | — | — |
