@@ -34,6 +34,16 @@ export async function getIntegrity(): Promise<Record<string, unknown>> {
   return readJson<Record<string, unknown>>("integrity.json");
 }
 
+export interface TrustStats {
+  built_at: string; methodology: string; note: string;
+  hadith: { total: number; byTier: Record<string, number>; machine: number; collections: number };
+  tafsir: { entries: number; machineArti: number; editions: string[] };
+  doa: { total: number; quranic: number; graded: number };
+}
+export async function getTrustStats(): Promise<TrustStats | null> {
+  try { return await readJson<TrustStats>("trust.json"); } catch { return null; }
+}
+
 // Bukti inklusi Merkle (identitas) untuk satu ayat. proofs.json besar -> baca sekali, cache.
 type ProofsFile = { merkle_root: string; scheme: string; byGlobal: Record<string, unknown> };
 let proofsCache: ProofsFile | null = null;

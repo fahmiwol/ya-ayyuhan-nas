@@ -1,0 +1,31 @@
+{
+  "built_at": "2026-07-06T16:21:58.161Z",
+  "methodology": "12_ISLAMIC_VALIDATION.md",
+  "note": "Distribusi status Eval-Gate. Langkah yang belum bisa dinilai otomatis TIDAK dianggap lulus (fail-closed). Grade dari rujukan sumber; perbedaan penilaian = \"khilaf\".",
+  "hadith": {
+    "total": 362,
+    "byTier": {
+      "hasan": 21,
+      "disputed": 17,
+      "daif": 8,
+      "sahih": 34,
+      "unreviewed": 282
+    },
+    "machine": 95,
+    "collections": 5
+  },
+  "tafsir": {
+    "entries": 6010,
+    "machineArti": 6010,
+    "editions": [
+      "kemenag",
+      "muyassar",
+      "jalalain"
+    ]
+  },
+  "doa": {
+    "total": 13,
+    "quranic": 5,
+    "graded": 8
+  }
+}

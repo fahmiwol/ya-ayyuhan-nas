@@ -3,6 +3,8 @@
 import { useEffect, useState } from "react";
 import type { Ayah, Word, AyahProof, Annotation } from "@/lib/types";
 import { transliterateArabic } from "@/lib/translit";
+import { assess } from "@/lib/evalgate";
+import { TrustBadge } from "./TrustBadge";
 
 async function sha256Hex(hex1: string, hex2: string): Promise<string> {
   const a = hexToBytes(hex1), b = hexToBytes(hex2);
@@ -143,11 +145,13 @@ export function IdentityPanel({ target, onClose }: { target: IdentityTarget | nu
                     const body = tafsir?.texts[e.key] ?? "";
                     const isAr = e.lang === "ar";
                     const idTrans = tafsir?.texts[`${e.key}_id`]; // terjemahan mesin (jika ada)
+                    const ta = assess({ kind: "tafsir", hasProvenance: true, machine: isAr && !!idTrans, source: { source: e.source, license: e.license } });
                     return (
                     <div key={e.key} className="mb-3 rounded-lg border p-3" style={{ borderColor: "var(--line)" }}>
-                      <div className="flex items-center gap-2">
+                      <div className="flex flex-wrap items-center gap-2">
                         <b className="text-sm gold">{e.name}</b>
                         <span className="mut rounded px-1.5 py-0.5 text-[10px]" style={{ background: "var(--bg-soft)" }}>{e.lang}</span>
+                        <TrustBadge a={ta} compact />
                       </div>
                       <p className="mt-1 leading-relaxed" dir={isAr ? "rtl" : "ltr"} style={isAr ? { fontSize: "1.2rem" } : undefined}>{body}</p>
                       {isAr && (

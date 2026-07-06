@@ -87,6 +87,21 @@
 
 ---
 
+### [F1.28] Eval-Gate jadi NYATA: "Lapisan Kepercayaan" (status + provenance seragam) — 2026-07-06
+
+**North Star check:** ya — ini prinsip paling ditekankan owner ("jadikan cara Islam memvalidasi kebenaran sebagai eval gate", "tak boleh kontaminasi/kontradiksi"). Mengubah metodologi 12_ISLAMIC_VALIDATION.md dari DOKUMEN → KODE yang menggerbang konten. Fondasi wajib sebelum kontributor.
+**Action:**
+- `lib/evalgate.ts` — ENGINE. `canonicalGrade()` normalkan string grade heterogen ("Hasan Sahih"→sahih, "Shadh/Munkar"→daif, dst). `aggregate()` multi-ulama: melintasi garis terima/tolak → **"disputed" (khilaf)**, selain itu ambil terendah (konservatif). `assess()` → TrustAssessment {tier, label, warna, ikon, machine, scholars, **7 langkah gate**, provenance, disclaimer}. Fail-closed: langkah tak-bisa-otomatis = "na" (TAK dianggap lulus). Teks Qur'an → mutawatir (jalur mushaf, bukan sanad hadits).
+- `components/TrustBadge.tsx` (badge pill, klik→panel; mode `asStatic` utk hindari button bersarang) + `components/ProvenancePanel.tsx` (7 langkah + penilaian ulama apa adanya + provenance + "bukan fatwa").
+- Wire seragam: **HadithReader** (badge ganti pill mentah), **IdentityPanel/tafsir** (badge + overlay 🌐 mesin), **DoaBrowser** (card `asStatic` + slider penuh).
+- `pipeline/gen-trust-stats.mjs` → `public/data/trust.json`; **halaman Integritas** dapat section "Lapisan Kepercayaan Konten": bar distribusi tier hadits + ringkasan tafsir/doa.
+**Test:** engine diuji data nyata — distribusi hadits **34 sahih / 21 hasan / 8 da'if / 17 khilaf / 282 perlu-tinjau** (jujur 78% belum bergrade). Preview: bar distribusi warna benar; 80 badge hadits (✅Hasan/🔀Khilaf/⚠️Da'if, 🌐 overlay); panel 7-langkah lengkap; doa Qur'ani→🔒Mutawatir. Fix hydration button-in-button (asStatic). TSC clean.
+**Provenance:** grade dari string rujukan sumber (fawazahmed0/hadith-api dll); khilaf tak diputus sepihak; disclaimer "bukan fatwa" + "belum otomatis" transparan.
+**Catatan pipeline:** logika grade DISALIN evalgate.ts↔gen-trust-stats.mjs (TS/mjs split) — ubah dua-duanya bila aturan berubah.
+**Status:** ✅ selesai (kode). Deploy menyusul. Lanjutan: antrean tinjau (promosi mesin→tervalidasi via RBAC reviewer), matn cross-check otomatis, korroborasi antar-koleksi.
+
+---
+
 ### [F1.27] Tafsir Arab bisa dibaca: transliterasi Latin + arti (mesin) — 2026-07-06
 
 **North Star check:** ya. App untuk BELAJAR agama & baca Qur'an; anggap user belum bisa baca Arab. Tafsir Arab (Jalalain/al-Muyassar) yang "plek-plekan" Arab tak berguna bagi pemula. Netralitas & immutability tetap: teks Arab TIDAK disentuh; transliterasi = turunan hitung di klien; terjemahan = mesin, DITANDAI belum ditinjau ahli (eval-gate: status MT = belum tervalidasi).

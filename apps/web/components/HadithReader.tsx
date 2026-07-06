@@ -3,14 +3,8 @@
 import Link from "next/link";
 import { useT } from "@/lib/i18n";
 import type { HadithCollection } from "@/lib/types";
-
-function gradeColor(g: string): string {
-  const s = g.toLowerCase();
-  if (s.includes("sahih") || s.includes("shahih")) return "var(--green)";
-  if (s.includes("hasan")) return "var(--gold)";
-  if (s.includes("da") && (s.includes("if") || s.includes("eef") || s.includes("'if"))) return "#e0664f";
-  return "var(--mut)";
-}
+import { assess } from "@/lib/evalgate";
+import { TrustBadge } from "./TrustBadge";
 
 // pilih terjemahan sesuai locale toggle; utamakan manusia, lalu mesin (bertanda), lalu bahasa lain
 function pickTr(tr: { en: string | null; id: string | null; id_auto?: string | null }, locale: string): { text: string | null; lang: string | null; mt: boolean } {
@@ -40,19 +34,24 @@ export function HadithReader({ c }: { c: HadithCollection }) {
       <ol className="space-y-4">
         {c.hadiths.map((h) => {
           const { text, lang, mt } = pickTr(h.tr, locale);
+          const a = assess({
+            kind: "hadith",
+            grades: h.grades,
+            hasProvenance: true, // koleksi + nomor hadits tercantum
+            corroboration: h.grades.length, // proksi: jumlah penilaian/rujukan
+            machine: mt,
+            source: { source: c.provenance.name, license: c.provenance.license, url: c.provenance.url, note: c.provenance.note },
+          });
           return (
             <li key={h.number} className="card p-4">
-              <div className="mut mb-2 flex items-center gap-2 text-xs">
+              <div className="mb-2 flex flex-wrap items-center gap-2 text-xs">
                 <span className="grid place-items-center rounded-full" style={{ minWidth: 26, height: 26, border: "1px solid var(--gold)", color: "var(--gold)" }}>{h.number}</span>
-                {h.grades.length > 0 ? h.grades.slice(0, 2).map((g, i) => (
-                  <span key={i} className="rounded px-2 py-0.5 text-[11px]" style={{ border: `1px solid ${gradeColor(g.grade)}`, color: gradeColor(g.grade) }} title={g.by ?? undefined}>{g.grade}{g.by ? ` · ${g.by}` : ""}</span>
-                )) : <span className="mut text-[11px]">derajat: —</span>}
+                <TrustBadge a={a} />
               </div>
               <p className="arabic" style={{ fontSize: "1.5rem", lineHeight: 2 }}>{h.arabic}</p>
               {text && (
                 <div className="mt-3">
                   <p className="mut text-[0.95rem] leading-relaxed">{text}</p>
-                  {mt && <span className="mt-1 inline-block rounded px-1.5 py-0.5 text-[10px]" style={{ border: "1px solid var(--gold)", color: "var(--gold)" }}>🌐 terjemahan mesin — belum ditinjau ahli</span>}
                   {!mt && lang && lang !== wantLang && <span className="ml-2 rounded px-1 py-0.5 text-[10px] uppercase" style={{ border: "1px solid var(--line)" }}>{lang}</span>}
                 </div>
               )}

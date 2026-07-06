@@ -3,14 +3,19 @@
 import Link from "next/link";
 import { useState } from "react";
 import type { DoaCategory, Doa } from "@/lib/doa";
+import { assess } from "@/lib/evalgate";
+import { TrustBadge } from "./TrustBadge";
 
-function gradeColor(g?: string): string {
-  if (!g) return "var(--mut)";
-  const s = g.toLowerCase();
-  if (s.includes("sahih") || s.includes("shahih")) return "var(--green)";
-  if (s.includes("hasan")) return "var(--gold)";
-  if (s.includes("da")) return "#e0664f";
-  return "var(--mut)";
+function assessDoa(doa: Doa) {
+  const quranic = !!doa.ref && /^QS/i.test(doa.ref); // teks doa = ayat Qur'an → mutawatir
+  const prov = doa.detail?.sanad || doa.detail?.sumber || doa.source;
+  return assess({
+    kind: "doa",
+    quranic,
+    grades: doa.grade ? [{ by: null, grade: doa.grade }] : [],
+    hasProvenance: !!(prov || doa.ref),
+    source: prov ? { source: prov } : undefined,
+  });
 }
 
 export function DoaBrowser({ categories }: { categories: DoaCategory[] }) {
@@ -28,7 +33,7 @@ export function DoaBrowser({ categories }: { categories: DoaCategory[] }) {
               <button key={i} onClick={() => setSel(doa)} className="card p-4 text-left transition hover:opacity-90">
                 <div className="flex flex-wrap items-center gap-2">
                   <span className="font-semibold">{doa.title}</span>
-                  {doa.grade && <span className="rounded px-1.5 py-0.5 text-[10px]" style={{ border: `1px solid ${gradeColor(doa.grade)}`, color: gradeColor(doa.grade) }}>{doa.grade}</span>}
+                  <TrustBadge a={assessDoa(doa)} compact asStatic />
                 </div>
                 <div className="mut mt-1 text-xs">{doa.occasion}{doa.ref ? ` · ${doa.ref}` : ""}</div>
                 <div className="mut mt-1 text-xs opacity-70">Klik untuk detail →</div>
@@ -55,7 +60,7 @@ export function DoaBrowser({ categories }: { categories: DoaCategory[] }) {
               {sel.text_ar && <p className="arabic mb-2" style={{ fontSize: "1.9rem", lineHeight: 2, textAlign: "right" }}>{sel.text_ar}</p>}
               {sel.translit && <p className="mut mb-1 italic">{sel.translit}</p>}
               <p className="leading-relaxed">{sel.meaning}</p>
-              {sel.grade && <div className="mt-2"><span className="rounded px-2 py-0.5 text-[11px]" style={{ border: `1px solid ${gradeColor(sel.grade)}`, color: gradeColor(sel.grade) }}>{sel.grade}</span></div>}
+              <div className="mt-2"><TrustBadge a={assessDoa(sel)} /></div>
 
               {sel.detail?.penjelasan && (
                 <div className="mt-5"><div className="mut mb-1 text-xs uppercase tracking-wide">Penjelasan</div><p className="leading-relaxed">{sel.detail.penjelasan}</p></div>
