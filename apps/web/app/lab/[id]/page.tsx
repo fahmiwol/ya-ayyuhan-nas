@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getLabIndex, getLabStudy, getLabTaxonomy } from "@/lib/lab";
+import { getLabIndex, getLabStudy, getLabStudyVersion, getLabTaxonomy } from "@/lib/lab";
 import { getSurah } from "@/lib/mushaf";
 import { LabStudyView, type StudyAyah } from "@/components/LabStudyView";
 
@@ -15,10 +15,17 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   return { title: s ? `${s.title} — Lab Tadabbur` : "Lab Tadabbur — MUSHAF" };
 }
 
-export default async function LabStudyPage({ params }: { params: Promise<{ id: string }> }) {
+export default async function LabStudyPage({ params, searchParams }: { params: Promise<{ id: string }>; searchParams: Promise<{ v?: string }> }) {
   const { id } = await params;
-  const [study, tax] = await Promise.all([getLabStudy(id), getLabTaxonomy()]);
-  if (!study) notFound();
+  const { v } = await searchParams;
+  const current = await getLabStudy(id);
+  if (!current) notFound();
+  // Riwayat tadabbur: ?v=N membuka versi ARSIP (rekaman lama tetap bisa dibaca).
+  const wantV = v ? Number(v) : null;
+  const archived = wantV && wantV !== current.version ? await getLabStudyVersion(id, wantV) : null;
+  if (wantV && wantV !== current.version && !archived) notFound();
+  const study = archived ?? current;
+  const tax = await getLabTaxonomy();
 
   // Teks ayat SELALU dari mushaf kanonik ber-Merkle (Lab tak pernah menyimpan teks Qur'an).
   const surah = await getSurah(study.ref.surah);
@@ -31,7 +38,14 @@ export default async function LabStudyPage({ params }: { params: Promise<{ id: s
   return (
     <div className="mx-auto max-w-3xl px-4 py-8">
       <div className="mut text-xs"><Link href="/lab" className="hover:underline">🧪 Lab Tadabbur</Link> / {study.id}</div>
-      <LabStudyView study={study} ayat={ayat} lenses={tax?.lenses ?? []} surahName={surah.name_latin} />
+      {archived && (
+        <div className="mt-3 rounded-lg border p-3 text-sm" style={{ borderColor: "#d97706", background: "#d9770614" }}>
+          <b style={{ color: "#d97706" }}>📼 Rekaman lama — versi {study.version}.</b>{" "}
+          <span className="mut">Tadabbur ini sudah diperbarui. </span>
+          <Link href={`/lab/${study.id}`} className="underline" style={{ color: "#d97706" }}>Lihat versi terkini (v{current.version}) →</Link>
+        </div>
+      )}
+      <LabStudyView study={study} ayat={ayat} lenses={tax?.lenses ?? []} surahName={surah.name_latin} isArchived={!!archived} />
     </div>
   );
 }

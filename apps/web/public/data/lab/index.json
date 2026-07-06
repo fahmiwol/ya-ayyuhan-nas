@@ -3,6 +3,7 @@
   "title": "Lab Tadabbur",
   "note": "Kajian interpretasi rekayasa (engineering reading) atas ayat — BUKAN tafsir, BUKAN dalil. Teks ayat selalu ditarik dari mushaf kanonik ber-Merkle; makna religius dirujuk ke tafsir bersumber. Kajian baru = 1 file JSON + 1 entri di sini.",
   "studies": [
+    { "id": "fatihah-1-1-7", "title": "Al-Fatihah — protokol pembuka & loop kalibrasi harian", "ref": "QS 1:1-7", "theme": "Protokol interaksi, alignment, spesifikasi via contoh, sinkronisasi global", "lenses": 9, "created": "2026-07-07" },
     { "id": "iqra-96-1-5", "title": "Iqra' — READ → ENCODE → LEARN", "ref": "QS 96:1-5", "theme": "Akuisisi pengetahuan, pembelajaran, eksternalisasi ilmu", "lenses": 9, "created": "2026-07-07" },
     { "id": "mizan-55-5-9", "title": "Ḥusbān & Mīzān — komputasi kosmik dan constraint keseimbangan", "ref": "QS 55:5-9", "theme": "Determinisme, keteraturan alam, invariant, alignment", "lenses": 9, "created": "2026-07-07" },
     { "id": "kun-36-82", "title": "Kun Fayakūn — instansiasi deklaratif", "ref": "QS 36:82", "theme": "Penciptaan, informasi, paradigma deklaratif", "lenses": 9, "created": "2026-07-07" }

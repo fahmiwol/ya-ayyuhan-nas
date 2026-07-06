@@ -87,6 +87,20 @@
 
 ---
 
+### [F1.31] Lab Tadabbur: riwayat tadabbur (versioning) + tooling sintesis + pilot Al-Fatihah — 2026-07-07
+
+**North Star check:** ya — permintaan owner: "setiap interpretasi harus DIREKAM; seiring waktu di-tadabburi ulang" + mulai sintesis massal. Interpretasi = artefak hidup ber-versi; tak ada yang ditimpa diam-diam (sejalan prinsip immutability & transparansi proyek).
+**Action:**
+- **Skema lab-study-v2**: + `version` + `history[]` (riwayat tadabbur). Kompat mundur (v1 → default). 3 kajian lama di-upgrade.
+- **Arsip rekaman**: re-tadabbur → versi lama DIREKAM ke `public/data/lab/archive/<id>.v<N>.json` (immutable, tak boleh ditimpa) & tetap terbaca di app via `/lab/<id>?v=N` (banner "📼 Rekaman lama" + link versi terkini). UI: badge 📼 v{n} + section "Riwayat tadabbur" (semua versi, klik buka arsip).
+- **Tooling pipeline** (fondasi sintesis SEMUA ayat): `lab-scaffold.mjs` (kerangka kajian baru: tarik ayat+tafsir kanonik, verifikasi ref fail-closed, template 9 lensa TODO) · `lab-rev.mjs` (re-tadabbur: arsip → bump → entri history) · `lab-validate.mjs` (GERBANG wajib pra-commit: skema, sourced_meaning wajib, lensa terdaftar, ref vs mushaf, arsip lengkap; exit≠0 bila gagal).
+- **Pilot sintesis per-surah: Al-Fatihah (1:1-7)** — kajian "protokol pembuka & loop kalibrasi harian": 9 lensa (protokol sesi; spec by example + negative examples di 1:6-7; heartbeat ≥17×/hari = spaced repetition; sinkronisasi terdistribusi 14 abad; core-context reload = anti-drift). Status basmalah = metadata antar-mazhab (netral, Kufi/Hafs). Total kajian live: 4.
+- **Uji re-tadabbur end-to-end**: iqra-96-1-5 v1→v2 (lensa AI dipertajam: talaqqī = supervised chain ber-sanad yang auditable); v1 terarsip & terbaca via ?v=1.
+**Test:** lab-validate 4/4 lolos; TSC clean; preview: badge v2 + riwayat + link v1 → banner arsip + isi v1 asli; Fatihah 7 ayat + 9 lensa + netralitas basmalah; 0 error konsol.
+**Status:** ✅ selesai + deploy. **Next:** sintesis massal bertahap (per surah/juz — scaffold→isi→validate→tinjau), lalu lensa turunan ilmu non-teknis.
+
+---
+
 ### [F1.30] MVP Lab Tadabbur — playground interpretasi rekayasa (Poin 4 dimulai) — 2026-07-07
 
 **North Star check:** ya — ini eksekusi Poin 4 visi awal owner: "sintesis isi Al-Qur'an → komputasional, algorithm, AI system, agentic". Guardrail dijaga penuh (netral teologis; bukan tafsir; makna bersumber).

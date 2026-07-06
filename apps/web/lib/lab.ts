@@ -21,9 +21,16 @@ export interface LabLensReading {
   analogy?: string; // padanan teknis singkat (mis. "READ → ENCODE → LEARN")
 }
 
+// Riwayat tadabbur: SETIAP interpretasi direkam. Re-tadabbur = version bump +
+// arsip versi lama (archive/<id>.v<N>.json — tetap bisa dibaca) + entri history.
+// Tooling: pipeline/lab-scaffold.mjs (buat kajian baru), lab-rev.mjs (re-tadabbur),
+// lab-validate.mjs (validasi skema + rujukan vs mushaf — jalankan sebelum commit).
+export interface LabRevision { version: number; date: string; note: string; authors: string[] }
+
 export interface LabStudy {
-  schema: string; // "lab-study-v1"
+  schema: string; // "lab-study-v2"
   id: string;
+  version: number; // versi tadabbur saat ini (mulai 1)
   title: string;
   subtitle?: string;
   ref: { surah: number; from: number; to: number }; // rujukan ayat (teks ditarik dari mushaf)
@@ -36,6 +43,7 @@ export interface LabStudy {
   authors: string[];
   status: "draft" | "published";
   created: string;
+  history: LabRevision[]; // riwayat tadabbur (terbaru terakhir)
 }
 
 export interface LabIndexEntry {
@@ -59,12 +67,23 @@ async function readJson<T>(rel: string): Promise<T | null> {
   }
 }
 
+// Kompat mundur: file lama (lab-study-v1) tanpa version/history → default v1.
+function normalize(s: LabStudy | null): LabStudy | null {
+  if (!s) return null;
+  return { ...s, version: s.version ?? 1, history: s.history ?? [{ version: 1, date: s.created, note: "Tadabbur perdana.", authors: s.authors }] };
+}
+
 export async function getLabIndex(): Promise<LabIndex | null> {
   return readJson<LabIndex>("index.json");
 }
 export async function getLabStudy(id: string): Promise<LabStudy | null> {
   if (!/^[a-z0-9-]+$/.test(id)) return null; // sanitasi id (anti path traversal)
-  return readJson<LabStudy>(`${id}.json`);
+  return normalize(await readJson<LabStudy>(`${id}.json`));
+}
+// Baca versi ARSIP (tadabbur lama tetap terekam & bisa dibaca).
+export async function getLabStudyVersion(id: string, version: number): Promise<LabStudy | null> {
+  if (!/^[a-z0-9-]+$/.test(id) || !Number.isInteger(version) || version < 1) return null;
+  return normalize(await readJson<LabStudy>(path.join("archive", `${id}.v${version}.json`)));
 }
 export async function getLabTaxonomy(): Promise<LabTaxonomy | null> {
   return readJson<LabTaxonomy>("taxonomy.json");

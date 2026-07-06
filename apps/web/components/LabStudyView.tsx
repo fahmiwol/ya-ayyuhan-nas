@@ -12,7 +12,7 @@ import { transliterateArabic } from "@/lib/translit";
 export interface StudyAyah { ayah: number; arabic: string; tr_id: string | null; hash: string }
 interface LensMeta { key: string; title: string; icon: string; desc: string }
 
-export function LabStudyView({ study, ayat, lenses, surahName }: { study: LabStudy; ayat: StudyAyah[]; lenses: LensMeta[]; surahName: string }) {
+export function LabStudyView({ study, ayat, lenses, surahName, isArchived }: { study: LabStudy; ayat: StudyAyah[]; lenses: LensMeta[]; surahName: string; isArchived?: boolean }) {
   const [activeLens, setActiveLens] = useState<string | null>(null); // null = semua
   const [showTranslit, setShowTranslit] = useState(false);
 
@@ -30,6 +30,7 @@ export function LabStudyView({ study, ayat, lenses, surahName }: { study: LabStu
       <div className="mt-1 flex flex-wrap items-center gap-2">
         <h1 className="text-xl font-bold">{study.title}</h1>
         <TrustBadge a={labTrust} refId={`lab:${study.id}`} />
+        <span className="mut rounded-full border px-2 py-0.5 text-[10px]" style={{ borderColor: "var(--line)" }} title="versi tadabbur — setiap interpretasi direkam & bisa di-tadabburi ulang">📼 v{study.version}</span>
       </div>
       {study.subtitle && <p className="mut mt-1 text-sm">{study.subtitle}</p>}
 
@@ -112,6 +113,25 @@ export function LabStudyView({ study, ayat, lenses, surahName }: { study: LabStu
       <div className="card mt-4 p-4" style={{ borderColor: "#3b82f6" }}>
         <b className="text-sm" style={{ color: "#3b82f6" }}>Inferensi kajian</b>
         <p className="mt-2 text-sm leading-relaxed">{study.inference}</p>
+      </div>
+
+      {/* RIWAYAT TADABBUR — setiap interpretasi direkam; versi lama tetap terbaca */}
+      <div className="card mt-6 p-4">
+        <b className="text-sm gold">📼 Riwayat tadabbur</b>
+        <p className="mut mt-1 text-xs">Interpretasi hidup: seiring waktu di-tadabburi ulang. Setiap versi direkam & tetap bisa dibaca — tak ada yang ditimpa diam-diam.</p>
+        <ol className="mt-2 space-y-1.5 text-sm">
+          {[...study.history].reverse().map((h) => (
+            <li key={h.version} className="flex flex-wrap items-baseline gap-2">
+              {h.version === study.version && !isArchived ? (
+                <span className="rounded px-1.5 py-0.5 text-[10px] font-semibold" style={{ background: "#3b82f614", color: "#3b82f6" }}>v{h.version} · terkini</span>
+              ) : (
+                <Link href={`/lab/${study.id}?v=${h.version}`} className="rounded border px-1.5 py-0.5 text-[10px] underline" style={{ borderColor: "var(--line)" }}>v{h.version}</Link>
+              )}
+              <span className="mut text-xs">{h.date}</span>
+              <span className="text-xs">{h.note}</span>
+            </li>
+          ))}
+        </ol>
       </div>
 
       <div className="mut mt-4 text-xs">
