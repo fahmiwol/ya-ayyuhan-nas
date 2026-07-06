@@ -87,6 +87,22 @@
 
 ---
 
+### [CHECKPOINT] Berhenti di sini — 2026-07-07 (pasca F1.32)
+
+**Kondisi:** SEMUA LIVE & SEHAT di quran.migancore.com. HEAD master = Wave 1 kajian. App lain di server tetap 301 (terverifikasi tiap deploy).
+**Yang sudah berdiri (ringkas rantai):**
+- **Fase 1 inti:** mushaf ber-Merkle (root `eb13d58a…`) · reader cursor-mode · audio · word-by-word · notebook · auth/RBAC · i18n · hadits/belajar/doa/kitab/kisah · tafsir Kemenag+Jalalain + transliterasi + arti mesin (6010) · asbabun nuzul.
+- **Lapisan Kepercayaan:** Eval-Gate (tier ala isnad + khilaf + muttafaq) · antrean tinjau /tinjau (RBAC) · dashboard Integritas.
+- **Lab Tadabbur (Poin 4):** 10 kajian live, 9 lensa, QCA, riwayat tadabbur (versioning+arsip ?v=N), tooling scaffold/rev/validate. Riset: 14_TADABBUR_LAB_RESEARCH.md.
+**TITIK LANJUT BERIKUTNYA (sudah dipetakan, tinggal "gas"):**
+1. **Wave 2 tematik:** 58:11 (ilmu & derajat), 39:9, 21:30 (ratq-fatq), 29:20 (eksplorasi empiris), 30:41 (feedback kerusakan). Alur: ground tafsir → tulis kajian (9 lensa, LANGSUNG bukan agent) → lab-validate → index → deploy.
+2. Lalu **Juz 30** (cakupan massal, pakai lab-scaffold).
+3. Lalu **lensa turunan non-teknis** (psikologi/tata-kelola/ekonomi/akhlak — extend taxonomy.json).
+**Rutinitas deploy:** commit → push → ssh sidix-vps → git pull --ff-only → docker compose up -d --build web → cek /lab 200 + app lain 301. Gerbang WAJIB pra-commit kajian: `node pipeline/lab-validate.mjs`.
+**Status:** ⏸ berhenti atas permintaan owner. Konteks aman: episodic ini + memory (lab-tadabbur, evalgate-trust-layer, mushaf-pipeline-f1) + dokumen 12/13/14.
+
+---
+
 ### [F1.32] Sintesis Wave 1 — 6 kajian tematik "ayat teknologi" (total 10 live) — 2026-07-07
 
 **North Star check:** ya — owner serahkan urutan padaku; kupilih Batch B (tematik computational/AI/agentic — bahan terkuat visi "AI brain") sebelum cakupan Juz 30. Ditulis langsung (bukan agent) demi konsistensi suara & guardrail. Tiap kajian di-ground ke tafsir Kemenag (ditarik dari data app) sebelum ditulis.
