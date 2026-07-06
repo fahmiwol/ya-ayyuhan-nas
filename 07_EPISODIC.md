@@ -87,6 +87,38 @@
 
 ---
 
+### [F1.30] MVP Lab Tadabbur — playground interpretasi rekayasa (Poin 4 dimulai) — 2026-07-07
+
+**North Star check:** ya — ini eksekusi Poin 4 visi awal owner: "sintesis isi Al-Qur'an → komputasional, algorithm, AI system, agentic". Guardrail dijaga penuh (netral teologis; bukan tafsir; makna bersumber).
+**Riset dulu (2 agent):** 5 PDF + 6 URL owner → `14_TADABBUR_LAB_RESEARCH.md`: taksonomi kognitif Qur'ani (Badi/IIUM: taʿaqqul, tafakkur, tadabbur, tadhakkur, tafaqquh, tabaṣṣur, iʿtibār…), metode penalaran (bukti/burhān, qiyās, sebab-akibat, anti-taklid — Urology Annals), rezim belajar (talaqqī→taṣḥīḥ→tasmīʿ→murājaʿah; 16:125). Sintesis → **QCA (Qur'anic Cognitive Architecture)**: peta istilah→komponen agen (grounding=dhikr, epistemik=zhann→yaqīn=Eval-Gate, alignment=mīzān, dst).
+**Action (MVP):**
+- Eval-Gate: tier baru **"interpretation"** (🧪 biru, ORDER=0 terbawah) + kind "lab" → SELALU berlabel "Interpretasi — bukan tafsir" + disclaimer keras.
+- `lib/lab.ts` (skema lab-study-v1, loader, sanitasi id) — **teks ayat TIDAK pernah disalin ke Lab**: hanya ref (surah:from-to); render tarik dari mushaf kanonik ber-Merkle (immutability!). Ref invalid → notFound (fail-closed).
+- Data: `public/data/lab/` — taxonomy.json (9 lensa + 12 istilah kognitif + provenance riset; ayat=source_claimed) + index.json + **3 kajian perdana**: iqra-96-1-5 (READ→ENCODE→LEARN), mizan-55-5-9 (ḥusbān/mīzān = komputasi+alignment), kun-36-82 (instansiasi deklaratif). Tiap kajian: makna BERSUMBER (tafsir Kemenag/Jalalain) + 9 lensa (amal/komputasional/logika/algoritma/inferensi/mat-fis/sistem/AI-agentic/artefak) + pemetaan QCA + inferensi.
+- Halaman `/lab` (guardrail paling atas + daftar kajian + tabel QCA + taksonomi istilah) + `/lab/[id]` (Lapis-1 ayat kanonik+hash+makna bersumber+toggle transliterasi; Lapis-2 matriks lensa **interaktif filterable**; badge 🧪 + refId `lab:<id>` → bisa ditinjau reviewer di antrean yang sama). Nav 🧪 Lab (i18n id/en/ar).
+- **Tumbuh terus:** kajian baru = 1 JSON + 1 entri index (skema terdokumentasi di lib/lab.ts).
+**Test:** rujukan 3 kajian diverifikasi vs mushaf (5/5, 5/5, 1/1 ✓); TSC clean; preview: guardrail+QCA+taksonomi render, filter lensa menyaring benar, transliterasi toggle, badge 🧪, 0 error konsol.
+**Next (per owner):** sintesis SEMUA ayat → script/metode/temuan/inferensi/tools (utamanya komputasional, AI brain, agentic) → lalu turunan ilmu non-teknis. Arsitektur data Lab sudah siap menampungnya (drop-in JSON per kajian; kelak digenerate pipeline).
+**Status:** ✅ MVP selesai + deploy.
+
+---
+
+### [CHECKPOINT] Berhenti di sini → mulai Poin 4 (Lab/Playground interpretasi) — 2026-07-07
+
+**Status Fase 1:** SOLID & LIVE. Selesai s/d F1.29. Yang sudah jalan di quran.migancore.com:
+mushaf terverifikasi (Merkle) · reader cursor-mode · audio · word-by-word · notebook · auth/RBAC ·
+i18n · hadits/belajar/doa/kitab/kisah · tafsir Kemenag+Jalalain (+translit+arti mesin) · asbabun nuzul ·
+**Eval-Gate/Lapisan Kepercayaan** (status ala isnad + provenance + korroborasi/muttafaq) · **Antrean Tinjau** (moderasi RBAC).
+**Permintaan owner (belok ke Poin 4 dari visi awal):** interpretasi Al-Qur'an SEBAGAI teknologi — berdasar
+metode/pedoman berpikir yang DIAJARKAN Al-Qur'an sendiri (tafakkur/tadabbur/ta'aqqul/dll). BUKAN menguji
+kebenaran Qur'an (owner muslim, tak meragukan); BUKAN tafsir baru. Demonstrasi multi-dimensi pada 1-3 ayat →
+lalu rancang "Lab/Playground". Referensi: 5 PDF lokal + ~6 URL (thinking terminologies, critical thinking, memorization).
+**GUARDRAIL WAJIB (Hukum Besi #3 & non-goal):** netral teologis; makna religius tetap BERSUMBER (eval-gate);
+lapisan komputasional = "interpretasi rekayasa / eksperimen berpikir", DITANDAI jelas BUKAN tafsir/wahyu.
+**Next:** riset referensi → demonstrasi → desain Lab (nama, arsitektur, cara nyambung ke eval-gate).
+
+---
+
 ### [F1.29] Antrean Tinjau (moderasi RBAC) + korroborasi otomatis + badge Kisah — 2026-07-06
 
 **North Star check:** ya — melengkapi Eval-Gate: dari "menilai otomatis + jujur" → "manusia (reviewer/admin) bisa mengesahkan". Ini pintu menuju kontributor (yang owner taruh paling akhir). "gas semua, hati-hati": deploy bertahap, app lain dijaga, RBAC & fail-closed.

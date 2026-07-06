@@ -16,6 +16,7 @@ export type TrustTier =
   | "maudhu"
   | "disputed" // khilaf: penilaian ulama melintasi garis terima/tolak
   | "sourced" // beratribusi sumber, tanpa grade hadits (mis. tafsir, editorial)
+  | "interpretation" // interpretasi rekayasa (Lab Tadabbur) — BUKAN tafsir/dalil; eksplorasi berlabel
   | "unreviewed"; // tanpa grade & belum diaudit → perlu tinjau
 
 export interface ScholarGrade { by: string | null; grade: string; canonical: TrustTier | null }
@@ -42,7 +43,7 @@ export interface TrustAssessment {
 }
 
 export interface EvalInput {
-  kind: "quran" | "hadith" | "tafsir" | "doa" | "kisah";
+  kind: "quran" | "hadith" | "tafsir" | "doa" | "kisah" | "lab";
   quranic?: boolean; // teks/rujukan adalah ayat Al-Qur'an
   grades?: { by?: string | null; grade: string }[]; // penilaian ulama (hadits)
   hasProvenance?: boolean; // ada sumber lengkap (kitab/koleksi + nomor / rujukan)
@@ -51,7 +52,7 @@ export interface EvalInput {
   source?: Provenance;
 }
 
-const ORDER: Record<TrustTier, number> = { mutawatir: 6, sahih: 5, hasan: 4, sourced: 3, daif: 2, disputed: 2, maudhu: 1, unreviewed: 0 };
+const ORDER: Record<TrustTier, number> = { mutawatir: 6, sahih: 5, hasan: 4, sourced: 3, daif: 2, disputed: 2, maudhu: 1, interpretation: 0, unreviewed: 0 };
 
 // Normalisasi string grade bebas (mis. "Hasan Sahih", "Sahih Lighairihi", "Shadh", "Munkar")
 // → tier kanonik. Konservatif: istilah bermasalah (syadz/munkar/matruk) diperlakukan lemah.
@@ -112,6 +113,7 @@ const META: Record<TrustTier, { label: string; short: string; color: string; ico
   daif: { label: "Da'if — lemah, bukan dasar hukum", short: "Da'if", color: "#d97706", icon: "⚠️" },
   disputed: { label: "Khilaf — ulama berbeda penilaian", short: "Khilaf", color: "#7c3aed", icon: "🔀" },
   maudhu: { label: "Maudhu' — palsu, tidak disebar sbg hadits", short: "Maudhu'", color: "#dc2626", icon: "⛔" },
+  interpretation: { label: "Interpretasi rekayasa — BUKAN tafsir/dalil (Lab Tadabbur)", short: "Interpretasi — bukan tafsir", color: "#3b82f6", icon: "🧪" },
   unreviewed: { label: "Perlu tinjau — belum bergrade / belum diaudit", short: "Perlu tinjau", color: "#64748b", icon: "🕵️" },
 };
 
@@ -125,7 +127,8 @@ export function assess(input: EvalInput): TrustAssessment {
 
   // Tentukan tier
   let tier: TrustTier;
-  if (quranic && input.kind !== "hadith") tier = "mutawatir"; // teks/ayat Qur'an
+  if (input.kind === "lab") tier = "interpretation"; // Lab Tadabbur: SELALU berlabel bukan-tafsir, apa pun sumbernya
+  else if (quranic && input.kind !== "hadith") tier = "mutawatir"; // teks/ayat Qur'an
   else {
     const agg = aggregateGrades(scholars);
     if (agg) tier = agg;
@@ -154,6 +157,7 @@ export function assess(input: EvalInput): TrustAssessment {
   else if (tier === "maudhu") disclaimer = "Dinilai palsu — tidak boleh disebarkan sebagai sabda Nabi ﷺ.";
   else if (tier === "disputed") disclaimer = "Ulama berbeda menilai — lihat rincian tiap penilaian; tidak diputuskan sepihak.";
   else if (tier === "unreviewed") disclaimer = "Belum bergrade/ditinjau. Perlakukan sebagai indikatif hingga diverifikasi ke sumber primer.";
+  else if (tier === "interpretation") disclaimer = "Pembacaan rekayasa/analogi struktural (eksperimen berpikir) — BUKAN tafsir, BUKAN dalil agama, BUKAN klaim atas maksud Ilahi. Makna religius: lihat tafsir bersumber.";
   if (machine) disclaimer = `${disclaimer ? disclaimer + " " : ""}Memuat terjemahan mesin — belum ditinjau ahli.`;
 
   return { tier, label: m.label, short: m.short, color: m.color, icon: m.icon, machine, quranic, scholars, steps, provenance: input.source, disclaimer, corroboration, collections: corr.collections, muttafaq };

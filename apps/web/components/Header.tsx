@@ -32,6 +32,7 @@ export function Header() {
         <Link href="/doa" className="hover:opacity-80">{t("nav.dua")}</Link>
         <Link href="/kitab" className="hover:opacity-80">{t("nav.kitab")}</Link>
         <Link href="/kisah" className="hover:opacity-80">{t("nav.story")}</Link>
+        <Link href="/lab" className="hover:opacity-80">🧪 {t("nav.lab")}</Link>
         <Link href="/catatan" className="hover:opacity-80">{t("nav.notes")}</Link>
         <Link href="/integritas" className="hover:opacity-80">{t("nav.integrity")}</Link>
         {canReview && <Link href="/tinjau" className="gold hover:opacity-80">⚖️ Tinjau</Link>}
