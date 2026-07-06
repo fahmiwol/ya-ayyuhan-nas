@@ -64,6 +64,23 @@
 
 <!-- Append entri baru di atas garis ini, atau lanjut kronologis di bawah -->
 
+### [F1.18] Menu Belajar — Dasar Keislaman (Iman·Islam·Ihsan) (poin 2) — 2026-07-06
+
+**North Star check:** ✅ align — lapisan belajar dasar, netral & ber-dalil (tertaut data yang sudah ada); teks kanonik tak tersentuh.
+**Action:**
+- **Kurikulum data** `apps/web/public/data/deen.json` (di-author editorial, netral, ber-dalil): kerangka Hadits Jibril (Islam/Iman/Ihsan); **Roadmap "Menjadi Muslim"** 6 langkah (syahadat→thaharah→shalat→zakat→puasa→haji); **5 Rukun Islam**, **6 Rukun Iman**, **Ihsan** (muraqabah); **Shalat** (waktu+rakaat, 12 rukun garis besar, catatan perbedaan madzhab); **Glossary** 16 istilah. Tiap materi tertaut **dalil** ke `/surah/..#ayah-..` & `/hadits/nawawi`.
+- App: `lib/deen.ts`, `app/belajar/page.tsx` (roadmap kartu bernomor + 3 track + shalat + glossary + chip dalil warna). Nav "Belajar" + i18n (id/en/ar).
+**WHY:** owner poin 2 — dasar keislaman utk memudahkan belajar (how to be muslim, shalat, istilah).
+**Test/verify:** `npm run build` LULUS. `next dev` + DOM verify: h1 "Dasar Keislaman Iman·Islam·Ihsan", 4 seksi (roadmap 6 langkah, tracks, shalat waktu+rukun, glossary), **chip dalil** "Hadits Jibril (Nawawi 2)"/"QS 5:6/4:103/2:43" tertaut. (Screenshot tool hang; DOM+build konfirmasi.)
+**Iterasi:** —.
+**Review:** **NETRAL** — hanya yang disepakati mayoritas; perbedaan madzhab (rincian shalat) ditandai catatan, bukan dihakimi. Konten = ringkasan fakta dasar (bukan salin kitab berhak cipta); tafsir/fiqh mendalam = via moderasi nanti. Ber-dalil ke data sendiri (auditable).
+**Provenance/Lisensi:** Editorial CC-BY-4.0 (fakta dasar ber-dalil). **Integritas:** root Qur'an tetap `eb13d58a…8cba7e56`.
+**Blocker:** —
+**Next:** redeploy; lalu poin 3 (Doa) / 4 (kitab) / 5 (kisah), atau skala hadits penuh.
+**Feeling owner:** —
+
+---
+
 ### [F1.17] Menu Hadits ber-grade + sumber (poin 1) — 2026-07-06
 
 **North Star check:** ✅ align — lapisan keilmuan pertama (hadits) ber-provenance + grade; teks kanonik tak tersentuh.
@@ -341,7 +358,7 @@ Cross-source akar konsonan (L3): **Tanzil 100%**, **Kemenag 99.984%** (1 konvens
 
 | Fase | Status | Milestone terakhir | Root hash mushaf |
 |------|--------|--------------------|------------------|
-| 1 | 🏗️ jalan | F1.17: menu Hadits ber-grade + sumber (poin 1 data) | `eb13d58a…8cba7e56` |
+| 1 | 🏗️ jalan | F1.18: menu Belajar — Dasar Keislaman (poin 2 data) | `eb13d58a…8cba7e56` |
 | 2 | ⬜ | — | — |
 | 3 | ⬜ | — | — |
 | 4 | ⬜ | — | — |

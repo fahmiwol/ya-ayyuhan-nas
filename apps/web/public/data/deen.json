@@ -1,0 +1,77 @@
+{
+  "schema": "deen-v1",
+  "title": "Dasar Keislaman",
+  "subtitle": "Iman · Islam · Ihsan",
+  "source": { "name": "Editorial (ringkasan fakta dasar, ber-dalil)", "license": "CC-BY-4.0", "note": "Materi netral berbasis dalil yang disepakati mayoritas; perbedaan madzhab ditandai sebagai catatan, bukan dihakimi. Tafsir/fiqh mendalam menyusul (moderasi)." },
+  "intro": "Kerangka klasik dari Hadits Jibril: Islam (amal lahir), Iman (keyakinan hati), Ihsan (kualitas ibadah). Tiap materi tertaut ke dalil (ayat/hadits) yang bisa kamu buka langsung.",
+  "roadmap": {
+    "title": "Roadmap: Menjadi Muslim (bertahap)",
+    "steps": [
+      { "n": 1, "title": "Syahadat", "body": "Masuk Islam dengan bersaksi tiada tuhan selain Allah dan Muhammad ﷺ utusan Allah. Ini pondasi & rukun pertama.", "dalil": [{ "type": "hadith", "label": "Hadits Jibril (Nawawi 2)", "href": "/hadits/nawawi" }] },
+      { "n": 2, "title": "Thaharah (Bersuci)", "body": "Menjaga kebersihan/kesucian (wudhu, mandi wajib) sebagai syarat sah ibadah seperti shalat.", "dalil": [{ "type": "ayah", "label": "QS 5:6", "href": "/surah/5#ayah-6" }] },
+      { "n": 3, "title": "Shalat", "body": "Menegakkan shalat 5 waktu — tiang agama dan rukun Islam kedua.", "dalil": [{ "type": "ayah", "label": "QS 4:103", "href": "/surah/4#ayah-103" }, { "type": "ayah", "label": "QS 2:43", "href": "/surah/2#ayah-43" }] },
+      { "n": 4, "title": "Zakat", "body": "Menunaikan zakat bagi yang wajib — menyucikan harta & menolong sesama.", "dalil": [{ "type": "ayah", "label": "QS 9:103", "href": "/surah/9#ayah-103" }] },
+      { "n": 5, "title": "Puasa Ramadan", "body": "Berpuasa di bulan Ramadan bagi yang mampu.", "dalil": [{ "type": "ayah", "label": "QS 2:183", "href": "/surah/2#ayah-183" }] },
+      { "n": 6, "title": "Haji", "body": "Menunaikan haji ke Baitullah bagi yang mampu (sekali seumur hidup).", "dalil": [{ "type": "ayah", "label": "QS 3:97", "href": "/surah/3#ayah-97" }] }
+    ]
+  },
+  "tracks": {
+    "islam": {
+      "title": "Islam", "subtitle": "5 Rukun Islam (amal lahir)",
+      "items": [
+        { "title": "Syahadat", "body": "Dua kalimat persaksian keimanan." },
+        { "title": "Shalat", "body": "Shalat 5 waktu sebagai kewajiban harian." },
+        { "title": "Zakat", "body": "Kewajiban harta bagi yang memenuhi syarat." },
+        { "title": "Puasa Ramadan", "body": "Menahan diri dari fajar hingga maghrib sebulan penuh." },
+        { "title": "Haji", "body": "Ibadah ke Makkah bagi yang mampu." }
+      ],
+      "dalil": [{ "type": "hadith", "label": "Hadits Jibril (Nawawi 2)", "href": "/hadits/nawawi" }]
+    },
+    "iman": {
+      "title": "Iman", "subtitle": "6 Rukun Iman (keyakinan hati)",
+      "items": [
+        { "title": "Iman kepada Allah", "body": "Meyakini keesaan & sifat-sifat Allah." },
+        { "title": "Iman kepada Malaikat", "body": "Meyakini keberadaan para malaikat." },
+        { "title": "Iman kepada Kitab-kitab", "body": "Meyakini kitab-kitab yang Allah turunkan (Al-Qur'an, dll)." },
+        { "title": "Iman kepada Rasul", "body": "Meyakini para nabi & rasul, penutupnya Muhammad ﷺ." },
+        { "title": "Iman kepada Hari Akhir", "body": "Meyakini kebangkitan, hisab, surga & neraka." },
+        { "title": "Iman kepada Qada & Qadar", "body": "Meyakini ketentuan Allah, yang baik maupun buruk." }
+      ],
+      "dalil": [{ "type": "ayah", "label": "QS 2:285", "href": "/surah/2#ayah-285" }, { "type": "hadith", "label": "Hadits Jibril (Nawawi 2)", "href": "/hadits/nawawi" }]
+    },
+    "ihsan": {
+      "title": "Ihsan", "subtitle": "Kualitas ibadah",
+      "body": "Beribadah kepada Allah seakan-akan engkau melihat-Nya; jika tidak, sesungguhnya Dia melihatmu. Inti ihsan = kesadaran akan pengawasan Allah (muraqabah) dalam setiap amal.",
+      "dalil": [{ "type": "hadith", "label": "Hadits Jibril (Nawawi 2)", "href": "/hadits/nawawi" }]
+    }
+  },
+  "shalat": {
+    "title": "Shalat: Waktu, Rukun & Tata Cara",
+    "note": "Garis besar yang disepakati mayoritas. Rincian (mis. cara bersedekap, doa iftitah) bisa berbeda antar madzhab — itu keragaman yang sah, bukan pertentangan.",
+    "waktu": [
+      { "name": "Subuh", "rakaat": 2 }, { "name": "Zuhur", "rakaat": 4 }, { "name": "Ashar", "rakaat": 4 }, { "name": "Maghrib", "rakaat": 3 }, { "name": "Isya", "rakaat": 4 }
+    ],
+    "rukun": [
+      "Niat", "Takbiratul ihram (Allahu akbar)", "Berdiri bagi yang mampu", "Membaca Al-Fatihah", "Ruku dengan tuma'ninah", "I'tidal (bangkit dari ruku)", "Sujud dua kali dengan tuma'ninah", "Duduk di antara dua sujud", "Tasyahud akhir", "Shalawat kepada Nabi ﷺ", "Salam", "Tertib (berurutan)"
+    ],
+    "dalil": [{ "type": "ayah", "label": "QS 4:103 (waktu)", "href": "/surah/4#ayah-103" }, { "type": "ayah", "label": "QS 20:14", "href": "/surah/20#ayah-14" }, { "type": "hadith", "label": "Niat (Nawawi 1)", "href": "/hadits/nawawi" }]
+  },
+  "glossary": [
+    { "term": "Tauhid", "def": "Mengesakan Allah dalam ibadah, nama & sifat." },
+    { "term": "Syahadat", "def": "Dua kalimat persaksian keislaman." },
+    { "term": "Thaharah", "def": "Bersuci dari hadas & najis." },
+    { "term": "Wudhu", "def": "Bersuci dengan air untuk anggota tertentu sebelum shalat." },
+    { "term": "Rakaat", "def": "Satu satuan gerakan shalat (berdiri–ruku–sujud)." },
+    { "term": "Takbiratul Ihram", "def": "Takbir pembuka yang mengharamkan hal di luar shalat." },
+    { "term": "Ruku", "def": "Membungkuk dengan punggung lurus dalam shalat." },
+    { "term": "Sujud", "def": "Meletakkan dahi (dan anggota lain) ke tanah." },
+    { "term": "Tasyahud", "def": "Bacaan duduk pada shalat (persaksian)." },
+    { "term": "Kiblat", "def": "Arah Ka'bah di Makkah untuk menghadap saat shalat." },
+    { "term": "Zakat", "def": "Kewajiban mengeluarkan bagian harta tertentu." },
+    { "term": "Shaum", "def": "Puasa: menahan diri dari pembatal sejak fajar hingga maghrib." },
+    { "term": "Fardhu", "def": "Kewajiban yang berdosa bila ditinggalkan." },
+    { "term": "Sunnah", "def": "Tuntunan Nabi ﷺ; dianjurkan, berpahala bila dikerjakan." },
+    { "term": "Niat", "def": "Maksud di hati untuk beribadah karena Allah." },
+    { "term": "Muraqabah", "def": "Kesadaran bahwa Allah selalu mengawasi (inti ihsan)." }
+  ]
+}

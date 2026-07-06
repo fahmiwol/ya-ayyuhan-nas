@@ -25,6 +25,7 @@ export function Header() {
       <nav className="mut ml-2 hidden gap-4 text-sm sm:flex">
         <Link href="/" className="hover:opacity-80">{t("nav.surah")}</Link>
         <Link href="/hadits" className="hover:opacity-80">{t("nav.hadith")}</Link>
+        <Link href="/belajar" className="hover:opacity-80">{t("nav.learn")}</Link>
         <Link href="/catatan" className="hover:opacity-80">{t("nav.notes")}</Link>
         <Link href="/integritas" className="hover:opacity-80">{t("nav.integrity")}</Link>
       </nav>
