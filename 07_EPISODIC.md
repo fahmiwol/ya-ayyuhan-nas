@@ -64,6 +64,24 @@
 
 <!-- Append entri baru di atas garis ini, atau lanjut kronologis di bawah -->
 
+### [F1.21] Doa detail slider + agent riset validasi Islam (eval-gate) — 2026-07-06
+
+**North Star check:** ✅ align — perdalam tiap doa (penjelasan/riwayat/sanad) + tegakkan metode validasi ala Islam sbg eval-gate.
+**Action (feedback owner):**
+- **Doa jadi klik→slider** (bukan langsung ke ayat): `public/data/doa.json` diperkaya `detail` per doa (penjelasan, riwayat/kisah, perawi/sanad, sumber). `components/DoaBrowser.tsx` (kartu klik → panel slide `.id-panel`: Penjelasan · Riwayat/kisah · Perawi & sumber (sanad) + link ayat sbg rujukan). `app/doa/page.tsx` pakai DoaBrowser.
+- **Agent riset (background)**: diluncurkan utk riset **metode validasi kebenaran Islam** (isnad/sanad, jarh wa ta'dil, mutawatir/ahad, grading, tawatur, ijma) → rubrik **eval-gate**, + latar/sanad 8 doa harian, ber-sumber (jurnal/buku/artikel), IP-aman (ringkas+sitasi). Output → `12_ISLAMIC_VALIDATION.md` (agent yang tulis).
+**WHY:** owner minta tiap doa punya slider detail (penjelasan/riwayat/kisah/kenapa/sumber/perawi/isnad) + riset ilmu Islam valid + jadikan cara Islam memvalidasi kebenaran sebagai eval-gate.
+**Test/verify:** `npm run build` LULUS (134). DOM: klik "Sebelum tidur" → panel buka, seksi ["Penjelasan","Riwayat / kisah di baliknya","Perawi & sumber (sanad)"].
+**Iterasi:** DoaPage server → DoaBrowser client (state panel).
+**Review:** detail doa = ringkasan editorial + atribusi perawi (fakta) + lafaz pendek domain-publik; akan **divalidasi & diperkaya** oleh hasil agent (eval-gate isnad). Multi-tafsir/kontributor menyusul.
+**Provenance/Lisensi:** Editorial CC-BY + sumber HR per doa. **Integritas:** root tetap `eb13d58a…8cba7e56`.
+**Agent SELESAI:** `12_ISLAMIC_VALIDATION.md` ditulis (10 web search, 20 sumber tersitasi, IP-aman). Eval-Gate = **7 langkah fail-closed** (provenance→sanad→grade→matn cross-check→corroboration→khilaf-metadata→label transparan; lolos hanya bila provenance ADA & grade ∈ {mutawatir,sahih,hasan} & tak ada konflik matn). **Koreksi validitas diterapkan ke doa.json**: "Ghufranaka" Sahih→**Hasan**; "keluar rumah" Sahih→**Hasan–Sahih (khilaf dicatat)**; catatan nomor hadits indikatif. (Doa "Bismillah" sebelum makan sudah benar — versi "Allahumma barik lana" itu da'if, tak dipakai.)
+**Blocker:** —
+**Next:** redeploy; formalkan eval-gate jadi rubrik moderasi (doc 10) + terapkan ke hadits/tafsir; verifikasi nomor hadits ke kitab primer; lalu poin 4/5.
+**Feeling owner:** ingin kedalaman ilmu + kevalidan tinggi.
+
+---
+
 ### [F1.20] Panel Identitas jadi 3 tab: Identitas · Tafsir(+search) · Riwayat — 2026-07-06
 
 **North Star check:** ✅ align — perkaya lapisan keilmuan per-ayat (tafsir+asbab), ber-sumber; kanonik tak tersentuh.
