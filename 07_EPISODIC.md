@@ -64,6 +64,24 @@
 
 <!-- Append entri baru di atas garis ini, atau lanjut kronologis di bawah -->
 
+### [F1.23] i18n konten ikut toggle + tafsir Jalalain + agent sumber global — 2026-07-06
+
+**North Star check:** ✅ align — konsistensi bahasa (UX) + perkaya tafsir + peta sumber dunia; kanonik tak tersentuh.
+**Action (respons pesan owner):**
+- **(a) Tafsir Jalalain** merged: `pipeline/seed-tafsir-jalalain.mjs` (spa5k) → **6010 ayat** dapat Jalalain (226 tak ada di sumber, dicatat). Panel Tafsir kini 2 edisi (Kemenag id + Jalalain ar) + search.
+- **i18n KONTEN ikut toggle bahasa** (bug owner: pilih Indonesia tapi hadits Nawawi masih EN): `components/HadithReader.tsx` (client, `useT` locale → pilih tr[locale], fallback + **penanda "en · terjemahan id menyusul"** bila bahasa terpilih tak ada). `Reader.tsx` terjemahan ikut locale global (buang selector id/en terpisah). Sebab Nawawi/Qudsi memang tak punya terjemahan ID di dataset → ditandai jujur (bukan diam-diam EN).
+- **Agent sumber GLOBAL** (owner: "kumpulin dari seluruh dunia, kampus/ilmuwan/sejarawan"): `13_GLOBAL_SOURCES.md` — peta institusi (Corpus Coranicum/BBAW, Leeds, SOAS, Oxford, Birmingham/Mingana, al-Azhar, KFGQPC, OpenITI/KITAB…), korpus terbuka + lisensi, ulama/sejarawan (netral [SUN]/[SHI]/[ACAD]), + **shortlist ingest license-clear** (OpenITI, Quranic Arabic Corpus, Tanzil/QuranEnc, QUL…). ⚠ Sunnah.com/Altafsir = izin; Tarteel CC BY-NC-ND.
+**WHY:** owner: konten harus ikut bahasa toggle di SEMUA halaman; sumber dari seluruh dunia bukan cuma Indonesia; sekalian Jalalain.
+**Test/verify:** `npm run build` LULUS (135). DOM: locale=id → Nawawi tampil penanda "en · terjemahan id menyusul"; Reader ikut locale. Jalalain di tafsir/{n}.json.
+**Iterasi:** hadith page → client `HadithReader`; reader buang selector lang (ikut global).
+**Review:** JUJUR — konten Indonesia-only (doa/belajar/asbab/kitab) tetap ID (benar utk user ID); yang belum ada terjemahan bahasa terpilih ditandai. Terjemahan penuh en/ar + hadits ID Nawawi = butuh sumber (agent temukan) → sprint berikut.
+**Provenance/Lisensi:** Jalalain klasik domain-publik; sumber global di `13`. **Integritas:** root tetap `eb13d58a…8cba7e56`.
+**Blocker:** hadits ID utk Nawawi/Qudsi belum ada sumber terbuka (gading.dev mati) → cari via `13` shortlist.
+**Next:** ingest sumber global license-clear (OpenITI dll); terjemahan ID hadits Nawawi; i18n konten en/ar bertahap; poin 5 (kisah).
+**Feeling owner:** menuntut konsistensi bahasa + kedalaman & keluasan sumber global.
+
+---
+
 ### [F1.22] WORKPLAN + eksekusi: tafsir multi-edisi + Kitab (poin 4) + asbab — 2026-07-06
 
 **North Star check:** ✅ align — perkaya keilmuan (tafsir/kitab/asbab), semua ber-sumber + lolos eval-gate; kanonik tak tersentuh.
@@ -430,7 +448,7 @@ Cross-source akar konsonan (L3): **Tanzil 100%**, **Kemenag 99.984%** (1 konvens
 
 | Fase | Status | Milestone terakhir | Root hash mushaf |
 |------|--------|--------------------|------------------|
-| 1 | 🏗️ jalan | F1.20: panel 3 tab (Identitas/Tafsir+search/Riwayat) + tafsir Kemenag | `eb13d58a…8cba7e56` |
+| 1 | 🏗️ jalan | F1.23: i18n konten ikut toggle + tafsir Jalalain + sumber global (`13`) | `eb13d58a…8cba7e56` |
 | 2 | ⬜ | — | — |
 | 3 | ⬜ | — | — |
 | 4 | ⬜ | — | — |

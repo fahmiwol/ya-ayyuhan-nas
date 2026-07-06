@@ -14,9 +14,10 @@ import { NotePanel, type NoteTarget } from "./NotePanel";
 const BISMILLAH = "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ";
 
 export function Reader({ surah }: { surah: Surah }) {
-  const { showTranslation, lang, arabicSize, wordByWord, reciter, mode, set } = useSettings();
+  const { showTranslation, arabicSize, wordByWord, reciter, mode, set } = useSettings();
   const { forAyah } = useNotes();
-  const { t } = useT();
+  const { t, locale } = useT();
+  const transLang: "id" | "en" = locale === "en" ? "en" : "id"; // terjemahan ikut toggle bahasa global
   const audioRef = useRef<HTMLAudioElement>(null);
   const [playing, setPlaying] = useState<number | null>(null);
   const [continuous, setContinuous] = useState(false);
@@ -76,12 +77,8 @@ export function Reader({ surah }: { surah: Surah }) {
       {/* Kontrol */}
       <div className="card mb-5 flex flex-wrap items-center gap-x-4 gap-y-2 p-3 text-sm">
         <label className="flex items-center gap-1.5">
-          <input type="checkbox" checked={showTranslation} onChange={(e) => set({ showTranslation: e.target.checked })} /> {t("reader.translation")}
+          <input type="checkbox" checked={showTranslation} onChange={(e) => set({ showTranslation: e.target.checked })} /> {t("reader.translation")} <span className="mut text-[10px]">({transLang})</span>
         </label>
-        <select value={lang} onChange={(e) => set({ lang: e.target.value as "id" | "en" })} disabled={!showTranslation}
-          className="rounded-md border px-2 py-1" style={{ background: "var(--panel)", borderColor: "var(--line)", color: "var(--txt)" }}>
-          <option value="id">Indonesia</option><option value="en">English</option>
-        </select>
         <label className="flex items-center gap-1.5">
           <input type="checkbox" checked={wordByWord} onChange={(e) => set({ wordByWord: e.target.checked })} /> {t("reader.perWord")}
         </label>
@@ -139,8 +136,8 @@ export function Reader({ surah }: { surah: Surah }) {
               <p className="arabic ayah-tap" onClick={() => onAyah(a)}>{a.arabic}</p>
             )}
 
-            {showTranslation && a.tr[lang] && (
-              <p className="mut mt-3 text-[0.95rem] leading-relaxed"><span className="gold mr-1">{a.ayah}.</span>{a.tr[lang]}</p>
+            {showTranslation && a.tr[transLang] && (
+              <p className="mut mt-3 text-[0.95rem] leading-relaxed"><span className="gold mr-1">{a.ayah}.</span>{a.tr[transLang]}</p>
             )}
           </li>
         ); })}
