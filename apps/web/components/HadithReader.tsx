@@ -36,9 +36,8 @@ export function HadithReader({ c }: { c: HadithCollection }) {
           const { text, lang, mt } = pickTr(h.tr, locale);
           const a = assess({
             kind: "hadith",
-            grades: h.grades,
+            grades: h.grades, // korroborasi (muttafaq 'alaih) diturunkan otomatis dari teks grade
             hasProvenance: true, // koleksi + nomor hadits tercantum
-            corroboration: h.grades.length, // proksi: jumlah penilaian/rujukan
             machine: mt,
             source: { source: c.provenance.name, license: c.provenance.license, url: c.provenance.url, note: c.provenance.note },
           });

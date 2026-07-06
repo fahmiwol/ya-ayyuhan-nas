@@ -35,6 +35,10 @@ export interface TrustAssessment {
   steps: EvalStep[]; // hasil 7-langkah gate
   provenance?: Provenance;
   disclaimer?: string;
+  corroboration: number; // jumlah koleksi/jalur independen terdeteksi
+  collections: string[]; // nama koleksi yang meriwayatkan (dari teks grade)
+  muttafaq: boolean; // Bukhari & Muslim sepakat (muttafaq 'alaih) → korroborasi tertinggi
+  reviewedBy?: string; // ditinjau manusia (reviewer/admin) — override
 }
 
 export interface EvalInput {
@@ -60,6 +64,32 @@ export function canonicalGrade(s: string): TrustTier | null {
   if (/sahih|shahih|sohih|authentic/.test(t)) return "sahih"; // "hasan sahih"/"sahih lighairihi" → sahih
   if (/hasan|good/.test(t)) return "hasan";
   return null;
+}
+
+// Deteksi korroborasi (tawatur ≈ multi-sumber) dari teks grade/rujukan.
+// Contoh: "Sahih Bukhari (142) Sahih Muslim (375)" → 2 koleksi, muttafaq 'alaih.
+const COLLECTIONS: { re: RegExp; name: string }[] = [
+  { re: /bukhari|bukhori/i, name: "Bukhari" },
+  { re: /muslim/i, name: "Muslim" },
+  { re: /abu ?daw|abi ?daw|dawud|dawood/i, name: "Abu Dawud" },
+  { re: /tirmid[hz]?i|tirmizi/i, name: "Tirmidzi" },
+  { re: /nasa'?i|nasai|nasa-?i/i, name: "an-Nasa'i" },
+  { re: /ibn ?ma?jah|ibnu ?majah/i, name: "Ibn Majah" },
+  { re: /ahmad|musnad/i, name: "Ahmad" },
+  { re: /darimi/i, name: "ad-Darimi" },
+  { re: /malik|muwatta/i, name: "Malik" },
+  { re: /baihaqi|bayhaqi/i, name: "al-Baihaqi" },
+  { re: /hakim/i, name: "al-Hakim" },
+  { re: /t[ha]?abr?ani/i, name: "ath-Thabrani" },
+  { re: /ibn ?hibban/i, name: "Ibn Hibban" },
+];
+export function deriveCorroboration(grades?: { grade: string }[]): { count: number; collections: string[]; muttafaq: boolean } {
+  const blob = (grades ?? []).map((g) => g.grade || "").join(" ");
+  const found = COLLECTIONS.filter((c) => c.re.test(blob)).map((c) => c.name);
+  const muttafaq = found.includes("Bukhari") && found.includes("Muslim");
+  // korroborasi minimal = jumlah koleksi; bila tak ada nama koleksi, pakai jumlah penilaian ulama sbg proksi
+  const count = found.length || (grades?.length ?? 0);
+  return { count, collections: found, muttafaq };
 }
 
 // Agregasi banyak penilaian ulama → satu tier.
@@ -89,6 +119,9 @@ export function assess(input: EvalInput): TrustAssessment {
   const scholars: ScholarGrade[] = (input.grades ?? []).map((g) => ({ by: g.by ?? null, grade: g.grade, canonical: canonicalGrade(g.grade) }));
   const machine = !!input.machine;
   const quranic = !!input.quranic;
+  const corr = deriveCorroboration(input.grades);
+  const corroboration = input.corroboration ?? corr.count;
+  const muttafaq = corr.muttafaq;
 
   // Tentukan tier
   let tier: TrustTier;
@@ -107,7 +140,7 @@ export function assess(input: EvalInput): TrustAssessment {
     { n: 2, name: "Sanad (isnad)", status: quranic ? "na" : scholars.length ? "warn" : "na", note: quranic ? "Tak perlu sanad hadits (teks mutawatir)" : "Rantai perawi belum dinilai otomatis — rujuk kitab primer" },
     { n: 3, name: "Grade resmi", status: quranic ? "pass" : gradeTier ? (ORDER[gradeTier] >= ORDER.hasan ? "pass" : gradeTier === "maudhu" ? "fail" : gradeTier === "disputed" ? "warn" : "warn") : "na", note: quranic ? "Mutawatir" : gradeTier ? META[gradeTier].short : "Belum ada grade" },
     { n: 4, name: "Matn / cross-check", status: "na", note: "Pemeriksaan isi (anti-syadz) belum otomatis" },
-    { n: 5, name: "Korroborasi", status: (input.corroboration ?? 0) >= 2 ? "pass" : "na", note: input.corroboration ? `${input.corroboration} jalur/rujukan` : "Jumlah jalur belum dihitung" },
+    { n: 5, name: "Korroborasi", status: muttafaq || corroboration >= 2 ? "pass" : corroboration === 1 ? "warn" : "na", note: muttafaq ? "Muttafaq 'alaih — Bukhari & Muslim sepakat" : corr.collections.length ? `${corr.collections.length} koleksi: ${corr.collections.join(", ")}` : corroboration ? `${corroboration} rujukan` : "Jumlah jalur belum dihitung" },
     { n: 6, name: "Khilaf (konsensus)", status: tier === "disputed" ? "warn" : scholars.length > 1 ? "pass" : "na", note: tier === "disputed" ? "Ada perbedaan penilaian — dicatat, tak dipilih pemenang" : scholars.length > 1 ? "Beberapa ulama sepakat" : "—" },
     { n: 7, name: "Label transparan", status: "pass", note: "Status & sumber ditampilkan ke pembaca" },
   ];
@@ -120,5 +153,5 @@ export function assess(input: EvalInput): TrustAssessment {
   else if (tier === "unreviewed") disclaimer = "Belum bergrade/ditinjau. Perlakukan sebagai indikatif hingga diverifikasi ke sumber primer.";
   if (machine) disclaimer = `${disclaimer ? disclaimer + " " : ""}Memuat terjemahan mesin — belum ditinjau ahli.`;
 
-  return { tier, label: m.label, short: m.short, color: m.color, icon: m.icon, machine, quranic, scholars, steps, provenance: input.source, disclaimer };
+  return { tier, label: m.label, short: m.short, color: m.color, icon: m.icon, machine, quranic, scholars, steps, provenance: input.source, disclaimer, corroboration, collections: corr.collections, muttafaq };
 }

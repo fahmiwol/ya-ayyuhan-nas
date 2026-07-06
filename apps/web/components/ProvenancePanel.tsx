@@ -15,6 +15,12 @@ export function ProvenancePanel({ a, onClose }: { a: TrustAssessment; onClose?: 
         {onClose && <button onClick={onClose} className="mut text-xs hover:underline">tutup ✕</button>}
       </div>
 
+      {a.muttafaq && (
+        <p className="mb-2 inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[11px] font-medium" style={{ background: "#16a34a14", color: "#16a34a" }}>🤝 Muttafaq 'alaih — Bukhari &amp; Muslim sepakat</p>
+      )}
+      {a.reviewedBy && (
+        <p className="mb-2 inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[11px] font-medium" style={{ background: "#0891b214", color: "#0891b2" }}>👤 Ditinjau: {a.reviewedBy}</p>
+      )}
       {a.disclaimer && (
         <p className="mb-2 rounded-md px-2 py-1 text-[12px]" style={{ background: `${a.color}14`, color: a.color }}>{a.disclaimer}</p>
       )}

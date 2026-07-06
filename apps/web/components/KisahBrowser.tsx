@@ -3,6 +3,17 @@
 import Link from "next/link";
 import { useState } from "react";
 import type { KisahCategory, Story } from "@/lib/kisah";
+import { assess } from "@/lib/evalgate";
+import { TrustBadge } from "./TrustBadge";
+
+function assessStory(s: Story) {
+  return assess({
+    kind: "kisah",
+    grades: s.grade ? [{ by: null, grade: s.grade }] : [],
+    hasProvenance: !!s.source,
+    source: s.source ? { source: s.source } : undefined,
+  });
+}
 
 export function KisahBrowser({ categories }: { categories: KisahCategory[] }) {
   const [sel, setSel] = useState<Story | null>(null);
@@ -16,9 +27,10 @@ export function KisahBrowser({ categories }: { categories: KisahCategory[] }) {
           <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2">
             {cat.stories.map((s, i) => (
               <button key={i} onClick={() => setSel(s)} className="card p-4 text-left transition hover:opacity-90">
-                <div className="flex items-center gap-2">
+                <div className="flex flex-wrap items-center gap-2">
                   <span className="font-semibold">{s.title}</span>
                   <span className="mut rounded px-1.5 py-0.5 text-[10px] uppercase" style={{ background: "var(--bg-soft)" }}>{s.type}</span>
+                  <TrustBadge a={assessStory(s)} compact asStatic />
                 </div>
                 <p className="mut mt-1 line-clamp-2 text-sm">{s.narrative}</p>
                 <div className="mut mt-1 text-xs opacity-70">Klik untuk baca →</div>
@@ -51,7 +63,8 @@ export function KisahBrowser({ categories }: { categories: KisahCategory[] }) {
                   </div>
                 </div>
               )}
-              <div className="mt-4 rounded-lg border p-3" style={{ borderColor: "var(--line)" }}>
+              <div className="mt-4"><TrustBadge a={assessStory(sel)} /></div>
+              <div className="mt-3 rounded-lg border p-3" style={{ borderColor: "var(--line)" }}>
                 <div className="mut text-xs uppercase tracking-wide">Sumber</div>
                 <p className="mt-1 text-xs">📎 {sel.source}{sel.grade ? ` · ${sel.grade}` : ""}</p>
               </div>
