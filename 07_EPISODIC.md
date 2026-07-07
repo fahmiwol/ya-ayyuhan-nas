@@ -87,6 +87,24 @@
 
 ---
 
+### [CHECKPOINT] Berhenti — 2026-07-07 (pasca F1.41)
+
+**Kondisi:** SEMUA LIVE & sehat di quran.migancore.com. HEAD master = Wave 7. App lain di server 301 (aman, dicek tiap deploy).
+**Yang berdiri (ringkas):**
+- **Fase 1 inti:** mushaf ber-Merkle (root eb13d58a…) · reader cursor-mode · audio · word-by-word · notebook · auth/RBAC · i18n · hadits/belajar/doa/kitab/kisah · tafsir Kemenag+Jalalain+translit+arti mesin · asbabun nuzul · **search terjemahan full-text** (ketik kata→ayat).
+- **Lapisan Kepercayaan:** Eval-Gate (tier isnad) · antrean tinjau /tinjau (RBAC) · Integritas.
+- **Lab Tadabbur (Poin 4):** 63 kajian · 16 lensa · 24 prinsip · 3 Kerangka Besar (Pohon Din, Aql-Qalb, Naqli-Aqli) · Mesin Temuan /lab/sintesis · **Peta Pengetahuan /lab/graph** (second-brain, 90 node) · riwayat tadabbur (versi+arsip) · jalur tinjauan ahli · **korpus siap-ML lab-corpus.jsonl (710 chunk)** · panel cakupan jujur (107 ayat/6% kandidat). Skill: `.claude/skills/tadabbur-lab`. Tools: scaffold/rev/validate/mine/coverage/graph/corpus. Riset: 14/16/17_*.md.
+**TITIK LANJUT (tinggal "gas"):**
+1. **Wave 8+** tadabbur: tema besar backlog belum tuntas (pikir/akal ~120, ilmu/ajar, air, hitung/ukuran) via 3 agen paralel — kejar 554 kandidat bertahap.
+2. **Embedding** bge-m3 → pgvector atas lab-corpus.jsonl (SAAT korpus tebal) → query semantik + fondasi AI brain.
+3. Integrasi analogi agen kuat jadi prinsip baru (single-source-of-truth, knowledge-grounding, sensor-fusion) via lab-mine → skill.
+4. Onboard peninjau ahli nyata (naikkan status kajian dari "menunggu tinjauan").
+**Terbuka:** chip task_61880c3d (fix tafsir 49:12 — sumber equran.id sendiri salah, perlu sumber Kemenag alternatif).
+**Rutinitas deploy:** commit→push→ssh sidix-vps→git pull --ff-only→docker compose up -d --build web→cek /lab 200 + app lain 301. Pra-commit kajian WAJIB: node pipeline/lab-validate.mjs (+ coverage/graph/corpus regen bila kajian nambah).
+**Status:** ⏸ berhenti atas permintaan owner. Konteks aman: episodic + memory (lab-tadabbur, evalgate-trust-layer, mushaf-pipeline-f1) + dokumen 12-17.
+
+---
+
 ### [F1.41] Wave 7 — 3 agen paralel, +15 kajian (total 63); pilih tadabbur dulu drpd embedding — 2026-07-07
 
 **North Star check:** ya — owner tanya "embedding dulu atau lanjut tadabbur?". Rekomendasiku: tadabbur dulu (nilai marginal kajian tinggi; embedding = investasi sekali, lebih hemat saat korpus tebal; korpus sudah .jsonl jadi menunda tak rugi). Owner setuju arah.
