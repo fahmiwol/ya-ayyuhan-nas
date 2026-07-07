@@ -1,0 +1,49 @@
+{
+  "schema": "sifat-v1",
+  "title": "Sifat-sifat Allah",
+  "subtitle": "Mengenal Allah melalui sifat-Nya",
+  "source": {
+    "name": "Ilmu Tauhid/Kalam — kerangka sifat 20 (tradisi Asy'ari/Maturidi; mis. Umm al-Barahin/Sanusiyah)",
+    "note": "Nama & sifat Allah bersumber Al-Qur'an & Sunnah; PENGELOMPOKAN '20 sifat wajib' adalah kerangka ilmu kalam. Dalil pokok: QS 42:11, 112:1-4, 2:255.",
+    "license": "editorial ber-dalil"
+  },
+  "status": "kandidat — perlu tinjauan ahli",
+  "note_neutralitas": "'20 sifat' = pendekatan Asy'ari/Maturidi yang masyhur diajarkan (mis. kitab Sanusiyah/Aqidatul Awam). Pendekatan Atsari/Salafi menetapkan nama & sifat Allah sesuai nash (Al-Qur'an & Sunnah) tanpa pembatasan jumlah '20' dan tanpa takwil. Keduanya arus dalam Islam Sunni — app menyajikan kerangka 20 sebagai materi pengenalan, BUKAN vonis atas metodologi lain. Perbedaan metodologi akidah adalah metadata, bukan penghakiman.",
+  "kelompok": [
+    {
+      "key": "wajib",
+      "title": "Sifat Wajib (20)",
+      "desc": "Sifat yang pasti ada pada Allah menurut kerangka ilmu kalam Asy'ari/Maturidi.",
+      "items": [
+        { "n": 1, "arab": "الْوُجُود", "latin": "Wujud", "arti": "Ada", "mustahil": "'Adam (tiada)", "dalil": "32:4" },
+        { "n": 2, "arab": "الْقِدَم", "latin": "Qidam", "arti": "Terdahulu, tanpa permulaan", "mustahil": "Huduts (baru/ada awalnya)", "dalil": "57:3" },
+        { "n": 3, "arab": "الْبَقَاء", "latin": "Baqa'", "arti": "Kekal, tidak berakhir", "mustahil": "Fana' (binasa)", "dalil": "55:27" },
+        { "n": 4, "arab": "الْمُخَالَفَةُ لِلْحَوَادِث", "latin": "Mukhalafatuhu lil-hawadits", "arti": "Berbeda dengan segala makhluk", "mustahil": "Mumatsalatuhu lil-hawadits (menyerupai makhluk)", "dalil": "42:11" },
+        { "n": 5, "arab": "الْقِيَامُ بِالنَّفْس", "latin": "Qiyamuhu binafsihi", "arti": "Berdiri sendiri, tidak butuh selain-Nya", "mustahil": "Ihtiyaju li ghairihi (butuh kepada yang lain)", "dalil": "35:15" },
+        { "n": 6, "arab": "الْوَحْدَانِيَّة", "latin": "Wahdaniyyah", "arti": "Maha Esa", "mustahil": "Ta'addud (berbilang/berserikat)", "dalil": "112:1" },
+        { "n": 7, "arab": "الْقُدْرَة", "latin": "Qudrah", "arti": "Maha Kuasa", "mustahil": "'Ajz (lemah)", "dalil": "2:20" },
+        { "n": 8, "arab": "الْإِرَادَة", "latin": "Iradah", "arti": "Maha Berkehendak", "mustahil": "Karahah (terpaksa/tidak berkehendak)", "dalil": "85:16" },
+        { "n": 9, "arab": "الْعِلْم", "latin": "'Ilmu", "arti": "Maha Mengetahui", "mustahil": "Jahl (bodoh/tidak tahu)", "dalil": "2:29" },
+        { "n": 10, "arab": "الْحَيَاة", "latin": "Hayah", "arti": "Maha Hidup", "mustahil": "Maut (mati)", "dalil": "2:255" },
+        { "n": 11, "arab": "السَّمْع", "latin": "Sama'", "arti": "Maha Mendengar", "mustahil": "Shamam (tuli)", "dalil": "42:11" },
+        { "n": 12, "arab": "الْبَصَر", "latin": "Bashar", "arti": "Maha Melihat", "mustahil": "'Ama (buta)", "dalil": "42:11" },
+        { "n": 13, "arab": "الْكَلَام", "latin": "Kalam", "arti": "Maha Berfirman", "mustahil": "Bakam (bisu)", "dalil": "4:164" },
+        { "n": 14, "arab": "كَوْنُهُ قَادِرًا", "latin": "Qadiran", "arti": "Keadaan-Nya Yang Maha Kuasa", "mustahil": "Kaunuhu 'ajizan (keadaan-Nya lemah)", "dalil": "2:20" },
+        { "n": 15, "arab": "كَوْنُهُ مُرِيدًا", "latin": "Muridan", "arti": "Keadaan-Nya Yang Maha Berkehendak", "mustahil": "Kaunuhu karihan (keadaan-Nya terpaksa)", "dalil": "85:16" },
+        { "n": 16, "arab": "كَوْنُهُ عَالِمًا", "latin": "'Aliman", "arti": "Keadaan-Nya Yang Maha Mengetahui", "mustahil": "Kaunuhu jahilan (keadaan-Nya bodoh)", "dalil": "2:29" },
+        { "n": 17, "arab": "كَوْنُهُ حَيًّا", "latin": "Hayyan", "arti": "Keadaan-Nya Yang Maha Hidup", "mustahil": "Kaunuhu mayyitan (keadaan-Nya mati)", "dalil": "2:255" },
+        { "n": 18, "arab": "كَوْنُهُ سَمِيعًا", "latin": "Sami'an", "arti": "Keadaan-Nya Yang Maha Mendengar", "mustahil": "Kaunuhu ashamma (keadaan-Nya tuli)", "dalil": "42:11" },
+        { "n": 19, "arab": "كَوْنُهُ بَصِيرًا", "latin": "Bashiran", "arti": "Keadaan-Nya Yang Maha Melihat", "mustahil": "Kaunuhu a'ma (keadaan-Nya buta)", "dalil": "42:11" },
+        { "n": 20, "arab": "كَوْنُهُ مُتَكَلِّمًا", "latin": "Mutakalliman", "arti": "Keadaan-Nya Yang Maha Berfirman", "mustahil": "Kaunuhu abkam (keadaan-Nya bisu)", "dalil": "4:164" }
+      ]
+    },
+    {
+      "key": "jaiz",
+      "title": "Sifat Jaiz (1)",
+      "desc": "Kewenangan mutlak Allah atas segala sesuatu yang mungkin.",
+      "items": [
+        { "n": 1, "arab": "فِعْلُ كُلِّ مُمْكِنٍ أَوْ تَرْكُهُ", "latin": "Fi'lu kulli mumkinin au tarkuhu", "arti": "Berbuat sesuatu yang mungkin atau meninggalkannya (kehendak mutlak)", "mustahil": "—", "dalil": "28:68" }
+      ]
+    }
+  ]
+}

@@ -14,6 +14,10 @@ export interface Nabi { schema: string; title: string; source: Sourced; status?:
 export interface MalaikatItem { nama: string; nama_arab: string; tugas: string; dalil?: string }
 export interface Malaikat { schema: string; title: string; source: Sourced; status?: string; items: MalaikatItem[] }
 
+export interface SifatItem { n: number; arab: string; latin: string; arti: string; mustahil?: string; dalil?: string }
+export interface SifatGroup { key: string; title: string; desc?: string; items: SifatItem[] }
+export interface Sifat { schema: string; title: string; subtitle?: string; source: Sourced; status?: string; note_neutralitas?: string; kelompok: SifatGroup[] }
+
 async function read<T>(file: string): Promise<T | null> {
   try {
     const raw = await fs.readFile(path.join(process.cwd(), "public", "data", "belajar", file), "utf8");
@@ -26,6 +30,7 @@ async function read<T>(file: string): Promise<T | null> {
 export const getAsma = () => read<Asma>("asma.json");
 export const getNabi = () => read<Nabi>("nabi.json");
 export const getMalaikat = () => read<Malaikat>("malaikat.json");
+export const getSifat = () => read<Sifat>("sifat.json");
 
 // Ubah "s:a" → href ke ayat di mushaf.
 export function ayahHref(ref: string): string {
