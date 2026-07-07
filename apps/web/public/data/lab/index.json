@@ -266,6 +266,126 @@
       "theme": "Audit imutabel, granularitas terkecil, replay lengkap",
       "lenses": 7,
       "created": "2026-07-07"
+    },
+    {
+      "id": "ali-imran-3-190-191",
+      "title": "Ali 'Imran 190-191 — ulul albab: integrasi dzikir + pikir",
+      "ref": "QS 3:190-191",
+      "theme": "Integrasi naqli-aqli, dzikir sebagai anchor + fikr sebagai inferensi, alam sebagai data bertujuan",
+      "lenses": 9,
+      "created": "2026-07-07"
+    },
+    {
+      "id": "anam-6-99",
+      "title": "Ḥabban mutarākiban — pipeline dari air ke biji berlapis",
+      "ref": "QS 6:99",
+      "theme": "Pipeline bertahap, transformasi berjenjang, output berstruktur, verifikasi hasil",
+      "lenses": 9,
+      "created": "2026-07-07"
+    },
+    {
+      "id": "anbiya-21-33",
+      "title": "Kullun fī falak — tiap benda beredar di orbitnya",
+      "ref": "QS 21:33",
+      "theme": "Determinisme kosmik, orbit/lintasan tetap, keteraturan yang bisa diprediksi",
+      "lenses": 9,
+      "created": "2026-07-07"
+    },
+    {
+      "id": "baqarah-2-170",
+      "title": "Al-Baqarah 170 — taklid buta: menyalin warisan tanpa verifikasi",
+      "ref": "QS 2:170",
+      "theme": "Anti-taklid, verifikasi sumber, provenance, penalaran vs pewarisan buta",
+      "lenses": 9,
+      "created": "2026-07-07"
+    },
+    {
+      "id": "dzariyat-51-47",
+      "title": "Wa innā la-mūsiʿūn — langit dibangun dengan kekuatan, dan Kami meluaskannya",
+      "ref": "QS 51:47",
+      "theme": "Kapasitas, skalabilitas, ruang tumbuh (headroom), konstruksi kuat tanpa lelah",
+      "lenses": 9,
+      "created": "2026-07-07"
+    },
+    {
+      "id": "furqan-25-53",
+      "title": "Barzakh — dua aliran berdampingan tanpa bercampur",
+      "ref": "QS 25:53",
+      "theme": "Isolasi, batas antar-domain, barzakh, pemisahan aliran data",
+      "lenses": 9,
+      "created": "2026-07-07"
+    },
+    {
+      "id": "hijr-15-19",
+      "title": "Kulla syaiʾin mawzūn — segala sesuatu menurut ukuran",
+      "ref": "QS 15:19",
+      "theme": "Kalibrasi, kadar/proporsi terukur, provisioning berbatas, keseimbangan kuantitatif",
+      "lenses": 9,
+      "created": "2026-07-07"
+    },
+    {
+      "id": "hujurat-49-12",
+      "title": "Al-Hujurat 12 — higiene prasangka: jauhi zhann, jangan tajassus",
+      "ref": "QS 49:12",
+      "theme": "Higiene prior/prasangka, minimalisasi data, privasi, husnuzhan sebagai default",
+      "lenses": 9,
+      "created": "2026-07-07"
+    },
+    {
+      "id": "isra-17-36",
+      "title": "Al-Isra 36 — jangan ikuti tanpa ilmu; setiap fakultas akan diaudit",
+      "ref": "QS 17:36",
+      "theme": "Akuntabilitas fakultas, atribusi sumber, logging, verifikasi sebelum bertindak",
+      "lenses": 9,
+      "created": "2026-07-07"
+    },
+    {
+      "id": "mulk-67-30",
+      "title": "Ghawran — jika sumber airmu meresap, siapa gantinya?",
+      "ref": "QS 67:30",
+      "theme": "Dependency tunggal, single point of failure, sumber tak tergantikan, ketahanan",
+      "lenses": 9,
+      "created": "2026-07-07"
+    },
+    {
+      "id": "nur-24-45",
+      "title": "Min māʾ — semua makhluk hidup dari satu substrat",
+      "ref": "QS 24:45",
+      "theme": "Substrat bersama, satu primitif → keberagaman, base-class, foundation",
+      "lenses": 9,
+      "created": "2026-07-07"
+    },
+    {
+      "id": "rahman-55-33",
+      "title": "Illā bi-sulthān — menembus penjuru langit-bumi hanya dengan kekuatan",
+      "ref": "QS 55:33",
+      "theme": "Kapabilitas berbatas otorisasi, sulthan (kuasa/ilmu) sebagai prasyarat melintasi batas",
+      "lenses": 9,
+      "created": "2026-07-07"
+    },
+    {
+      "id": "waqiah-56-68-70",
+      "title": "Al-māʾ alladhī tashrabūn — provenance sumber daya yang bukan buatanmu",
+      "ref": "QS 56:68-70",
+      "theme": "Provenance sumber daya, atribusi infrastruktur, counterfactual, kalibrasi syukur",
+      "lenses": 9,
+      "created": "2026-07-07"
+    },
+    {
+      "id": "yasin-36-38-40",
+      "title": "Li-mustaqarr — matahari menuju tempat menetap, bulan berfase, tak saling mendahului",
+      "ref": "QS 36:38-40",
+      "theme": "Ketetapan (taqdir) sebagai kontrak invarian; fase periodik; konkurensi tanpa bentrok",
+      "lenses": 9,
+      "created": "2026-07-07"
+    },
+    {
+      "id": "yunus-10-36",
+      "title": "Yunus 36 — zhann vs haqq: dugaan tak menggantikan bukti",
+      "ref": "QS 10:36",
+      "theme": "Ketidakpastian vs bukti, kalibrasi keyakinan, zhann vs burhan, argumentum ad populum",
+      "lenses": 9,
+      "created": "2026-07-07"
     }
   ]
 }

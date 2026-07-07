@@ -524,6 +524,35 @@
         }
       ],
       "implication": "AI/ML: audit trail lengkap (no-threshold) + tamper-evident + deterministic replay + transparan ke subjek; berlapis (logger eksternal + self-attestation komponen + ledger substrat) sehingga tak ada titik buta & tak bisa disangkal. Akumulasi 'butir kecil' (micro-bias, drift) = sumber kegagalan besar → jangan ada yang terlalu kecil untuk dicatat."
+    },
+    {
+      "id": "decay-without-maintenance",
+      "cluster": "systems",
+      "title": "Tanpa pemeliharaan aktif, sistem meluruh (entropi/drift)",
+      "statement": "Trajektori default sistem apa pun tanpa kerja pemeliharaan adalah peluruhan: nilai drift, data basi, keseimbangan rusak, keadaan mati/dorman. Korpus berulang menempatkan kebaikan/kesehatan sebagai hasil kerja berkelanjutan, bukan status yang menetap sendiri. (Pola ini muncul di ≥6 kajian — disorot generator prinsip lab-mine.)",
+      "evidence": [
+        {
+          "ref": "103:1-3",
+          "id": "asr-103-1-3",
+          "note": "default = rugi (khusr); hanya kerja aktif membaliknya"
+        },
+        {
+          "ref": "91:7-10",
+          "id": "shams-91-7-10",
+          "note": "dassāhā — dibiarkan (tak dirawat) = meluruh"
+        },
+        {
+          "ref": "30:41",
+          "id": "rum-30-41",
+          "note": "fasād terakumulasi dari kelalaian; butuh koreksi"
+        },
+        {
+          "ref": "16:65",
+          "id": "nahl-16-65",
+          "note": "bumi 'mati' tanpa substrat; hidup lagi hanya dgn injeksi"
+        }
+      ],
+      "implication": "AI/ML: asumsikan DECAY sebagai default — model drift, data staleness, value drift, reward hacking terjadi tanpa intervensi. Anggarkan pemeliharaan berkelanjutan (continual eval, re-grounding, refresh data, re-alignment) sebagai bagian arsitektur, bukan tambahan. Sistem yang 'dibiarkan jalan sendiri' meluruh — bukan stabil."
     }
   ],
   "blueprint": {

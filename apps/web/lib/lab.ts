@@ -102,6 +102,16 @@ export async function getLabTaxonomy(): Promise<LabTaxonomy | null> {
   return readJson<LabTaxonomy>("taxonomy.json");
 }
 
+export interface LabCoverage {
+  updated: string; total_ayat: number; studies: number; principles: number; frameworks: number;
+  direct_ayat: number; cited_ayat: number; touched_ayat: number;
+  candidates_total: number; candidates_done: number; pct_of_total: number; pct_of_candidates: number;
+  by_theme: { theme: string; total: number; done: number }[];
+}
+export async function getLabCoverage(): Promise<LabCoverage | null> {
+  return readJson<LabCoverage>("coverage.json");
+}
+
 // Sintesis lintas-kajian — memanen pola berulang antar-ayat jadi prinsip desain.
 export interface SynthEvidence { ref: string; id: string; note: string }
 export interface SynthPrinciple {

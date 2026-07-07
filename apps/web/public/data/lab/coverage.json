@@ -1,0 +1,96 @@
+{
+  "updated": "2026-07-07",
+  "total_ayat": 6236,
+  "studies": 48,
+  "principles": 24,
+  "frameworks": 3,
+  "direct_ayat": 87,
+  "cited_ayat": 67,
+  "touched_ayat": 87,
+  "candidates_total": 596,
+  "candidates_done": 36,
+  "pct_of_total": 1.4,
+  "pct_of_candidates": 6,
+  "by_theme": [
+    {
+      "theme": "pikir/akal/renung",
+      "total": 120,
+      "done": 5
+    },
+    {
+      "theme": "saksi/bukti",
+      "total": 115,
+      "done": 8
+    },
+    {
+      "theme": "hitung/kadar/ukuran",
+      "total": 49,
+      "done": 4
+    },
+    {
+      "theme": "air & kehidupan",
+      "total": 48,
+      "done": 3
+    },
+    {
+      "theme": "makan/gizi/batas",
+      "total": 40,
+      "done": 1
+    },
+    {
+      "theme": "ilmu/tahu/ajar",
+      "total": 38,
+      "done": 1
+    },
+    {
+      "theme": "catat/tulis/kitab",
+      "total": 36,
+      "done": 2
+    },
+    {
+      "theme": "penciptaan bertahap",
+      "total": 27,
+      "done": 2
+    },
+    {
+      "theme": "waktu/ajal/jadwal",
+      "total": 27,
+      "done": 1
+    },
+    {
+      "theme": "sembuh/obat/sehat",
+      "total": 22,
+      "done": 1
+    },
+    {
+      "theme": "kerusakan/feedback",
+      "total": 22,
+      "done": 1
+    },
+    {
+      "theme": "perjalanan/eksplorasi",
+      "total": 18,
+      "done": 1
+    },
+    {
+      "theme": "besi/material",
+      "total": 12,
+      "done": 1
+    },
+    {
+      "theme": "berpasangan/duality",
+      "total": 10,
+      "done": 2
+    },
+    {
+      "theme": "cahaya/optik",
+      "total": 7,
+      "done": 1
+    },
+    {
+      "theme": "jaringan/semut/hewan sosial",
+      "total": 5,
+      "done": 2
+    }
+  ]
+}

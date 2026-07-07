@@ -87,6 +87,23 @@
 
 ---
 
+### [F1.39] Peta cakupan jujur + Wave 6 (3 agen paralel, +15 kajian → total 48) — 2026-07-07
+
+**North Star check:** ya — owner nyadar "dari ribuan ayat baru sedikit ditadabburi". Jujur: sebelumnya 67 ayat langsung (1.1%). Respons: percepat + buat progres TERLACAK.
+**(a) Peta cakupan (`pipeline/lab-coverage.mjs` → coverage.json → panel /lab):** hitung jujur — studi langsung, dikutip-bukti, tersentuh, per-tema dari backlog. Denominator jujur = 596 kandidat bertema (bukan 6236, krn ayat naratif/hukum berulang tak dipaksa jadi kajian). Panel tampilkan angka + progress bar + disclaimer "maraton bukan sprint".
+**(b) Wave 6 — 3 AGEN PARALEL (@5 kajian, patuh skill tadabbur-lab, ground tafsir, gerbang fail-closed):**
+- Batch A air/substrat: 25:53 (barzakh=context-isolation/anti prompt-injection!), 24:45, 6:99, 56:68-70 (provenance data), 67:30 (SPOF/dependency).
+- Batch B astronomi/determinisme: 21:33, 36:38-40 (safety-invariant/phase-planning), 15:19 (kalibrasi/quota), 51:47 (elastic scaling/headroom), 55:33 (least-privilege/authz!).
+- Batch C nalar-kritis: 2:170 (taklid=RAG wajib sitasi, tolak parametric memory!), 17:36 (audit fakultas), 10:36 (zhann vs bukti), 49:12 (higiene prior+privasi), 3:190-191 (integrasi dzikir+pikir=naqli-aqli).
+- **Prinsip baru "decay-without-maintenance"** (dari lab-mine, drift×6): tanpa pemeliharaan sistem meluruh → 24 prinsip.
+- Mutu di-spot-check: pembacaan tajam & on-theme; guardrail (resonansi bukan mukjizat) terjaga; semua `menunggu tinjauan` (tak ada endorse palsu).
+**(c) Bug data ditemukan agen C:** tafsir Kemenag QS 49:12 salah-tempel (isi soal neraka, bukan prasangka) — di-flag spawn_task task_61880c3d utk re-seed; kajian hujurat-49-12 grounding jujur ke terjemah + catat diskrepansi.
+**Hasil cakupan:** 48 kajian · 87 ayat langsung · 87 tersentuh (1.4% total, 6% kandidat). Naik dari 33/67.
+**Test:** lab-validate 48/48 + sintesis (24 prinsip/8 lapis/3 kerangka) valid; TSC clean; preview: panel cakupan render + 3 kajian agen + prinsip drift; 49 link; 0 error konsol.
+**Status:** ✅ deploy. **Next:** wave paralel lagi (tema besar backlog: pikir/akal 120, saksi/bukti sisa, ilmu/ajar); integrasikan analogi agen ke sintesis (barzakh→isolation, authz→least-privilege bisa jadi prinsip); onboard peninjau nyata.
+
+---
+
 ### [F1.38] Wave 5 attestation + generator prinsip + jalur tinjauan ahli (total 33) — 2026-07-07
 
 **North Star check:** ya — 3 arah yang owner konfirmasi "lanjut aja": (1) cluster saksi/bukti, (2) generator prinsip semi-otomatis, (3) jalur tinjauan ahli.

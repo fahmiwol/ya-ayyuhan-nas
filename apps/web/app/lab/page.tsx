@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getLabIndex, getLabTaxonomy } from "@/lib/lab";
+import { getLabIndex, getLabTaxonomy, getLabCoverage } from "@/lib/lab";
 
 export const metadata = { title: "Lab Tadabbur — MUSHAF" };
 
@@ -16,7 +16,7 @@ const QCA = [
 ];
 
 export default async function LabPage() {
-  const [idx, tax] = await Promise.all([getLabIndex(), getLabTaxonomy()]);
+  const [idx, tax, cov] = await Promise.all([getLabIndex(), getLabTaxonomy(), getLabCoverage()]);
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-8">
@@ -33,6 +33,37 @@ export default async function LabPage() {
         <b> bukan</b> klaim atas maksud Ilahi. Teks ayat selalu ditarik dari mushaf kanonik terverifikasi (Merkle);
         makna religius dirujuk ke tafsir bersumber. Netral: tidak menguji kebenaran Al-Qur&apos;an.</span>
       </div>
+
+      {/* Peta cakupan — jujur, terlacak */}
+      {cov && (
+        <div className="card mt-5 p-4">
+          <div className="flex flex-wrap items-baseline justify-between gap-2">
+            <b className="text-sm">📊 Cakupan tadabbur</b>
+            <span className="mut text-[10px]">diperbarui {cov.updated}</span>
+          </div>
+          <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-4">
+            {[
+              { n: cov.studies, l: "kajian" },
+              { n: cov.direct_ayat, l: "ayat distudi langsung" },
+              { n: cov.touched_ayat, l: "ayat tersentuh (+bukti)" },
+              { n: cov.principles, l: "prinsip temuan" },
+            ].map((x) => (
+              <div key={x.l}><div className="text-xl font-bold gold">{x.n}</div><div className="mut text-[11px]">{x.l}</div></div>
+            ))}
+          </div>
+          {/* progress bar terhadap kandidat backlog (denominator jujur) */}
+          <div className="mt-3">
+            <div className="mut mb-1 flex justify-between text-[11px]">
+              <span>Progres atas {cov.candidates_total} ayat kandidat (bertema, hasil sweep 6236 ayat)</span>
+              <span>{cov.candidates_done}/{cov.candidates_total} · {cov.pct_of_candidates}%</span>
+            </div>
+            <div className="h-2 w-full overflow-hidden rounded-full" style={{ background: "var(--bg-soft)" }}>
+              <div className="h-full rounded-full" style={{ width: `${Math.max(2, cov.pct_of_candidates)}%`, background: "var(--gold)" }} />
+            </div>
+            <div className="mut mt-1 text-[10px]">Ini maraton, bukan sprint: {cov.touched_ayat} dari 6236 ayat ({cov.pct_of_total}%). Denominator jujur = kandidat bertema; ayat naratif/hukum berulang tak dipaksa jadi kajian. Tumbuh tiap wave.</div>
+          </div>
+        </div>
+      )}
 
       {/* Mesin Temuan — sintesis lintas-kajian */}
       <Link href="/lab/sintesis" className="card mt-5 block p-4 transition hover:opacity-90" style={{ borderColor: "#3b82f6" }}>
