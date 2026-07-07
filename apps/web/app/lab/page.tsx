@@ -22,8 +22,10 @@ export default async function LabPage() {
     <div className="mx-auto max-w-3xl px-4 py-8">
       <h1 className="text-2xl font-bold">Lab <span className="gold">Tadabbur</span> <span className="text-base">🧪</span></h1>
       <p className="mut mt-2 text-sm">
-        Playground <b>interpretasi rekayasa</b>: membaca ayat lewat lensa komputasional, algoritmik, AI/agentic,
-        dan lintas-domain — memakai metode berpikir yang Al-Qur&apos;an sendiri ajarkan (<i>tadabbur</i>, QS 4:82).
+        Kita belajar dari Al-Qur&apos;an & menyintesis <b>pola/cara penciptaan</b> (āyāt kauniyah): bagaimana manusia
+        dicipta, akal dibuat berpikir, siklus siang-malam, penyembuhan, pertumbuhan, kemandirian — lalu
+        di-<b>interpretasi rekayasa</b> lewat lensa komputasional/AI/lintas-domain, untuk diwujudkan <i>artificial</i>.
+        Yang dibaca adalah <b>pola pada ciptaan</b>, bukan Sang Pencipta — Allah tetap di luar segala interpretasi (<i>tanzih</i>).
       </p>
 
       {/* GUARDRAIL — selalu paling atas */}
