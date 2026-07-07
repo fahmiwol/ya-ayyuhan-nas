@@ -113,6 +113,12 @@ Owner minta (catat dulu, belum bangun): (1) **4 mazhab fikih** (Hanafi/Maliki/Sy
 
 ---
 
+### [F1.52] Doa diperkaya — +22 doa (total 35) — 2026-07-08
+
+Lanjut isi halaman non-Lab (Doa paling tipis, 13→35, paling sering dipakai harian). Agen sumberkan 11 doa Qur'ani (deret rabbana: 2:286, 3:8/16/193, 7:23/126, 14:40-41, 20:25-28, 25:74, 40:7, 46:15 dst) + 11 doa harian sunnah (masuk/keluar masjid, setelah wudhu, setelah adzan, sayyidul istighfar, pagi-petang, hujan, berbuka, masuk pasar, memakai pakaian, susah/gundah, sakit) dgn skema penuh (text_ar/translit/meaning/source/grade/detail{penjelasan,riwayat,sanad}). Merge: **+22 (0 dupe, 0 bad-ref) → 35** (quran:16, harian:19). **Doa Qur'ani href diverifikasi vs mushaf.** Grade konservatif, tanzih dijaga. Data-only, LIVE.
+
+---
+
 ### [F1.51] Kisah diperkaya — +20 kisah Qur'ani (total 32) — 2026-07-08
 
 Lanjut isi halaman non-Lab. Agen sumberkan 20 kisah Qur'ani terkenal (Hud/Shaleh/Luth/Musa-Khidr/Dzulqarnain/Luqman/Ashabul Fil/Qarun/Ashabul Ukhdud/Zakariya/sapi betina/Talut-Dawud-Jalut/Syuaib/Habil-Qabil/mukjizat Isa/3 utusan/2 kebun/2:259/Idris) → `kisah-add.json`; aku merge ke kategori qurani, dedup, **verifikasi related refs vs mushaf (0 bad-ref, 0 dupe)** → 32 total. Tanzih dijaga (mukjizat=peristiwa "dengan izin Allah", bukan gambarkan Dzat). Data-only, LIVE.

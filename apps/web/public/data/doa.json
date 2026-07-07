@@ -1,35 +1,473 @@
 {
-  "schema": "doa-v2",
-  "title": "Kumpulan Doa",
-  "subtitle": "Dari Al-Qur'an & Sunnah — ber-sumber",
-  "source": { "name": "Editorial (kurasi ber-dalil, lolos eval-gate isnad)", "license": "CC-BY-4.0", "note": "Klik doa untuk detail: penjelasan, riwayat/kisah, perawi & sumber. Doa Qur'ani merujuk ayat aslinya (mutawatir); doa harian = lafaz dari hadits (domain publik) + sumber + derajat. Derajat mengikuti eval-gate ala isnad (lihat 12_ISLAMIC_VALIDATION.md); perbedaan penilaian dicatat sebagai metadata, bukan dihakimi. ⚠ Nomor hadits indikatif antar cetakan — verifikasi ke kitab primer sebelum dikunci." },
-  "categories": [
+ "schema": "doa-v2",
+ "title": "Kumpulan Doa",
+ "subtitle": "Dari Al-Qur'an & Sunnah — ber-sumber",
+ "source": {
+  "name": "Editorial (kurasi ber-dalil, lolos eval-gate isnad)",
+  "license": "CC-BY-4.0",
+  "note": "Klik doa untuk detail: penjelasan, riwayat/kisah, perawi & sumber. Doa Qur'ani merujuk ayat aslinya (mutawatir); doa harian = lafaz dari hadits (domain publik) + sumber + derajat. Derajat mengikuti eval-gate ala isnad (lihat 12_ISLAMIC_VALIDATION.md); perbedaan penilaian dicatat sebagai metadata, bukan dihakimi. ⚠ Nomor hadits indikatif antar cetakan — verifikasi ke kitab primer sebelum dikunci."
+ },
+ "categories": [
+  {
+   "key": "quran",
+   "title": "Doa dari Al-Qur'an",
+   "note": "Klik untuk detail & konteks.",
+   "duas": [
     {
-      "key": "quran",
-      "title": "Doa dari Al-Qur'an",
-      "note": "Klik untuk detail & konteks.",
-      "duas": [
-        { "title": "Kebaikan dunia & akhirat", "occasion": "umum", "ref": "QS 2:201", "href": "/surah/2#ayah-201", "meaning": "Memohon kebaikan di dunia dan akhirat serta perlindungan dari azab neraka.", "detail": { "penjelasan": "Doa jami' (menyeluruh) yang paling sering dibaca Nabi ﷺ karena mencakup kebaikan dunia sekaligus akhirat.", "riwayat": "Anas bin Malik menyebut ini doa yang paling banyak dibaca Nabi ﷺ.", "sumber": "QS Al-Baqarah 201; riwayat penggunaannya HR Bukhari & Muslim." } },
-        { "title": "Mohon ampun, rahmat & pertolongan", "occasion": "umum", "ref": "QS 2:286", "href": "/surah/2#ayah-286", "meaning": "Memohon agar tidak dibebani di luar kemampuan, diampuni, dirahmati, dan ditolong.", "detail": { "penjelasan": "Penutup Surah Al-Baqarah; rangkaian permohonan keringanan beban, ampunan, dan pertolongan melawan kaum kafir.", "riwayat": "Disebut dalam hadits sebagai bagian akhir Al-Baqarah yang memiliki keutamaan khusus (dua ayat terakhir).", "sumber": "QS Al-Baqarah 286; keutamaan HR Bukhari & Muslim (dari Abu Mas'ud)." } },
-        { "title": "Keteguhan hati di atas kebenaran", "occasion": "keteguhan iman", "ref": "QS 3:8", "href": "/surah/3#ayah-8", "meaning": "Memohon agar hati tidak dicondongkan kepada kesesatan setelah diberi petunjuk.", "detail": { "penjelasan": "Doa orang-orang berilmu (ar-rasikhun fil 'ilm) agar tetap istiqamah setelah mendapat hidayah.", "riwayat": "Ummu Salamah meriwayatkan Nabi ﷺ sering berdoa memohon keteguhan hati.", "sumber": "QS Ali 'Imran 8; doa keteguhan hati HR Tirmidzi." } },
-        { "title": "Doa Nabi Yunus", "occasion": "kesulitan/musibah", "ref": "QS 21:87", "href": "/surah/21#ayah-87", "meaning": "Pengakuan tiada tuhan selain Allah, mahasuci Dia, dan pengakuan atas kezaliman diri.", "detail": { "penjelasan": "Diucapkan Nabi Yunus di dalam perut ikan; doa pertaubatan yang menggabungkan tauhid, tanzih (mensucikan Allah), dan pengakuan dosa.", "riwayat": "Nabi ﷺ bersabda: tidaklah seorang muslim berdoa dengannya dalam suatu perkara melainkan Allah mengabulkannya.", "sumber": "QS Al-Anbiya 87; keutamaan HR Tirmidzi (dari Sa'd bin Abi Waqqash)." } },
-        { "title": "Mohon tambahan ilmu", "occasion": "belajar", "ref": "QS 20:114", "href": "/surah/20#ayah-114", "meaning": "\"Ya Rabb-ku, tambahkanlah kepadaku ilmu.\"", "detail": { "penjelasan": "Perintah Allah kepada Nabi ﷺ agar memohon tambahan ilmu — dalil pentingnya doa dalam menuntut ilmu.", "riwayat": "Ayat ini dijadikan doa harian penuntut ilmu oleh para ulama.", "sumber": "QS Taha 114." } }
-      ]
+     "title": "Kebaikan dunia & akhirat",
+     "occasion": "umum",
+     "ref": "QS 2:201",
+     "href": "/surah/2#ayah-201",
+     "meaning": "Memohon kebaikan di dunia dan akhirat serta perlindungan dari azab neraka.",
+     "detail": {
+      "penjelasan": "Doa jami' (menyeluruh) yang paling sering dibaca Nabi ﷺ karena mencakup kebaikan dunia sekaligus akhirat.",
+      "riwayat": "Anas bin Malik menyebut ini doa yang paling banyak dibaca Nabi ﷺ.",
+      "sumber": "QS Al-Baqarah 201; riwayat penggunaannya HR Bukhari & Muslim."
+     }
     },
     {
-      "key": "harian",
-      "title": "Doa Harian (Sunnah)",
-      "note": "Klik untuk penjelasan, perawi & sumber.",
-      "duas": [
-        { "title": "Sebelum makan", "occasion": "makan", "text_ar": "بِسْمِ اللَّهِ", "translit": "Bismillah", "meaning": "Dengan nama Allah.", "source": "HR Bukhari & Muslim", "grade": "Sahih", "detail": { "penjelasan": "Memulai makan dengan menyebut nama Allah — bentuk syukur & agar makanan diberkahi; bila lupa di awal, ucapkan \"Bismillahi awwalahu wa akhirahu\".", "riwayat": "Nabi ﷺ mengajari 'Umar bin Abi Salamah (anak kecil di asuhannya): \"Sebutlah nama Allah, makanlah dengan tangan kananmu, dan makanlah yang dekat denganmu.\"", "sanad": "HR Bukhari & Muslim, dari 'Umar bin Abi Salamah." } },
-        { "title": "Sesudah makan", "occasion": "makan", "text_ar": "الْحَمْدُ لِلَّهِ الَّذِي أَطْعَمَنَا وَسَقَانَا وَجَعَلَنَا مُسْلِمِينَ", "translit": "Alhamdulillahilladzi ath'amana wa saqana wa ja'alana muslimin", "meaning": "Segala puji bagi Allah yang memberi kami makan, minum, dan menjadikan kami muslim.", "source": "HR Abu Dawud & Tirmidzi", "grade": "Hasan", "detail": { "penjelasan": "Mensyukuri tiga nikmat sekaligus: makanan, minuman, dan nikmat terbesar yaitu Islam.", "riwayat": "Diucapkan Nabi ﷺ seusai makan sebagai wujud syukur.", "sanad": "HR Abu Dawud, Tirmidzi, Ibnu Majah — dari Abu Sa'id al-Khudri." } },
-        { "title": "Sebelum tidur", "occasion": "tidur", "text_ar": "بِاسْمِكَ اللَّهُمَّ أَمُوتُ وَأَحْيَا", "translit": "Bismika Allahumma amutu wa ahya", "meaning": "Dengan nama-Mu ya Allah, aku mati dan aku hidup.", "source": "HR Bukhari", "grade": "Sahih", "detail": { "penjelasan": "Tidur diserupakan dengan kematian kecil; doa ini menyerahkan hidup-mati kepada Allah.", "riwayat": "Nabi ﷺ bila hendak tidur meletakkan tangan kanan di bawah pipi lalu membaca doa ini.", "sanad": "HR Bukhari, dari Hudzaifah bin al-Yaman." } },
-        { "title": "Bangun tidur", "occasion": "bangun", "text_ar": "الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ", "translit": "Alhamdulillahilladzi ahyana ba'da ma amatana wa ilaihin-nusyur", "meaning": "Segala puji bagi Allah yang menghidupkan kami setelah mematikan kami, dan kepada-Nya tempat kembali.", "source": "HR Bukhari", "grade": "Sahih", "detail": { "penjelasan": "Mensyukuri nikmat bangun (dihidupkan kembali) sekaligus mengingat hari kebangkitan.", "riwayat": "Doa yang dibaca Nabi ﷺ ketika bangun dari tidur.", "sanad": "HR Bukhari, dari Hudzaifah bin al-Yaman." } },
-        { "title": "Masuk kamar mandi", "occasion": "wc", "text_ar": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْخُبُثِ وَالْخَبَائِثِ", "translit": "Allahumma inni a'udzu bika minal khubutsi wal khaba'its", "meaning": "Ya Allah, aku berlindung kepada-Mu dari (gangguan) setan jantan dan betina.", "source": "HR Bukhari & Muslim", "grade": "Sahih", "detail": { "penjelasan": "Tempat buang hajat adalah tempat berkumpulnya setan; doa ini memohon perlindungan sebelum masuk.", "riwayat": "Nabi ﷺ mengajarkan doa ini ketika hendak masuk tempat buang hajat.", "sanad": "HR Bukhari & Muslim, dari Anas bin Malik." } },
-        { "title": "Keluar kamar mandi", "occasion": "wc", "text_ar": "غُفْرَانَكَ", "translit": "Ghufranaka", "meaning": "(Aku memohon) ampunan-Mu.", "source": "HR Abu Dawud, Tirmidzi, Ibnu Majah", "grade": "Hasan", "detail": { "penjelasan": "Setelah dimudahkan membuang kotoran, seorang hamba memohon ampun — mengganti keluhan dengan istighfar.", "riwayat": "Nabi ﷺ bila keluar dari tempat buang hajat mengucapkan \"Ghufranaka\".", "sanad": "HR Abu Dawud, Tirmidzi, Ibnu Majah — dari 'Aisyah. Lafaz \"Ghufranaka\" (tunggal) dinilai hasan; sebagian riwayat tambahannya lemah." } },
-        { "title": "Keluar rumah", "occasion": "keluar rumah", "text_ar": "بِسْمِ اللَّهِ تَوَكَّلْتُ عَلَى اللَّهِ وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ", "translit": "Bismillah, tawakkaltu 'alallah, wa la hawla wa la quwwata illa billah", "meaning": "Dengan nama Allah, aku bertawakal kepada Allah; tiada daya dan kekuatan kecuali dengan (pertolongan) Allah.", "source": "HR Abu Dawud & Tirmidzi", "grade": "Hasan–Sahih", "detail": { "penjelasan": "Menggabungkan tawakal dan pengakuan lemahnya diri tanpa pertolongan Allah.", "riwayat": "Nabi ﷺ bersabda: siapa mengucapkannya saat keluar rumah dikatakan kepadanya: engkau diberi petunjuk, dicukupi, dan dilindungi; setan pun menjauh.", "sanad": "HR Abu Dawud & Tirmidzi, dari Anas bin Malik. Derajat: hasan (at-Tirmidzi) — sebagian menilai sahih (al-Albani). Perbedaan penilaian dicatat, bukan dihakimi." } },
-        { "title": "Naik kendaraan", "occasion": "bepergian", "text_ar": "سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ", "translit": "Subhanalladzi sakhkhara lana hadza wa ma kunna lahu muqrinin", "meaning": "Mahasuci Allah yang menundukkan kendaraan ini bagi kami, padahal kami tak mampu menguasainya.", "source": "HR Muslim (lafaz dari QS 43:13-14)", "grade": "Sahih", "detail": { "penjelasan": "Mengingat bahwa kendaraan/nikmat adalah karunia yang ditundukkan Allah, bukan hasil kemampuan diri semata.", "riwayat": "Ibnu 'Umar meriwayatkan Nabi ﷺ membaca lafaz ini (diambil dari QS Az-Zukhruf 13-14) ketika naik kendaraan.", "sanad": "HR Muslim, dari Ibnu 'Umar." } }
-      ]
+     "title": "Mohon ampun, rahmat & pertolongan",
+     "occasion": "umum",
+     "ref": "QS 2:286",
+     "href": "/surah/2#ayah-286",
+     "meaning": "Memohon agar tidak dibebani di luar kemampuan, diampuni, dirahmati, dan ditolong.",
+     "detail": {
+      "penjelasan": "Penutup Surah Al-Baqarah; rangkaian permohonan keringanan beban, ampunan, dan pertolongan melawan kaum kafir.",
+      "riwayat": "Disebut dalam hadits sebagai bagian akhir Al-Baqarah yang memiliki keutamaan khusus (dua ayat terakhir).",
+      "sumber": "QS Al-Baqarah 286; keutamaan HR Bukhari & Muslim (dari Abu Mas'ud)."
+     }
+    },
+    {
+     "title": "Keteguhan hati di atas kebenaran",
+     "occasion": "keteguhan iman",
+     "ref": "QS 3:8",
+     "href": "/surah/3#ayah-8",
+     "meaning": "Memohon agar hati tidak dicondongkan kepada kesesatan setelah diberi petunjuk.",
+     "detail": {
+      "penjelasan": "Doa orang-orang berilmu (ar-rasikhun fil 'ilm) agar tetap istiqamah setelah mendapat hidayah.",
+      "riwayat": "Ummu Salamah meriwayatkan Nabi ﷺ sering berdoa memohon keteguhan hati.",
+      "sumber": "QS Ali 'Imran 8; doa keteguhan hati HR Tirmidzi."
+     }
+    },
+    {
+     "title": "Doa Nabi Yunus",
+     "occasion": "kesulitan/musibah",
+     "ref": "QS 21:87",
+     "href": "/surah/21#ayah-87",
+     "meaning": "Pengakuan tiada tuhan selain Allah, mahasuci Dia, dan pengakuan atas kezaliman diri.",
+     "detail": {
+      "penjelasan": "Diucapkan Nabi Yunus di dalam perut ikan; doa pertaubatan yang menggabungkan tauhid, tanzih (mensucikan Allah), dan pengakuan dosa.",
+      "riwayat": "Nabi ﷺ bersabda: tidaklah seorang muslim berdoa dengannya dalam suatu perkara melainkan Allah mengabulkannya.",
+      "sumber": "QS Al-Anbiya 87; keutamaan HR Tirmidzi (dari Sa'd bin Abi Waqqash)."
+     }
+    },
+    {
+     "title": "Mohon tambahan ilmu",
+     "occasion": "belajar",
+     "ref": "QS 20:114",
+     "href": "/surah/20#ayah-114",
+     "meaning": "\"Ya Rabb-ku, tambahkanlah kepadaku ilmu.\"",
+     "detail": {
+      "penjelasan": "Perintah Allah kepada Nabi ﷺ agar memohon tambahan ilmu — dalil pentingnya doa dalam menuntut ilmu.",
+      "riwayat": "Ayat ini dijadikan doa harian penuntut ilmu oleh para ulama.",
+      "sumber": "QS Taha 114."
+     }
+    },
+    {
+     "title": "Mohon ampunan & lindung dari neraka",
+     "occasion": "ampunan",
+     "ref": "QS 3:16",
+     "href": "/surah/3#ayah-16",
+     "meaning": "Ya Tuhan kami, sungguh kami telah beriman, maka ampunilah dosa-dosa kami dan lindungilah kami dari azab neraka.",
+     "detail": {
+      "penjelasan": "Doa orang-orang bertakwa yang disebut Allah pada awal Surah Ali 'Imran, memadukan pengakuan iman dengan permohonan ampun dan perlindungan.",
+      "riwayat": "Doa hamba-hamba yang sabar, jujur, taat, dan gemar bersedekah — sebagaimana digambarkan ayat sesudahnya (3:17)."
+     }
+    },
+    {
+     "title": "Ampunan & wafat bersama orang saleh",
+     "occasion": "ampunan",
+     "ref": "QS 3:193",
+     "href": "/surah/3#ayah-193",
+     "meaning": "Ya Tuhan kami, ampunilah dosa-dosa kami, hapuskanlah kesalahan-kesalahan kami, dan wafatkanlah kami bersama orang-orang yang berbakti.",
+     "detail": {
+      "penjelasan": "Bagian dari rangkaian doa Ulul Albab (orang berakal) yang berzikir dan merenungi penciptaan langit dan bumi (QS 3:190-194).",
+      "riwayat": "Doa Ulul Albab — mereka yang mengingat Allah sambil berdiri, duduk, dan berbaring."
+     }
+    },
+    {
+     "title": "Doa Nabi Adam",
+     "occasion": "taubat",
+     "ref": "QS 7:23",
+     "href": "/surah/7#ayah-23",
+     "meaning": "Ya Tuhan kami, kami telah menzalimi diri kami sendiri. Jika Engkau tidak mengampuni kami dan merahmati kami, niscaya kami termasuk orang-orang yang rugi.",
+     "detail": {
+      "penjelasan": "Lafaz taubat Nabi Adam dan Hawa setelah terpeleset dari ketaatan; menjadi teladan adab bertaubat: mengakui kesalahan lalu memohon ampun dan rahmat.",
+      "riwayat": "Diucapkan oleh Nabi Adam 'alaihissalam dan istrinya."
+     }
+    },
+    {
+     "title": "Doa Nabi Ibrahim menegakkan salat",
+     "occasion": "keturunan/ibadah",
+     "ref": "QS 14:40-41",
+     "href": "/surah/14#ayah-40",
+     "meaning": "Ya Tuhanku, jadikanlah aku dan anak cucuku orang yang menegakkan salat. Ya Tuhan kami, perkenankanlah doaku. Ya Tuhan kami, ampunilah aku, kedua orang tuaku, dan orang-orang mukmin pada hari perhitungan.",
+     "detail": {
+      "penjelasan": "Doa Nabi Ibrahim agar dirinya dan keturunannya istiqamah menegakkan salat, ditutup dengan permohonan ampun untuk diri, orang tua, dan seluruh mukmin.",
+      "riwayat": "Diucapkan oleh Nabi Ibrahim 'alaihissalam."
+     }
+    },
+    {
+     "title": "Doa Nabi Musa melapangkan dada",
+     "occasion": "keteguhan/keberanian",
+     "ref": "QS 20:25-28",
+     "href": "/surah/20#ayah-25",
+     "meaning": "Ya Tuhanku, lapangkanlah dadaku, mudahkanlah urusanku, dan lepaskanlah kekakuan lidahku agar mereka memahami perkataanku.",
+     "detail": {
+      "penjelasan": "Doa Nabi Musa saat diutus menghadapi Fir'aun; permohonan kelapangan hati, kemudahan urusan, dan kefasihan lisan dalam menyampaikan kebenaran.",
+      "riwayat": "Diucapkan oleh Nabi Musa 'alaihissalam."
+     }
+    },
+    {
+     "title": "Doa mohon ampun & rahmat terbaik",
+     "occasion": "ampunan",
+     "ref": "QS 23:109",
+     "href": "/surah/23#ayah-109",
+     "meaning": "Ya Tuhan kami, kami telah beriman, maka ampunilah kami dan rahmatilah kami, sebab Engkau adalah pemberi rahmat yang terbaik.",
+     "detail": {
+      "penjelasan": "Ucapan sekelompok hamba beriman yang disebut dalam Surah Al-Mu'minun; permohonan ampun dan rahmat dengan menyandarkan harap pada rahmat Allah.",
+      "riwayat": "Doa hamba-hamba beriman sebagaimana dikisahkan dalam ayat."
+     }
+    },
+    {
+     "title": "Penyejuk mata dari keluarga",
+     "occasion": "keluarga",
+     "ref": "QS 25:74",
+     "href": "/surah/25#ayah-74",
+     "meaning": "Ya Tuhan kami, anugerahkanlah kepada kami pasangan dan keturunan sebagai penyejuk mata, dan jadikanlah kami pemimpin bagi orang-orang yang bertakwa.",
+     "detail": {
+      "penjelasan": "Doa 'Ibadurrahman (hamba-hamba Ar-Rahman) memohon keluarga yang menyejukkan hati serta keteladanan dalam ketakwaan.",
+      "riwayat": "Doa 'Ibadurrahman sebagaimana digambarkan pada akhir Surah Al-Furqan."
+     }
+    },
+    {
+     "title": "Doa para malaikat pemikul 'Arsy",
+     "occasion": "ampunan bagi mukmin",
+     "ref": "QS 40:7",
+     "href": "/surah/40#ayah-7",
+     "meaning": "Ya Tuhan kami, rahmat dan ilmu-Mu meliputi segala sesuatu, maka ampunilah orang-orang yang bertaubat dan mengikuti jalan-Mu, serta peliharalah mereka dari azab neraka.",
+     "detail": {
+      "penjelasan": "Kisah para malaikat yang memohonkan ampun bagi orang-orang beriman; menunjukkan luasnya rahmat dan ilmu Allah atas hamba yang bertaubat.",
+      "riwayat": "Doa para malaikat pemikul 'Arsy dan yang di sekitarnya."
+     }
+    },
+    {
+     "title": "Syukur nikmat & bakti orang tua",
+     "occasion": "syukur",
+     "ref": "QS 46:15",
+     "href": "/surah/46#ayah-15",
+     "meaning": "Ya Tuhanku, berilah aku ilham untuk mensyukuri nikmat-Mu yang telah Engkau berikan kepadaku dan kepada kedua orang tuaku, dan agar aku dapat berbuat kebajikan yang Engkau ridai; perbaikilah keturunanku.",
+     "detail": {
+      "penjelasan": "Doa seorang hamba yang telah dewasa (usia 40 tahun) memohon taufik untuk bersyukur, beramal saleh, dan kebaikan bagi keturunannya.",
+      "riwayat": "Doa hamba yang matang imannya sebagaimana disebut dalam Surah Al-Ahqaf."
+     }
+    },
+    {
+     "title": "Sempurnakan cahaya & ampunan",
+     "occasion": "taubat/keteguhan",
+     "ref": "QS 66:8",
+     "href": "/surah/66#ayah-8",
+     "meaning": "Ya Tuhan kami, sempurnakanlah cahaya kami untuk kami dan ampunilah kami; sesungguhnya Engkau Mahakuasa atas segala sesuatu.",
+     "detail": {
+      "penjelasan": "Ucapan orang-orang beriman pada hari kiamat; dalam konteks seruan bertaubat dengan taubat nasuha (taubat yang tulus) pada ayat yang sama.",
+      "riwayat": "Doa orang-orang beriman kelak di akhirat sebagaimana dikisahkan ayat."
+     }
+    },
+    {
+     "title": "Doa Ashabul Kahfi",
+     "occasion": "kesulitan/keteguhan iman",
+     "ref": "QS 18:10",
+     "href": "/surah/18#ayah-10",
+     "meaning": "Ya Tuhan kami, berikanlah rahmat kepada kami dari sisi-Mu dan sempurnakanlah petunjuk yang lurus bagi kami dalam urusan kami.",
+     "detail": {
+      "penjelasan": "Doa para pemuda Ashabul Kahfi ketika berlindung ke dalam gua untuk mempertahankan iman; memohon rahmat dan petunjuk di tengah kesulitan.",
+      "riwayat": "Doa para pemuda Ashabul Kahfi sebagaimana dikisahkan dalam Surah Al-Kahfi."
+     }
     }
-  ]
+   ]
+  },
+  {
+   "key": "harian",
+   "title": "Doa Harian (Sunnah)",
+   "note": "Klik untuk penjelasan, perawi & sumber.",
+   "duas": [
+    {
+     "title": "Sebelum makan",
+     "occasion": "makan",
+     "text_ar": "بِسْمِ اللَّهِ",
+     "translit": "Bismillah",
+     "meaning": "Dengan nama Allah.",
+     "source": "HR Bukhari & Muslim",
+     "grade": "Sahih",
+     "detail": {
+      "penjelasan": "Memulai makan dengan menyebut nama Allah — bentuk syukur & agar makanan diberkahi; bila lupa di awal, ucapkan \"Bismillahi awwalahu wa akhirahu\".",
+      "riwayat": "Nabi ﷺ mengajari 'Umar bin Abi Salamah (anak kecil di asuhannya): \"Sebutlah nama Allah, makanlah dengan tangan kananmu, dan makanlah yang dekat denganmu.\"",
+      "sanad": "HR Bukhari & Muslim, dari 'Umar bin Abi Salamah."
+     }
+    },
+    {
+     "title": "Sesudah makan",
+     "occasion": "makan",
+     "text_ar": "الْحَمْدُ لِلَّهِ الَّذِي أَطْعَمَنَا وَسَقَانَا وَجَعَلَنَا مُسْلِمِينَ",
+     "translit": "Alhamdulillahilladzi ath'amana wa saqana wa ja'alana muslimin",
+     "meaning": "Segala puji bagi Allah yang memberi kami makan, minum, dan menjadikan kami muslim.",
+     "source": "HR Abu Dawud & Tirmidzi",
+     "grade": "Hasan",
+     "detail": {
+      "penjelasan": "Mensyukuri tiga nikmat sekaligus: makanan, minuman, dan nikmat terbesar yaitu Islam.",
+      "riwayat": "Diucapkan Nabi ﷺ seusai makan sebagai wujud syukur.",
+      "sanad": "HR Abu Dawud, Tirmidzi, Ibnu Majah — dari Abu Sa'id al-Khudri."
+     }
+    },
+    {
+     "title": "Sebelum tidur",
+     "occasion": "tidur",
+     "text_ar": "بِاسْمِكَ اللَّهُمَّ أَمُوتُ وَأَحْيَا",
+     "translit": "Bismika Allahumma amutu wa ahya",
+     "meaning": "Dengan nama-Mu ya Allah, aku mati dan aku hidup.",
+     "source": "HR Bukhari",
+     "grade": "Sahih",
+     "detail": {
+      "penjelasan": "Tidur diserupakan dengan kematian kecil; doa ini menyerahkan hidup-mati kepada Allah.",
+      "riwayat": "Nabi ﷺ bila hendak tidur meletakkan tangan kanan di bawah pipi lalu membaca doa ini.",
+      "sanad": "HR Bukhari, dari Hudzaifah bin al-Yaman."
+     }
+    },
+    {
+     "title": "Bangun tidur",
+     "occasion": "bangun",
+     "text_ar": "الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ",
+     "translit": "Alhamdulillahilladzi ahyana ba'da ma amatana wa ilaihin-nusyur",
+     "meaning": "Segala puji bagi Allah yang menghidupkan kami setelah mematikan kami, dan kepada-Nya tempat kembali.",
+     "source": "HR Bukhari",
+     "grade": "Sahih",
+     "detail": {
+      "penjelasan": "Mensyukuri nikmat bangun (dihidupkan kembali) sekaligus mengingat hari kebangkitan.",
+      "riwayat": "Doa yang dibaca Nabi ﷺ ketika bangun dari tidur.",
+      "sanad": "HR Bukhari, dari Hudzaifah bin al-Yaman."
+     }
+    },
+    {
+     "title": "Masuk kamar mandi",
+     "occasion": "wc",
+     "text_ar": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْخُبُثِ وَالْخَبَائِثِ",
+     "translit": "Allahumma inni a'udzu bika minal khubutsi wal khaba'its",
+     "meaning": "Ya Allah, aku berlindung kepada-Mu dari (gangguan) setan jantan dan betina.",
+     "source": "HR Bukhari & Muslim",
+     "grade": "Sahih",
+     "detail": {
+      "penjelasan": "Tempat buang hajat adalah tempat berkumpulnya setan; doa ini memohon perlindungan sebelum masuk.",
+      "riwayat": "Nabi ﷺ mengajarkan doa ini ketika hendak masuk tempat buang hajat.",
+      "sanad": "HR Bukhari & Muslim, dari Anas bin Malik."
+     }
+    },
+    {
+     "title": "Keluar kamar mandi",
+     "occasion": "wc",
+     "text_ar": "غُفْرَانَكَ",
+     "translit": "Ghufranaka",
+     "meaning": "(Aku memohon) ampunan-Mu.",
+     "source": "HR Abu Dawud, Tirmidzi, Ibnu Majah",
+     "grade": "Hasan",
+     "detail": {
+      "penjelasan": "Setelah dimudahkan membuang kotoran, seorang hamba memohon ampun — mengganti keluhan dengan istighfar.",
+      "riwayat": "Nabi ﷺ bila keluar dari tempat buang hajat mengucapkan \"Ghufranaka\".",
+      "sanad": "HR Abu Dawud, Tirmidzi, Ibnu Majah — dari 'Aisyah. Lafaz \"Ghufranaka\" (tunggal) dinilai hasan; sebagian riwayat tambahannya lemah."
+     }
+    },
+    {
+     "title": "Keluar rumah",
+     "occasion": "keluar rumah",
+     "text_ar": "بِسْمِ اللَّهِ تَوَكَّلْتُ عَلَى اللَّهِ وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ",
+     "translit": "Bismillah, tawakkaltu 'alallah, wa la hawla wa la quwwata illa billah",
+     "meaning": "Dengan nama Allah, aku bertawakal kepada Allah; tiada daya dan kekuatan kecuali dengan (pertolongan) Allah.",
+     "source": "HR Abu Dawud & Tirmidzi",
+     "grade": "Hasan–Sahih",
+     "detail": {
+      "penjelasan": "Menggabungkan tawakal dan pengakuan lemahnya diri tanpa pertolongan Allah.",
+      "riwayat": "Nabi ﷺ bersabda: siapa mengucapkannya saat keluar rumah dikatakan kepadanya: engkau diberi petunjuk, dicukupi, dan dilindungi; setan pun menjauh.",
+      "sanad": "HR Abu Dawud & Tirmidzi, dari Anas bin Malik. Derajat: hasan (at-Tirmidzi) — sebagian menilai sahih (al-Albani). Perbedaan penilaian dicatat, bukan dihakimi."
+     }
+    },
+    {
+     "title": "Naik kendaraan",
+     "occasion": "bepergian",
+     "text_ar": "سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ",
+     "translit": "Subhanalladzi sakhkhara lana hadza wa ma kunna lahu muqrinin",
+     "meaning": "Mahasuci Allah yang menundukkan kendaraan ini bagi kami, padahal kami tak mampu menguasainya.",
+     "source": "HR Muslim (lafaz dari QS 43:13-14)",
+     "grade": "Sahih",
+     "detail": {
+      "penjelasan": "Mengingat bahwa kendaraan/nikmat adalah karunia yang ditundukkan Allah, bukan hasil kemampuan diri semata.",
+      "riwayat": "Ibnu 'Umar meriwayatkan Nabi ﷺ membaca lafaz ini (diambil dari QS Az-Zukhruf 13-14) ketika naik kendaraan.",
+      "sanad": "HR Muslim, dari Ibnu 'Umar."
+     }
+    },
+    {
+     "title": "Masuk masjid",
+     "occasion": "masjid",
+     "text_ar": "اللَّهُمَّ افْتَحْ لِي أَبْوَابَ رَحْمَتِكَ",
+     "translit": "Allahummaftah lii abwaaba rahmatik",
+     "meaning": "Ya Allah, bukakanlah untukku pintu-pintu rahmat-Mu.",
+     "source": "HR Muslim",
+     "grade": "Sahih",
+     "detail": {
+      "penjelasan": "Dibaca ketika melangkah masuk ke masjid, didahului dengan mendahulukan kaki kanan dan bershalawat kepada Nabi ﷺ.",
+      "riwayat": "Dari Abu Humaid atau Abu Usaid radhiyallahu 'anhu.",
+      "sanad": "HR Muslim no. 713, dari Abu Humaid/Abu Usaid."
+     }
+    },
+    {
+     "title": "Keluar masjid",
+     "occasion": "masjid",
+     "text_ar": "اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِكَ",
+     "translit": "Allahumma innii as-aluka min fadhlik",
+     "meaning": "Ya Allah, sesungguhnya aku memohon kepada-Mu sebagian dari karunia-Mu.",
+     "source": "HR Muslim",
+     "grade": "Sahih",
+     "detail": {
+      "penjelasan": "Dibaca ketika keluar dari masjid, didahului dengan mendahulukan kaki kiri dan bershalawat kepada Nabi ﷺ.",
+      "riwayat": "Dari Abu Humaid atau Abu Usaid radhiyallahu 'anhu.",
+      "sanad": "HR Muslim no. 713, dari Abu Humaid/Abu Usaid."
+     }
+    },
+    {
+     "title": "Setelah wudhu",
+     "occasion": "wudhu",
+     "text_ar": "أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ",
+     "translit": "Asyhadu allaa ilaaha illallaahu wahdahu laa syariika lah, wa asyhadu anna Muhammadan 'abduhu wa rasuuluh",
+     "meaning": "Aku bersaksi bahwa tiada tuhan yang berhak disembah selain Allah semata, tiada sekutu bagi-Nya, dan aku bersaksi bahwa Muhammad adalah hamba dan utusan-Nya.",
+     "source": "HR Muslim",
+     "grade": "Sahih",
+     "detail": {
+      "penjelasan": "Dibaca setelah menyempurnakan wudhu; disebutkan bahwa siapa membacanya akan dibukakan baginya delapan pintu surga.",
+      "riwayat": "Dari 'Umar bin al-Khaththab radhiyallahu 'anhu.",
+      "sanad": "HR Muslim no. 234, dari 'Umar bin al-Khaththab."
+     }
+    },
+    {
+     "title": "Setelah adzan",
+     "occasion": "adzan/salat",
+     "text_ar": "اللَّهُمَّ رَبَّ هَٰذِهِ الدَّعْوَةِ التَّامَّةِ وَالصَّلَاةِ الْقَائِمَةِ آتِ مُحَمَّدًا الْوَسِيلَةَ وَالْفَضِيلَةَ وَابْعَثْهُ مَقَامًا مَحْمُودًا الَّذِي وَعَدْتَهُ",
+     "translit": "Allahumma Rabba haadzihid-da'watit-taammah, wash-shalaatil-qaa-imah, aati Muhammadanil-wasiilata wal-fadhiilah, wab'atshu maqaaman mahmuudanil-ladzii wa'adtah",
+     "meaning": "Ya Allah, Tuhan pemilik seruan yang sempurna ini dan salat yang ditegakkan, berikanlah kepada Muhammad wasilah dan keutamaan, dan bangkitkanlah beliau ke kedudukan terpuji yang telah Engkau janjikan.",
+     "source": "HR Bukhari",
+     "grade": "Sahih",
+     "detail": {
+      "penjelasan": "Dibaca setelah selesai menjawab adzan; disebutkan bahwa siapa membacanya berhak mendapat syafaat Nabi ﷺ pada hari kiamat.",
+      "riwayat": "Dari Jabir bin 'Abdillah radhiyallahu 'anhu.",
+      "sanad": "HR Bukhari no. 614, dari Jabir bin 'Abdillah."
+     }
+    },
+    {
+     "title": "Sayyidul Istighfar",
+     "occasion": "istighfar/pagi-petang",
+     "text_ar": "اللَّهُمَّ أَنْتَ رَبِّي لَا إِلَٰهَ إِلَّا أَنْتَ خَلَقْتَنِي وَأَنَا عَبْدُكَ وَأَنَا عَلَىٰ عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ وَأَبُوءُ بِذَنْبِي فَاغْفِرْ لِي فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ",
+     "translit": "Allahumma anta Rabbii laa ilaaha illaa anta, khalaqtanii wa ana 'abduka, wa ana 'alaa 'ahdika wa wa'dika mastatha'tu, a'uudzu bika min syarri maa shana'tu, abuu-u laka bi ni'matika 'alayya, wa abuu-u bi dzanbii faghfir lii, fa innahu laa yaghfirudz-dzunuuba illaa anta",
+     "meaning": "Ya Allah, Engkau Tuhanku, tiada tuhan selain Engkau. Engkau menciptakanku dan aku hamba-Mu. Aku berpegang pada janji dan ikatan-Mu sekemampuanku. Aku berlindung kepada-Mu dari keburukan yang kuperbuat. Aku mengakui nikmat-Mu atasku dan mengakui dosaku, maka ampunilah aku, sebab tiada yang mengampuni dosa kecuali Engkau.",
+     "source": "HR Bukhari",
+     "grade": "Sahih",
+     "detail": {
+      "penjelasan": "Disebut penghulu istighfar; siapa membacanya dengan yakin di siang hari lalu wafat sebelum petang, atau di malam hari lalu wafat sebelum pagi, ia termasuk penghuni surga.",
+      "riwayat": "Dari Syaddad bin Aus radhiyallahu 'anhu.",
+      "sanad": "HR Bukhari no. 6306, dari Syaddad bin Aus."
+     }
+    },
+    {
+     "title": "Doa pagi",
+     "occasion": "pagi",
+     "text_ar": "أَصْبَحْنَا وَأَصْبَحَ الْمُلْكُ لِلَّهِ وَالْحَمْدُ لِلَّهِ لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ",
+     "translit": "Ashbahnaa wa ashbahal-mulku lillah, wal-hamdu lillah, laa ilaaha illallaahu wahdahu laa syariika lah",
+     "meaning": "Kami memasuki waktu pagi dan kerajaan hanya milik Allah, segala puji bagi Allah. Tiada tuhan selain Allah semata, tiada sekutu bagi-Nya.",
+     "source": "HR Muslim",
+     "grade": "Sahih",
+     "detail": {
+      "penjelasan": "Bagian dari zikir pagi; pada petang hari lafaz 'ashbahnaa' diganti 'amsainaa' dan 'al-mulku' menyesuaikan. Dibaca memohon kebaikan hari itu dan berlindung dari keburukannya.",
+      "riwayat": "Dari 'Abdullah bin Mas'ud radhiyallahu 'anhu.",
+      "sanad": "HR Muslim no. 2723, dari Ibnu Mas'ud."
+     }
+    },
+    {
+     "title": "Saat turun hujan",
+     "occasion": "hujan",
+     "text_ar": "اللَّهُمَّ صَيِّبًا نَافِعًا",
+     "translit": "Allahumma shayyiban naafi'aa",
+     "meaning": "Ya Allah, jadikanlah hujan ini hujan yang bermanfaat.",
+     "source": "HR Bukhari",
+     "grade": "Sahih",
+     "detail": {
+      "penjelasan": "Dibaca ketika hujan turun, memohon agar hujan itu membawa manfaat dan bukan bencana.",
+      "riwayat": "Dari 'Aisyah radhiyallahu 'anha.",
+      "sanad": "HR Bukhari no. 1032, dari 'Aisyah."
+     }
+    },
+    {
+     "title": "Berbuka puasa",
+     "occasion": "puasa",
+     "text_ar": "ذَهَبَ الظَّمَأُ وَابْتَلَّتِ الْعُرُوقُ وَثَبَتَ الْأَجْرُ إِنْ شَاءَ اللَّهُ",
+     "translit": "Dzahabazh-zhama-u wabtallatil-'uruuqu wa tsabatal-ajru insyaa Allah",
+     "meaning": "Telah hilang rasa haus, urat-urat telah basah, dan pahala telah ditetapkan insya Allah.",
+     "source": "HR Abu Dawud",
+     "grade": "Hasan",
+     "detail": {
+      "penjelasan": "Dibaca setelah berbuka puasa. Lafaz masyhur 'Allahumma laka shumtu...' derajatnya diperselisihkan (banyak dinilai da'if), maka dipilih lafaz ini yang lebih kuat.",
+      "riwayat": "Dari 'Abdullah bin 'Umar radhiyallahu 'anhuma.",
+      "sanad": "HR Abu Dawud no. 2357, dari Ibnu 'Umar."
+     }
+    },
+    {
+     "title": "Masuk pasar",
+     "occasion": "pasar",
+     "text_ar": "لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ يُحْيِي وَيُمِيتُ وَهُوَ حَيٌّ لَا يَمُوتُ بِيَدِهِ الْخَيْرُ وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ",
+     "translit": "Laa ilaaha illallaahu wahdahu laa syariika lah, lahul-mulku wa lahul-hamdu yuhyii wa yumiitu wa huwa hayyun laa yamuutu, bi yadihil-khairu wa huwa 'alaa kulli syai-in qadiir",
+     "meaning": "Tiada tuhan selain Allah semata, tiada sekutu bagi-Nya. Milik-Nya kerajaan dan bagi-Nya segala puji. Dia menghidupkan dan mematikan, Dia hidup dan tidak mati. Di tangan-Nya segala kebaikan, dan Dia Mahakuasa atas segala sesuatu.",
+     "source": "HR Tirmidzi",
+     "grade": "Hasan",
+     "detail": {
+      "penjelasan": "Dibaca saat memasuki pasar; disebutkan besarnya pahala dan pengampunan bagi yang membacanya di tempat yang lalai dari mengingat Allah.",
+      "riwayat": "Dari 'Umar bin al-Khaththab radhiyallahu 'anhu.",
+      "sanad": "HR Tirmidzi no. 3428 (dinilai hasan), juga al-Hakim, dari 'Umar."
+     }
+    },
+    {
+     "title": "Memakai pakaian",
+     "occasion": "pakaian",
+     "text_ar": "الْحَمْدُ لِلَّهِ الَّذِي كَسَانِي هَٰذَا الثَّوْبَ وَرَزَقَنِيهِ مِنْ غَيْرِ حَوْلٍ مِنِّي وَلَا قُوَّةٍ",
+     "translit": "Alhamdu lillaahil-ladzii kasaanii haadzats-tsauba wa razaqaniihi min ghairi haulin minnii wa laa quwwah",
+     "meaning": "Segala puji bagi Allah yang telah memberiku pakaian ini dan menganugerahkannya kepadaku tanpa daya dan kekuatan dariku.",
+     "source": "HR Abu Dawud",
+     "grade": "Hasan",
+     "detail": {
+      "penjelasan": "Dibaca ketika mengenakan pakaian baru atau pakaian sehari-hari, sebagai wujud syukur; disebutkan pahala pengampunan dosa yang telah lalu.",
+      "riwayat": "Dari Mu'adz bin Anas radhiyallahu 'anhu.",
+      "sanad": "HR Abu Dawud no. 4023 & Tirmidzi no. 3458 (dinilai hasan), dari Mu'adz bin Anas."
+     }
+    },
+    {
+     "title": "Ketika susah & gundah",
+     "occasion": "kesedihan/kesulitan",
+     "text_ar": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ وَالْعَجْزِ وَالْكَسَلِ وَالْبُخْلِ وَالْجُبْنِ وَضَلَعِ الدَّيْنِ وَغَلَبَةِ الرِّجَالِ",
+     "translit": "Allahumma innii a'uudzu bika minal-hammi wal-hazan, wal-'ajzi wal-kasal, wal-bukhli wal-jubn, wa dhala'id-dain wa ghalabatir-rijaal",
+     "meaning": "Ya Allah, aku berlindung kepada-Mu dari rasa susah dan sedih, dari kelemahan dan kemalasan, dari sifat kikir dan pengecut, dari lilitan utang dan tekanan orang lain.",
+     "source": "HR Bukhari",
+     "grade": "Sahih",
+     "detail": {
+      "penjelasan": "Doa yang sering dibaca Nabi ﷺ untuk mengusir kegelisahan dan kesedihan serta memohon perlindungan dari sebab-sebabnya.",
+      "riwayat": "Dari Anas bin Malik radhiyallahu 'anhu.",
+      "sanad": "HR Bukhari no. 2893, dari Anas bin Malik."
+     }
+    }
+   ]
+  }
+ ]
 }
