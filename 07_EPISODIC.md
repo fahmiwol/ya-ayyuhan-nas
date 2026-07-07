@@ -113,6 +113,13 @@ Owner minta (catat dulu, belum bangun): (1) **4 mazhab fikih** (Hanafi/Maliki/Sy
 
 ---
 
+### [F1.49] Riwayat diperkaya — +17 asbabun nuzul dari al-Wahidi (total 32) — 2026-07-08
+
+Mapping dokumen owner (al-Wahidi PDF) → modul **Riwayat**. Agen ekstrak 25 asbabun nuzul dari `Asbab Al-Nuzul by Al-Wahidi.pdf` (terjemahan Guezzou, Royal Aal al-Bayt 2008) via python pypdf → `asbab-add.json`; aku merge+dedup ke asbab.json (schema {surah,ayah,title,narrative,source,grade}). Hasil: **+17 baru** (8 dupe di-skip, 0 ref invalid vs mushaf, 0 incomplete) → **32 entri** (2× lipat). Perawi dikutip di source (Ka'b ibn 'Ujrah, Sa'd ibn Abi Waqqash, 'A'ishah, Ibn 'Abbas, al-Bara', Ubay, Jundub); grade konservatif "riwayat (al-Wahidi)" (tak mengarang derajat). Banyak surah pendek (93,96,97,102,106-113) + 2:104/158/187/196, 5:90 dll. Riwayat tab (panel Identitas) otomatis surface — API /ayah/111/1/riwayat verified live (Abu Lahab). Data-only, LIVE, app lain 301.
+**Next:** Rukun Iman/Islam detail; Kisah perluas; silang Asma↔Lab; sisa asbab bertahap.
+
+---
+
 ### [F1.48] Belajar: Sifat-sifat Allah (20 wajib + jaiz) — netralitas mazhab akidah — 2026-07-08
 
 Lanjutan otonom "isi halaman lain". Data bersumber (agen): `belajar/sifat.json` — kerangka **sifat 20** (Asy'ari/Maturidi; urutan Wujud→Mutakalliman) + jaiz 1. **Netralitas kritis dijaga:** field `note_neutralitas` eksplisit (pendekatan Atsari/Salafi menetapkan sifat sesuai nash tanpa enumerasi & takwil = metadata, BUKAN vonis; keduanya arus Sunni). Agen taat: jaiz `mustahil`="—" (tak ada lawan wajib), 7 sifat ma'nawiyyah pakai dalil konsisten. **21 dalil valid vs mushaf (0 invalid).** UI: `/belajar/sifat-allah` (catatan netralitas paling atas) + Belajar hub jadi 4 kartu. Status kandidat-perlu tinjauan. TSC+build ok, LIVE, app lain 301.
