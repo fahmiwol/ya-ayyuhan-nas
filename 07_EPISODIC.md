@@ -87,6 +87,21 @@
 
 ---
 
+### [F1.36] Wave 4 — 5 kajian penguat: SEMUA prinsip kini ≥2 bukti (total 28) — 2026-07-07
+
+**North Star check:** ya — "ok gas" otonom; menutup kelemahan yang kucatat sendiri di F1.35 (5 prinsip note_single = baru 1 kajian).
+**5 kajian penguat (di-ground tafsir dulu):**
+- **furqan-25-67** qawām (tak boros tak kikir) → memperkuat *median-stable-fair*: invariant DUA SISI, U-shaped loss, overfit vs underfit.
+- **maidah-5-1** awfū bil-ʿuqūd → memperkuat *ledger-audit-trail*: catat (2:282) DAN tunaikan (5:1); commitment binding utk orkestrasi agen; penyimpangan wajib eksplisit.
+- **munafiqun-63-9-10** deadline tak bisa dinegosiasi → memperkuat *time-as-capital*: anytime commits (kecil & sering), objective guarding dari distraksi, feedback pra-cutoff.
+- **nahl-16-65** bumi hidup lagi oleh air → memperkuat *shared-substrate*: revival via re-injeksi substrat (model stale + data segar), dormansi bukan mati.
+- **zumar-39-6** tiga kegelapan → memperkuat *stage-aware-care*: defense-in-depth 3 lapis; sandbox berlapis utk fase rapuh; "kemampuan penuh diekspos terakhir".
+**Sintesis diperbarui:** 5 prinsip naik ke ≥2 bukti, SEMUA note_single dicabut → 20/20 prinsip kini berbasis pola berulang. lab-validate 28/28 + integritas sintesis ✓.
+**Test:** preview 2 kajian baru ok; sintesis menampilkan evidence baru & ⚠ hilang; /lab 29 link; 0 error.
+**Status:** ✅ deploy. **Next:** tema backlog belum tergarap (saksi/bukti 115, cahaya, besi/material sisa); generator prinsip semi-otomatis; tinjauan ahli utk naikkan status kajian.
+
+---
+
 ### [F1.35] Mesin Temuan — sintesis lintas-kajian + Blueprint Organisme Digital — 2026-07-07
 
 **North Star check:** ya — owner minta jadikan pola-pola ini "dasar pengembangan AI/ML/Agentic; utamanya teknologi, komputasi, cara kerja otak, kehidupan→logika makhluk digital, AI autonomous, organisme digital"; "clusterin sendiri"; sekunder sosial/keuangan/bisnis/kedokteran/mesin. Lab berpindah dari kumpulan kajian per-ayat → MESIN TEMUAN.

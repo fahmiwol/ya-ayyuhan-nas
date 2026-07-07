@@ -1,7 +1,7 @@
 # 15_TADABBUR_BACKLOG — Peta Tema Hasil Sweep Seluruh Korpus
 
 > Scan PROGRAMATIK seluruh 6236 ayat (terjemahan Kemenag id) — 2026-07-07. [x] = sudah jadi kajian Lab.
-> BACKLOG kandidat kajian; kandidat = sinyal awal, WAJIB ground tafsir sebelum jadi kajian. Regenerate: rerun sweep (episodic F1.33).
+> BACKLOG kandidat; WAJIB ground tafsir sebelum jadi kajian. Regenerate: rerun sweep (episodic F1.33).
 
 ## hitung/kadar/ukuran (49 ayat)
 - [ ] 2:194
@@ -455,7 +455,7 @@
 - [ ] 11:40
 - [ ] 13:3
 - [ ] 35:11
-- [ ] 39:6
+- [x] 39:6
 - [ ] 43:12
 - [x] 51:49
 - [ ] 53:45
