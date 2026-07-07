@@ -87,6 +87,19 @@
 
 ---
 
+### [F1.41] Wave 7 — 3 agen paralel, +15 kajian (total 63); pilih tadabbur dulu drpd embedding — 2026-07-07
+
+**North Star check:** ya — owner tanya "embedding dulu atau lanjut tadabbur?". Rekomendasiku: tadabbur dulu (nilai marginal kajian tinggi; embedding = investasi sekali, lebih hemat saat korpus tebal; korpus sudah .jsonl jadi menunda tak rugi). Owner setuju arah.
+**Wave 7 — 3 agen paralel (@5, patuh skill, ground tafsir, gate fail-closed):**
+- Batch D tafakkur: 2:164 (sensor-fusion: banyak sinyal→satu kesimpulan), 30:8 (introspeksi-dulu+TTL), 45:13 (tool/affordance catalog), 59:21 (kapasitas≠eksekusi), 16:12 (shared clock/landmark grounding).
+- Batch E ilmu/bahasa: 2:31-32 (al-asma=knowledge grounding/tokenizer/refuse-when-ungrounded — KUAT), 20:114 (continual learning), 18:66 (apprenticeship/distillation), 55:1-4 (al-bayan=NLG di atas korpus grounded), 12:76 (anti-overconfidence/deferral).
+- Batch F bukti/hujjah: 2:111 & 27:64 (burden of proof=Eval-Gate burhan), 21:22 (reductio→single-source-of-truth/one arbiter — KUAT), 17:81 (ground truth geser noise), 52:35-36 (argumen kausal/proof-by-exhaustion).
+**Derived regen:** coverage 63 kajian·107 ayat langsung (6% kandidat, backlog 44 [x]); graph 90 node/111 edge; corpus **710 chunk**; lab-mine 41 konsep berulang.
+**Test:** lab-validate 63/63; preview: kajian render (Inferensi+badge+konten), graph 90 node, 0 server error. Spot-check mutu: 2:31-32 & 21:22 tajam & on-theme.
+**Status:** ✅ deploy. **Next:** wave lagi (pikir/akal 120 masih banyak, ilmu/ajar, air) sampai kandidat besar tergarap; BARU embedding bge-m3→pgvector saat korpus tebal; integrasi analogi agen kuat ke prinsip (single-source-of-truth, knowledge-grounding, sensor-fusion).
+
+---
+
 ### [F1.40] Search terjemahan + Peta Pengetahuan (second-brain) + korpus siap-ML — 2026-07-07
 
 **North Star check:** ya — 3 permintaan owner: (1) fix error, (2) search bar cari via kata terjemahan, (3) Lab jadi peta pengetahuan/linkage ala Obsidian+second-brain, "biar riset bisa dipakai ML/LLM/corpus/inference".

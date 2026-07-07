@@ -386,6 +386,126 @@
       "theme": "Ketidakpastian vs bukti, kalibrasi keyakinan, zhann vs burhan, argumentum ad populum",
       "lenses": 9,
       "created": "2026-07-07"
+    },
+    {
+      "id": "anbiya-21-22",
+      "title": "Law kāna fīhimā ālihatun — bukti keesaan lewat kontradiksi",
+      "ref": "QS 21:22",
+      "theme": "Reductio ad absurdum, konsistensi sistem, otoritas tunggal",
+      "lenses": 9,
+      "created": "2026-07-07"
+    },
+    {
+      "id": "ar-rahman-55-1-4",
+      "title": "Al-Bayan — dari MENGAJAR Al-Qur'an ke kemampuan MENGUNGKAP",
+      "ref": "QS 55:1-4",
+      "theme": "Bahasa, kemampuan mengungkap (generation), pengajaran ilahi, ekspresi",
+      "lenses": 9,
+      "created": "2026-07-07"
+    },
+    {
+      "id": "baqarah-2-111",
+      "title": "Hātū burhānakum — beban bukti ada pada pengklaim",
+      "ref": "QS 2:111",
+      "theme": "Beban pembuktian, klaim terverifikasi, epistemologi hujjah",
+      "lenses": 9,
+      "created": "2026-07-07"
+    },
+    {
+      "id": "baqarah-2-164-164",
+      "title": "Delapan Sinyal, Satu Kesimpulan",
+      "ref": "QS 2:164",
+      "theme": "Tafakkur & pengenalan pola: banyak fenomena beragam menuju satu inferensi",
+      "lenses": 9,
+      "created": "2026-07-07"
+    },
+    {
+      "id": "baqarah-2-31-32",
+      "title": "Al-Asma' — MEMBERI NAMA sebagai fondasi pengetahuan",
+      "ref": "QS 2:31-32",
+      "theme": "Ilmu, representasi simbol, penamaan, batas pengetahuan makhluk",
+      "lenses": 9,
+      "created": "2026-07-07"
+    },
+    {
+      "id": "hasyr-59-21-21",
+      "title": "Gunung yang Hancur, Manusia yang Diam",
+      "ref": "QS 59:21",
+      "theme": "Tafakkur & pengenalan pola: perumpamaan sebagai antarmuka agar makna abstrak dapat diproses akal",
+      "lenses": 9,
+      "created": "2026-07-07"
+    },
+    {
+      "id": "isra-17-81",
+      "title": "Jāʾa al-ḥaqqu wa zahaqa al-bāṭil — kebenaran menggeser kebatilan",
+      "ref": "QS 17:81",
+      "theme": "Ground truth, robustness, konvergensi, koreksi kesalahan",
+      "lenses": 9,
+      "created": "2026-07-07"
+    },
+    {
+      "id": "jatsiyah-45-13-13",
+      "title": "Alam yang Ditundukkan sebagai Antarmuka",
+      "ref": "QS 45:13",
+      "theme": "Tafakkur & pengenalan pola: alam yang teratur dijadikan dapat dimanfaatkan bagi kaum berpikir",
+      "lenses": 9,
+      "created": "2026-07-07"
+    },
+    {
+      "id": "kahf-18-66-66",
+      "title": "Musa & Khidr — MAGANG: transfer ilmu dari guru terbimbing",
+      "ref": "QS 18:66",
+      "theme": "Pemagangan, transfer ilmu berpandu, adab murid, rantai pengajaran",
+      "lenses": 9,
+      "created": "2026-07-07"
+    },
+    {
+      "id": "nahl-16-12-12",
+      "title": "Sinyal Periodik Langit sebagai Jam & Kompas",
+      "ref": "QS 16:12",
+      "theme": "Tafakkur & pengenalan pola: benda langit yang periodik menjadi tanda bagi kaum berakal",
+      "lenses": 9,
+      "created": "2026-07-07"
+    },
+    {
+      "id": "naml-27-64",
+      "title": "Qul hātū burhānakum — bukti untuk hipotesis tandingan",
+      "ref": "QS 27:64",
+      "theme": "Beban bukti, uji hipotesis, klaim terverifikasi",
+      "lenses": 9,
+      "created": "2026-07-07"
+    },
+    {
+      "id": "rum-30-8-8",
+      "title": "Introspeksi Dulu, Baru Dunia",
+      "ref": "QS 30:8",
+      "theme": "Tafakkur & pengenalan pola: dari refleksi diri ke inferensi tentang keteraturan bertujuan",
+      "lenses": 9,
+      "created": "2026-07-07"
+    },
+    {
+      "id": "taha-20-114-114",
+      "title": "Rabbi zidni 'ilma — permintaan TAMBAH ILMU tanpa henti",
+      "ref": "QS 20:114",
+      "theme": "Pembelajaran berkelanjutan, kesabaran akuisisi, growth mindset",
+      "lenses": 9,
+      "created": "2026-07-07"
+    },
+    {
+      "id": "tur-52-35-36",
+      "title": "Am khuliqū min ghayri syayʾ — argumen kausal & disjungsi tuntas",
+      "ref": "QS 52:35-36",
+      "theme": "Prinsip kausalitas, disjungsi ekshaustif, pembuktian per-kasus",
+      "lenses": 9,
+      "created": "2026-07-07"
+    },
+    {
+      "id": "yusuf-12-76-76",
+      "title": "Fauqa kulli dzi 'ilmin 'alim — di atas yang berilmu ada yang lebih",
+      "ref": "QS 12:76",
+      "theme": "Hierarki ilmu, anti-kesombongan, batas pengetahuan, taktik cerdas",
+      "lenses": 9,
+      "created": "2026-07-07"
     }
   ]
 }

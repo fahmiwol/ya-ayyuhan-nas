@@ -1,15 +1,15 @@
 {
   "updated": "2026-07-07",
   "total_ayat": 6236,
-  "studies": 48,
+  "studies": 63,
   "principles": 24,
   "frameworks": 3,
-  "direct_ayat": 87,
+  "direct_ayat": 107,
   "cited_ayat": 67,
-  "touched_ayat": 87,
+  "touched_ayat": 107,
   "candidates_total": 596,
   "candidates_done": 36,
-  "pct_of_total": 1.4,
+  "pct_of_total": 1.72,
   "pct_of_candidates": 6,
   "by_theme": [
     {
