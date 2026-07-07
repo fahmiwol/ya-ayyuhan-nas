@@ -95,7 +95,13 @@ Owner kirim 4 peta-konsep Ulumul Qur'an (pengertian/keotentikan Qur'an; Qur'an-H
 - **Rambu tafsir isyari klasik → guardrail keras** (masuk skill checklist): tak menyalahi zahir; ada sandaran (analogi lemah=bounded); bukan klaim maksud tunggal; tak simpulkan hukum/netral; batas tafsir ilmiah (sains=analogi BUKAN bukti; "resonansi bukan mukjizat numerik"). Ini menutup celah "melantur".
 - **SKILL tadabbur-lab diperbarui**: tambah bagian "Metode formal" + 5 rambu isyari sbg checklist mutu wajib. Hukum Besi #2 ditegaskan = disiplin bil-ma'tsur.
 - **Riset (agen background):** `21_TAFSIR_METHODS_RESEARCH.md` — metodologi tafsir global (adz-Dzahabi, Ibn Taimiyah muqaddimah, asy-Syathibi, i'jaz & debat tafsir ilmiah) + rambu isyari + batas scientific exegesis. ⏳ menyusul.
-**Test:** —(dokumen+skill, tak ada kode/deploy). **Status:** ✅ dicatat & di-commit. **Next:** saat riset 21 selesai, serap ke 20 + skill; terapkan rambu saat wave berikut; re-tadabbur kajian lama yg klaim sains-nya kurang hati-hati.
+**Test:** —(dokumen+skill, tak ada kode/deploy). **Status:** ✅ dicatat & di-commit.
+
+### [F1.43] Ilmu Hadis + Asbabun Nuzul jadi arsitektur + riset tafsir selesai — 2026-07-07
+- **Riset 21 selesai** (`21_TAFSIR_METHODS_RESEARCH.md`): metode vs corak, rambu isyari 6-syarat (adz-Dzahabi/az-Zarqani/asy-Syathibi/al-Ghazali/Ibn Qayyim), hierarki grounding (Ibn Taimiyah), i'jaz + debat tafsir ilmiah (Tanthawi pro vs asy-Syathibi kontra), khilaf=metadata, sumber ber-tier + §8 keterbatasan (turats via sekunder → verifikasi matan). **5 actionable:** (1) metadata tipologi per kajian, (2) validator fail-closed "Kartu Rambu Isyari" 6-cek, (3) pisah lapis otoritatif vs lensa Lab, (4) rem tafsir ilmiah (kontroversi:tinggi+disclaimer), (5) khilaf sbg array pendapat.
+- **PDF Peta Ilmu Hadis** (owner, image) + 2 rujukan asbabun nuzul (Walisongo 2025, Google Books) → **`22_ILMU_HADIS_ASBAB_ARCH.md`**: peta mustalah (riwayah/dirayah, sanad-matn-rawi, mutawatir/ahad, maqbul[sahih/hasan]/mardud[da'if→jenis], jarh-ta'dil, qudsi/marfu'/mauquf/maqtu') **dipetakan ke arsitektur Eval-Gate** (sanad=auditable chain, jarh-ta'dil=source reputation, klasifikasi=evidence quality, ma'mul-bih=gating verified→actionable). Asbabun nuzul = **lapisan grounding historis** (fitur Riwayat/asbab.json) → prinsip "konteks sebelum generalisasi" (padanan AI: provenance-before-inference, distribution-shift awareness).
+- **SKILL diperbarui:** +rambu #6 cek asbabun nuzul; rujuk 21/22; catat rencana validator "Kartu Rambu Isyari" + metadata tipologi.
+**Status:** ✅ dicatat & commit. **Next (saat digarap):** kodekan validator Kartu Rambu Isyari (fail-closed 6-cek) + field tipologi per kajian (non-breaking: default utk 63 kajian lama); perluas Eval-Gate tier Ahad + jarh-ta'dil saat modul hadis/sahabat.
 
 ---
 

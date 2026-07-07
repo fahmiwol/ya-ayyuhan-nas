@@ -23,6 +23,8 @@ Lab = **maudhu'i** (pilih tema dari backlog) + **tahlili** (bedah per-lensa) + *
 3. **Bukan klaim maksud tunggal** ayat — eksplisit "salah satu pembacaan", bukan maksud Ilahi.
 4. **Tak menyimpulkan hukum**, tak menghina, netral.
 5. **Batas tafsir ilmiah:** sains = analogi pemahaman, BUKAN bukti kebenaran teks → wajib frasa "resonansi struktural, bukan mukjizat numerik".
+6. **Cek konteks (asbabun nuzul):** bila ayat punya asbabun nuzul (tab Riwayat / `asbab.json`), pahami konteksnya dulu — pembacaan rekayasa tak boleh melantur dari sebab/konteks turunnya (grounding historis; lihat `22_ILMU_HADIS_ASBAB_ARCH.md`).
+> Riset pendukung lengkap: `21_TAFSIR_METHODS_RESEARCH.md` (rambu isyari 6-syarat + hierarki grounding + batas tafsir ilmiah), `22_ILMU_HADIS_ASBAB_ARCH.md` (mustalah → Eval-Gate). RENCANA: validator fail-closed "Kartu Rambu Isyari" + metadata tipologi per kajian (metode/corak/tingkat_grounding/kontroversi) — belum dikodekan.
 
 ## Alur produksi kajian baru
 1. **Pilih ayat** dari backlog `15_TADABBUR_BACKLOG.md` (hasil sweep 6236 ayat; regenerate = rerun sweep di episodic F1.33). Kandidat = sinyal awal, bukan keputusan.
