@@ -70,9 +70,9 @@ export default async function LabPage() {
         <Link href="/lab/sintesis" className="card block p-4 transition hover:opacity-90" style={{ borderColor: "#3b82f6" }}>
           <div className="flex flex-wrap items-center gap-2">
             <span className="font-semibold" style={{ color: "#3b82f6" }}>🧬 Sintesis Lintas-Kajian</span>
-            <span className="rounded-full px-1.5 py-0.5 text-[10px]" style={{ border: "1px solid #3b82f6", color: "#3b82f6" }}>Mesin Temuan</span>
+            <span className="rounded-full px-1.5 py-0.5 text-[10px]" style={{ border: "1px solid #3b82f6", color: "#3b82f6" }}>Peta Hipotesis Pola</span>
           </div>
-          <div className="mut mt-1 text-xs">Pola berulang antar-ayat → prinsip desain + <b>Blueprint Organisme Digital / Agen Autonom</b>. Buka →</div>
+          <div className="mut mt-1 text-xs">Pola lintas-kajian yang dicatat <b>untuk diuji & ditinjau</b> → prinsip desain + <b>Kerangka Analogi Agen Digital</b> (bukan klaim Qur&apos;an mendesain AI). Buka →</div>
         </Link>
         <Link href="/lab/graph" className="card block p-4 transition hover:opacity-90" style={{ borderColor: "var(--gold)" }}>
           <div className="flex flex-wrap items-center gap-2">
@@ -83,8 +83,32 @@ export default async function LabPage() {
         </Link>
       </div>
 
+      {/* Mulai dari sini — 5 kajian awal (onboarding pengguna baru) */}
+      {(() => {
+        const starters = [
+          { id: "fatihah-1-1-7", t: "Al-Fatihah", d: "protokol pembuka & kalibrasi" },
+          { id: "iqra-96-1-5", t: "Iqra'", d: "READ → ENCODE → LEARN" },
+          { id: "hujurat-49-6", t: "Fatabayyanū", d: "verifikasi sebelum bertindak" },
+          { id: "nahl-16-43", t: "Ahl adz-Dzikr", d: "tanya ahli, jangan mengarang" },
+          { id: "mizan-55-5-9", t: "Mīzān", d: "hitung & keseimbangan" },
+        ].filter((s) => (idx?.studies ?? []).some((x) => x.id === s.id));
+        return starters.length ? (
+          <div className="mt-6">
+            <h2 className="text-lg font-semibold">▶️ Mulai dari sini</h2>
+            <p className="mut mt-1 text-xs">Baru pertama? Lima kajian ini paket pengantar yang enak diikuti.</p>
+            <div className="mt-2 flex flex-wrap gap-2">
+              {starters.map((s, i) => (
+                <Link key={s.id} href={`/lab/${s.id}`} className="card px-3 py-2 text-sm transition hover:opacity-90">
+                  <b className="gold">{i + 1}. {s.t}</b> <span className="mut text-xs">— {s.d}</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        ) : null;
+      })()}
+
       {/* Daftar kajian */}
-      <h2 className="mt-8 text-lg font-semibold">Kajian</h2>
+      <h2 className="mt-8 text-lg font-semibold">Semua kajian ({(idx?.studies ?? []).length})</h2>
       <div className="mt-3 grid grid-cols-1 gap-3">
         {(idx?.studies ?? []).map((s) => (
           <Link key={s.id} href={`/lab/${s.id}`} className="card block p-4 transition hover:opacity-90">

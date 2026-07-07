@@ -35,6 +35,8 @@ Lab = **maudhu'i** (pilih tema dari backlog) + **tahlili** (bedah per-lensa) + *
 3. **Scaffold** (opsional, utk kerangka): `node pipeline/lab-scaffold.mjs <id> <surah> <from> <to> "<judul>"` — id format `<namasurah>-<s>-<f>-<t>` kebab-case.
 4. **Tulis kajian** (skema `lab-study-v2`, lihat `lib/lab.ts`): `sourced_meaning` (ringkas dari tafsir + sources), `qca[]` (peta ke Qur'anic Cognitive Architecture), `lenses[]` (pilih lensa RELEVAN dari `taxonomy.json` — tak wajib semua; tiap reading ≥30 char, sertakan `analogy` teknis & `quranic_term`), `inference` (temuan utama), `history[]` v1.
    - **Mutu:** tulis LANGSUNG (bukan delegasi agent) demi konsistensi suara; lensa ai-agentic harus actionable utk desain sistem; hindari klaim berlebihan — tandai analogi yang dibatasi ("bounded").
+   - **MAKSIMALKAN DIMENSI (arahan owner):** sintesis sebanyak mungkin sudut pandang/analogi/logika/metode yang RELEVAN & bernas — lintas disiplin (teknis & non-teknis, teori & praktik). Bukan target 9 lensa kaku; tambah lensa/analogi bila membuka wawasan baru (teknologi/kedokteran/pendidikan/fisika/mat/astronomi). TETAP di bawah rambu isyari (bukan maksud tunggal; sains=analogi bukan bukti).
+   - **BAHASA (pelunakan — hindari terkesan mengklaim):** framing "hipotesis/analogi/diinspirasi pola pembacaan ayat", BUKAN "diturunkan dari ayat / temuan / Qur'an mendesain X". Lihat `23_STRATEGY_DOMAINS_FEEDBACK.md`.
 5. **Index**: tambah entri di `index.json` (field `lenses` = jumlah lensa aktual file).
 6. **Validasi**: `node pipeline/lab-validate.mjs` → 0 pelanggaran.
 7. **Preview** (`preview_start` mushaf-web) → cek halaman kajian render (ayat+badge+riwayat), lalu stop.

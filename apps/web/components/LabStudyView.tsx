@@ -50,7 +50,13 @@ export function LabStudyView({ study, ayat, lenses, surahName, isArchived }: { s
           {study.review.note && <div className="mt-1">{study.review.note}</div>}
         </div>
       )}
-      {study.subtitle && <p className="mut mt-1 text-sm">{study.subtitle}</p>}
+      {/* Badge status 3-tingkat — pisahkan status teks / makna / analogi (transparansi) */}
+      <div className="mt-2 flex flex-wrap gap-1.5 text-[10px]">
+        <span className="rounded border px-2 py-0.5" style={{ borderColor: "var(--green)", color: "var(--green)" }} title="Teks Arab ditarik dari mushaf kanonik ber-Merkle">📖 Teks Qur&apos;an: <b>Terverifikasi</b></span>
+        <span className="rounded border px-2 py-0.5" style={{ borderColor: "var(--gold)", color: "var(--gold)" }} title="Makna diringkas dari tafsir bersumber (Kemenag/Jalalain)">📚 Makna/Tafsir: <b>Bersumber</b></span>
+        <span className="rounded border px-2 py-0.5" style={{ borderColor: "#3b82f6", color: "#3b82f6" }} title="Pembacaan rekayasa = hipotesis pola untuk diuji/ditinjau — bukan tafsir/dalil">🧪 Analogi Rekayasa: <b>{study.review?.verdict === "endorsed" ? "Sudah Ditinjau" : "Draft — Menunggu Reviewer"}</b></span>
+      </div>
+      {study.subtitle && <p className="mut mt-2 text-sm">{study.subtitle}</p>}
 
       {/* LAPIS 1 — Ayat kanonik + makna bersumber */}
       <div className="card mt-5 p-4">

@@ -15,12 +15,12 @@ export function LabSynthesisView({ syn }: { syn: LabSynthesis }) {
     <div>
       <div className="mt-1 flex flex-wrap items-center gap-2">
         <h1 className="text-2xl font-bold">🧬 {syn.title}</h1>
-        <span className="rounded-full px-2 py-0.5 text-[10px]" style={{ border: "1px solid #3b82f6", color: "#3b82f6" }}>Mesin Temuan</span>
+        <span className="rounded-full px-2 py-0.5 text-[10px]" style={{ border: "1px solid #3b82f6", color: "#3b82f6" }} title="Peta Hipotesis Pola — untuk diuji & ditinjau">Peta Hipotesis Pola</span>
       </div>
       <p className="mut mt-2 text-sm">{syn.note}</p>
       <div className="mt-3 rounded-lg border p-3 text-xs" style={{ borderColor: "#3b82f6", background: "#3b82f610" }}>
-        <b style={{ color: "#3b82f6" }}>🧪 Interpretasi rekayasa, bukan tafsir.</b>{" "}
-        <span className="mut">Prinsip = pola yang berulang di ≥2 kajian. Sebuah pola yang muncul independen di banyak surah = sinyal struktural. Untuk dasar riset teknologi/AI — bukan dalil agama.</span>
+        <b style={{ color: "#3b82f6" }}>🧪 Hipotesis pola — untuk diuji & ditinjau, bukan temuan final, bukan tafsir.</b>{" "}
+        <span className="mut">Prinsip = pola lintas-kajian yang muncul di ≥2 kajian, <b>dicatat untuk diuji</b> — bukan klaim bahwa Qur&apos;an mendesain AI. &quot;Kerangka Analogi Agen Digital&quot; di bawah = analogi struktural, <b>diinspirasi oleh pola pembacaan ayat</b>, bukan diturunkan sebagai dalil. Untuk dasar riset teknologi/AI yang bertanggung jawab.</span>
       </div>
 
       {/* BLUEPRINT — flagship */}
