@@ -87,6 +87,25 @@
 
 ---
 
+### [F1.33] Sweep korpus 6236 ayat → backlog tematik + Wave 2 (7 kajian, total 17) — 2026-07-07
+
+**North Star check:** ya — owner minta "baca lagi SEMUA ayat (terjemahan+tafsir), jadikan interpretasi Lab; temuan utk teknologi, kesehatan, dll; terus reasoning & inference cari kemungkinan baru".
+**Metode baru — sweep sistematis (agar cakupan berbasis data, bukan tebakan):**
+- Script scan SELURUH 6236 terjemahan Kemenag (id) dgn 16 regex tema konsep → **596 ayat kandidat** → `15_TADABBUR_BACKLOG.md` (checklist, kajian selesai ditandai [x]). Regenerate: rerun sweep. Ini jadi BACKLOG resmi sintesis massal.
+**7 kajian Wave 2 (dari backlog, di-ground tafsir Kemenag dulu; 9 lensa masing2):**
+- **mujadilah-58-11** ilmu=sumbu elevasi; compaction+yield resource; ranking alignment×kapabilitas.
+- **zumar-39-9** asimetri tahu vs tak-tahu = kelas ekuivalensi; knowledge-weighted, capability≠arsitektur.
+- **anbiya-21-30** ratq→fatq (foundation→spesialisasi) + air=substrat (data); resonansi kosmologi DIBATASI (bukan klaim mukjizat numerik).
+- **ankabut-29-20** sīrū fil-arḍ = OOD sampling + reverse-engineering asal-usul + active info gathering.
+- **rum-30-41** fasād = pelanggaran invariant (definisi Kemenag!) + feedback korektif PARSIAL (bukan terminasi); ekologi/AI-harm.
+- **muminun-23-12-14** (KESEHATAN) embriologi = pipeline bertahap + ordering constraint + emergensi (khalq ākhar = emergent abilities); sandbox rahim.
+- **hadid-57-25** (MATERIAL/dual-use) kitab+mīzān+ḥadīd = spec+metric+hardware; kekuatan diletakkan TERAKHIR sesudah nilai+ukur = "align & ukur dulu, baru skalakan daya".
+**Guardrail dijaga:** klaim sains ditandai "resonansi struktural, bukan mukjizat numerik"; makna religius selalu dari tafsir bersumber; tier "interpretasi — bukan tafsir".
+**Test:** lab-validate 17/17; preview muminun render 3 ayat+pipeline+emergensi+badge+riwayat; index 17 link; 0 error konsol.
+**Status:** ✅ deploy. **Next:** lanjut backlog (596 kandidat) per gelombang; kelak lensa non-teknis (psikologi/ekonomi/tata-kelola).
+
+---
+
 ### [CHECKPOINT] Berhenti di sini — 2026-07-07 (pasca F1.32)
 
 **Kondisi:** SEMUA LIVE & SEHAT di quran.migancore.com. HEAD master = Wave 1 kajian. App lain di server tetap 301 (terverifikasi tiap deploy).

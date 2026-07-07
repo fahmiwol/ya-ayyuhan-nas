@@ -12,6 +12,13 @@
     { "id": "nahl-16-68-69", "title": "Wahyu kepada lebah — kecerdasan kawanan", "ref": "QS 16:68-69", "theme": "Swarm intelligence, emergence, optimisasi terdistribusi", "lenses": 9, "created": "2026-07-07" },
     { "id": "fussilat-41-53", "title": "Āfāq wa anfus — konvergensi bukti dari dua kanal sensor", "ref": "QS 41:53", "theme": "Observabilitas, verifikasi konvergen, dua kanal bukti", "lenses": 9, "created": "2026-07-07" },
     { "id": "baqarah-2-282", "title": "Āyat ad-dayn — protokol transaksi & jejak audit", "ref": "QS 2:282", "theme": "Pencatatan transaksi, audit trail, saksi/redundansi", "lenses": 9, "created": "2026-07-07" },
-    { "id": "mulk-67-3-4", "title": "Farjiʿil-baṣar — loop pengujian mencari cacat", "ref": "QS 67:3-4", "theme": "QA/pengujian iteratif, falsifikasi, konsistensi sistem", "lenses": 9, "created": "2026-07-07" }
+    { "id": "mulk-67-3-4", "title": "Farjiʿil-baṣar — loop pengujian mencari cacat", "ref": "QS 67:3-4", "theme": "QA/pengujian iteratif, falsifikasi, konsistensi sistem", "lenses": 9, "created": "2026-07-07" },
+    { "id": "mujadilah-58-11", "title": "Yarfaʿillāhu... darajāt — ilmu sebagai sumbu elevasi", "ref": "QS 58:11", "theme": "Hierarki pengetahuan, alokasi resource, meritokrasi ilmu", "lenses": 9, "created": "2026-07-07" },
+    { "id": "zumar-39-9", "title": "Hal yastawī — asimetri antara yang tahu dan tidak tahu", "ref": "QS 39:9", "theme": "Asimetri informasi, nilai pengetahuan, kelas ekuivalensi", "lenses": 9, "created": "2026-07-07" },
+    { "id": "anbiya-21-30", "title": "Ratq wa fatq — keadaan padu awal & air kehidupan", "ref": "QS 21:30", "theme": "Kosmologi, kondisi awal, substrat kehidupan", "lenses": 9, "created": "2026-07-07" },
+    { "id": "ankabut-29-20", "title": "Sīrū fil-arḍ — riset lapangan atas asal-usul", "ref": "QS 29:20", "theme": "Riset empiris, ekspedisi ilmiah, studi asal-usul", "lenses": 9, "created": "2026-07-07" },
+    { "id": "rum-30-41", "title": "Ẓaharal-fasād — umpan balik kerusakan agar sistem kembali", "ref": "QS 30:41", "theme": "Feedback loop, ekologi, atribusi kausal, koreksi sistem", "lenses": 9, "created": "2026-07-07" },
+    { "id": "muminun-23-12-14", "title": "Nuṭfah → khalq ākhar — pipeline pembentukan manusia", "ref": "QS 23:12-14", "theme": "Kesehatan/embriologi, konstruksi bertahap, emergensi", "lenses": 9, "created": "2026-07-07" },
+    { "id": "hadid-57-25", "title": "Kitāb, Mīzān, Ḥadīd — tiga instrumen peradaban", "ref": "QS 57:25", "theme": "Instrumen peradaban, standar, material dual-use, keadilan", "lenses": 9, "created": "2026-07-07" }
   ]
 }
