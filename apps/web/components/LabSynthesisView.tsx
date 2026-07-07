@@ -48,6 +48,42 @@ export function LabSynthesisView({ syn }: { syn: LabSynthesis }) {
         </div>
       </div>
 
+      {/* FRAMEWORKS — struktur besar (Pohon Din, Aql-Qalb, Naqli-Aqli) */}
+      {(syn.frameworks ?? []).length > 0 && (
+        <>
+          <h2 className="mt-8 text-lg font-semibold">🌳 Kerangka Besar</h2>
+          <p className="mut mt-1 text-xs">Struktur ajaran (ber-basis sumber) dibaca sebagai arsitektur — jembatan antara ilmu keislaman dan rekayasa.</p>
+          <div className="mt-3 space-y-4">
+            {(syn.frameworks ?? []).map((f) => (
+              <div key={f.id} className="card p-4">
+                <b className="text-sm gold">{f.title}</b>
+                <div className="mut mt-1 text-[11px]">Basis: {f.basis}</div>
+                <div className="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-3">
+                  {f.layers.map((L, i) => (
+                    <div key={L.name} className="rounded-lg border p-3" style={{ borderColor: "var(--line)" }}>
+                      <div className="flex items-center gap-1.5">
+                        <span className="flex h-5 w-5 items-center justify-center rounded-full text-[10px] font-bold" style={{ background: "#3b82f620", color: "#3b82f6" }}>{i + 1}</span>
+                        <b className="text-xs">{L.name}</b>
+                      </div>
+                      <p className="mut mt-1 text-[11px]">{L.concept}</p>
+                      <p className="mt-1.5 text-[11px] leading-relaxed" style={{ color: "#3b82f6" }}>{L.engineering}</p>
+                    </div>
+                  ))}
+                </div>
+                <p className="mt-3 text-sm leading-relaxed">{f.reading}</p>
+                <div className="mut mt-2 flex flex-wrap items-center gap-1.5 text-[10px]">
+                  <span className="uppercase tracking-wide">Kajian terkait:</span>
+                  {f.refs.map((e) => (
+                    <Link key={e.id} href={`/lab/${e.id}`} title={e.note} className="rounded px-1.5 py-0.5 hover:opacity-80" style={{ border: "1px solid var(--green)", color: "var(--green)" }}>📖 {e.ref} →</Link>
+                  ))}
+                </div>
+                {f.candidates && <div className="mut mt-1.5 text-[10px] italic">→ {f.candidates}</div>}
+              </div>
+            ))}
+          </div>
+        </>
+      )}
+
       {/* CLUSTER FILTER */}
       <h2 className="mt-8 text-lg font-semibold">Prinsip berulang ({syn.principles.length})</h2>
       <div className="mt-2 flex flex-wrap gap-1.5">

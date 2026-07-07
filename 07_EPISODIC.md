@@ -87,6 +87,22 @@
 
 ---
 
+### [F1.37] Skill + Kerangka Besar (Pohon Din, Aql-Qalb, Naqli-Aqli) + 4 lensa domain + riset global — 2026-07-07
+
+**North Star check:** ya — owner minta 5 hal: (1) jadi SKILL, (2) artefak/aplikasi, (3) metode, (4) playground riset, (5) syntax/script/inference — plus domain baru (biologi/matematika/geologi/astronomi/kimia/sejarah), kerangka Iman-Islam-Ihsan/tauhid (diagram pohon), anatomi kognisi Aql-Qalb, dan riset global tercanggih.
+**Action:**
+- **(1)+(3) SKILL:** `.claude/skills/tadabbur-lab/SKILL.md` — seluruh metode dikodifikasi (hukum besi → alur produksi 9 langkah → re-tadabbur → sintesis prinsip → framework → deploy). Sesi mana pun kini bisa memproduksi kajian dgn disiplin identik.
+- **(4) Lensa domain +4:** biology-medicine 🧬, earth-cosmos 🌌, chemistry-process ⚗️, history-ummah 📜 (total 16 lensa).
+- **(2) KERANGKA BESAR di /lab/sintesis** (synthesis.json.frameworks + tipe + render + validasi fail-closed):
+  - **Pohon Din** (basis: hadits Jibril Sahih Muslim 8, bersumber di app): Iman=akar=VALUES/world-model → Islam=batang=PROTOCOL/interface → Ihsan=buah=QUALITY-UNDER-OBSERVATION. Temuan tajam: *sistem yang baik hanya saat diawasi = kebalikan persis ihsan (deceptive alignment)*.
+  - **Aql–Qalb** (basis riset 14+17): reasoning engine (aql) + value-evaluator (qalb); pemahaman = keduanya. Mode gagal terparah: SEGEL (khatm/rān) = evaluator corruption — *reward hacking = rān versi mesin*. Kandidat kajian: 22:46 (prioritas), 2:6-7, 83:14.
+  - **Naqli–Aqli**: dual corpus (qauliyah+kauniyah) + tauhid = CONSISTENCY AXIOM (konflik tampak = bug pembacaan, bukan kontradiksi sumber) — kerangka integrasi SEMUA domain ilmu.
+- **(5) Riset global (2 agent):** ✅ `17_AQL_QALB_EPISTEMOLOGY.md` selesai — sumber ber-tier (Ibrahim Kalin; Religions/MDPI 2025 qalb↔batas AI; al-Farabi Iḥṣāʾ al-ʿUlūm; Ibn Khaldun; al-Attas/al-Faruqi; maqāṣid sbg guardrail AI) + checklist ayat "klaim sumber wajib verifikasi mushaf" + disclaimer jujur (kaitan segel↔bias kognitif belum ada paper tier-A). ⏳ Agent PDF (16_IMAN_ISLAM_IHSAN_RESEARCH.md) masih jalan — menyusul.
+**Test:** lab-validate 28/28 + sintesis (20 prinsip, 8 lapis, 3 kerangka) valid; TSC clean; preview: 3 kerangka render (basis atribusi tampil, layer engineering tampil); 0 error.
+**Status:** ✅ deploy. **Next:** kajian 22:46 & 2:6-7 & 3:190-191 (penguat kerangka); serap temuan 5-actionable dari riset 17 (maqāṣid guardrail, taksonomi al-Farabi sbg ontologi) ke blueprint; commit 16_*.md saat agent selesai.
+
+---
+
 ### [F1.36] Wave 4 — 5 kajian penguat: SEMUA prinsip kini ≥2 bukti (total 28) — 2026-07-07
 
 **North Star check:** ya — "ok gas" otonom; menutup kelemahan yang kucatat sendiri di F1.35 (5 prinsip note_single = baru 1 kajian).

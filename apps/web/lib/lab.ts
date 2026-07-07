@@ -99,11 +99,20 @@ export interface SynthCluster { key: string; title: string; icon: string; desc: 
 export interface SynthBlueprintLayer {
   n: number; layer: string; quranic: string; principle: string; reading: string; refs: string[];
 }
+export interface SynthFrameworkLayer { name: string; concept: string; engineering: string }
+export interface SynthFramework {
+  id: string; title: string; basis: string; // basis WAJIB beratribusi (hadits/riset/dokumen)
+  layers: SynthFrameworkLayer[];
+  reading: string;
+  refs: SynthEvidence[];
+  candidates?: string; // kajian penguat berikutnya
+}
 export interface LabSynthesis {
   schema: string; title: string; note: string;
   clusters: SynthCluster[];
   principles: SynthPrinciple[];
   blueprint: { title: string; note: string; layers: SynthBlueprintLayer[] };
+  frameworks?: SynthFramework[];
 }
 export async function getLabSynthesis(): Promise<LabSynthesis | null> {
   return readJson<LabSynthesis>("synthesis.json");

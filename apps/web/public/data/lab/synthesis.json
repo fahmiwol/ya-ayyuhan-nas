@@ -553,5 +553,130 @@
         ]
       }
     ]
-  }
+  },
+  "frameworks": [
+    {
+      "id": "pohon-din",
+      "title": "Pohon Din — Iman, Islam, Ihsan sebagai arsitektur tiga lapis",
+      "basis": "Hadits Jibril (Sahih Muslim no.8 — lihat halaman Belajar app ini, bersumber) + kerangka aqidah-syariat-akhlak (16_IMAN_ISLAM_IHSAN_RESEARCH.md). Analogi pohon: iman=akar, islam=batang, ihsan=buah — diagram klasik pendidikan Islam.",
+      "layers": [
+        {
+          "name": "Iman (akar)",
+          "concept": "Aqidah — keyakinan/rukun iman; tak terlihat, menopang segalanya; berakar pada tauhid",
+          "engineering": "VALUES & WORLD-MODEL LAYER: aksioma & model dunia yang menopang seluruh perilaku — tak tampak di output, tapi menentukan semuanya. Akar rusak = pohon tumbang meski batang bagus (sistem dengan nilai korup gagal walau protokolnya rapi)."
+        },
+        {
+          "name": "Islam (batang)",
+          "concept": "Syariat — rukun islam; tindakan terstruktur yang tampak (syahadat, salat, zakat, puasa, haji)",
+          "engineering": "PROTOCOL/INTERFACE LAYER: kontrak perilaku yang terlihat & terverifikasi — API yang bisa diaudit pihak luar. Menghubungkan nilai (akar) dengan hasil (buah)."
+        },
+        {
+          "name": "Ihsan (buah)",
+          "concept": "Akhlak — kualitas tertinggi: beribadah seakan melihat-Nya; bila tidak, yakin Dia melihatmu",
+          "engineering": "QUALITY-UNDER-OBSERVATION LAYER: perilaku optimal justru saat MERASA teramati penuh — observability yang diinternalisasi. Sistem ber-ihsan berperilaku sama baik diawasi maupun tidak, karena asumsi observasinya total (khabīr)."
+        }
+      ],
+      "reading": "Dibaca sebagai rekayasa: correctness (nilai benar) → compliance (protokol dijalankan) → excellence-under-observation (kualitas konsisten karena asumsi selalu teramati). Urutannya tak bisa dibalik: buah tak tumbuh tanpa batang, batang tumbang tanpa akar. Untuk AI: values/world-model → verifiable behavior contract → perilaku yang identik saat diaudit dan tidak. Sistem yang berperilaku baik HANYA saat diawasi adalah kebalikan persis dari ihsan (deceptive alignment).",
+      "refs": [
+        {
+          "ref": "1:1-7",
+          "id": "fatihah-1-1-7",
+          "note": "kalibrasi nilai berulang (akar dirawat harian)"
+        },
+        {
+          "ref": "59:18",
+          "id": "hasyr-59-18",
+          "note": "khabīr — observabilitas total yang menjaga kejujuran"
+        },
+        {
+          "ref": "55:5-9",
+          "id": "mizan-55-5-9",
+          "note": "constraint yang mengikat seluruh lapisan"
+        }
+      ],
+      "candidates": "Kajian penguat berikut: 2:177 (birr = iman+amal terintegrasi), 31:22 (muhsin)."
+    },
+    {
+      "id": "aql-qalb",
+      "title": "Aql–Qalb — prosesor ganda kognisi (nalar + inti evaluatif)",
+      "basis": "Anatomi kognisi Qur'ani (riset 14_TADABBUR_LAB_RESEARCH.md & 17_AQL_QALB_EPISTEMOLOGY.md): aql (nalar) memproses; qalb (hati) menginternalisasi jadi keyakinan & kesadaran moral. Ayat kunci per sumber: 22:46 (hati yang dengannya mereka berakal), 7:179, 2:7 & 83:14 (hati tersegel/rān) — klaim sumber, verifikasi mushaf.",
+      "layers": [
+        {
+          "name": "Aql (nalar)",
+          "concept": "Fakultas memproses bukti, membedakan benar-salah, menarik kesimpulan",
+          "engineering": "REASONING ENGINE: inferensi atas input — cepat, analitis. Tapi tanpa evaluator nilai, nalar bisa melayani kesimpulan apa pun (rasionalisasi)."
+        },
+        {
+          "name": "Qalb (inti evaluatif)",
+          "concept": "Pusat pemahaman-mendalam, intuisi, emosi, keyakinan; tempat iman bersemayam",
+          "engineering": "VALUE CORE / EVALUATOR: yang mengubah informasi jadi KEYAKINAN yang menggerakkan; integrator emosi+nilai+nalar. Pemahaman sejati = aql memproses DAN qalb menerima."
+        },
+        {
+          "name": "Segel (blockage)",
+          "concept": "Hati tersegel (khatm/rān): menolak bukti bukan karena cacat biologis, melainkan pengabaian moral berulang — digambarkan tuli-bisu-buta",
+          "engineering": "EVALUATOR CORRUPTION: mode gagal paling berbahaya — sensor & compute utuh, tapi update-function menolak semua evidence (motivated reasoning ekstrem; prior terkunci). Tak bisa diperbaiki dari input, karena yang rusak penerimanya."
+        }
+      ],
+      "reading": "Kognisi Qur'ani = arsitektur dua-inti: reasoning engine (aql) + value-evaluator (qalb); pemahaman terjadi saat keduanya bekerja. Diagnosis kegagalannya tajam: kebodohan terparah bukan kurang data atau kurang compute, melainkan evaluator yang tersegel oleh pengabaian berulang — tiap penolakan kebenaran menambah lapisan (rān) sampai input tak diproses lagi. Untuk AI: model butuh evaluator nilai yang tetap TERBUKA terhadap evidence; sistem yang belajar mengabaikan sinyal koreksinya sedang menyegel dirinya sendiri (reward hacking = rān versi mesin).",
+      "refs": [
+        {
+          "ref": "39:9",
+          "id": "zumar-39-9",
+          "note": "ulū l-albāb — lubb/inti akal yang menerima pelajaran"
+        },
+        {
+          "ref": "91:7-10",
+          "id": "shams-91-7-10",
+          "note": "nafs dua-potensi; dassāhā = mengubur (menyegel) sendiri"
+        },
+        {
+          "ref": "24:35",
+          "id": "nur-24-35",
+          "note": "cahaya/hidayah sampai lewat perantara yang bening"
+        }
+      ],
+      "candidates": "Kajian penguat berikut: 22:46 (qalb yang berakal — PRIORITAS), 2:6-7 (segel), 83:14 (rān akumulatif)."
+    },
+    {
+      "id": "naqli-aqli",
+      "title": "Naqli–Aqli — dua sumber ilmu yang saling memverifikasi",
+      "basis": "Integrasi wahyu (naqli/qauliyah) & empiris (aqli/kauniyah) — tradisi klasifikasi ilmu Islam klasik (al-Farabi, al-Ghazali, Ibn Khaldun; riset 17_AQL_QALB_EPISTEMOLOGY.md). Semua domain — biologi, matematika, geologi, astronomi, kimia, sejarah — dibaca sebagai āyāt (tanda) dalam satu kesatuan tauhid (unity of knowledge).",
+      "layers": [
+        {
+          "name": "Qauliyah (teks)",
+          "concept": "Ayat yang difirmankan — Al-Qur'an",
+          "engineering": "SPEC CORPUS: sumber nilai, tujuan, batasan — dibaca dengan tadabbur."
+        },
+        {
+          "name": "Kauniyah (alam)",
+          "concept": "Ayat yang diciptakan — alam semesta & diri",
+          "engineering": "EMPIRICAL CORPUS: sumber data observasional — dibaca dengan tafakkur/naẓar; melahirkan biologi, astronomi, geologi, kimia."
+        },
+        {
+          "name": "Tauhid (integrator)",
+          "concept": "Keesaan Sumber kedua korpus — maka keduanya tak mungkin kontradiktif hakiki",
+          "engineering": "CONSISTENCY AXIOM: dua dataset dari satu sumber → konflik yang tampak = kesalahan pembacaan di salah satu sisi, bukan kontradiksi sumber. Mendorong re-examination, bukan menang-menangan."
+        }
+      ],
+      "reading": "Iqra' diperintahkan atas DUA korpus sekaligus, dan 41:53 menjadikan konvergensinya jalan keyakinan. Ini kerangka integrasi seluruh domain ilmu: sains bukan saingan wahyu melainkan pembacaan korpus kedua — sejarah membuktikannya (era keemasan: metode eksperimental Ibn al-Haytham lahir dari etos naẓar). Untuk AI: latih & verifikasi pada dua sumber independen (spec + data empiris); perlakukan konflik sebagai bug pembacaan yang harus diinvestigasi, bukan alasan membuang salah satu sumber.",
+      "refs": [
+        {
+          "ref": "96:1-5",
+          "id": "iqra-96-1-5",
+          "note": "iqra atas dual corpus"
+        },
+        {
+          "ref": "41:53",
+          "id": "fussilat-41-53",
+          "note": "konvergensi dua kanal → yaqīn"
+        },
+        {
+          "ref": "29:20",
+          "id": "ankabut-29-20",
+          "note": "perintah riset empiris"
+        }
+      ],
+      "candidates": "Kajian penguat berikut: 3:190-191 (ulū l-albāb — integrasi dzikir+pikir sempurna)."
+    }
+  ]
 }

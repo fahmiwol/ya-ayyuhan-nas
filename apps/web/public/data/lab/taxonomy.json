@@ -12,7 +12,11 @@
     { "key": "artifact", "title": "Artefak & Teknologi", "icon": "🛠️", "desc": "Teknologi/instrumen yang disebut atau diimplikasikan (pena, timbangan, besi)." },
     { "key": "psychology", "title": "Psikologi & Jiwa", "icon": "🧠", "desc": "Regulasi diri (nafs), motivasi, emosi, kesehatan mental, kognisi." },
     { "key": "economy", "title": "Ekonomi & Muamalah", "icon": "💰", "desc": "Nilai, insentif, distribusi, kontrak, sumber daya, waktu sebagai kapital." },
-    { "key": "pedagogy", "title": "Pendidikan & Pedagogi", "icon": "📚", "desc": "Metode ajar, kurikulum bertahap, repetisi, keteladanan, transfer ilmu." }
+    { "key": "pedagogy", "title": "Pendidikan & Pedagogi", "icon": "📚", "desc": "Metode ajar, kurikulum bertahap, repetisi, keteladanan, transfer ilmu." },
+    { "key": "biology-medicine", "title": "Biologi & Kedokteran", "icon": "🧬", "desc": "Kehidupan, tubuh, perkembangan, penyembuhan, ekologi hayati." },
+    { "key": "earth-cosmos", "title": "Bumi & Kosmos", "icon": "🌌", "desc": "Astronomi, geologi, geografi, iklim — āyāt kauniyah skala besar." },
+    { "key": "chemistry-process", "title": "Kimia & Proses", "icon": "⚗️", "desc": "Transformasi materi, fermentasi/pemurnian, proses industri, siklus zat." },
+    { "key": "history-ummah", "title": "Sejarah & Peradaban", "icon": "📜", "desc": "Kisah umat terdahulu sebagai dataset; pola naik-turun peradaban; iʿtibār historis." }
   ],
   "cognitive_terms": [
     { "term": "taʿaqqul / ʿaql", "arabic": "تعقّل / عقل", "meaning": "menalar; mengikat pengetahuan", "operation": "deduksi + observasi; teori+fakta+tindakan", "ayat_claimed": "89:5, 21:67, 6:151 (49x)" },

@@ -81,7 +81,12 @@ if (!only && existsSync(fileURLToPath(new URL('synthesis.json', LAB)))) {
   for (const L of syn.blueprint?.layers ?? []) {
     if (!prinIds.has(L.principle)) err('synthesis', `blueprint lapis ${L.n}: principle tak dikenal (${L.principle})`);
   }
-  if (!errs.length) console.log(`✓ sintesis: ${syn.principles.length} prinsip, ${syn.blueprint.layers.length} lapis blueprint — evidence & prinsip valid.`);
+  for (const f of syn.frameworks ?? []) {
+    if (!f.basis || f.basis.length < 20) err('synthesis', `framework ${f.id}: basis wajib beratribusi`);
+    if (!(f.layers ?? []).length) err('synthesis', `framework ${f.id}: layers kosong`);
+    for (const e of f.refs ?? []) if (!studyIds.has(e.id)) err('synthesis', `framework ${f.id}: refs.id bukan kajian (${e.id})`);
+  }
+  if (!errs.length) console.log(`✓ sintesis: ${syn.principles.length} prinsip, ${syn.blueprint.layers.length} lapis blueprint, ${(syn.frameworks ?? []).length} kerangka — semua valid.`);
 }
 
 if (errs.length) { console.error(`LAB VALIDATE: ${errs.length} pelanggaran\n` + errs.join('\n')); process.exit(1); }
