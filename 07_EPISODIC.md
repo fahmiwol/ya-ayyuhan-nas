@@ -113,6 +113,13 @@ Owner minta (catat dulu, belum bangun): (1) **4 mazhab fikih** (Hanafi/Maliki/Sy
 
 ---
 
+### [F1.48] Belajar: Sifat-sifat Allah (20 wajib + jaiz) — netralitas mazhab akidah — 2026-07-08
+
+Lanjutan otonom "isi halaman lain". Data bersumber (agen): `belajar/sifat.json` — kerangka **sifat 20** (Asy'ari/Maturidi; urutan Wujud→Mutakalliman) + jaiz 1. **Netralitas kritis dijaga:** field `note_neutralitas` eksplisit (pendekatan Atsari/Salafi menetapkan sifat sesuai nash tanpa enumerasi & takwil = metadata, BUKAN vonis; keduanya arus Sunni). Agen taat: jaiz `mustahil`="—" (tak ada lawan wajib), 7 sifat ma'nawiyyah pakai dalil konsisten. **21 dalil valid vs mushaf (0 invalid).** UI: `/belajar/sifat-allah` (catatan netralitas paling atas) + Belajar hub jadi 4 kartu. Status kandidat-perlu tinjauan. TSC+build ok, LIVE, app lain 301.
+**Next mapping:** asbabun nuzul (al-Wahidi)→Riwayat; Rukun Iman/Islam detail; Kisah perluas; silang Asma↔Lab.
+
+---
+
 ### [F1.47] Belajar diperluas — Asma'ul Husna + 25 Nabi + Malaikat (bukan cuma Lab) — 2026-07-08
 
 **North Star:** owner "AI-brain arch DITAHAN (dia revisi SIDIX sendiri); otonom; jangan cuma isi Lab, halaman lain juga isi & optimasi; setiap referensi kamu yg mapping". → garap fitur **Belajar** (domain yg sudah kupetakan di 23).
