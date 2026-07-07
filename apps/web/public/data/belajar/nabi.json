@@ -1,0 +1,37 @@
+{
+  "schema": "nabi-v1",
+  "title": "25 Nabi & Rasul",
+  "source": {
+    "name": "Al-Qur'an (nama-nama nabi yang disebut) + ijmak 25 wajib diketahui",
+    "note": "25 = jumlah masyhur yang wajib diimani; jumlah TOTAL nabi menurut riwayat jauh lebih banyak (mis. 124.000 — riwayat, verifikasi) = metadata, bukan vonis. Ulul Azmi 5: Nuh, Ibrahim, Musa, Isa, Muhammad.",
+    "license": "editorial ber-dalil"
+  },
+  "status": "kandidat — perlu tinjauan ahli",
+  "items": [
+    { "n": 1, "nama": "Adam", "nama_arab": "آدَم", "ulul_azmi": false, "ringkas": "Manusia dan nabi pertama yang diciptakan Allah.", "ayat_ref": ["2:31", "2:35", "3:33"], "kaum": "—" },
+    { "n": 2, "nama": "Idris", "nama_arab": "إِدْرِيس", "ulul_azmi": false, "ringkas": "Nabi yang disebut sebagai orang benar dan diangkat ke tempat yang tinggi.", "ayat_ref": ["19:56", "21:85"], "kaum": "—" },
+    { "n": 3, "nama": "Nuh", "nama_arab": "نُوح", "ulul_azmi": true, "ringkas": "Nabi Ulul Azmi yang berdakwah ratusan tahun dan diselamatkan dengan bahtera.", "ayat_ref": ["7:59", "11:25", "71:1"], "kaum": "Kaum Nuh" },
+    { "n": 4, "nama": "Hud", "nama_arab": "هُود", "ulul_azmi": false, "ringkas": "Nabi yang diutus kepada kaum 'Ad yang mendustakannya.", "ayat_ref": ["7:65", "11:50", "26:124"], "kaum": "Kaum 'Ad" },
+    { "n": 5, "nama": "Salih", "nama_arab": "صَالِح", "ulul_azmi": false, "ringkas": "Nabi yang diutus kepada kaum Tsamud dengan mukjizat unta betina.", "ayat_ref": ["7:73", "11:61", "26:142"], "kaum": "Kaum Tsamud" },
+    { "n": 6, "nama": "Ibrahim", "nama_arab": "إِبْرَاهِيم", "ulul_azmi": true, "ringkas": "Nabi Ulul Azmi, bapak para nabi dan teladan tauhid.", "ayat_ref": ["2:124", "6:74", "21:51"], "kaum": "Kaum Ibrahim (Babilonia)" },
+    { "n": 7, "nama": "Luth", "nama_arab": "لُوط", "ulul_azmi": false, "ringkas": "Nabi yang diutus kepada kaum yang melakukan kekejian.", "ayat_ref": ["7:80", "11:77", "21:71"], "kaum": "Kaum Luth (Sodom)" },
+    { "n": 8, "nama": "Ismail", "nama_arab": "إِسْمَاعِيل", "ulul_azmi": false, "ringkas": "Putra Ibrahim yang bersama ayahnya membangun Ka'bah.", "ayat_ref": ["2:127", "19:54", "21:85"], "kaum": "Penduduk Makkah" },
+    { "n": 9, "nama": "Ishaq", "nama_arab": "إِسْحَاق", "ulul_azmi": false, "ringkas": "Putra Ibrahim yang menjadi kabar gembira dan nabi.", "ayat_ref": ["2:133", "11:71", "37:112"], "kaum": "Bani Israil (leluhur)" },
+    { "n": 10, "nama": "Yaqub", "nama_arab": "يَعْقُوب", "ulul_azmi": false, "ringkas": "Putra Ishaq, dikenal juga sebagai Israil, ayah dari dua belas suku.", "ayat_ref": ["2:132", "19:49", "21:72"], "kaum": "Bani Israil" },
+    { "n": 11, "nama": "Yusuf", "nama_arab": "يُوسُف", "ulul_azmi": false, "ringkas": "Putra Yaqub yang kisahnya diabadikan dalam satu surah penuh.", "ayat_ref": ["6:84", "12:4", "40:34"], "kaum": "Mesir (kerajaan)" },
+    { "n": 12, "nama": "Ayyub", "nama_arab": "أَيُّوب", "ulul_azmi": false, "ringkas": "Nabi teladan kesabaran dalam menghadapi ujian penyakit.", "ayat_ref": ["4:163", "21:83", "38:41"], "kaum": "—" },
+    { "n": 13, "nama": "Syu'aib", "nama_arab": "شُعَيْب", "ulul_azmi": false, "ringkas": "Nabi yang diutus kepada penduduk Madyan dan menyeru berlaku jujur dalam timbangan.", "ayat_ref": ["7:85", "11:84", "26:177"], "kaum": "Penduduk Madyan" },
+    { "n": 14, "nama": "Musa", "nama_arab": "مُوسَىٰ", "ulul_azmi": true, "ringkas": "Nabi Ulul Azmi yang diutus kepada Fir'aun dan menerima Taurat.", "ayat_ref": ["2:51", "7:104", "20:9"], "kaum": "Bani Israil / Fir'aun" },
+    { "n": 15, "nama": "Harun", "nama_arab": "هَارُون", "ulul_azmi": false, "ringkas": "Saudara Musa yang menjadi pendamping dalam berdakwah.", "ayat_ref": ["4:163", "20:30", "28:34"], "kaum": "Bani Israil" },
+    { "n": 16, "nama": "Dzulkifli", "nama_arab": "ذُو الْكِفْل", "ulul_azmi": false, "ringkas": "Nabi yang disebut termasuk orang-orang yang sabar dan saleh.", "ayat_ref": ["21:85", "38:48"], "kaum": "—" },
+    { "n": 17, "nama": "Dawud", "nama_arab": "دَاوُود", "ulul_azmi": false, "ringkas": "Nabi dan raja yang diberi kitab Zabur serta suara merdu.", "ayat_ref": ["2:251", "21:78", "38:17"], "kaum": "Bani Israil" },
+    { "n": 18, "nama": "Sulaiman", "nama_arab": "سُلَيْمَان", "ulul_azmi": false, "ringkas": "Putra Dawud, nabi dan raja yang diberi kekuasaan atas angin, jin, dan bahasa hewan.", "ayat_ref": ["21:81", "27:15", "38:30"], "kaum": "Bani Israil" },
+    { "n": 19, "nama": "Ilyas", "nama_arab": "إِلْيَاس", "ulul_azmi": false, "ringkas": "Nabi yang menyeru kaumnya meninggalkan penyembahan berhala Ba'l.", "ayat_ref": ["6:85", "37:123"], "kaum": "Bani Israil" },
+    { "n": 20, "nama": "Ilyasa'", "nama_arab": "الْيَسَع", "ulul_azmi": false, "ringkas": "Nabi yang disebut termasuk orang-orang pilihan dan terbaik.", "ayat_ref": ["6:86", "38:48"], "kaum": "Bani Israil" },
+    { "n": 21, "nama": "Yunus", "nama_arab": "يُونُس", "ulul_azmi": false, "ringkas": "Nabi yang dikenal dengan kisah ditelan ikan besar (Dzun-Nun).", "ayat_ref": ["4:163", "10:98", "21:87"], "kaum": "Penduduk Ninawa" },
+    { "n": 22, "nama": "Zakariya", "nama_arab": "زَكَرِيَّا", "ulul_azmi": false, "ringkas": "Nabi yang dikaruniai putra Yahya di usia tua.", "ayat_ref": ["3:37", "19:2", "21:89"], "kaum": "Bani Israil" },
+    { "n": 23, "nama": "Yahya", "nama_arab": "يَحْيَىٰ", "ulul_azmi": false, "ringkas": "Putra Zakariya yang dibenarkan sejak kecil dan diberi hikmah.", "ayat_ref": ["3:39", "19:7", "21:90"], "kaum": "Bani Israil" },
+    { "n": 24, "nama": "Isa", "nama_arab": "عِيسَىٰ", "ulul_azmi": true, "ringkas": "Nabi Ulul Azmi, putra Maryam, yang diberi kitab Injil dan mukjizat.", "ayat_ref": ["3:45", "5:110", "19:30"], "kaum": "Bani Israil" },
+    { "n": 25, "nama": "Muhammad", "nama_arab": "مُحَمَّد", "ulul_azmi": true, "ringkas": "Nabi Ulul Azmi, penutup para nabi, penerima wahyu Al-Qur'an.", "ayat_ref": ["3:144", "33:40", "48:29"], "kaum": "Bangsa Arab dan seluruh umat manusia" }
+  ]
+}

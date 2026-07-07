@@ -49,6 +49,21 @@ export default async function BelajarPage() {
       <h1 className="text-2xl font-bold">{d.title} <span className="gold">{d.subtitle}</span></h1>
       <p className="mut mt-2 text-sm leading-relaxed">{d.intro}</p>
 
+      {/* Jelajahi — domain dasar keislaman */}
+      <div className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-3">
+        {[
+          { href: "/belajar/asma-ul-husna", icon: "✨", t: "Asma'ul Husna", d: "99 nama Allah" },
+          { href: "/belajar/nabi", icon: "☝️", t: "25 Nabi & Rasul", d: "para utusan Allah" },
+          { href: "/belajar/malaikat", icon: "👼", t: "Malaikat", d: "nama & tugas" },
+        ].map((x) => (
+          <Link key={x.href} href={x.href} className="card p-4 transition hover:opacity-90">
+            <div className="text-2xl">{x.icon}</div>
+            <div className="mt-1 font-semibold">{x.t}</div>
+            <div className="mut text-xs">{x.d} →</div>
+          </Link>
+        ))}
+      </div>
+
       {/* Roadmap */}
       <h2 className="mt-8 text-lg font-semibold">{d.roadmap.title}</h2>
       <ol className="mt-3 space-y-3">

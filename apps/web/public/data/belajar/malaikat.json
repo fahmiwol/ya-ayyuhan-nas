@@ -1,0 +1,22 @@
+{
+  "schema": "malaikat-v1",
+  "title": "Malaikat",
+  "source": {
+    "name": "Al-Qur'an & Hadits",
+    "note": "10 malaikat masyhur yang wajib diketahui namanya/tugasnya; jumlah malaikat sebenarnya hanya Allah yang tahu.",
+    "license": "editorial ber-dalil"
+  },
+  "status": "kandidat — perlu tinjauan ahli",
+  "items": [
+    { "nama": "Jibril", "nama_arab": "جِبْرِيل", "tugas": "Menyampaikan wahyu kepada para nabi dan rasul.", "dalil": "2:97" },
+    { "nama": "Mikail", "nama_arab": "مِيكَائِيل", "tugas": "Mengatur pembagian rezeki, hujan, dan kesuburan.", "dalil": "2:98" },
+    { "nama": "Israfil", "nama_arab": "إِسْرَافِيل", "tugas": "Meniup sangkakala pada hari kiamat dan kebangkitan.", "dalil": "—" },
+    { "nama": "Izrail", "nama_arab": "عِزْرَائِيل", "tugas": "Mencabut nyawa (Malaikat Maut).", "dalil": "32:11" },
+    { "nama": "Munkar", "nama_arab": "مُنْكَر", "tugas": "Menanyai manusia di alam kubur.", "dalil": "—" },
+    { "nama": "Nakir", "nama_arab": "نَكِير", "tugas": "Menanyai manusia di alam kubur.", "dalil": "—" },
+    { "nama": "Raqib", "nama_arab": "رَقِيب", "tugas": "Mencatat amal baik manusia.", "dalil": "50:18" },
+    { "nama": "Atid", "nama_arab": "عَتِيد", "tugas": "Mencatat amal buruk manusia.", "dalil": "50:18" },
+    { "nama": "Malik", "nama_arab": "مَالِك", "tugas": "Menjaga pintu neraka.", "dalil": "43:77" },
+    { "nama": "Ridwan", "nama_arab": "رِضْوَان", "tugas": "Menjaga pintu surga.", "dalil": "—" }
+  ]
+}

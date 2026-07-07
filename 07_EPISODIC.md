@@ -113,6 +113,17 @@ Owner minta (catat dulu, belum bangun): (1) **4 mazhab fikih** (Hanafi/Maliki/Sy
 
 ---
 
+### [F1.47] Belajar diperluas — Asma'ul Husna + 25 Nabi + Malaikat (bukan cuma Lab) — 2026-07-08
+
+**North Star:** owner "AI-brain arch DITAHAN (dia revisi SIDIX sendiri); otonom; jangan cuma isi Lab, halaman lain juga isi & optimasi; setiap referensi kamu yg mapping". → garap fitur **Belajar** (domain yg sudah kupetakan di 23).
+**Action:**
+- Data **bersumber** (agen, prinsip "sumber dulu bukan generate"): `public/data/belajar/` → **asma.json (99 Asma'ul Husna**, enumerasi Tirmidhi 3507, khilaf=metadata), **nabi.json (25 Nabi**, Ulul Azmi 5, tiap nabi 2-3 ayat_ref), **malaikat.json (10**, dalil "—" utk nama dari hadits agar tak mengarang rujukan Qur'ani). Semua `status: kandidat — perlu tinjauan ahli`.
+- `lib/belajar.ts` (loader getAsma/getNabi/getMalaikat + ayahHref) + 3 halaman `/belajar/{asma-ul-husna,nabi,malaikat}` (Asma searchable via AsmaGrid client) + kartu domain di /belajar.
+- **Integritas terverifikasi:** 99/25/10 ✓; **semua ayat_ref nabi valid vs mushaf kanonik (0 invalid)**; Ulul Azmi = Nuh/Ibrahim/Musa/Isa/Muhammad ✓; nama sesuai daftar masyhur.
+**Test:** TSC clean; next build 4 halaman /belajar sukses. **Status:** ✅ deploy. **Next (mapping dokumen — sesuai arahan):** asbabun nuzul (al-Wahidi PDF) → modul Riwayat; Sifat Allah (sifat 20/wajib-mustahil) + Rukun Iman/Islam detail; Kisah perluas; kajian Lab silang ke Asma (atribut=kapabilitas sistem).
+
+---
+
 ### [F1.46] Wave 8 — 3 agen paralel, +15 kajian maks-dimensi (total 78) — 2026-07-08
 
 **North Star:** owner "gas otonom, kamu tentukan" → kupilih Wave 8 (misi inti + pola teraman) dgn arahan baru MAKSIMALKAN DIMENSI.
