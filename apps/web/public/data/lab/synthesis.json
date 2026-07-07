@@ -558,7 +558,7 @@
     {
       "id": "pohon-din",
       "title": "Pohon Din — Iman, Islam, Ihsan sebagai arsitektur tiga lapis",
-      "basis": "Hadits Jibril (Sahih Muslim no.8 — lihat halaman Belajar app ini, bersumber) + kerangka aqidah-syariat-akhlak (16_IMAN_ISLAM_IHSAN_RESEARCH.md). Analogi pohon: iman=akar, islam=batang, ihsan=buah — diagram klasik pendidikan Islam.",
+      "basis": "Hadits Jibril (Sahih Muslim no.8 — tersedia bersumber di halaman Belajar app ini) utk trio Iman-Islam-Ihsan. Analogi pohon (iman=akar, islam=batang, ihsan=buah) = diagram pendidikan Islam populer yang dilampirkan owner — CATATAN ATRIBUSI: analogi ini TIDAK ditemukan di 2 PDF riset (16_IMAN_ISLAM_IHSAN_RESEARCH.md mencatat gap ini eksplisit); [AEI 2022] mengisi slot buah-iman dgn TAKWA, dan memetakan syariat=aqidah+fiqh+akhlaq (Laldin, hlm.91). Tauhid 3 bagian (rububiyah/uluhiyah/asma-wa-sifat) per [AEI] hlm.39-49 — semua khilaf/versi disimpan sbg metadata pandangan.",
       "layers": [
         {
           "name": "Iman (akar)",
@@ -594,7 +594,7 @@
           "note": "constraint yang mengikat seluruh lapisan"
         }
       ],
-      "candidates": "Kajian penguat berikut: 2:177 (birr = iman+amal terintegrasi), 31:22 (muhsin)."
+      "candidates": "Kajian penguat: 2:177 (birr), 31:22 (muhsin), 14:24-25 (kalimah thayyibah SEPERTI POHON — akar kokoh, cabang ke langit, buah tiap musim: basis Qurani terdekat utk analogi pohon; PRIORITAS)."
     },
     {
       "id": "aql-qalb",
