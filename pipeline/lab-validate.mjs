@@ -98,3 +98,15 @@ if (!only && existsSync(fileURLToPath(new URL('synthesis.json', LAB)))) {
 
 if (errs.length) { console.error(`LAB VALIDATE: ${errs.length} pelanggaran\n` + errs.join('\n')); process.exit(1); }
 console.log(`✓ lab-validate: ${targets.length} kajian lolos (skema, sumber, rujukan mushaf, riwayat).`);
+
+// SOFT LINT tanzih (WARN, tak menggagalkan) — sorot frasa yang MUNGKIN menganalogikan Dzat/Sifat Allah.
+const TANZIH = /\bPrincipal\b|khab[iī]r['" ]*[-=:]+\s*observ|Allah\s*=|(sifat|atribut|asma)[^.]{0,40}(lensa|sistem|properti|kapabilitas|observab)|(kapabilitas|observabilitas|compute)[^.]{0,25}(Allah|Tuhan|Ilahi)/i;
+const warns = [];
+for (const id of targets) {
+  const fp = fileURLToPath(new URL(`${id}.json`, LAB));
+  if (!existsSync(fp)) continue;
+  const s = JSON.parse(readFileSync(fp, 'utf8'));
+  const blobs = [s.inference, ...(s.lenses ?? []).map((l) => l.reading), ...(s.qca ?? []).map((q) => q.note)];
+  for (const b of blobs) if (b && TANZIH.test(b) && !/tanzih/i.test(b)) warns.push(`  ⚠ ${id}: "${b.slice(0, 70)}…" (cek: jangan analogikan Dzat/Sifat Allah)`);
+}
+if (warns.length) console.warn(`\n⚠ TANZIH-LINT (${warns.length} sorotan — tinjau manual, beri CATATAN TANZIH bila perlu):\n` + warns.join('\n'));

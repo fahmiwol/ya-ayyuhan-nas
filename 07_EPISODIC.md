@@ -113,6 +113,19 @@ Owner minta (catat dulu, belum bangun): (1) **4 mazhab fikih** (Hanafi/Maliki/Sy
 
 ---
 
+### [F1.50] ⛔ KOREKSI TANZIH — Allah tak boleh dianalogikan sbg sistem — 2026-07-08
+
+**Koreksi teologis penting dari owner:** ide "silang Asma'ul Husna ↔ Lab (atribut Allah sbg lensa)" SALAH & DIBATALKAN. Allah = Dzat ghaib & transenden; Sifat/Asma-Nya TIDAK boleh ditafsirkan/digambarkan/dibayangkan/dianalogikan sebagai atribut/komponen sistem (tanzih).
+**Action:**
+- **Aturan TANZIH jadi guardrail paling utama di skill** (di atas Hukum Besi): analogi HANYA pada sisi makhluk/manusia/teks/alam; Allah tak pernah jadi objek/peran/analog; bila ayat sebut Sifat Allah → landasan iman dgn ta'zhim, wajib "CATATAN TANZIH".
+- **Audit & perbaikan 3 spot yang terlanjur melewati batas:** (1) fatihah-1-1-7 — Allah dicasting "Principal"/"interaksi agen dgn Principal-nya" → reframe ke DISIPLIN MANUSIA (pengabdian/kalibrasi diri); (2) hasyr-59-18 — "khabīr = observabilitas total/auditor tertinggi" → reframe: iman bahwa Allah Maha Mengetahui = landasan kejujuran muhasabah, sifat Allah TAK dianalogikan; (3) kerangka Pohon Din (ihsan) — "khabīr=observability layer" → reframe ke postur pelaku + catatan tanzih.
+- **`lab-validate` +soft tanzih-lint** (WARN, tak menggagalkan): sorot frasa "Principal", "khabīr=observ", "Allah=", "sifat/asma…=sistem/lensa" untuk tinjauan manual. (1 false-positive furqan-25-53 "sifat AIR" — aman.)
+- Scrub rencana silang-Asma dari 23_STRATEGY + memory.
+**Sikap:** Asma'ul Husna tetap sbg materi Belajar (dikenal/dihafal), TIDAK jadi lensa rekayasa. Prinsip: Lab menafsir-rekayasa POLA di makhluk/teks, Allah selalu di luar jangkauan analogi.
+**Test:** lab-validate 78/78 (+lint); corpus regen. **Status:** ✅ deploy.
+
+---
+
 ### [F1.49] Riwayat diperkaya — +17 asbabun nuzul dari al-Wahidi (total 32) — 2026-07-08
 
 Mapping dokumen owner (al-Wahidi PDF) → modul **Riwayat**. Agen ekstrak 25 asbabun nuzul dari `Asbab Al-Nuzul by Al-Wahidi.pdf` (terjemahan Guezzou, Royal Aal al-Bayt 2008) via python pypdf → `asbab-add.json`; aku merge+dedup ke asbab.json (schema {surah,ayah,title,narrative,source,grade}). Hasil: **+17 baru** (8 dupe di-skip, 0 ref invalid vs mushaf, 0 incomplete) → **32 entri** (2× lipat). Perawi dikutip di source (Ka'b ibn 'Ujrah, Sa'd ibn Abi Waqqash, 'A'ishah, Ibn 'Abbas, al-Bara', Ubay, Jundub); grade konservatif "riwayat (al-Wahidi)" (tak mengarang derajat). Banyak surah pendek (93,96,97,102,106-113) + 2:104/158/187/196, 5:90 dll. Riwayat tab (panel Identitas) otomatis surface — API /ayah/111/1/riwayat verified live (Abu Lahab). Data-only, LIVE, app lain 301.

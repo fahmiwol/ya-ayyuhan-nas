@@ -47,7 +47,7 @@ Owner minta tambah: **25 Nabi, Malaikat, Sifat-sifat Allah, dasar-dasar Islam** 
 = jumlah masyhur (ada khilaf jumlah nabi total 124.000 dst → metadata); netral Sunni; audit dulu,
 status kandidat → tinjauan. **Skema data disketsa di `24_*` saat digarap.** Ini SILANG ke Lab: kisah
 nabi & sifat Allah bisa jadi bahan tadabbur (mis. metode dakwah para nabi = strategi/negosiasi;
-Asma'ul Husna = "kapabilitas/atribut sistem"), tetap tier interpretasi terpisah.
+[DIBATALKAN — lihat catatan TANZIH], tetap tier interpretasi terpisah.
 
 ---
 

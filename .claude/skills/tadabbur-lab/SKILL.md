@@ -7,6 +7,9 @@ description: Metode lengkap memproduksi kajian Lab Tadabbur (interpretasi rekaya
 
 Metode memproduksi kajian di Lab Tadabbur (`apps/web/public/data/lab/`). Interpretasi = analogi struktural rekayasa — **BUKAN tafsir, BUKAN dalil**. Tujuan: dasar pengembangan teknologi (utama: AI/ML/agentic), sekunder: sosial/keuangan/kedokteran/mesin.
 
+## ⛔ TANZIH — batas mutlak (paling utama)
+**Allah (Dzat & Sifat-Nya) TIDAK PERNAH ditafsirkan, digambarkan, dibayangkan, didefinisikan, atau dianalogikan.** Allah adalah Dzat yang ghaib & transenden — bukan objek/komponen/peran dalam analogi rekayasa. DILARANG: mencasting Allah sebagai "Principal/agen/sistem", menyamakan Sifat Allah (mis. khabīr, qudrah, ilmu) dengan properti teknis ("observability", "compute", dll), atau menjadikan Asma'ul Husna sebagai "lensa/atribut sistem". Analogi HANYA boleh pada sisi **makhluk/manusia/teks/alam** (amal, sikap hati, struktur ibadah, pola ciptaan). Bila ayat menyebut Sifat Allah, sebut dengan ta'zhim sebagai LANDASAN iman — bukan sebagai bahan analogi. Setiap kajian yang menyentuh ini WAJIB beri "CATATAN TANZIH".
+
 ## Hukum Besi (tidak bisa ditawar)
 1. **Teks ayat TIDAK PERNAH disalin** ke data Lab — hanya ref `{surah, from, to}`; render menarik dari mushaf kanonik ber-Merkle. Ref invalid → fail-closed.
 2. **Makna religius SELALU dari tafsir bersumber** (Kemenag/Jalalain di data app) — field `sourced_meaning` wajib. Ini disiplin **bil-ma'tsur**: ground ke riwayat DULU sebelum menalar.
