@@ -97,6 +97,11 @@
           "ref": "41:53",
           "id": "fussilat-41-53",
           "note": "verifikasi dua kanal: āfāq + anfus"
+        },
+        {
+          "ref": "2:31-32",
+          "id": "baqarah-2-31-32",
+          "note": "al-asma: jawab hanya utk simbol ter-grounding ('tak tahu selain yang Kau ajarkan') = refuse-when-ungrounded"
         }
       ],
       "implication": "AI/ML: ini dalil langsung dari Eval-Gate app ini. RAG + uncertainty-triggered retrieval + multi-channel verification = arsitektur anti-halusinasi. Agen yang bertindak atas klaim tak terverifikasi = rusak by design."
@@ -553,6 +558,25 @@
         }
       ],
       "implication": "AI/ML: asumsikan DECAY sebagai default — model drift, data staleness, value drift, reward hacking terjadi tanpa intervensi. Anggarkan pemeliharaan berkelanjutan (continual eval, re-grounding, refresh data, re-alignment) sebagai bagian arsitektur, bukan tambahan. Sistem yang 'dibiarkan jalan sendiri' meluruh — bukan stabil."
+    },
+    {
+      "id": "consistency-single-truth",
+      "cluster": "systems",
+      "title": "Konsistensi tanpa kontradiksi; satu sumber kebenaran (single source of truth)",
+      "statement": "Sistem yang benar tak boleh mengandung kontradiksi internal. Dua otoritas final yang bisa berselisih → kerusakan/kebuntuan; maka butuh satu arbiter/sumber kebenaran. Integritas dibuktikan dengan MENCARI kontradiksi berulang dan tak menemukannya — bukan dengan melarang pemeriksaan.",
+      "evidence": [
+        {
+          "ref": "21:22",
+          "id": "anbiya-21-22",
+          "note": "andai dua tuhan → keduanya rusak (reductio ad absurdum → single arbiter)"
+        },
+        {
+          "ref": "67:3-4",
+          "id": "mulk-67-3-4",
+          "note": "cari tafāwut/fuṭūr (kontradiksi/retak) berulang → tak ada = integritas"
+        }
+      ],
+      "implication": "AI/ML: satu canonical objective / final arbiter untuk tujuan yang bisa bertentangan (hindari split-brain deadlock); consistency-check lintas komponen; kontradiksi = sinyal korupsi state. Integritas layak dipercaya = yang berani diaudit berulang & tetap konsisten (bandingkan falsify-to-trust)."
     }
   ],
   "blueprint": {

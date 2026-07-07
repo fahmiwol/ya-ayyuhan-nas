@@ -2,25 +2,25 @@
   "updated": "2026-07-07",
   "total_ayat": 6236,
   "studies": 63,
-  "principles": 24,
+  "principles": 25,
   "frameworks": 3,
   "direct_ayat": 107,
-  "cited_ayat": 67,
+  "cited_ayat": 70,
   "touched_ayat": 107,
   "candidates_total": 596,
-  "candidates_done": 36,
+  "candidates_done": 44,
   "pct_of_total": 1.72,
-  "pct_of_candidates": 6,
+  "pct_of_candidates": 7.4,
   "by_theme": [
     {
       "theme": "pikir/akal/renung",
       "total": 120,
-      "done": 5
+      "done": 7
     },
     {
       "theme": "saksi/bukti",
       "total": 115,
-      "done": 8
+      "done": 10
     },
     {
       "theme": "hitung/kadar/ukuran",
@@ -40,7 +40,7 @@
     {
       "theme": "ilmu/tahu/ajar",
       "total": 38,
-      "done": 1
+      "done": 4
     },
     {
       "theme": "catat/tulis/kitab",
@@ -55,7 +55,7 @@
     {
       "theme": "waktu/ajal/jadwal",
       "total": 27,
-      "done": 1
+      "done": 2
     },
     {
       "theme": "sembuh/obat/sehat",
