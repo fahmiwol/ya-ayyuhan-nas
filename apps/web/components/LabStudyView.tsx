@@ -31,7 +31,25 @@ export function LabStudyView({ study, ayat, lenses, surahName, isArchived }: { s
         <h1 className="text-xl font-bold">{study.title}</h1>
         <TrustBadge a={labTrust} refId={`lab:${study.id}`} />
         <span className="mut rounded-full border px-2 py-0.5 text-[10px]" style={{ borderColor: "var(--line)" }} title="versi tadabbur — setiap interpretasi direkam & bisa di-tadabburi ulang">📼 v{study.version}</span>
+        {(() => {
+          const v = study.review?.verdict ?? "pending";
+          const M: Record<string, { l: string; c: string }> = {
+            endorsed: { l: "✅ Disahkan peninjau", c: "var(--green)" },
+            revise: { l: "✏️ Perlu perbaikan", c: "#d97706" },
+            rejected: { l: "⛔ Ditolak peninjau", c: "#dc2626" },
+            pending: { l: "🕵️ Menunggu tinjauan ahli", c: "var(--mut)" },
+          };
+          const m = M[v];
+          return <span className="rounded-full border px-2 py-0.5 text-[10px]" style={{ borderColor: m.c, color: m.c }}
+            title={study.review ? `${study.review.by} (${study.review.role}) · ${study.review.date}${study.review.note ? " — " + study.review.note : ""}` : "Interpretasi rekayasa; belum ditinjau peninjau berkelas (ulama/mufassir/sejarawan/hafizh)"}>{m.l}</span>;
+        })()}
       </div>
+      {study.review && study.review.verdict !== "pending" && (
+        <div className="mut mt-2 rounded-lg border p-2 text-xs" style={{ borderColor: "var(--line)" }}>
+          <b>Tinjauan:</b> {study.review.by} — {study.review.role}{study.review.credential ? ` (${study.review.credential})` : ""} · {study.review.date}
+          {study.review.note && <div className="mt-1">{study.review.note}</div>}
+        </div>
+      )}
       {study.subtitle && <p className="mut mt-1 text-sm">{study.subtitle}</p>}
 
       {/* LAPIS 1 — Ayat kanonik + makna bersumber */}

@@ -26,6 +26,18 @@ export interface LabLensReading {
 // Tooling: pipeline/lab-scaffold.mjs (buat kajian baru), lab-rev.mjs (re-tadabbur),
 // lab-validate.mjs (validasi skema + rujukan vs mushaf — jalankan sebelum commit).
 export interface LabRevision { version: number; date: string; note: string; authors: string[] }
+// Jalur tinjauan ahli: kajian "menunggu tinjauan" bisa dinaikkan statusnya HANYA
+// oleh peninjau berkelas (ulama/mufassir/sejarawan/hafizh) via lab-review.mjs.
+// verdict: pending (default) → endorsed (disahkan) | revise (perlu perbaikan) | rejected.
+export type ReviewVerdict = "pending" | "endorsed" | "revise" | "rejected";
+export interface LabReview {
+  verdict: ReviewVerdict;
+  by: string; // nama peninjau
+  role: string; // kelas: ulama | mufassir | sejarawan | hafizh | akademisi | dll
+  credential?: string; // atribusi kredensial/afiliasi
+  date: string;
+  note?: string; // catatan tinjauan
+}
 
 export interface LabStudy {
   schema: string; // "lab-study-v2"
@@ -44,6 +56,7 @@ export interface LabStudy {
   status: "draft" | "published";
   created: string;
   history: LabRevision[]; // riwayat tadabbur (terbaru terakhir)
+  review?: LabReview; // hasil tinjauan ahli (opsional; default = menunggu tinjauan)
 }
 
 export interface LabIndexEntry {

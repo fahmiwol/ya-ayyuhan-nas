@@ -226,6 +226,46 @@
       "theme": "Kesehatan/perkembangan, isolasi berlapis, sandbox",
       "lenses": 9,
       "created": "2026-07-07"
+    },
+    {
+      "id": "nisa-4-135",
+      "title": "Syuhadāʾ lillāh — kesaksian tak-bias bahkan atas diri sendiri",
+      "ref": "QS 4:135",
+      "theme": "Kesaksian tak-bias, integritas evaluator, konflik kepentingan",
+      "lenses": 8,
+      "created": "2026-07-07"
+    },
+    {
+      "id": "nur-24-4",
+      "title": "Arbaʿati syuhadāʾ — ambang bukti berskala dengan besar tuduhan",
+      "ref": "QS 24:4",
+      "theme": "Ambang bukti, biaya klaim palsu, proporsionalitas evidence",
+      "lenses": 7,
+      "created": "2026-07-07"
+    },
+    {
+      "id": "qaf-50-17-18",
+      "title": "Raqīb ʿatīd — logging berkelanjutan oleh dua pencatat",
+      "ref": "QS 50:17-18",
+      "theme": "Logging berkelanjutan, audit trail, redundansi, observabilitas",
+      "lenses": 7,
+      "created": "2026-07-07"
+    },
+    {
+      "id": "fussilat-41-20-22",
+      "title": "Syahida ʿalaihim julūduhum — komponen bersaksi atas sistemnya",
+      "ref": "QS 41:20-22",
+      "theme": "Self-attestation, tamper-proof telemetry, non-repudiation",
+      "lenses": 7,
+      "created": "2026-07-07"
+    },
+    {
+      "id": "zalzalah-99-1-8",
+      "title": "Mithqāla dzarratin — audit imutabel sampai butir terkecil",
+      "ref": "QS 99:1-8",
+      "theme": "Audit imutabel, granularitas terkecil, replay lengkap",
+      "lenses": 7,
+      "created": "2026-07-07"
     }
   ]
 }

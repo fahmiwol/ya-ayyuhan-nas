@@ -44,6 +44,12 @@
       "title": "Kehidupan, Kedokteran & Materi",
       "icon": "🧬",
       "desc": "Substrat kehidupan, pembentukan bertahap, material dual-use."
+    },
+    {
+      "key": "attestation",
+      "title": "Attestation, Kesaksian & Audit",
+      "icon": "📿",
+      "desc": "Bukti, logging, non-repudiation, integritas penilai — bagaimana sistem membuktikan & dibuktikan."
     }
   ],
   "principles": [
@@ -451,6 +457,73 @@
         }
       ],
       "implication": "Kedokteran: perawatan perinatal sadar-tahap (nutrisi/teratogen per fase). AI: fase pelatihan = titik rentan; sediakan lingkungan terisolasi (sandbox) untuk proses yang belum matang."
+    },
+    {
+      "id": "unbiased-attestation",
+      "cluster": "attestation",
+      "title": "Penilai/saksi harus tak-bias — bahkan melawan kepentingan sendiri",
+      "statement": "Kesaksian & penilaian wajib objektif ke standar tertinggi, kebal dari bias afiliasi & status, sampai berani bersaksi atas diri sendiri. Integritas terinternalisasi lebih tahan daripada pengawasan eksternal.",
+      "evidence": [
+        {
+          "ref": "4:135",
+          "id": "nisa-4-135",
+          "note": "syuhadāʾ lillāh walau atas diri sendiri; bias afiliasi & status dilarang"
+        },
+        {
+          "ref": "2:143",
+          "id": "baqarah-2-143",
+          "note": "wasaṭ = posisi tengah tak-bias sebagai syarat jadi saksi adil"
+        }
+      ],
+      "implication": "AI/ML: evaluator/judge/verifier harus memutuskan dari evidence, bukan dari identitas/kepentingan; self-critique jujur (mengakui error sendiri) = bentuk tertinggi objektivitas. Guard bias afiliasi (favoritisme sumber) & status (popularitas)."
+    },
+    {
+      "id": "harm-scaled-evidence",
+      "cluster": "attestation",
+      "title": "Ambang bukti berskala dengan potensi kerusakan; biaya klaim palsu asimetris",
+      "statement": "Klaim/tuduhan berdampak besar menuntut bukti jauh lebih kuat sebelum di-assert; dan kegagalan membuktikan klaim berbahaya menghukum sumbernya (kredibilitas dicabut). Kalibrasi false-positive vs false-negative eksplisit terhadap biaya kesalahan.",
+      "evidence": [
+        {
+          "ref": "24:4",
+          "id": "nur-24-4",
+          "note": "tuduhan zina butuh 4 saksi; gagal → 80 dera + kesaksian ditolak selamanya"
+        },
+        {
+          "ref": "49:6",
+          "id": "hujurat-49-6",
+          "note": "kabar berdampak wajib tabayyun sebelum bertindak"
+        }
+      ],
+      "implication": "AI/ML: confidence threshold = f(potensi harm) — output high-stakes butuh evidentiary bar tinggi; biaya asimetris untuk false high-stakes claims agar sistem tak menyebar tuduhan berbahaya dengan percaya diri."
+    },
+    {
+      "id": "complete-immutable-audit",
+      "cluster": "attestation",
+      "title": "Audit berlapis, lengkap sampai butir terkecil, imutabel & non-repudiable",
+      "statement": "Setiap tindakan tercatat oleh observer always-on & redundan (eksternal), oleh komponen sistem sendiri (self-attestation, non-repudiation), dan oleh substrat/lingkungan — sampai granularitas terkecil, tanpa ambang de-minimis, tersimpan imutabel & dapat di-replay.",
+      "evidence": [
+        {
+          "ref": "50:17-18",
+          "id": "qaf-50-17-18",
+          "note": "raqīb ʿatīd — dua pencatat always-on, 100% coverage"
+        },
+        {
+          "ref": "41:20-22",
+          "id": "fussilat-41-20-22",
+          "note": "komponen (indera/kulit) bersaksi sendiri — non-repudiation"
+        },
+        {
+          "ref": "99:1-8",
+          "id": "zalzalah-99-1-8",
+          "note": "audit sebesar dzarrah; bumi/substrat menyimpan & me-replay"
+        },
+        {
+          "ref": "2:282",
+          "id": "baqarah-2-282",
+          "note": "catat kecil & besar; redundansi saksi"
+        }
+      ],
+      "implication": "AI/ML: audit trail lengkap (no-threshold) + tamper-evident + deterministic replay + transparan ke subjek; berlapis (logger eksternal + self-attestation komponen + ledger substrat) sehingga tak ada titik buta & tak bisa disangkal. Akumulasi 'butir kecil' (micro-bias, drift) = sumber kegagalan besar → jangan ada yang terlalu kecil untuk dicatat."
     }
   ],
   "blueprint": {

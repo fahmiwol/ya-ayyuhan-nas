@@ -49,6 +49,13 @@ function validate(id) {
   const expect = r.to - r.from + 1;
   if (expect < 1 || found !== expect) err(id, `rujukan ${r.surah}:${r.from}-${r.to} → ${found}/${expect} ayat di mushaf`);
 
+  // Tinjauan ahli (opsional): bila ada, wajib lengkap & verdict valid
+  if (s.review) {
+    const r = s.review;
+    if (!["pending", "endorsed", "revise", "rejected"].includes(r.verdict)) err(id, `review.verdict tak valid: ${r.verdict}`);
+    if (r.verdict !== "pending" && (!r.by || !r.role || !r.date)) err(id, "review disahkan wajib punya by+role+date (atribusi peninjau)");
+  }
+
   // Arsip: semua versi < current harus terekam
   for (let v = 1; v < s.version; v++) {
     if (!existsSync(fileURLToPath(new URL(`archive/${id}.v${v}.json`, LAB))))

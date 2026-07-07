@@ -38,6 +38,14 @@ Metode memproduksi kajian di Lab Tadabbur (`apps/web/public/data/lab/`). Interpr
 - Edit `synthesis.json`: `principles[]` (statement + evidence + implication rekayasa) & `blueprint.layers` (8 lapis arsitektur agen). Validasi ikut lab-validate.
 - Cari pola: baca ulang `inference` semua kajian; pola lintas-surah yang muncul independen = sinyal struktural.
 
+## Generator prinsip (semi-otomatis)
+`node pipeline/lab-mine.mjs` → baca semua kajian, ekstrak konsep rekayasa berulang (≥2 kajian) & istilah baru → tulis `18_MINED_PATTERNS.md`. Ini USULAN, bukan keputusan: peninjau memilih pola yang layak jadi prinsip (≥2 evidence) lalu tulis ke synthesis.json. Jalankan tiap kali korpus kajian bertambah signifikan.
+
+## Jalur tinjauan ahli (naik status)
+Kajian default "🕵️ menunggu tinjauan". Peninjau BERKELAS NYATA (ulama/mufassir/sejarawan/hafizh/akademisi) yang benar-benar meninjau menstempel via:
+`node pipeline/lab-review.mjs <id> <endorsed|revise|rejected> "<by>" "<role>" "<catatan>" ["<credential>"]`
+→ field `review` terisi (atribusi wajib), `endorsed` menaikkan status→published, tampil badge di UI. **JANGAN mengesahkan tanpa tinjauan nyata** (atribusi palsu = kontaminasi, langgar eval-gate & netralitas). AI hanya boleh menandai `pending`.
+
 ## Menambah lensa / framework
 - Lensa baru → `taxonomy.json.lenses` (key kebab, icon, desc). Kajian lama tak perlu diubah.
 - Framework (struktur besar spt Pohon Din, Aql-Qalb) → `synthesis.json.frameworks` (basis wajib beratribusi; hadits → rujuk data hadits app / sumber, bukan tanpa sanad).

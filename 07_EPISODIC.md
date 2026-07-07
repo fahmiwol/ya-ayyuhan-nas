@@ -87,6 +87,23 @@
 
 ---
 
+### [F1.38] Wave 5 attestation + generator prinsip + jalur tinjauan ahli (total 33) — 2026-07-07
+
+**North Star check:** ya — 3 arah yang owner konfirmasi "lanjut aja": (1) cluster saksi/bukti, (2) generator prinsip semi-otomatis, (3) jalur tinjauan ahli.
+**(1) Cluster ATTESTATION (5 kajian saksi/bukti):**
+- **nisa-4-135** syuhadāʾ lillāh walau atas diri → evaluator/judge tak-bias; self-critique jujur; guard bias afiliasi+status.
+- **nur-24-4** 4 saksi utk tuduhan berat → confidence threshold BERSKALA dgn harm; biaya asimetris klaim palsu high-stakes.
+- **qaf-50-17-18** raqīb ʿatīd → audit logging always-on + redundan + kategori-di-titik-tulis; zero untracked actions.
+- **fussilat-41-20-22** kulit bersaksi → self-attestation/non-repudiation; tamper-evident telemetry terdistribusi.
+- **zalzalah-99-1-8** sebesar dzarrah → audit no-threshold + immutable ledger + deterministic replay; audit berlapis (diri+komponen+substrat).
+- Synthesis: cluster ke-8 "attestation" 📿 + 3 prinsip baru (unbiased-attestation, harm-scaled-evidence, complete-immutable-audit) → total 23 prinsip.
+**(2) `pipeline/lab-mine.mjs`:** baca semua kajian → glosarium konsep rekayasa → pola berulang ≥2 kajian → `18_MINED_PATTERNS.md` (USULAN utk ditinjau, tak menulis synthesis). Hasil: audit×8, alignment×8, drift×6, verifikasi×5, redundansi/threshold/homeostasis/invariant/pipeline×4 — memvalidasi cluster & menyorot 'drift' (6) sbg kandidat pola.
+**(3) Jalur tinjauan ahli:** skema +`review{verdict,by,role,credential,date,note}` (opsional); `pipeline/lab-review.mjs` stempel (endorsed→status published); UI badge status tinjauan (default "🕵️ menunggu tinjauan ahli"); validasi atribusi wajib. **Integritas: TIDAK ada endorsement palsu** — AI hanya boleh `pending`; hanya peninjau berkelas nyata yang mengesahkan. SKILL diperbarui (lab-mine + lab-review).
+**Test:** lab-validate 33/33 + sintesis (23 prinsip/8 lapis/3 kerangka) valid; TSC clean; preview: 41:20-22 render 3 ayat+non-repudiation+badge tinjauan; cluster attestation di /lab/sintesis; 34 link; 0 error. Backlog: 31 [x].
+**Status:** ✅ deploy. **Next:** tinjau 18_MINED_PATTERNS.md (pola 'drift' → mungkin prinsip eksplisit); tema backlog: cahaya/optik sisa, air, berpasangan; onboard peninjau nyata via antrean /tinjau.
+
+---
+
 ### [F1.37] Skill + Kerangka Besar (Pohon Din, Aql-Qalb, Naqli-Aqli) + 4 lensa domain + riset global — 2026-07-07
 
 **North Star check:** ya — owner minta 5 hal: (1) jadi SKILL, (2) artefak/aplikasi, (3) metode, (4) playground riset, (5) syntax/script/inference — plus domain baru (biologi/matematika/geologi/astronomi/kimia/sejarah), kerangka Iman-Islam-Ihsan/tauhid (diagram pohon), anatomi kognisi Aql-Qalb, dan riset global tercanggih.
