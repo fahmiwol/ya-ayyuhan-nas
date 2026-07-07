@@ -1,22 +1,267 @@
 {
-  "schema": "asbab-v1",
-  "title": "Asbabun Nuzul & Riwayat",
-  "source": { "name": "Editorial (ringkasan dari sumber klasik)", "license": "CC-BY-4.0", "note": "Ringkasan netral sebab/latar turunnya ayat berbasis riwayat masyhur (mis. al-Wahidi, as-Suyuti). Tidak semua ayat memiliki asbabun nuzul; ini bagian awal, dilengkapi bertahap & lewat moderasi. Derajat riwayat = keterangan umum, audit bila perlu." },
-  "items": [
-    { "surah": 2, "ayah": 144, "title": "Perpindahan kiblat ke Ka'bah", "narrative": "Nabi ﷺ kerap menengadah ke langit berharap kiblat dipindah dari Baitul Maqdis ke Ka'bah di Makkah. Turunlah ayat ini yang memerintahkan menghadap Masjidil Haram.", "source": "al-Wahidi, Asbab al-Nuzul", "grade": "masyhur" },
-    { "surah": 2, "ayah": 158, "title": "Sa'i antara Safa & Marwah", "narrative": "Sebagian sahabat ragu ber-sa'i karena dahulu ada berhala di kedua bukit itu pada masa jahiliah. Ayat ini menegaskan keduanya termasuk syiar Allah.", "source": "Riwayat Bukhari-Muslim", "grade": "sahih" },
-    { "surah": 2, "ayah": 187, "title": "Keringanan di malam Ramadan", "narrative": "Sebagian sahabat merasa berat karena mengira larangan makan/berhubungan berlaku sepanjang malam Ramadan setelah tidur. Ayat ini memberi keringanan hingga terbit fajar.", "source": "al-Wahidi; Riwayat Bukhari", "grade": "sahih" },
-    { "surah": 4, "ayah": 43, "title": "Disyariatkannya tayammum", "narrative": "Dalam sebuah perjalanan, kalung 'Aisyah hilang dan rombongan tertahan mencarinya tanpa air untuk berwudhu. Turunlah keringanan bersuci dengan tayammum.", "source": "Riwayat Bukhari-Muslim", "grade": "sahih" },
-    { "surah": 93, "ayah": 1, "title": "Wahyu sempat tertunda (Ad-Dhuha)", "narrative": "Wahyu sempat terhenti beberapa waktu sehingga sebagian orang mengolok bahwa Nabi ﷺ ditinggalkan. Turunlah surah ini menghibur bahwa Allah tidak meninggalkan beliau.", "source": "Riwayat Bukhari-Muslim", "grade": "sahih" },
-    { "surah": 108, "ayah": 1, "title": "Al-Kautsar & penghinaan lawan", "narrative": "Setelah putra Nabi ﷺ wafat, sebagian orang menyebut beliau 'abtar' (terputus keturunan/kebaikannya). Turunlah pemberian nikmat berlimpah (al-Kautsar) dan bantahan bahwa justru pembencinyalah yang terputus.", "source": "Riwayat masyhur; as-Suyuti", "grade": "masyhur" },
-    { "surah": 80, "ayah": 1, "title": "'Abasa — teguran lembut", "narrative": "Ketika Nabi ﷺ sibuk menyeru pembesar Quraisy, datang Ibnu Ummi Maktum (seorang tunanetra) meminta diajari. Ayat ini menegur agar tidak mengabaikan orang yang bersungguh-sungguh mencari petunjuk.", "source": "Riwayat Tirmidzi & lainnya", "grade": "hasan" },
-    { "surah": 5, "ayah": 3, "title": "Penyempurnaan agama (Arafah)", "narrative": "Ayat \"Hari ini telah Kusempurnakan agamamu\" turun pada hari Arafah dalam Haji Wada'. Sebagian sahabat menangis merasakan isyarat sempurnanya risalah.", "source": "Riwayat Bukhari-Muslim", "grade": "sahih" },
-    { "surah": 96, "ayah": 1, "title": "Wahyu pertama (Iqra' di Gua Hira)", "narrative": "Wahyu pertama turun kepada Nabi ﷺ di Gua Hira melalui Malaikat Jibril yang berkata \"Iqra' (Bacalah)\". Beliau pulang dalam keadaan menggigil dan diselimuti Khadijah.", "source": "Riwayat Bukhari-Muslim (dari 'Aisyah)", "grade": "sahih" },
-    { "surah": 74, "ayah": 1, "title": "Perintah berdakwah (al-Muddatstsir)", "narrative": "Setelah jeda wahyu, Nabi ﷺ melihat Jibril lalu pulang menggigil minta diselimuti; turunlah perintah bangkit memberi peringatan.", "source": "Riwayat Bukhari-Muslim", "grade": "sahih" },
-    { "surah": 58, "ayah": 1, "title": "Pengaduan Khaulah (al-Mujadilah)", "narrative": "Khaulah binti Tsa'labah mengadu kepada Nabi ﷺ tentang suaminya yang menzhiharnya (menyamakan dengan punggung ibunya). Turunlah awal Surah al-Mujadilah menjawab pengaduannya.", "source": "al-Wahidi; Riwayat Ahmad & lainnya", "grade": "hasan-sahih" },
-    { "surah": 2, "ayah": 115, "title": "Menghadap saat tak tahu arah kiblat", "narrative": "Berkenaan dengan orang yang shalat dalam perjalanan/gelap lalu keliru arah, atau shalat sunnah di atas kendaraan; ayat menegaskan ke mana pun menghadap, di situ wajah Allah.", "source": "al-Wahidi; Riwayat at-Tirmidzi", "grade": "masyhur" },
-    { "surah": 24, "ayah": 11, "title": "Pembebasan 'Aisyah (Haditsul Ifki)", "narrative": "Ketika 'Aisyah dituduh keji oleh kaum munafik dalam peristiwa 'Ifk', turun ayat-ayat yang membebaskannya dari tuduhan dan menegur penyebar berita bohong.", "source": "Riwayat Bukhari-Muslim (dari 'Aisyah)", "grade": "sahih" },
-    { "surah": 5, "ayah": 90, "title": "Pengharaman khamr (bertahap)", "narrative": "Pengharaman khamr turun bertahap; ayat ini menjadi penegasan larangan final. Para sahabat pun segera menumpahkan khamr mereka.", "source": "Riwayat Bukhari-Muslim", "grade": "sahih" },
-    { "surah": 111, "ayah": 1, "title": "Abu Lahab (al-Masad)", "narrative": "Ketika Nabi ﷺ menyeru kerabat dekat di bukit Shafa, Abu Lahab mencela \"Celaka engkau, untuk inikah kau kumpulkan kami?\". Turunlah surah yang membalas celaan itu.", "source": "Riwayat Bukhari-Muslim (dari Ibn 'Abbas)", "grade": "sahih" }
-  ]
+ "schema": "asbab-v1",
+ "title": "Asbabun Nuzul & Riwayat",
+ "source": {
+  "name": "Editorial (ringkasan dari sumber klasik)",
+  "license": "CC-BY-4.0",
+  "note": "Ringkasan netral sebab/latar turunnya ayat berbasis riwayat masyhur (mis. al-Wahidi, as-Suyuti). Tidak semua ayat memiliki asbabun nuzul; ini bagian awal, dilengkapi bertahap & lewat moderasi. Derajat riwayat = keterangan umum, audit bila perlu."
+ },
+ "items": [
+  {
+   "surah": 2,
+   "ayah": 104,
+   "title": "Larangan mengucapkan kata 'raa'ina'",
+   "narrative": "Kaum muslimin biasa mengucapkan kata 'raa'ina' kepada Nabi. Orang-orang Yahudi menyalahgunakannya karena dalam bahasa mereka kata itu bermakna cacian, sehingga mereka bisa mencela Nabi secara terselubung. Maka turunlah larangan mengucapkan 'raa'ina' dan perintah menggantinya dengan 'unzhurna' (perhatikanlah kami).",
+   "source": "al-Wahidi, Asbab al-Nuzul (riwayat Ibn 'Abbas dari 'Ata')",
+   "grade": "riwayat (al-Wahidi)"
+  },
+  {
+   "surah": 2,
+   "ayah": 114,
+   "title": "Perusakan rumah-rumah ibadah Allah",
+   "narrative": "Menurut Ibn 'Abbas (riwayat al-Kalbi), ayat ini turun tentang Titus orang Romawi dan pasukan Nasraninya yang menyerbu Bani Israil: membunuh tentaranya, menawan wanita dan anak-anak, membakar Taurat, serta menghancurkan dan menajiskan Baitul Maqdis. Qatadah dan al-Suddi menyebutnya tentang Bukhtunassar yang meruntuhkan Yerusalem.",
+   "source": "al-Wahidi, Asbab al-Nuzul (riwayat Ibn 'Abbas dari al-Kalbi; juga Qatadah & al-Suddi)",
+   "grade": "riwayat (al-Wahidi)"
+  },
+  {
+   "surah": 2,
+   "ayah": 115,
+   "title": "Menghadap saat tak tahu arah kiblat",
+   "narrative": "Berkenaan dengan orang yang shalat dalam perjalanan/gelap lalu keliru arah, atau shalat sunnah di atas kendaraan; ayat menegaskan ke mana pun menghadap, di situ wajah Allah.",
+   "source": "al-Wahidi; Riwayat at-Tirmidzi",
+   "grade": "masyhur"
+  },
+  {
+   "surah": 2,
+   "ayah": 144,
+   "title": "Perpindahan kiblat ke Ka'bah",
+   "narrative": "Nabi ﷺ kerap menengadah ke langit berharap kiblat dipindah dari Baitul Maqdis ke Ka'bah di Makkah. Turunlah ayat ini yang memerintahkan menghadap Masjidil Haram.",
+   "source": "al-Wahidi, Asbab al-Nuzul",
+   "grade": "masyhur"
+  },
+  {
+   "surah": 2,
+   "ayah": 158,
+   "title": "Sa'i antara Safa & Marwah",
+   "narrative": "Sebagian sahabat ragu ber-sa'i karena dahulu ada berhala di kedua bukit itu pada masa jahiliah. Ayat ini menegaskan keduanya termasuk syiar Allah.",
+   "source": "Riwayat Bukhari-Muslim",
+   "grade": "sahih"
+  },
+  {
+   "surah": 2,
+   "ayah": 187,
+   "title": "Keringanan di malam Ramadan",
+   "narrative": "Sebagian sahabat merasa berat karena mengira larangan makan/berhubungan berlaku sepanjang malam Ramadan setelah tidur. Ayat ini memberi keringanan hingga terbit fajar.",
+   "source": "al-Wahidi; Riwayat Bukhari",
+   "grade": "sahih"
+  },
+  {
+   "surah": 2,
+   "ayah": 196,
+   "title": "Fidyah mencukur kepala saat ihram",
+   "narrative": "Ka'b ibn 'Ujrah menuturkan bahwa ayat ini turun tentang dirinya. Saat berihram kepalanya penuh kutu yang menyakitinya, lalu Nabi menyuruhnya mencukur kepala dan membayar fidyah: puasa tiga hari, menyembelih kurban, atau memberi makan enam orang miskin.",
+   "source": "al-Wahidi, Asbab al-Nuzul (riwayat Ka'b ibn 'Ujrah)",
+   "grade": "riwayat (al-Wahidi)"
+  },
+  {
+   "surah": 3,
+   "ayah": 144,
+   "title": "Isu terbunuhnya Nabi di Perang Uhud",
+   "narrative": "'Atiyyah al-'Awfi menuturkan bahwa pada Perang Uhud sebagian orang lari dan berkata, 'Muhammad telah terbunuh, menyerahlah kepada mereka.' Maka turunlah ayat, 'Muhammad hanyalah seorang rasul; sungguh telah berlalu rasul-rasul sebelumnya,' yang mengecam sikap berbalik ke belakang.",
+   "source": "al-Wahidi, Asbab al-Nuzul (riwayat 'Atiyyah al-'Awfi)",
+   "grade": "riwayat (al-Wahidi)"
+  },
+  {
+   "surah": 3,
+   "ayah": 169,
+   "title": "Para syuhada Uhud tidaklah mati",
+   "narrative": "Ibn 'Abbas meriwayatkan sabda Nabi bahwa ketika para sahabat gugur di Uhud, Allah menempatkan ruh mereka dalam burung-burung hijau yang mendatangi sungai-sungai surga. Maka turunlah ayat, 'Janganlah engkau mengira orang-orang yang gugur di jalan Allah itu mati; bahkan mereka hidup di sisi Tuhannya.'",
+   "source": "al-Wahidi, Asbab al-Nuzul (riwayat Ibn 'Abbas)",
+   "grade": "riwayat (al-Wahidi)"
+  },
+  {
+   "surah": 4,
+   "ayah": 43,
+   "title": "Disyariatkannya tayammum",
+   "narrative": "Dalam sebuah perjalanan, kalung 'Aisyah hilang dan rombongan tertahan mencarinya tanpa air untuk berwudhu. Turunlah keringanan bersuci dengan tayammum.",
+   "source": "Riwayat Bukhari-Muslim",
+   "grade": "sahih"
+  },
+  {
+   "surah": 5,
+   "ayah": 3,
+   "title": "Penyempurnaan agama (Arafah)",
+   "narrative": "Ayat \"Hari ini telah Kusempurnakan agamamu\" turun pada hari Arafah dalam Haji Wada'. Sebagian sahabat menangis merasakan isyarat sempurnanya risalah.",
+   "source": "Riwayat Bukhari-Muslim",
+   "grade": "sahih"
+  },
+  {
+   "surah": 5,
+   "ayah": 90,
+   "title": "Pengharaman khamr (bertahap)",
+   "narrative": "Pengharaman khamr turun bertahap; ayat ini menjadi penegasan larangan final. Para sahabat pun segera menumpahkan khamr mereka.",
+   "source": "Riwayat Bukhari-Muslim",
+   "grade": "sahih"
+  },
+  {
+   "surah": 24,
+   "ayah": 11,
+   "title": "Pembebasan 'Aisyah (Haditsul Ifki)",
+   "narrative": "Ketika 'Aisyah dituduh keji oleh kaum munafik dalam peristiwa 'Ifk', turun ayat-ayat yang membebaskannya dari tuduhan dan menegur penyebar berita bohong.",
+   "source": "Riwayat Bukhari-Muslim (dari 'Aisyah)",
+   "grade": "sahih"
+  },
+  {
+   "surah": 58,
+   "ayah": 1,
+   "title": "Pengaduan Khaulah (al-Mujadilah)",
+   "narrative": "Khaulah binti Tsa'labah mengadu kepada Nabi ﷺ tentang suaminya yang menzhiharnya (menyamakan dengan punggung ibunya). Turunlah awal Surah al-Mujadilah menjawab pengaduannya.",
+   "source": "al-Wahidi; Riwayat Ahmad & lainnya",
+   "grade": "hasan-sahih"
+  },
+  {
+   "surah": 74,
+   "ayah": 1,
+   "title": "Perintah berdakwah (al-Muddatstsir)",
+   "narrative": "Setelah jeda wahyu, Nabi ﷺ melihat Jibril lalu pulang menggigil minta diselimuti; turunlah perintah bangkit memberi peringatan.",
+   "source": "Riwayat Bukhari-Muslim",
+   "grade": "sahih"
+  },
+  {
+   "surah": 76,
+   "ayah": 8,
+   "title": "Memberi makan orang miskin, yatim, dan tawanan",
+   "narrative": "Ibn 'Abbas (riwayat 'Ata') menuturkan bahwa 'Ali bin Abi Thalib bekerja mengambil upah gandum. Tiga kali makanan yang telah dimasak diberikan kepada seorang miskin, anak yatim, dan tawanan yang datang meminta, hingga sehari itu keluarganya tidak makan apa pun. Maka turunlah ayat ini.",
+   "source": "al-Wahidi, Asbab al-Nuzul (riwayat Ibn 'Abbas dari 'Ata')",
+   "grade": "riwayat (al-Wahidi)"
+  },
+  {
+   "surah": 80,
+   "ayah": 1,
+   "title": "'Abasa — teguran lembut",
+   "narrative": "Ketika Nabi ﷺ sibuk menyeru pembesar Quraisy, datang Ibnu Ummi Maktum (seorang tunanetra) meminta diajari. Ayat ini menegur agar tidak mengabaikan orang yang bersungguh-sungguh mencari petunjuk.",
+   "source": "Riwayat Tirmidzi & lainnya",
+   "grade": "hasan"
+  },
+  {
+   "surah": 92,
+   "ayah": 19,
+   "title": "Abu Bakar memerdekakan Bilal",
+   "narrative": "Ibn 'Abbas (riwayat 'Ata') menuturkan bahwa Bilal disiksa kaum musyrik karena masuk Islam, lalu Abu Bakar membelinya dengan emas dan memerdekakannya. Kaum musyrik berkata Abu Bakar melakukannya hanya karena membalas budi kepada Bilal, maka turunlah ayat, 'Padahal tidak ada pada seorang pun nikmat yang harus dibalas, kecuali karena mencari keridaan Tuhannya Yang Mahatinggi.'",
+   "source": "al-Wahidi, Asbab al-Nuzul (riwayat Ibn 'Abbas dari 'Ata')",
+   "grade": "riwayat (al-Wahidi)"
+  },
+  {
+   "surah": 93,
+   "ayah": 1,
+   "title": "Wahyu sempat tertunda (Ad-Dhuha)",
+   "narrative": "Wahyu sempat terhenti beberapa waktu sehingga sebagian orang mengolok bahwa Nabi ﷺ ditinggalkan. Turunlah surah ini menghibur bahwa Allah tidak meninggalkan beliau.",
+   "source": "Riwayat Bukhari-Muslim",
+   "grade": "sahih"
+  },
+  {
+   "surah": 96,
+   "ayah": 1,
+   "title": "Wahyu pertama (Iqra' di Gua Hira)",
+   "narrative": "Wahyu pertama turun kepada Nabi ﷺ di Gua Hira melalui Malaikat Jibril yang berkata \"Iqra' (Bacalah)\". Beliau pulang dalam keadaan menggigil dan diselimuti Khadijah.",
+   "source": "Riwayat Bukhari-Muslim (dari 'Aisyah)",
+   "grade": "sahih"
+  },
+  {
+   "surah": 96,
+   "ayah": 17,
+   "title": "Ancaman Abu Jahal terhadap Nabi yang shalat",
+   "narrative": "Ibn 'Abbas menuturkan bahwa Abu Jahal menghardik Nabi yang sedang shalat dan menyombongkan diri bahwa tak seorang pun di Makkah memiliki lebih banyak pengikut/penjaga darinya. Maka turunlah ayat, 'Maka biarlah dia memanggil golongannya (untuk menolongnya), kelak Kami akan memanggil malaikat Zabaniyah.'",
+   "source": "al-Wahidi, Asbab al-Nuzul (riwayat Ibn 'Abbas dari 'Ikrimah)",
+   "grade": "riwayat (al-Wahidi)"
+  },
+  {
+   "surah": 97,
+   "ayah": 1,
+   "title": "Keutamaan Lailatul Qadar",
+   "narrative": "Mujahid menuturkan bahwa Nabi menyebut seorang dari Bani Israil yang berperang di jalan Allah selama seribu bulan. Kaum muslimin takjub mendengarnya, lalu turunlah surat al-Qadr yang menegaskan bahwa malam Lailatul Qadar lebih baik daripada seribu bulan.",
+   "source": "al-Wahidi, Asbab al-Nuzul (riwayat Mujahid)",
+   "grade": "riwayat (al-Wahidi)"
+  },
+  {
+   "surah": 100,
+   "ayah": 1,
+   "title": "Pasukan berkuda yang dinantikan kabarnya",
+   "narrative": "Ibn 'Abbas menuturkan bahwa Nabi mengirim satu pasukan berkuda dalam suatu misi, namun sebulan berlalu tanpa kabar dari mereka. Maka turunlah, 'Demi kuda perang yang berlari kencang terengah-engah,' sebagai kabar tentang kuda-kuda pasukan itu.",
+   "source": "al-Wahidi, Asbab al-Nuzul (riwayat Ibn 'Abbas; juga Muqatil)",
+   "grade": "riwayat (al-Wahidi)"
+  },
+  {
+   "surah": 102,
+   "ayah": 1,
+   "title": "Bermegah-megahan dua kabilah Quraisy",
+   "narrative": "Muqatil dan al-Kalbi menuturkan bahwa surat ini turun tentang dua kabilah Quraisy, Bani 'Abd Manaf dan Bani Sahm, yang saling membanggakan jumlah pemuka dan anggota mereka. Ketika masih kalah jumlah, mereka bahkan pergi ke kuburan menghitung orang-orang yang telah mati untuk melebihkan bilangan.",
+   "source": "al-Wahidi, Asbab al-Nuzul (riwayat Muqatil & al-Kalbi)",
+   "grade": "riwayat (al-Wahidi)"
+  },
+  {
+   "surah": 106,
+   "ayah": 1,
+   "title": "Keistimewaan kaum Quraisy",
+   "narrative": "Umm Hani' binti Abi Thalib meriwayatkan sabda Nabi bahwa Allah mengistimewakan Quraisy dengan tujuh perkara yang tidak diberikan kepada siapa pun sebelum dan sesudah mereka, di antaranya kekhalifahan, penjagaan Ka'bah, pemberian air haji, kenabian, dan diturunkannya satu surat khusus tentang mereka, yakni surat Quraisy.",
+   "source": "al-Wahidi, Asbab al-Nuzul (riwayat Umm Hani' binti Abi Thalib)",
+   "grade": "riwayat (al-Wahidi)"
+  },
+  {
+   "surah": 107,
+   "ayah": 1,
+   "title": "Menghardik anak yatim",
+   "narrative": "Ibn Jurayj menuturkan bahwa Abu Sufyan bin Harb biasa menyembelih dua ekor unta setiap pekan. Suatu kali seorang anak yatim datang meminta sesuatu kepadanya, namun ia malah memukulnya dengan tongkat. Maka turunlah, 'Tahukah engkau (orang) yang mendustakan agama? Itulah orang yang menghardik anak yatim.'",
+   "source": "al-Wahidi, Asbab al-Nuzul (riwayat Ibn Jurayj)",
+   "grade": "riwayat (al-Wahidi)"
+  },
+  {
+   "surah": 108,
+   "ayah": 1,
+   "title": "Al-Kautsar & penghinaan lawan",
+   "narrative": "Setelah putra Nabi ﷺ wafat, sebagian orang menyebut beliau 'abtar' (terputus keturunan/kebaikannya). Turunlah pemberian nikmat berlimpah (al-Kautsar) dan bantahan bahwa justru pembencinyalah yang terputus.",
+   "source": "Riwayat masyhur; as-Suyuti",
+   "grade": "masyhur"
+  },
+  {
+   "surah": 109,
+   "ayah": 1,
+   "title": "Tawaran menyembah bergantian",
+   "narrative": "Para mufassir menuturkan bahwa sekelompok orang Quraisy mengajak Nabi menyembah secara bergantian: setahun beliau menyembah sesembahan mereka dan setahun mereka menyembah Tuhan beliau. Nabi menolak seraya berkata, 'Aku berlindung kepada Allah dari mempersekutukan-Nya,' lalu turunlah surat al-Kafirun.",
+   "source": "al-Wahidi, Asbab al-Nuzul (riwayat para mufassir)",
+   "grade": "riwayat (al-Wahidi)"
+  },
+  {
+   "surah": 110,
+   "ayah": 1,
+   "title": "Kabar dekatnya wafat Nabi (surat an-Nashr)",
+   "narrative": "Ibn 'Abbas menuturkan bahwa ayat ini turun ketika Nabi kembali dari Perang Hunain, dan beliau hanya hidup dua tahun sesudahnya. Ketika turun, beliau bersabda bahwa pertolongan dan kemenangan Allah telah datang dan manusia masuk agama Allah berbondong-bondong, lalu beliau bertasbih dan beristigfar.",
+   "source": "al-Wahidi, Asbab al-Nuzul (riwayat Ibn 'Abbas dari 'Ikrimah)",
+   "grade": "riwayat (al-Wahidi)"
+  },
+  {
+   "surah": 111,
+   "ayah": 1,
+   "title": "Abu Lahab (al-Masad)",
+   "narrative": "Ketika Nabi ﷺ menyeru kerabat dekat di bukit Shafa, Abu Lahab mencela \"Celaka engkau, untuk inikah kau kumpulkan kami?\". Turunlah surah yang membalas celaan itu.",
+   "source": "Riwayat Bukhari-Muslim (dari Ibn 'Abbas)",
+   "grade": "sahih"
+  },
+  {
+   "surah": 112,
+   "ayah": 1,
+   "title": "Pertanyaan tentang sifat/nasab Tuhan",
+   "narrative": "Ubay bin Ka'b meriwayatkan bahwa kaum musyrik bertanya kepada Nabi, 'Sebutkan kepada kami nasab Tuhanmu.' Maka turunlah surat al-Ikhlas, 'Katakanlah: Dialah Allah Yang Maha Esa, Allah tempat bergantung, tidak beranak dan tidak diperanakkan, dan tidak ada sesuatu pun yang setara dengan-Nya.'",
+   "source": "al-Wahidi, Asbab al-Nuzul (riwayat Ubay bin Ka'b; juga Jabir)",
+   "grade": "riwayat (al-Wahidi)"
+  },
+  {
+   "surah": 113,
+   "ayah": 1,
+   "title": "Sihir terhadap Nabi (surat al-Falaq)",
+   "narrative": "Para mufassir menuturkan bahwa seorang Yahudi bernama Labid bin al-A'sham menyihir Nabi dengan rambut rontok dan serpihan gigi sisir beliau, lalu meletakkannya di sebuah sumur milik Bani Zurayq. Nabi jatuh sakit selama beberapa waktu, hingga turunlah surat al-Falaq sebagai perlindungan.",
+   "source": "al-Wahidi, Asbab al-Nuzul (riwayat para mufassir)",
+   "grade": "riwayat (al-Wahidi)"
+  }
+ ]
 }
