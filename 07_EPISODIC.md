@@ -87,6 +87,14 @@
 
 ---
 
+### [BACKLOG-DICATAT] Modul Mazhab + Kitab per-mazhab + Catatan Sahabat — 2026-07-07
+
+Owner minta (catat dulu, belum bangun): (1) **4 mazhab fikih** (Hanafi/Maliki/Syafi'i/Hanbali) + manhaj; (2) **kitab/buku tiap mazhab** (dari ulama/perawi mazhab) → nyambung fitur Kitab; (3) **catatan para sahabat** (profil + peran periwayatan, nyambung isnad). Owner tegas: "jangan sampe ada yang melantur" → validasi+verifikasi ketat.
+**Rencana + aturan validasi lengkap → `19_MAZHAB_SAHABAT_PLAN.md`.** Inti guardrail: provenance wajib (≥2 sumber utk klaim kontroversial), netral (Sunni/Syiah & khilaf = metadata viewpoint, bukan vonis), anti-fabrikasi (atribusi kitab↔penulis & angka riwayat wajib cross-check; screenshot owner = sekunder, jangan disalin), kandidat kitab (al-Umm/Hidayah/Mudawwanah/al-Mughni dll) BELUM diverifikasi + audit lisensi turats/tahqiq, sahabat = deskriptif bersumber (hindari isu keutamaan/fitnah). Masuk fitur Belajar+Kitab; jalur tinjauan ahli utk naik status. Opsional: ushul fikih sbg bahan Lab (rule-engine inferensi hukum, tier interpretasi terpisah).
+**Status:** 📝 dicatat, belum dibangun. Menunggu instruksi urutan owner.
+
+---
+
 ### [CHECKPOINT] Berhenti — 2026-07-07 (pasca F1.41)
 
 **Kondisi:** SEMUA LIVE & sehat di quran.migancore.com. HEAD master = Wave 7. App lain di server 301 (aman, dicek tiap deploy).
