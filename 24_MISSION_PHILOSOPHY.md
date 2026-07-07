@@ -41,6 +41,34 @@ ditutup tasbih).
    matematika, astronomi, AI/agentic** — arsip ilmu yang **bisa dibaca manusia & dipakai mesin dengan
    bertanggung jawab.**
 
+## Cakupan tadabbur (diperluas — owner 2026-07-08)
+
+Al-Qur'an memuat lebih dari pola ciptaan; semua ini bahan tadabbur untuk hidup sebagai **khalifah**:
+- **Pola ciptaan** (āyāt kauniyah) — cara alam & kehidupan dirancang bekerja.
+- **Pedoman & aturan** (hudan, hukum) — arah & batas.
+- **Wasilah & tata cara** (sarana, metode, prosedur ibadah/muamalah).
+- **Syariat** — sistem hukum/jalan hidup. *(Lab membaca STRUKTUR/pola-nya sbg interpretasi rekayasa; TIDAK menetapkan fatwa/hukum — itu ranah fuqaha/tafsir bersumber.)*
+
+**Busur kosmik penuh** yang dicakup Al-Qur'an (bahan tadabbur "lifecycle"): kekosongan → penciptaan →
+kehidupan → kematian → kiamat → (kosong) → kebangkitan & hari akhir. Dibaca sbg pola **daur hidup sistem**
+(init → run → shutdown → re-instantiate) — dengan rambu GHAIB di bawah.
+
+## Konteks wahyu (memperkuat keotentikan)
+
+Al-Qur'an diturunkan kepada Nabi Muhammad ﷺ yang **ummi** (tak bisa baca-tulis), melalui **Jibril**, untuk
+disampaikan ke seluruh manusia. Ke-ummi-an Nabi + keluasan-kedalaman isi (dari asal-usul alam sampai hari
+akhir) + transmisi mutawatir + teks satu-versi = bagian dari **keotentikan** (tercermin di halaman Integritas
+& Merkle app). Ini konteks yang dihormati, bukan objek analogi.
+
+## ⛔ Rambu GHAIB (mirip tanzih — untuk kiamat, akhirat, ruh, malaikat, dst)
+
+Perkara **ghaib** (kiamat, kebangkitan, surga-neraka, ruh, alam barzakh) hanya diketahui dari **wahyu**.
+Lab membacanya **deskriptif dari tafsir bersumber** sebagai POLA/struktur — **BUKAN** spekulasi, **BUKAN**
+klaim tahu detail yang tak disebut, **BUKAN** menetapkan kepastian di luar teks. Ini perkara **iman**;
+analogi rekayasa (mis. kiamat = "shutdown/entropi puncak", kebangkitan = "re-instantiation") hanyalah
+**pembacaan struktural bertanda `bounded`**, disajikan dengan adab & "resonansi struktural, bukan mukjizat".
+Wajib "CATATAN GHAIB" pada kajian bertema akhirat.
+
 ## Satu kalimat
 
 > **Lab Tadabbur mempelajari POLA CIPTAAN & cara Allah berkarya di alam (āyāt kauniyah), lalu

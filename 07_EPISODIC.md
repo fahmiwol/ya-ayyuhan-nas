@@ -113,6 +113,12 @@ Owner minta (catat dulu, belum bangun): (1) **4 mazhab fikih** (Hanafi/Maliki/Sy
 
 ---
 
+### [F1.55] Cakupan tadabbur diperluas + rambu GHAIB — 2026-07-08
+
+Owner memperluas visi: Al-Qur'an memuat pola ciptaan + **pedoman/aturan/wasilah/tata cara/syariat** (panduan khalifah) + **busur kosmik penuh** (kekosongan→cipta→hidup→mati→kiamat→kebangkitan). Konteks wahyu: Nabi ummi via Jibril = bagian keotentikan. → `24_MISSION_PHILOSOPHY.md` diperluas (cakupan + konteks wahyu + rambu GHAIB). **Rambu GHAIB baru (mirip tanzih):** perkara akhirat/ghaib dibaca DESKRIPTIF dari tafsir bersumber sbg pola, BUKAN spekulasi/klaim di luar teks; perkara iman; wajib CATATAN GHAIB. Syariat: baca struktur, JANGAN tetapkan fatwa. Ditanam di skill. Doc-only.
+
+---
+
 ### [F1.54] Wave 9 — POLA PENCIPTAAN (north-star), +15 kajian (total 93) — 2026-07-08
 
 Wave selaras north-star (F1.53): sintesis CARA/POLA penciptaan. 3 agen paralel, semua **CATATAN TANZIH** eksplisit (subjek=perbuatan Allah → baca pola pada PROSES/ciptaan, bukan Sang Pencipta; 0 tanzih-lint warning baru).
