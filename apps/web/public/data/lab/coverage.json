@@ -1,94 +1,94 @@
 {
   "updated": "2026-07-07",
   "total_ayat": 6236,
-  "studies": 78,
+  "studies": 93,
   "principles": 25,
   "frameworks": 3,
-  "direct_ayat": 128,
+  "direct_ayat": 166,
   "cited_ayat": 70,
-  "touched_ayat": 128,
+  "touched_ayat": 166,
   "candidates_total": 596,
-  "candidates_done": 44,
-  "pct_of_total": 2.05,
-  "pct_of_candidates": 7.4,
+  "candidates_done": 50,
+  "pct_of_total": 2.66,
+  "pct_of_candidates": 8.4,
   "by_theme": [
     {
-      "theme": "pikir/akal/renung",
+      "theme": "pikir/akal/renung (120)",
       "total": 120,
-      "done": 7
+      "done": 9
     },
     {
-      "theme": "saksi/bukti",
+      "theme": "saksi/bukti (115)",
       "total": 115,
       "done": 10
     },
     {
-      "theme": "hitung/kadar/ukuran",
+      "theme": "hitung/kadar/ukuran (49)",
       "total": 49,
-      "done": 4
+      "done": 8
     },
     {
-      "theme": "air & kehidupan",
+      "theme": "air & kehidupan (48)",
       "total": 48,
       "done": 3
     },
     {
-      "theme": "makan/gizi/batas",
+      "theme": "makan/gizi/batas (40)",
       "total": 40,
       "done": 1
     },
     {
-      "theme": "ilmu/tahu/ajar",
+      "theme": "ilmu/tahu/ajar (38)",
       "total": 38,
       "done": 4
     },
     {
-      "theme": "catat/tulis/kitab",
+      "theme": "catat/tulis/kitab (36)",
       "total": 36,
       "done": 2
     },
     {
-      "theme": "penciptaan bertahap",
+      "theme": "penciptaan bertahap (27)",
       "total": 27,
       "done": 2
     },
     {
-      "theme": "waktu/ajal/jadwal",
+      "theme": "waktu/ajal/jadwal (27)",
       "total": 27,
       "done": 2
     },
     {
-      "theme": "sembuh/obat/sehat",
+      "theme": "sembuh/obat/sehat (22)",
       "total": 22,
       "done": 1
     },
     {
-      "theme": "kerusakan/feedback",
+      "theme": "kerusakan/feedback (22)",
       "total": 22,
       "done": 1
     },
     {
-      "theme": "perjalanan/eksplorasi",
+      "theme": "perjalanan/eksplorasi (18)",
       "total": 18,
       "done": 1
     },
     {
-      "theme": "besi/material",
+      "theme": "besi/material (12)",
       "total": 12,
       "done": 1
     },
     {
-      "theme": "berpasangan/duality",
+      "theme": "berpasangan/duality (10)",
       "total": 10,
       "done": 2
     },
     {
-      "theme": "cahaya/optik",
+      "theme": "cahaya/optik (7)",
       "total": 7,
       "done": 1
     },
     {
-      "theme": "jaringan/semut/hewan sosial",
+      "theme": "jaringan/semut/hewan sosial (5)",
       "total": 5,
       "done": 2
     }

@@ -626,6 +626,126 @@
       "theme": "Qadar sebagai ketentuan + jadwal; tawakal = bounded delegation sesudah ikhtiar; pemisahan usaha (yang di tangan agen) dari hasil (di luar kendali)",
       "lenses": 9,
       "created": "2026-07-08"
+    },
+    {
+      "id": "abasa-80-24-32",
+      "title": "Falyanẓuril-insānu ilā ṭaʿāmih — rantai pasok pangan sebagai pipeline dari satu input",
+      "ref": "QS 80:24-32",
+      "theme": "Rantai pasok pangan, pipeline input→output beragam, sustainability, provisioning downstream",
+      "lenses": 9,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "anam-6-95-95",
+      "title": "Fāliqul-ḥabbi wan-nawā — pembelahan benih & pembangkitan hidup-dari-mati sebagai transformasi generatif",
+      "ref": "QS 6:95",
+      "theme": "Transformasi generatif, state-change hidup↔mati, pembelahan benih, bootstrapping kehidupan",
+      "lenses": 8,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "hajj-22-5-5",
+      "title": "Dari tanah, nutfah, 'alaqah, mudghah — penciptaan bertahap yang tuntas sampai lahir, dewasa, dan pikun",
+      "ref": "QS 22:5",
+      "theme": "Penciptaan bertahap (staged pipeline/incremental build) dengan checkpoint per tahap; siklus mati→hidup pada bumi sebagai daur ulang; degradasi pengetahuan pada usia pikun",
+      "lenses": 10,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "insan-76-2-2",
+      "title": "Nutfah amsyaj — setetes campuran dua sumber, dicipta untuk diuji, lalu diberi pendengaran dan penglihatan",
+      "ref": "QS 76:2",
+      "theme": "Nutfah amsyaj = kombinasi/merge dua sumber menjadi satu titik-awal; penciptaan yang goal-conditioned (untuk diuji: taklif); provisioning sensor (dengar-lihat) untuk menjalani uji",
+      "lenses": 8,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "isra-17-82",
+      "title": "Syifā' wa rahmah lil-mu'minīn — sinyal pemulih yang efeknya bergantung keadaan penerima",
+      "ref": "QS 17:82",
+      "theme": "Syifā' fis-sudūr, perbaikan state internal, sinyal koreksi bersyarat keadaan penerima",
+      "lenses": 10,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "naba-78-9-11",
+      "title": "Tidur=istirahat, malam=pakaian, siang=penghidupan — duty-cycle rest-recovery",
+      "ref": "QS 78:9-11",
+      "theme": "Siklus siang-malam, duty-cycle, rest-recovery scheduling, tidur=maintenance/consolidation",
+      "lenses": 10,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "nahl-16-11-11",
+      "title": "Bihi az-zarʿa waz-zaitūn — satu air, keluaran yang beragam",
+      "ref": "QS 16:11",
+      "theme": "Same input → diverse output, diversifikasi keluaran dari sumber tunggal, tanda bagi yang berpikir",
+      "lenses": 8,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "nahl-16-78-78",
+      "title": "Dikeluarkan dari perut ibu tak tahu apa-apa, lalu diberi pendengaran, penglihatan, dan hati agar bersyukur",
+      "ref": "QS 16:78",
+      "theme": "State awal kosong (blank slate/tabula rasa) → provisioning kanal input (dengar-lihat) + evaluator (hati) → pembelajaran inkremental dari lingkungan; syukur sebagai objective",
+      "lenses": 8,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "nuh-71-14-17",
+      "title": "Khalaqakum aṭwārā — penciptaan bertahap & tumbuh dari bumi bak tumbuhan",
+      "ref": "QS 71:14-17",
+      "theme": "Pertumbuhan bertahap (aṭwār), organic bottom-up growth, staged development bukan instan, nutrisi dari substrat",
+      "lenses": 8,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "qaf-50-9-11",
+      "title": "Mā'an mubārakā — air berkah, panen berlipat, dan pemulihan negeri mati",
+      "ref": "QS 50:9-11",
+      "theme": "Injeksi resource, scaling panen, disaster recovery, revival negeri mati, inferensi dari teramati ke belum-teramati",
+      "lenses": 8,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "sajdah-32-7-9",
+      "title": "Memulai dari tanah, keturunan dari saripati air hina, lalu disempurnakan dan di-provision-i pendengaran, penglihatan, dan hati",
+      "ref": "QS 32:7-9",
+      "theme": "Bootstrap dari bahan minimal; penyempurnaan (taswiyah); provisioning sensor (pendengaran-penglihatan) + evaluator (hati) saat inisialisasi; kapabilitas laten yang aktif belakangan",
+      "lenses": 10,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "shams-91-1-4",
+      "title": "Matahari, duha, bulan, siang, malam — jam kosmik & sinyal fasa yang menampak-menutupi",
+      "ref": "QS 91:1-4",
+      "theme": "Siklus siang-malam, jam/penjadwal kosmik, sinyal fasa komplementer, entrainment ritme",
+      "lenses": 9,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "syuara-26-80",
+      "title": "Wa idzā maridtu fa huwa yasyfīn — pola penyembuhan yang tertanam pada tubuh",
+      "ref": "QS 26:80",
+      "theme": "Penyembuhan, self-healing, koreksi kesalahan, homeostasis, pemulihan ke titik-sehat",
+      "lenses": 10,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "tariq-86-5-8",
+      "title": "Hendaklah manusia memperhatikan dari apa ia dicipta — dari air yang terpancar, dari sumber yang tertentu, maka Yang memulai kuasa mengulang",
+      "ref": "QS 86:5-8",
+      "theme": "Perintah introspeksi asal (audit provenance); air terpancar dari sumber tertentu; reproducibility/idempotence — kemampuan mengulang proses yang sudah pernah berjalan",
+      "lenses": 8,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "yunus-10-57",
+      "title": "Maw'izah, syifā', hudā, rahmah — pipeline empat-tahap perbaikan keadaan internal",
+      "ref": "QS 10:57",
+      "theme": "Syifā' fis-sudūr, perbaikan state internal/mental, pipeline restorasi bertahap",
+      "lenses": 10,
+      "created": "2026-07-08"
     }
   ]
 }
