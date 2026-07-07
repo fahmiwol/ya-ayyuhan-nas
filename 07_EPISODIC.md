@@ -87,6 +87,25 @@
 
 ---
 
+### [F1.40] Search terjemahan + Peta Pengetahuan (second-brain) + korpus siap-ML — 2026-07-07
+
+**North Star check:** ya — 3 permintaan owner: (1) fix error, (2) search bar cari via kata terjemahan, (3) Lab jadi peta pengetahuan/linkage ala Obsidian+second-brain, "biar riset bisa dipakai ML/LLM/corpus/inference".
+**(1) Error 49:12:** dicek — equran.id (sumber Kemenag) SENDIRI mengembalikan teks salah utk 49:12 (bukan bug pipeline kita). Chip re-seed dipertahankan (perlu sumber Kemenag alternatif). Kajian hujurat-49-12 sudah grounding jujur ke terjemah + catat diskrepansi.
+**(2) Search terjemahan full-text:**
+- `pipeline/gen-search-index.mjs` → search-index.json (6236 ayat, id+en, 2MB).
+- API `/api/v1/search/ayah?q=&lang=&limit=` (index cache module-scope; klien tak unduh 2MB) → snippet + surah:ayah.
+- SurahList: input diperluas — ketik kata (≥3, bukan angka) → debounced fetch → seksi "Ayat mengandung ..." dgn highlight + link ke /surah/N#ayah-A. i18n id/en/ar. (uji: "hujan" → 47 ayat, pertama 2:19 ✓).
+**(3) Peta Pengetahuan (second brain) + korpus ML:**
+- `pipeline/lab-graph.mjs` → lab-graph.json: node kajian/prinsip/kerangka + edge (evidence + framework + tautan istilah Qur'ani bersama) + `related` (backlink per kajian). 75 node, 104 edge.
+- `/lab/graph`: graf gaya-terarah interaktif (SVG, layout deterministik client-only utk hindari hydration mismatch, tanpa lib eksternal/CSP-safe), warna per-cluster, klik node kajian → buka; zoom; hover highlight tetangga.
+- Backlink "🔗 Kajian terkait" di tiap halaman kajian (via istilah/prinsip bersama) — rasa wikilink/Obsidian.
+- `pipeline/lab-corpus.mjs` → **lab-corpus.jsonl (545 chunk)**: tiap chunk = unit reasoning (lens/inference/makna/prinsip/kerangka) + metadata kaya (ref ayat, cluster, prinsip, istilah, analogi, provenance, tier=interpretation) → siap embed/RAG/fine-tune. Tombol unduh di /lab/graph (jsonl + graph.json + synthesis.json).
+- +Prinsip "decay-without-maintenance" (drift×6 dari lab-mine) → 24 prinsip. Link Peta+Sintesis dari /lab.
+**Test:** next build sukses (191 halaman, /lab/graph 2.09kB); TSC clean; lab-validate 48/48; preview: search "hujan"=47, graf 75 node/104 edge render, korpus jsonl reachable, backlink tampil; hydration mismatch beres (client-only mount); 0 error nyata.
+**Status:** ✅ deploy. **Next:** search: fuzzy/normalisasi diakritik + cari teks Arab; graf: cluster-collapse & pencarian node; korpus: endpoint embedding (bge-m3) → vektor pgvector (nyambung ke rencana RAG Fase awal).
+
+---
+
 ### [F1.39] Peta cakupan jujur + Wave 6 (3 agen paralel, +15 kajian → total 48) — 2026-07-07
 
 **North Star check:** ya — owner nyadar "dari ribuan ayat baru sedikit ditadabburi". Jujur: sebelumnya 67 ayat langsung (1.1%). Respons: percepat + buat progres TERLACAK.

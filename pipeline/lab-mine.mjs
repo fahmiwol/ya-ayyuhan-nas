@@ -11,7 +11,7 @@ import { fileURLToPath } from "node:url";
 
 const LAB = new URL("../apps/web/public/data/lab/", import.meta.url);
 const read = (f) => JSON.parse(readFileSync(fileURLToPath(new URL(f, LAB)), "utf8"));
-const SKIP = new Set(["index.json", "taxonomy.json", "synthesis.json"]);
+const SKIP = new Set(["index.json", "taxonomy.json", "synthesis.json", "coverage.json", "lab-graph.json"]);
 
 const studies = readdirSync(fileURLToPath(LAB))
   .filter((f) => f.endsWith(".json") && !SKIP.has(f))

@@ -112,6 +112,25 @@ export async function getLabCoverage(): Promise<LabCoverage | null> {
   return readJson<LabCoverage>("coverage.json");
 }
 
+export interface GraphNode { id: string; type: "study" | "principle" | "framework"; label: string; ref?: string; cluster: string }
+export interface GraphEdge { s: string; t: string; rel: string; w: number; via?: string }
+export interface RelatedItem { id: string; title: string; via: string }
+export interface LabGraph {
+  updated: string;
+  stats: { studies: number; principles: number; frameworks: number; nodes: number; edges: number };
+  clusters: { key: string; title: string; icon: string; desc: string }[];
+  nodes: GraphNode[]; edges: GraphEdge[];
+  related: Record<string, RelatedItem[]>;
+}
+export async function getLabGraph(): Promise<LabGraph | null> {
+  return readJson<LabGraph>("lab-graph.json");
+}
+// backlink per kajian (dipakai halaman kajian — "Kajian terkait")
+export async function getRelated(studyId: string): Promise<RelatedItem[]> {
+  const g = await getLabGraph();
+  return g?.related?.[studyId] ?? [];
+}
+
 // Sintesis lintas-kajian — memanen pola berulang antar-ayat jadi prinsip desain.
 export interface SynthEvidence { ref: string; id: string; note: string }
 export interface SynthPrinciple {

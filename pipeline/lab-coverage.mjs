@@ -9,7 +9,7 @@ import { fileURLToPath } from "node:url";
 const ROOT = new URL("../", import.meta.url);
 const LAB = new URL("apps/web/public/data/lab/", ROOT);
 const rd = (u) => readFileSync(fileURLToPath(u), "utf8");
-const SKIP = new Set(["index.json", "taxonomy.json", "synthesis.json", "coverage.json"]);
+const SKIP = new Set(["index.json", "taxonomy.json", "synthesis.json", "coverage.json", "lab-graph.json"]);
 
 const expand = (r, set) => { const m = String(r).match(/(\d+):(\d+)(?:-(\d+))?/); if (!m) return; const s = +m[1], f = +m[2], t = m[3] ? +m[3] : f; for (let a = f; a <= t; a++) set.add(s + ":" + a); };
 
