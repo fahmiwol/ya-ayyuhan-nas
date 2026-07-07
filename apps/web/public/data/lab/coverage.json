@@ -1,21 +1,21 @@
 {
   "updated": "2026-07-07",
   "total_ayat": 6236,
-  "studies": 93,
+  "studies": 108,
   "principles": 25,
   "frameworks": 3,
-  "direct_ayat": 166,
+  "direct_ayat": 213,
   "cited_ayat": 70,
-  "touched_ayat": 166,
+  "touched_ayat": 213,
   "candidates_total": 596,
-  "candidates_done": 50,
-  "pct_of_total": 2.66,
-  "pct_of_candidates": 8.4,
+  "candidates_done": 68,
+  "pct_of_total": 3.42,
+  "pct_of_candidates": 11.4,
   "by_theme": [
     {
       "theme": "pikir/akal/renung (120)",
       "total": 120,
-      "done": 9
+      "done": 12
     },
     {
       "theme": "saksi/bukti (115)",
@@ -30,12 +30,12 @@
     {
       "theme": "air & kehidupan (48)",
       "total": 48,
-      "done": 3
+      "done": 7
     },
     {
       "theme": "makan/gizi/batas (40)",
       "total": 40,
-      "done": 1
+      "done": 4
     },
     {
       "theme": "ilmu/tahu/ajar (38)",
@@ -50,7 +50,7 @@
     {
       "theme": "penciptaan bertahap (27)",
       "total": 27,
-      "done": 2
+      "done": 5
     },
     {
       "theme": "waktu/ajal/jadwal (27)",
@@ -60,7 +60,7 @@
     {
       "theme": "sembuh/obat/sehat (22)",
       "total": 22,
-      "done": 1
+      "done": 4
     },
     {
       "theme": "kerusakan/feedback (22)",
@@ -85,7 +85,7 @@
     {
       "theme": "cahaya/optik (7)",
       "total": 7,
-      "done": 1
+      "done": 3
     },
     {
       "theme": "jaringan/semut/hewan sosial (5)",

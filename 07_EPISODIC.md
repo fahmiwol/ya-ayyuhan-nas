@@ -113,6 +113,16 @@ Owner minta (catat dulu, belum bangun): (1) **4 mazhab fikih** (Hanafi/Maliki/Sy
 
 ---
 
+### [F1.56] Wave 10 — BUSUR KOSMIK (init→run→shutdown→re-instantiate), +15 (total 108) — 2026-07-08
+
+Wave selaras cakupan luas F1.55 + rambu GHAIB. 3 agen paralel, tiap kajian CATATAN TANZIH + (utk akhirat) CATATAN GHAIB; adab dijaga (istiwa tanpa takyif; 56:7 golongan=hak Allah; 75 pakai asbabun nuzul).
+- **Awal/penciptaan kosmos (init):** 2:117 (badi+kun=spec→wujud bertahap), 25:59 (6 masa→istiwa=init→fase kendali), 7:54 (khalq/amr, subsistem terjadwal), 79:27-33 (build→provisioning), 41:9-10 (capacity/kuota rezeki).
+- **Hidup-mati-ujian (run/eval):** 67:2 (lifecycle ber-objektif: menguji amal terbaik=objective function, kualitas vs Goodhart), 2:28 (state transitions/re-instansiasi), 3:185 (dunia=reward memperdaya/reward hacking), 21:35 (uji dua-sisi), 18:7 (sandbox+distractor reward/honeypot).
+- **Kiamat-kebangkitan (shutdown→re-instantiate):** 81 & 82 (shutdown terurut + flush log amal), 36:78-79 & 75:3-4 (Yang mencipta pertama kuasa mengulang=reproducibility/restore presisi; CATATAN TANZIH kuasa Allah=landasan iman bukan analog), 56:1-7 (klasifikasi final 3 golongan).
+coverage **108 kajian·213 ayat/11.4% kandidat** (backlog 71 [x]); graph 136 node/188 edge; corpus regen; mine 46 konsep. lab-validate 108/108, tanzih-lint bersih. Milestone: >100 kajian, busur kosmik penuh. LIVE.
+
+---
+
 ### [F1.55] Cakupan tadabbur diperluas + rambu GHAIB — 2026-07-08
 
 Owner memperluas visi: Al-Qur'an memuat pola ciptaan + **pedoman/aturan/wasilah/tata cara/syariat** (panduan khalifah) + **busur kosmik penuh** (kekosongan→cipta→hidup→mati→kiamat→kebangkitan). Konteks wahyu: Nabi ummi via Jibril = bagian keotentikan. → `24_MISSION_PHILOSOPHY.md` diperluas (cakupan + konteks wahyu + rambu GHAIB). **Rambu GHAIB baru (mirip tanzih):** perkara akhirat/ghaib dibaca DESKRIPTIF dari tafsir bersumber sbg pola, BUKAN spekulasi/klaim di luar teks; perkara iman; wajib CATATAN GHAIB. Syariat: baca struktur, JANGAN tetapkan fatwa. Ditanam di skill. Doc-only.
