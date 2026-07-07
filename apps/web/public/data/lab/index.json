@@ -19,6 +19,12 @@
     { "id": "ankabut-29-20", "title": "Sīrū fil-arḍ — riset lapangan atas asal-usul", "ref": "QS 29:20", "theme": "Riset empiris, ekspedisi ilmiah, studi asal-usul", "lenses": 9, "created": "2026-07-07" },
     { "id": "rum-30-41", "title": "Ẓaharal-fasād — umpan balik kerusakan agar sistem kembali", "ref": "QS 30:41", "theme": "Feedback loop, ekologi, atribusi kausal, koreksi sistem", "lenses": 9, "created": "2026-07-07" },
     { "id": "muminun-23-12-14", "title": "Nuṭfah → khalq ākhar — pipeline pembentukan manusia", "ref": "QS 23:12-14", "theme": "Kesehatan/embriologi, konstruksi bertahap, emergensi", "lenses": 9, "created": "2026-07-07" },
-    { "id": "hadid-57-25", "title": "Kitāb, Mīzān, Ḥadīd — tiga instrumen peradaban", "ref": "QS 57:25", "theme": "Instrumen peradaban, standar, material dual-use, keadilan", "lenses": 9, "created": "2026-07-07" }
+    { "id": "hadid-57-25", "title": "Kitāb, Mīzān, Ḥadīd — tiga instrumen peradaban", "ref": "QS 57:25", "theme": "Instrumen peradaban, standar, material dual-use, keadilan", "lenses": 9, "created": "2026-07-07" },
+    { "id": "nur-24-35", "title": "Āyat an-Nūr — cahaya berlapis & representasi bertingkat", "ref": "QS 24:35", "theme": "Optik/sinyal, representasi berlapis, sumber & perantara", "lenses": 10, "created": "2026-07-07" },
+    { "id": "shams-91-7-10", "title": "Nafs & tazkiyah — regulasi diri dua-potensi", "ref": "QS 91:7-10", "theme": "Psikologi/regulasi diri, dua potensi, kesehatan mental", "lenses": 9, "created": "2026-07-07" },
+    { "id": "asr-103-1-3", "title": "Wal-ʿAṣr — trajektori default kerugian & syarat pengecualian", "ref": "QS 103:1-3", "theme": "Waktu sebagai sumber daya, default trajectory, entropi", "lenses": 9, "created": "2026-07-07" },
+    { "id": "baqarah-2-143", "title": "Ummatan wasaṭan — nilai tengah sebagai posisi saksi", "ref": "QS 2:143", "theme": "Tata kelola, nilai tengah/median, keseimbangan sosial", "lenses": 9, "created": "2026-07-07" },
+    { "id": "dzariyat-51-49", "title": "Min kulli syaiʾin zawjayn — segala sesuatu berpasangan", "ref": "QS 51:49", "theme": "Dualitas, komplementaritas, biner, adversarial pairs", "lenses": 9, "created": "2026-07-07" },
+    { "id": "hasyr-59-18", "title": "Waltanẓur li-ghad — audit diri & perencanaan ke depan", "ref": "QS 59:18", "theme": "Self-audit, forecasting, akuntabilitas, refleksi", "lenses": 9, "created": "2026-07-07" }
   ]
 }

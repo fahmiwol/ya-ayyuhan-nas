@@ -87,6 +87,24 @@
 
 ---
 
+### [F1.34] Wave 3 — lensa non-teknis + 6 kajian lintas domain (total 23) — 2026-07-07
+
+**North Star check:** ya — owner "lanjut otonom"; ini lanjutan sintesis + membuka "turunan ilmu non-teknis" yang diminta sejak visi awal.
+**Taxonomy diperluas:** +3 lensa non-teknis → **psychology (🧠)**, **economy (💰)**, **pedagogy (📚)**. Total 12 lensa. Kajian lama tetap valid (lab-validate cek key terdaftar; kajian pakai subset lensa relevan — tak dipaksa semua).
+**6 kajian Wave 3 (dari backlog, ground tafsir dulu):**
+- **nur-24-35** (cahaya/optik, 10 lensa) representasi berlapis "nūrun ʿalā nūr"; sumber≠perantara (model=kaca bukan cahaya); output dibatasi perantara terlemah.
+- **shams-91-7-10** (psikologi, debut 🧠) nafs dua-potensi (fujūr/taqwā)+agensi; tazkiyah=continuous alignment vs drift; kesehatan mental = regulasi bukan penghapusan dorongan.
+- **asr-103-1-3** (waktu/ekonomi) default=rugi (entropi); exit konjungtif 4 syarat; 2 syarat SOSIAL (tawāṣī) = koreksi butuh peer; waktu=kapital menyusut.
+- **baqarah-2-143** (tata kelola) wasaṭ=median robust thd outlier → syarat jadi saksi adil; relevan AI-judge tak-bias; ujian kiblat=config-change eval.
+- **dzariyat-51-49** (dualitas) berpasangan=biner basis informasi + adversarial pairs (GAN/actor-critic/proposer-verifier) sbg mesin peningkatan.
+- **hasyr-59-18** (muhasabah) audit-diri prospektif (bukan ruminasi)=agent self-reflection (Reflexion)+forward credit assignment+observabilitas (khabīr).
+**Temuan lintas-korpus menguat:** "align & ukur SEBELUM skalakan daya" kini muncul di 55:8, 30:41, 57:25; "koreksi butuh peer/jaringan" di 103:3 & 59:6-lensa. Pola berulang lintas surah = sinyal struktural, dicatat sbg inferensi tingkat-korpus.
+**Guardrail:** resonansi sains ditandai "bukan mukjizat numerik"; makna dari tafsir bersumber; tier interpretasi.
+**Test:** lab-validate 23/23; TSC clean; preview: lensa 🧠 Psikologi render + filter; ekonomi/pedagogi aktif; taxonomy 12 lensa; index 23; 0 error. Backlog: 25 kandidat ditandai [x].
+**Status:** ✅ deploy. **Next:** lanjut backlog (tema saksi/bukti 115, air 48, penciptaan-bertahap belum tuntas); pertimbangkan halaman "sintesis lintas-kajian" (pola berulang antar ayat).
+
+---
+
 ### [F1.33] Sweep korpus 6236 ayat → backlog tematik + Wave 2 (7 kajian, total 17) — 2026-07-07
 
 **North Star check:** ya — owner minta "baca lagi SEMUA ayat (terjemahan+tafsir), jadikan interpretasi Lab; temuan utk teknologi, kesehatan, dll; terus reasoning & inference cari kemungkinan baru".

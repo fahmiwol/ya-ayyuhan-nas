@@ -9,7 +9,10 @@
     { "key": "math-physics", "title": "Matematika & Fisika", "icon": "📐", "desc": "Keteraturan, perhitungan, periodisitas, hukum alam." },
     { "key": "systems", "title": "Sistem & Organisasi", "icon": "🕸️", "desc": "Keseimbangan, umpan-balik, tata kelola, ekologi sistem." },
     { "key": "ai-agentic", "title": "AI & Agentic", "icon": "🤖", "desc": "Analogi ke arsitektur agen: grounding, reasoning, alignment, pelatihan." },
-    { "key": "artifact", "title": "Artefak & Teknologi", "icon": "🛠️", "desc": "Teknologi/instrumen yang disebut atau diimplikasikan (pena, timbangan, besi)." }
+    { "key": "artifact", "title": "Artefak & Teknologi", "icon": "🛠️", "desc": "Teknologi/instrumen yang disebut atau diimplikasikan (pena, timbangan, besi)." },
+    { "key": "psychology", "title": "Psikologi & Jiwa", "icon": "🧠", "desc": "Regulasi diri (nafs), motivasi, emosi, kesehatan mental, kognisi." },
+    { "key": "economy", "title": "Ekonomi & Muamalah", "icon": "💰", "desc": "Nilai, insentif, distribusi, kontrak, sumber daya, waktu sebagai kapital." },
+    { "key": "pedagogy", "title": "Pendidikan & Pedagogi", "icon": "📚", "desc": "Metode ajar, kurikulum bertahap, repetisi, keteladanan, transfer ilmu." }
   ],
   "cognitive_terms": [
     { "term": "taʿaqqul / ʿaql", "arabic": "تعقّل / عقل", "meaning": "menalar; mengikat pengetahuan", "operation": "deduksi + observasi; teori+fakta+tindakan", "ayat_claimed": "89:5, 21:67, 6:151 (49x)" },

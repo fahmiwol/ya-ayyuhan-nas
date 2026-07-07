@@ -1,8 +1,7 @@
 # 15_TADABBUR_BACKLOG — Peta Tema Hasil Sweep Seluruh Korpus
 
-> Hasil scan PROGRAMATIK seluruh 6236 ayat (terjemahan Kemenag id) dengan kata kunci konsep — 2026-07-07.
-> Fungsi: BACKLOG kandidat kajian Lab Tadabbur. Kandidat = sinyal awal, WAJIB dibaca ulang + ground tafsir sebelum jadi kajian.
-> Regenerate: jalankan ulang sweep (lihat episodic F1.33). Kajian selesai ditandai [x].
+> Scan PROGRAMATIK seluruh 6236 ayat (terjemahan Kemenag id) — 2026-07-07. [x] = sudah jadi kajian Lab.
+> BACKLOG kandidat kajian; kandidat = sinyal awal, WAJIB ground tafsir sebelum jadi kajian. Regenerate: rerun sweep (episodic F1.33).
 
 ## hitung/kadar/ukuran (49 ayat)
 - [ ] 2:194
@@ -46,7 +45,7 @@
 - [ ] 43:11
 - [ ] 54:49
 - [x] 55:5
-- [ ] 55:9
+- [x] 55:9
 - [x] 67:3
 - [ ] 73:20
 - [ ] 82:7
@@ -97,7 +96,7 @@
 - [ ] 2:87
 - [ ] 2:92
 - [ ] 2:111
-- [ ] 2:143
+- [x] 2:143
 - [ ] 2:209
 - [ ] 2:213
 - [x] 2:282
@@ -201,7 +200,7 @@
 - [ ] 48:28
 - [ ] 52:38
 - [ ] 57:19
-- [ ] 57:25
+- [x] 57:25
 - [ ] 58:5
 - [ ] 61:6
 - [ ] 65:2
@@ -318,7 +317,7 @@
 - [ ] 51:21
 - [ ] 55:31
 - [ ] 59:11
-- [ ] 59:18
+- [x] 59:18
 - [ ] 67:10
 - [ ] 67:19
 - [ ] 69:48
@@ -366,7 +365,7 @@
 - [ ] 29:43
 - [ ] 30:22
 - [ ] 36:69
-- [ ] 39:9
+- [x] 39:9
 - [ ] 53:5
 - [ ] 55:2
 - [ ] 58:3
@@ -382,7 +381,7 @@
 - [ ] 17:98
 - [ ] 22:5
 - [ ] 22:36
-- [ ] 23:14
+- [x] 23:14
 - [ ] 23:35
 - [ ] 23:82
 - [ ] 36:78
@@ -417,7 +416,7 @@
 - [ ] 17:90
 - [ ] 18:45
 - [ ] 20:53
-- [ ] 21:30
+- [x] 21:30
 - [ ] 22:5
 - [ ] 23:18
 - [ ] 23:21
@@ -458,7 +457,7 @@
 - [ ] 35:11
 - [ ] 39:6
 - [ ] 43:12
-- [ ] 51:49
+- [x] 51:49
 - [ ] 53:45
 - [ ] 55:52
 - [ ] 78:8
@@ -477,7 +476,7 @@
 - [ ] 17:21
 - [ ] 26:225
 - [ ] 27:69
-- [ ] 29:20
+- [x] 29:20
 - [ ] 30:42
 - [ ] 37:73
 - [ ] 43:25
@@ -596,7 +595,7 @@
 - [ ] 27:48
 - [ ] 28:77
 - [ ] 28:83
-- [ ] 30:41
+- [x] 30:41
 - [ ] 38:28
 - [ ] 40:26
 - [ ] 47:22
@@ -614,10 +613,10 @@
 - [ ] 34:11
 - [ ] 34:12
 - [ ] 55:35
-- [ ] 57:25
+- [x] 57:25
 
 ## cahaya/optik (7 ayat)
-- [ ] 24:35
+- [x] 24:35
 - [ ] 28:43
 - [ ] 71:16
 - [ ] 75:8
