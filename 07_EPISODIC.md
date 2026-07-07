@@ -87,6 +87,18 @@
 
 ---
 
+### [F1.42] Metode tafsir klasik jadi kerangka sintesis Lab + rambu isyari — 2026-07-07
+
+Owner kirim 4 peta-konsep Ulumul Qur'an (pengertian/keotentikan Qur'an; Qur'an-Hadits; hadis sbg sumber syariah/fungsi bayan/inkar sunnah; **Pendekatan & Metode Penafsiran**) → "jadikan metode kamu dalam mensintesis; pahami peta lain; cari sumber lain".
+**Action:**
+- **`20_TAFSIR_METHODS.md`** (metode formal Lab): metode CARA (tahlili/ijmali/muqaran/maudhu'i) dipetakan ke cara kerja Lab (maudhu'i=sweep/wave, tahlili=per-lensa, muqaran=sintesis, ijmali=inferensi). Corak SUMBER (bil-ma'tsur/bir-ra'y/isyari) + **hierarki grounding** (ayat→sunnah→atsar sahabat→tabi'in→ra'y). Identitas Lab = "isyari-rekayasa" yang di-ground bil-ma'tsur dulu.
+- **Rambu tafsir isyari klasik → guardrail keras** (masuk skill checklist): tak menyalahi zahir; ada sandaran (analogi lemah=bounded); bukan klaim maksud tunggal; tak simpulkan hukum/netral; batas tafsir ilmiah (sains=analogi BUKAN bukti; "resonansi bukan mukjizat numerik"). Ini menutup celah "melantur".
+- **SKILL tadabbur-lab diperbarui**: tambah bagian "Metode formal" + 5 rambu isyari sbg checklist mutu wajib. Hukum Besi #2 ditegaskan = disiplin bil-ma'tsur.
+- **Riset (agen background):** `21_TAFSIR_METHODS_RESEARCH.md` — metodologi tafsir global (adz-Dzahabi, Ibn Taimiyah muqaddimah, asy-Syathibi, i'jaz & debat tafsir ilmiah) + rambu isyari + batas scientific exegesis. ⏳ menyusul.
+**Test:** —(dokumen+skill, tak ada kode/deploy). **Status:** ✅ dicatat & di-commit. **Next:** saat riset 21 selesai, serap ke 20 + skill; terapkan rambu saat wave berikut; re-tadabbur kajian lama yg klaim sains-nya kurang hati-hati.
+
+---
+
 ### [BACKLOG-DICATAT] Modul Mazhab + Kitab per-mazhab + Catatan Sahabat — 2026-07-07
 
 Owner minta (catat dulu, belum bangun): (1) **4 mazhab fikih** (Hanafi/Maliki/Syafi'i/Hanbali) + manhaj; (2) **kitab/buku tiap mazhab** (dari ulama/perawi mazhab) → nyambung fitur Kitab; (3) **catatan para sahabat** (profil + peran periwayatan, nyambung isnad). Owner tegas: "jangan sampe ada yang melantur" → validasi+verifikasi ketat.

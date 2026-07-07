@@ -9,11 +9,20 @@ Metode memproduksi kajian di Lab Tadabbur (`apps/web/public/data/lab/`). Interpr
 
 ## Hukum Besi (tidak bisa ditawar)
 1. **Teks ayat TIDAK PERNAH disalin** ke data Lab — hanya ref `{surah, from, to}`; render menarik dari mushaf kanonik ber-Merkle. Ref invalid → fail-closed.
-2. **Makna religius SELALU dari tafsir bersumber** (Kemenag/Jalalain di data app) — field `sourced_meaning` wajib.
+2. **Makna religius SELALU dari tafsir bersumber** (Kemenag/Jalalain di data app) — field `sourced_meaning` wajib. Ini disiplin **bil-ma'tsur**: ground ke riwayat DULU sebelum menalar.
 3. **Tier "interpretation"** — semua output berlabel "🧪 Interpretasi — bukan tafsir".
 4. **Netral teologis** — khilaf ditandai metadata; klaim sains ditulis "resonansi struktural, BUKAN mukjizat numerik" (non-goal #4 CLAUDE.md).
 5. **Setiap interpretasi DIREKAM** — revisi lewat version bump + arsip (jangan menimpa).
 6. **Gerbang wajib pra-commit:** `node pipeline/lab-validate.mjs` harus exit 0.
+
+## Metode formal (kerangka Ulumul Qur'an — lihat `20_TAFSIR_METHODS.md`)
+Lab = **maudhu'i** (pilih tema dari backlog) + **tahlili** (bedah per-lensa) + **muqaran** (sintesis prinsip lintas-ayat) + **ijmali** (inferensi ringkas). Grounding **bil-ma'tsur** (sourced_meaning), penalaran **bir-ra'y mahmud** (berbasis ilmu, bukan hawa), disajikan sebagai **isyari-rekayasa**.
+### Rambu isyari (WAJIB tiap kajian — jadi checklist mutu):
+1. Pembacaan rekayasa **tak menyalahi makna zahir** / makna bersumber — ia lapisan di ATAS, bukan pengganti.
+2. Idealnya ada **sandaran** (ayat lain / istilah Qur'ani / prinsip); analogi lemah ditandai `bounded`.
+3. **Bukan klaim maksud tunggal** ayat — eksplisit "salah satu pembacaan", bukan maksud Ilahi.
+4. **Tak menyimpulkan hukum**, tak menghina, netral.
+5. **Batas tafsir ilmiah:** sains = analogi pemahaman, BUKAN bukti kebenaran teks → wajib frasa "resonansi struktural, bukan mukjizat numerik".
 
 ## Alur produksi kajian baru
 1. **Pilih ayat** dari backlog `15_TADABBUR_BACKLOG.md` (hasil sweep 6236 ayat; regenerate = rerun sweep di episodic F1.33). Kandidat = sinyal awal, bukan keputusan.
