@@ -113,6 +113,20 @@ Owner minta (catat dulu, belum bangun): (1) **4 mazhab fikih** (Hanafi/Maliki/Sy
 
 ---
 
+### [F1.44] Umpan balik GPT/Gemini + domain baru + governance — 2026-07-08
+
+Owner (sambil sesi limit): diskusi /lab dgn GPT-5 & Gemini (dinilai 9/10 konsep, "beta research platform bukan tafsir AI"); minta baca 2 PDF asbabun nuzul + URL; tambah domain 25 Nabi/Malaikat/Sifat Allah/dasar Islam/Kisah ("kelompokan sendiri"); tegaskan filosofi: sintesis tiap ayat jadi SEBANYAK mungkin dimensi (ia temukan 37 tafsir dari 1 ayat 2:2).
+**Rekam lengkap → `23_STRATEGY_DOMAINS_FEEDBACK.md`:**
+- **Kritik GPT diadopsi:** bahasa terlalu afirmatif utk status analogi → pelunakan framing (Mesin Temuan=+"Peta Hipotesis Pola"; Blueprint=+"Kerangka ANALOGI"; "diturunkan"→"diinspirasi pola"). Governance: badge status 3-tingkat, "Mulai dari sini", 3 pintu masuk, panel sumber per klaim, kanal kritik.
+- **Domain baru → penempatan diputuskan:** dasar Islam/Sifat Allah(Asma'ul Husna 99)/Malaikat/25 Nabi → fitur **Belajar** (perluas deen.json); Kisah → fitur **Kisah**. Semua provenance+dalil, angka masyhur=metadata khilaf, netral, silang ke Lab sbg bahan tadabbur.
+- **Asbabun nuzul sumber primer:** al-Wahidi *Asbab an-Nuzul* (PDF 184hlm) + as-Suyuti Lubab + PDF 653hlm + URL Walisongo/UINSGD (tanjim=incremental deployment). Perkuat modul Riwayat/asbab.json.
+- **Metode:** "maksimalkan dimensi per ayat" masuk skill (lensa sebanyak relevan, lintas-disiplin) TETAP di bawah rambu isyari.
+- **Arsitektur AI-brain (dari Gemini + rencana kita):** QCA→ Dhikr(RAG+tamper-ledger+cache), Tafakkur(multi-agen Ollama/LoRA), Eval-Gate(agen evaluator burhan), Muhasabah(self-audit→dataset LoRA). Spec organisme digital, dibingkai ANALOGI.
+**Turn ini kerjakan:** badge status 3-tingkat + "Mulai dari sini" + framing pelunakan (F1.45). Sisanya menyusul.
+**Status:** ✅ dicatat & commit (checkpoint aman).
+
+---
+
 ### [CHECKPOINT] Berhenti — 2026-07-07 (pasca F1.41)
 
 **Kondisi:** SEMUA LIVE & sehat di quran.migancore.com. HEAD master = Wave 7. App lain di server 301 (aman, dicek tiap deploy).
