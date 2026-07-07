@@ -67,5 +67,22 @@ if (!only) for (const e of idx.studies) {
   if (existsSync(fp)) { const s = JSON.parse(readFileSync(fp, 'utf8')); if (s.lenses?.length !== e.lenses) err(e.id, `index.lenses (${e.lenses}) != file (${s.lenses?.length})`); }
 }
 
+// Integritas SINTESIS (bila ada & validasi penuh): tiap evidence.id & principle → kajian/prinsip nyata.
+if (!only && existsSync(fileURLToPath(new URL('synthesis.json', LAB)))) {
+  const syn = read(new URL('synthesis.json', LAB));
+  const studyIds = new Set(idx.studies.map((s) => s.id));
+  const clusterKeys = new Set((syn.clusters ?? []).map((c) => c.key));
+  const prinIds = new Set((syn.principles ?? []).map((p) => p.id));
+  for (const p of syn.principles ?? []) {
+    if (!clusterKeys.has(p.cluster)) err('synthesis', `prinsip ${p.id}: cluster tak terdaftar (${p.cluster})`);
+    if (!(p.evidence ?? []).length) err('synthesis', `prinsip ${p.id}: tanpa evidence`);
+    for (const e of p.evidence ?? []) if (!studyIds.has(e.id)) err('synthesis', `prinsip ${p.id}: evidence.id bukan kajian (${e.id})`);
+  }
+  for (const L of syn.blueprint?.layers ?? []) {
+    if (!prinIds.has(L.principle)) err('synthesis', `blueprint lapis ${L.n}: principle tak dikenal (${L.principle})`);
+  }
+  if (!errs.length) console.log(`✓ sintesis: ${syn.principles.length} prinsip, ${syn.blueprint.layers.length} lapis blueprint — evidence & prinsip valid.`);
+}
+
 if (errs.length) { console.error(`LAB VALIDATE: ${errs.length} pelanggaran\n` + errs.join('\n')); process.exit(1); }
 console.log(`✓ lab-validate: ${targets.length} kajian lolos (skema, sumber, rujukan mushaf, riwayat).`);

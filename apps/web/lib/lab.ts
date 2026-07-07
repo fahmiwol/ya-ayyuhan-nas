@@ -88,3 +88,23 @@ export async function getLabStudyVersion(id: string, version: number): Promise<L
 export async function getLabTaxonomy(): Promise<LabTaxonomy | null> {
   return readJson<LabTaxonomy>("taxonomy.json");
 }
+
+// Sintesis lintas-kajian — memanen pola berulang antar-ayat jadi prinsip desain.
+export interface SynthEvidence { ref: string; id: string; note: string }
+export interface SynthPrinciple {
+  id: string; cluster: string; title: string; statement: string;
+  evidence: SynthEvidence[]; implication: string; note_single?: string;
+}
+export interface SynthCluster { key: string; title: string; icon: string; desc: string }
+export interface SynthBlueprintLayer {
+  n: number; layer: string; quranic: string; principle: string; reading: string; refs: string[];
+}
+export interface LabSynthesis {
+  schema: string; title: string; note: string;
+  clusters: SynthCluster[];
+  principles: SynthPrinciple[];
+  blueprint: { title: string; note: string; layers: SynthBlueprintLayer[] };
+}
+export async function getLabSynthesis(): Promise<LabSynthesis | null> {
+  return readJson<LabSynthesis>("synthesis.json");
+}

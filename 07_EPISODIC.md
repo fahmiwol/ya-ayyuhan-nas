@@ -87,6 +87,19 @@
 
 ---
 
+### [F1.35] Mesin Temuan — sintesis lintas-kajian + Blueprint Organisme Digital — 2026-07-07
+
+**North Star check:** ya — owner minta jadikan pola-pola ini "dasar pengembangan AI/ML/Agentic; utamanya teknologi, komputasi, cara kerja otak, kehidupan→logika makhluk digital, AI autonomous, organisme digital"; "clusterin sendiri"; sekunder sosial/keuangan/bisnis/kedokteran/mesin. Lab berpindah dari kumpulan kajian per-ayat → MESIN TEMUAN.
+**Action:**
+- `public/data/lab/synthesis.json` (schema lab-synthesis-v1): **20 prinsip** hasil harvest pola berulang, di-cluster 7 (utama **ai-core**🤖 + cognition🧠/learning📈/systems🕸️/epistemics🔍/society💰/life🧬). Tiap prinsip: statement + evidence (≥2 kajian, kecuali ditandai note_single) + **implikasi rekayasa** (fokus AI/ML). + **Blueprint Organisme Digital / Agen Autonom** = 8 lapis (Persepsi→Memori→Penalaran→Pembelajaran→Aksi→Umpan-balik→Alignment→Multi-agen), tiap lapis dipetakan ke istilah Qur'ani + prinsip + ayat.
+- `lib/lab.ts` getLabSynthesis + tipe. `components/LabSynthesisView.tsx` (blueprint flagship + prinsip filter-by-cluster + evidence chip → link ke kajian). `app/lab/sintesis/page.tsx`. Banner menonjol di /lab.
+- `lab-validate` diperluas: integritas sintesis (tiap evidence.id → kajian nyata; cluster & blueprint.principle terdaftar) — fail-closed.
+**Temuan flagship (prinsip inti AI):** align-before-scale, verify-before-act (dalil Eval-Gate), alignment-is-process, distributed-intelligence, staged-construction→emergensi, epistemic-ladder, dual-drive self-regulation, declarative-arc, learn-by-moving(OOD), invariant+feedback, self-audit prospektif, falsify-to-trust. Guardrail: bukan tafsir; note_single menandai prinsip yg baru 1 kajian (kandidat penguatan dicatat).
+**Test:** lab-validate: 20 prinsip+8 lapis valid, 23 kajian 23/23; TSC clean; preview: blueprint render, 20 prinsip, filter cluster AI→4, 40 evidence-link, banner /lab, 0 error.
+**Status:** ✅ deploy. **Next:** perkuat prinsip note_single (Wave 4 tematik: saksi/bukti, air, nafkah-pertengahan); kelak generate prinsip semi-otomatis dari korpus.
+
+---
+
 ### [F1.34] Wave 3 — lensa non-teknis + 6 kajian lintas domain (total 23) — 2026-07-07
 
 **North Star check:** ya — owner "lanjut otonom"; ini lanjutan sintesis + membuka "turunan ilmu non-teknis" yang diminta sejak visi awal.

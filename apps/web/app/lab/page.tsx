@@ -34,6 +34,15 @@ export default async function LabPage() {
         makna religius dirujuk ke tafsir bersumber. Netral: tidak menguji kebenaran Al-Qur&apos;an.</span>
       </div>
 
+      {/* Mesin Temuan — sintesis lintas-kajian */}
+      <Link href="/lab/sintesis" className="card mt-5 block p-4 transition hover:opacity-90" style={{ borderColor: "#3b82f6" }}>
+        <div className="flex flex-wrap items-center gap-2">
+          <span className="font-semibold" style={{ color: "#3b82f6" }}>🧬 Sintesis Lintas-Kajian</span>
+          <span className="rounded-full px-1.5 py-0.5 text-[10px]" style={{ border: "1px solid #3b82f6", color: "#3b82f6" }}>Mesin Temuan</span>
+        </div>
+        <div className="mut mt-1 text-xs">Pola berulang antar-ayat → prinsip desain, di-cluster (utama: AI/komputasi/organisme digital) + <b>Blueprint Organisme Digital / Agen Autonom</b>. Buka →</div>
+      </Link>
+
       {/* Daftar kajian */}
       <h2 className="mt-8 text-lg font-semibold">Kajian</h2>
       <div className="mt-3 grid grid-cols-1 gap-3">
