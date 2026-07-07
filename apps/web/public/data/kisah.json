@@ -1,30 +1,441 @@
 {
-  "schema": "kisah-v1",
-  "title": "Kisah & Hikayat",
-  "subtitle": "Kisah Qur'ani & riwayat, ber-sumber",
-  "source": { "name": "Editorial (ringkasan ber-dalil)", "license": "CC-BY-4.0", "note": "Ringkasan netral kisah dari Al-Qur'an & riwayat masyhur. Klik untuk detail + tautan ayat/sumber. Bukan salinan kitab berhak cipta; dilengkapi bertahap & lewat moderasi (eval-gate)." },
-  "categories": [
+ "schema": "kisah-v1",
+ "title": "Kisah & Hikayat",
+ "subtitle": "Kisah Qur'ani & riwayat, ber-sumber",
+ "source": {
+  "name": "Editorial (ringkasan ber-dalil)",
+  "license": "CC-BY-4.0",
+  "note": "Ringkasan netral kisah dari Al-Qur'an & riwayat masyhur. Klik untuk detail + tautan ayat/sumber. Bukan salinan kitab berhak cipta; dilengkapi bertahap & lewat moderasi (eval-gate)."
+ },
+ "categories": [
+  {
+   "key": "qurani",
+   "title": "Kisah dalam Al-Qur'an",
+   "stories": [
     {
-      "key": "qurani", "title": "Kisah dalam Al-Qur'an",
-      "stories": [
-        { "title": "Nabi Adam & penciptaan manusia", "type": "qurani", "narrative": "Allah menciptakan Adam dan menjadikannya khalifah di bumi, mengajarinya nama-nama, memerintahkan malaikat bersujud (iblis membangkang), lalu ujian di surga hingga turun ke bumi sebagai awal kehidupan manusia.", "related": [{ "label": "QS 2:30-37", "href": "/surah/2#ayah-30" }], "source": "Al-Qur'an" },
-        { "title": "Nabi Nuh & bahtera", "type": "qurani", "narrative": "Nabi Nuh berdakwah ratusan tahun namun kaumnya menolak. Atas perintah Allah ia membangun bahtera; banjir besar menenggelamkan pengingkar, sementara kaum beriman selamat.", "related": [{ "label": "QS 11:25-48", "href": "/surah/11#ayah-25" }, { "label": "QS Nuh 71", "href": "/surah/71#ayah-1" }], "source": "Al-Qur'an" },
-        { "title": "Nabi Ibrahim & api yang dingin", "type": "qurani", "narrative": "Ibrahim menghancurkan berhala kaumnya dan berdakwah tauhid. Ia dilemparkan ke api besar, tetapi Allah menjadikan api itu dingin dan menyelamatkannya. Kelak ia membangun Ka'bah bersama putranya Ismail.", "related": [{ "label": "QS 21:51-70", "href": "/surah/21#ayah-51" }, { "label": "QS 2:127", "href": "/surah/2#ayah-127" }], "source": "Al-Qur'an" },
-        { "title": "Nabi Yusuf", "type": "qurani", "narrative": "Yusuf dibuang saudaranya ke sumur karena dengki, dijual sebagai budak, difitnah, dipenjara, lalu diangkat menjadi bendahara Mesir berkat kejujuran & ilmunya — kisah kesabaran yang berujung pertemuan kembali dengan keluarganya.", "related": [{ "label": "QS Yusuf (12)", "href": "/surah/12#ayah-1" }], "source": "Al-Qur'an" },
-        { "title": "Nabi Musa & Fir'aun", "type": "qurani", "narrative": "Musa diutus menyeru Fir'aun yang mengaku tuhan. Dengan mukjizat tongkat, ia mengalahkan penyihir dan membawa Bani Israil keluar dari perbudakan; laut terbelah menyelamatkan mereka dan menenggelamkan Fir'aun.", "related": [{ "label": "QS Taha (20)", "href": "/surah/20#ayah-1" }, { "label": "QS Al-Qasas (28)", "href": "/surah/28#ayah-1" }], "source": "Al-Qur'an" },
-        { "title": "Ashabul Kahfi", "type": "qurani", "narrative": "Sekelompok pemuda beriman berlindung di sebuah gua dari penguasa zalim; Allah menidurkan mereka ratusan tahun lalu membangunkannya sebagai tanda kekuasaan-Nya atas kebangkitan.", "related": [{ "label": "QS Al-Kahfi 9-26", "href": "/surah/18#ayah-9" }], "source": "Al-Qur'an" },
-        { "title": "Maryam & kelahiran Isa", "type": "qurani", "narrative": "Maryam, wanita suci, dikaruniai putra Isa tanpa ayah sebagai mukjizat; bayi Isa berbicara membela ibunya. Kisah kesucian dan kekuasaan Allah menciptakan tanpa sebab biasa.", "related": [{ "label": "QS Maryam (19)", "href": "/surah/19#ayah-1" }, { "label": "QS 3:42-47", "href": "/surah/3#ayah-42" }], "source": "Al-Qur'an" },
-        { "title": "Nabi Sulaiman & Ratu Saba", "type": "qurani", "narrative": "Sulaiman dikaruniai kerajaan besar, memahami bahasa hewan, dan menundukkan angin serta jin. Ia mengajak Ratu Saba (Balqis) meninggalkan penyembahan matahari menuju tauhid.", "related": [{ "label": "QS An-Naml (27)", "href": "/surah/27#ayah-1" }], "source": "Al-Qur'an" },
-        { "title": "Nabi Ayyub & kesabaran", "type": "qurani", "narrative": "Ayyub diuji dengan kehilangan harta, keluarga, dan penyakit menahun, namun tetap bersabar dan bersyukur. Allah lalu menyembuhkan dan memuliakannya — teladan kesabaran.", "related": [{ "label": "QS 21:83-84", "href": "/surah/21#ayah-83" }, { "label": "QS 38:41-44", "href": "/surah/38#ayah-41" }], "source": "Al-Qur'an" },
-        { "title": "Nabi Yunus & ikan besar", "type": "qurani", "narrative": "Yunus meninggalkan kaumnya sebelum izin Allah, lalu ditelan ikan besar. Di kegelapan ia berdoa dan bertaubat; Allah menyelamatkannya. Kaumnya kemudian beriman.", "related": [{ "label": "QS 21:87-88", "href": "/surah/21#ayah-87" }, { "label": "QS 37:139-148", "href": "/surah/37#ayah-139" }], "source": "Al-Qur'an" }
-      ]
+     "title": "Nabi Adam & penciptaan manusia",
+     "type": "qurani",
+     "narrative": "Allah menciptakan Adam dan menjadikannya khalifah di bumi, mengajarinya nama-nama, memerintahkan malaikat bersujud (iblis membangkang), lalu ujian di surga hingga turun ke bumi sebagai awal kehidupan manusia.",
+     "related": [
+      {
+       "label": "QS 2:30-37",
+       "href": "/surah/2#ayah-30"
+      }
+     ],
+     "source": "Al-Qur'an"
     },
     {
-      "key": "riwayat", "title": "Kisah Sahabat & Riwayat",
-      "stories": [
-        { "title": "Hijrah & Gua Tsur", "type": "riwayat", "narrative": "Saat hijrah ke Madinah, Nabi ﷺ dan Abu Bakr bersembunyi di Gua Tsur dari kejaran Quraisy. Ketika musuh nyaris menemukan, Abu Bakr cemas; Nabi menenangkan: \"Jangan bersedih, sesungguhnya Allah bersama kita.\"", "related": [{ "label": "QS At-Taubah 40", "href": "/surah/9#ayah-40" }], "source": "Sirah; riwayat Bukhari-Muslim", "grade": "sahih" },
-        { "title": "Bilal bin Rabah", "type": "riwayat", "narrative": "Bilal, budak yang disiksa karena beriman, tetap teguh mengucap \"Ahad, Ahad\" (Allah Maha Esa). Ia dimerdekakan Abu Bakr dan menjadi muazin pertama Islam — lambang bahwa kemuliaan diukur dari takwa, bukan status.", "related": [], "source": "Sirah Nabawiyah", "grade": "masyhur" }
-      ]
+     "title": "Nabi Nuh & bahtera",
+     "type": "qurani",
+     "narrative": "Nabi Nuh berdakwah ratusan tahun namun kaumnya menolak. Atas perintah Allah ia membangun bahtera; banjir besar menenggelamkan pengingkar, sementara kaum beriman selamat.",
+     "related": [
+      {
+       "label": "QS 11:25-48",
+       "href": "/surah/11#ayah-25"
+      },
+      {
+       "label": "QS Nuh 71",
+       "href": "/surah/71#ayah-1"
+      }
+     ],
+     "source": "Al-Qur'an"
+    },
+    {
+     "title": "Nabi Ibrahim & api yang dingin",
+     "type": "qurani",
+     "narrative": "Ibrahim menghancurkan berhala kaumnya dan berdakwah tauhid. Ia dilemparkan ke api besar, tetapi Allah menjadikan api itu dingin dan menyelamatkannya. Kelak ia membangun Ka'bah bersama putranya Ismail.",
+     "related": [
+      {
+       "label": "QS 21:51-70",
+       "href": "/surah/21#ayah-51"
+      },
+      {
+       "label": "QS 2:127",
+       "href": "/surah/2#ayah-127"
+      }
+     ],
+     "source": "Al-Qur'an"
+    },
+    {
+     "title": "Nabi Yusuf",
+     "type": "qurani",
+     "narrative": "Yusuf dibuang saudaranya ke sumur karena dengki, dijual sebagai budak, difitnah, dipenjara, lalu diangkat menjadi bendahara Mesir berkat kejujuran & ilmunya — kisah kesabaran yang berujung pertemuan kembali dengan keluarganya.",
+     "related": [
+      {
+       "label": "QS Yusuf (12)",
+       "href": "/surah/12#ayah-1"
+      }
+     ],
+     "source": "Al-Qur'an"
+    },
+    {
+     "title": "Nabi Musa & Fir'aun",
+     "type": "qurani",
+     "narrative": "Musa diutus menyeru Fir'aun yang mengaku tuhan. Dengan mukjizat tongkat, ia mengalahkan penyihir dan membawa Bani Israil keluar dari perbudakan; laut terbelah menyelamatkan mereka dan menenggelamkan Fir'aun.",
+     "related": [
+      {
+       "label": "QS Taha (20)",
+       "href": "/surah/20#ayah-1"
+      },
+      {
+       "label": "QS Al-Qasas (28)",
+       "href": "/surah/28#ayah-1"
+      }
+     ],
+     "source": "Al-Qur'an"
+    },
+    {
+     "title": "Ashabul Kahfi",
+     "type": "qurani",
+     "narrative": "Sekelompok pemuda beriman berlindung di sebuah gua dari penguasa zalim; Allah menidurkan mereka ratusan tahun lalu membangunkannya sebagai tanda kekuasaan-Nya atas kebangkitan.",
+     "related": [
+      {
+       "label": "QS Al-Kahfi 9-26",
+       "href": "/surah/18#ayah-9"
+      }
+     ],
+     "source": "Al-Qur'an"
+    },
+    {
+     "title": "Maryam & kelahiran Isa",
+     "type": "qurani",
+     "narrative": "Maryam, wanita suci, dikaruniai putra Isa tanpa ayah sebagai mukjizat; bayi Isa berbicara membela ibunya. Kisah kesucian dan kekuasaan Allah menciptakan tanpa sebab biasa.",
+     "related": [
+      {
+       "label": "QS Maryam (19)",
+       "href": "/surah/19#ayah-1"
+      },
+      {
+       "label": "QS 3:42-47",
+       "href": "/surah/3#ayah-42"
+      }
+     ],
+     "source": "Al-Qur'an"
+    },
+    {
+     "title": "Nabi Sulaiman & Ratu Saba",
+     "type": "qurani",
+     "narrative": "Sulaiman dikaruniai kerajaan besar, memahami bahasa hewan, dan menundukkan angin serta jin. Ia mengajak Ratu Saba (Balqis) meninggalkan penyembahan matahari menuju tauhid.",
+     "related": [
+      {
+       "label": "QS An-Naml (27)",
+       "href": "/surah/27#ayah-1"
+      }
+     ],
+     "source": "Al-Qur'an"
+    },
+    {
+     "title": "Nabi Ayyub & kesabaran",
+     "type": "qurani",
+     "narrative": "Ayyub diuji dengan kehilangan harta, keluarga, dan penyakit menahun, namun tetap bersabar dan bersyukur. Allah lalu menyembuhkan dan memuliakannya — teladan kesabaran.",
+     "related": [
+      {
+       "label": "QS 21:83-84",
+       "href": "/surah/21#ayah-83"
+      },
+      {
+       "label": "QS 38:41-44",
+       "href": "/surah/38#ayah-41"
+      }
+     ],
+     "source": "Al-Qur'an"
+    },
+    {
+     "title": "Nabi Yunus & ikan besar",
+     "type": "qurani",
+     "narrative": "Yunus meninggalkan kaumnya sebelum izin Allah, lalu ditelan ikan besar. Di kegelapan ia berdoa dan bertaubat; Allah menyelamatkannya. Kaumnya kemudian beriman.",
+     "related": [
+      {
+       "label": "QS 21:87-88",
+       "href": "/surah/21#ayah-87"
+      },
+      {
+       "label": "QS 37:139-148",
+       "href": "/surah/37#ayah-139"
+      }
+     ],
+     "source": "Al-Qur'an"
+    },
+    {
+     "title": "Nabi Hud & kaum 'Ad",
+     "type": "qurani",
+     "narrative": "Nabi Hud diutus kepada kaum 'Ad yang perkasa dan membangun bangunan megah, namun sombong dan menyembah berhala. Ia menyeru mereka kepada tauhid, tetapi mereka mendustakannya. Kaum yang ingkar itu pun dibinasakan oleh angin dahsyat, sementara Hud dan orang beriman diselamatkan.",
+     "related": [
+      {
+       "label": "QS 7:65-72",
+       "href": "/surah/7#ayah-65"
+      }
+     ],
+     "source": "Al-Qur'an"
+    },
+    {
+     "title": "Nabi Shaleh & unta betina",
+     "type": "qurani",
+     "narrative": "Nabi Shaleh diutus kepada kaum Tsamud dan datang membawa mukjizat berupa unta betina sebagai tanda, dengan peringatan agar tidak menyakitinya. Namun mereka menyembelih unta itu dan menentang. Karena keingkaran itu, kaum Tsamud ditimpa azab yang membinasakan.",
+     "related": [
+      {
+       "label": "QS 7:73-79",
+       "href": "/surah/7#ayah-73"
+      }
+     ],
+     "source": "Al-Qur'an"
+    },
+    {
+     "title": "Nabi Ibrahim & pengorbanan Ismail",
+     "type": "qurani",
+     "narrative": "Nabi Ibrahim bermimpi diperintahkan menyembelih putranya, Ismail. Keduanya berserah diri; sang anak menerima dengan sabar dan ridha. Ketika perintah hendak dilaksanakan, Ismail digantikan dengan sembelihan besar — teladan ketaatan dan kepasrahan.",
+     "related": [
+      {
+       "label": "QS 37:100-111",
+       "href": "/surah/37#ayah-100"
+      }
+     ],
+     "source": "Al-Qur'an"
+    },
+    {
+     "title": "Nabi Luth & kaumnya",
+     "type": "qurani",
+     "narrative": "Nabi Luth menyeru kaumnya meninggalkan perbuatan keji yang belum pernah dilakukan umat sebelumnya. Mereka menolak dan mengancam mengusirnya. Luth beserta keluarganya yang beriman diselamatkan, kecuali istrinya, sementara negeri kaum itu dibinasakan.",
+     "related": [
+      {
+       "label": "QS 7:80-84",
+       "href": "/surah/7#ayah-80"
+      }
+     ],
+     "source": "Al-Qur'an"
+    },
+    {
+     "title": "Nabi Musa & Khidr",
+     "type": "qurani",
+     "narrative": "Nabi Musa menempuh perjalanan menemui seorang hamba saleh (Khidr) untuk menimba ilmu. Ia diminta bersabar dan tidak bertanya, namun tiga peristiwa aneh membuatnya heran: perahu dilubangi, seorang anak dibunuh, dan dinding roboh ditegakkan. Khidr lalu menjelaskan hikmah di balik semuanya sebagai pelajaran tentang ilmu dan takdir.",
+     "related": [
+      {
+       "label": "QS 18:60-82",
+       "href": "/surah/18#ayah-60"
+      }
+     ],
+     "source": "Al-Qur'an"
+    },
+    {
+     "title": "Dzulqarnain & Ya'juj-Ma'juj",
+     "type": "qurani",
+     "narrative": "Dzulqarnain, penguasa yang diberi kekuasaan dan sarana, mengembara ke timur dan barat menegakkan keadilan. Suatu kaum meminta perlindungan dari kerusakan Ya'juj dan Ma'juj. Ia membangun benteng kokoh dari besi dan tembaga untuk menahan mereka, seraya mengembalikan segalanya kepada karunia Ilahi.",
+     "related": [
+      {
+       "label": "QS 18:83-98",
+       "href": "/surah/18#ayah-83"
+      }
+     ],
+     "source": "Al-Qur'an"
+    },
+    {
+     "title": "Luqman & nasihat kepada anaknya",
+     "type": "qurani",
+     "narrative": "Luqman, yang dianugerahi hikmah, memberi nasihat berharga kepada putranya: jangan menyekutukan Allah, berbuat baik kepada kedua orang tua, dirikan salat, sabar atas ujian, jangan sombong, dan sederhanakan langkah serta suara. Nasihatnya menjadi pedoman akhlak yang abadi.",
+     "related": [
+      {
+       "label": "QS 31:12-19",
+       "href": "/surah/31#ayah-12"
+      }
+     ],
+     "source": "Al-Qur'an"
+    },
+    {
+     "title": "Pasukan Gajah (Ashabul Fil)",
+     "type": "qurani",
+     "narrative": "Pasukan bergajah datang hendak menghancurkan Ka'bah. Sebelum mencapai tujuannya, mereka dihancurkan oleh burung-burung berbondong yang melempari mereka dengan batu dari tanah keras, hingga menjadi seperti daun yang dimakan ulat. Peristiwa ini menjadi tanda perlindungan atas rumah suci.",
+     "related": [
+      {
+       "label": "QS 105:1-5",
+       "href": "/surah/105#ayah-1"
+      }
+     ],
+     "source": "Al-Qur'an"
+    },
+    {
+     "title": "Qarun & hartanya",
+     "type": "qurani",
+     "narrative": "Qarun adalah orang dari kaum Musa yang diberi kekayaan melimpah, namun sombong dan menganggap harta itu hasil ilmunya sendiri. Ia diperingatkan agar bersyukur dan tidak berbuat kerusakan, tetapi menolak. Akibat keangkuhannya, ia beserta hartanya ditelan bumi.",
+     "related": [
+      {
+       "label": "QS 28:76-82",
+       "href": "/surah/28#ayah-76"
+      }
+     ],
+     "source": "Al-Qur'an"
+    },
+    {
+     "title": "Ashabul Ukhdud (para pemilik parit)",
+     "type": "qurani",
+     "narrative": "Sekelompok penguasa zalim menggali parit besar dan menyalakan api untuk menyiksa orang-orang beriman yang menolak meninggalkan keyakinannya. Kaum beriman itu tetap teguh menghadapi siksaan. Kisah ini menjadi peringatan atas kekejaman terhadap orang yang berpegang pada iman.",
+     "related": [
+      {
+       "label": "QS 85:4-8",
+       "href": "/surah/85#ayah-4"
+      }
+     ],
+     "source": "Al-Qur'an"
+    },
+    {
+     "title": "Nabi Zakariya & Yahya",
+     "type": "qurani",
+     "narrative": "Nabi Zakariya, yang telah lanjut usia dan istrinya mandul, berdoa memohon keturunan yang saleh. Doanya dikabulkan dengan kelahiran Yahya, seorang nabi yang bijak, penyantun, dan berbakti sejak kecil. Kisah ini menampilkan harapan dan pengabulan doa.",
+     "related": [
+      {
+       "label": "QS 19:2-15",
+       "href": "/surah/19#ayah-2"
+      },
+      {
+       "label": "QS 3:38-41",
+       "href": "/surah/3#ayah-38"
+      }
+     ],
+     "source": "Al-Qur'an"
+    },
+    {
+     "title": "Bani Israil & sapi betina",
+     "type": "qurani",
+     "narrative": "Setelah terjadi pembunuhan yang tak diketahui pelakunya, Bani Israil diperintahkan menyembelih seekor sapi betina. Mereka banyak bertanya dan mempersulit diri sebelum akhirnya melaksanakannya. Dengan sebagian tubuh sapi itu, kebenaran peristiwa pembunuhan pun terungkap.",
+     "related": [
+      {
+       "label": "QS 2:67-73",
+       "href": "/surah/2#ayah-67"
+      }
+     ],
+     "source": "Al-Qur'an"
+    },
+    {
+     "title": "Talut, Dawud & Jalut",
+     "type": "qurani",
+     "narrative": "Bani Israil diberi raja bernama Talut untuk memimpin perang; pasukannya diuji dengan sebuah sungai. Dalam pertempuran melawan Jalut yang perkasa, Dawud yang masih muda berhasil mengalahkannya. Dawud kemudian dianugerahi kerajaan dan hikmah.",
+     "related": [
+      {
+       "label": "QS 2:246-251",
+       "href": "/surah/2#ayah-246"
+      }
+     ],
+     "source": "Al-Qur'an"
+    },
+    {
+     "title": "Nabi Syu'aib & kaum Madyan",
+     "type": "qurani",
+     "narrative": "Nabi Syu'aib diutus kepada penduduk Madyan yang gemar mengurangi takaran dan timbangan serta berbuat curang. Ia menyeru mereka menyembah Allah dan berlaku adil dalam perniagaan. Karena mendustakannya, kaum yang ingkar itu ditimpa azab, sementara orang beriman diselamatkan.",
+     "related": [
+      {
+       "label": "QS 7:85-93",
+       "href": "/surah/7#ayah-85"
+      }
+     ],
+     "source": "Al-Qur'an"
+    },
+    {
+     "title": "Dua putra Adam (Habil & Qabil)",
+     "type": "qurani",
+     "narrative": "Dua putra Adam mempersembahkan kurban; kurban salah satunya diterima dan yang lain tidak. Didorong dengki, salah seorang mengancam membunuh saudaranya, sementara yang lain menolak membalas dengan kejahatan. Kisah ini menjadi pelajaran pertama tentang kejahatan dan penyesalan.",
+     "related": [
+      {
+       "label": "QS 5:27-31",
+       "href": "/surah/5#ayah-27"
+      }
+     ],
+     "source": "Al-Qur'an"
+    },
+    {
+     "title": "Mukjizat Nabi Isa",
+     "type": "qurani",
+     "narrative": "Nabi Isa diutus kepada Bani Israil dengan sejumlah tanda: dengan izin Allah ia membentuk burung dari tanah lalu ia hidup, menyembuhkan orang buta dan penderita kusta, serta memberi kabar tentang perkara yang tersembunyi. Semua itu ia sampaikan sebagai bukti kerasulan dan seruan tauhid.",
+     "related": [
+      {
+       "label": "QS 3:49",
+       "href": "/surah/3#ayah-49"
+      },
+      {
+       "label": "QS 5:110",
+       "href": "/surah/5#ayah-110"
+      }
+     ],
+     "source": "Al-Qur'an"
+    },
+    {
+     "title": "Penduduk negeri & tiga utusan",
+     "type": "qurani",
+     "narrative": "Sebuah negeri didatangi para utusan yang menyeru penduduknya kepada kebenaran, namun mereka mendustakan dan mengancam. Seorang lelaki datang dari ujung kota dengan bergegas, membenarkan para utusan dan menasihati kaumnya untuk mengikuti mereka. Ia tetap teguh meski harus menghadapi risiko.",
+     "related": [
+      {
+       "label": "QS 36:13-29",
+       "href": "/surah/36#ayah-13"
+      }
+     ],
+     "source": "Al-Qur'an"
+    },
+    {
+     "title": "Pemilik dua kebun",
+     "type": "qurani",
+     "narrative": "Seorang pemilik dua kebun subur menjadi sombong, membanggakan hartanya, dan meragukan hari kebangkitan. Temannya yang beriman menasihatinya untuk bersyukur dan mengingat asal penciptaannya. Kebun itu kemudian binasa, dan sang pemilik menyesal atas keangkuhannya.",
+     "related": [
+      {
+       "label": "QS 18:32-44",
+       "href": "/surah/18#ayah-32"
+      }
+     ],
+     "source": "Al-Qur'an"
+    },
+    {
+     "title": "Orang yang melewati negeri yang runtuh",
+     "type": "qurani",
+     "narrative": "Seseorang melewati sebuah negeri yang telah roboh dan bertanya bagaimana Allah menghidupkannya kembali setelah hancur. Ia lalu diwafatkan selama seratus tahun kemudian dibangkitkan, dan diperlihatkan makanan serta keledainya sebagai bukti. Peristiwa ini menjadi tanda nyata tentang kebangkitan.",
+     "related": [
+      {
+       "label": "QS 2:259",
+       "href": "/surah/2#ayah-259"
+      }
+     ],
+     "source": "Al-Qur'an"
+    },
+    {
+     "title": "Nabi Idris",
+     "type": "qurani",
+     "narrative": "Nabi Idris disebut dalam Al-Qur'an sebagai seorang yang sangat membenarkan lagi seorang nabi, yang diangkat ke tempat yang tinggi. Ia dikenal sebagai teladan kesabaran dan ketaatan. Namanya disebut bersama para nabi yang diberi nikmat oleh Allah.",
+     "related": [
+      {
+       "label": "QS 19:56-57",
+       "href": "/surah/19#ayah-56"
+      },
+      {
+       "label": "QS 21:85-86",
+       "href": "/surah/21#ayah-85"
+      }
+     ],
+     "source": "Al-Qur'an"
     }
-  ]
+   ]
+  },
+  {
+   "key": "riwayat",
+   "title": "Kisah Sahabat & Riwayat",
+   "stories": [
+    {
+     "title": "Hijrah & Gua Tsur",
+     "type": "riwayat",
+     "narrative": "Saat hijrah ke Madinah, Nabi ﷺ dan Abu Bakr bersembunyi di Gua Tsur dari kejaran Quraisy. Ketika musuh nyaris menemukan, Abu Bakr cemas; Nabi menenangkan: \"Jangan bersedih, sesungguhnya Allah bersama kita.\"",
+     "related": [
+      {
+       "label": "QS At-Taubah 40",
+       "href": "/surah/9#ayah-40"
+      }
+     ],
+     "source": "Sirah; riwayat Bukhari-Muslim",
+     "grade": "sahih"
+    },
+    {
+     "title": "Bilal bin Rabah",
+     "type": "riwayat",
+     "narrative": "Bilal, budak yang disiksa karena beriman, tetap teguh mengucap \"Ahad, Ahad\" (Allah Maha Esa). Ia dimerdekakan Abu Bakr dan menjadi muazin pertama Islam — lambang bahwa kemuliaan diukur dari takwa, bukan status.",
+     "related": [],
+     "source": "Sirah Nabawiyah",
+     "grade": "masyhur"
+    }
+   ]
+  }
+ ]
 }

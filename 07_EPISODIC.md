@@ -113,6 +113,12 @@ Owner minta (catat dulu, belum bangun): (1) **4 mazhab fikih** (Hanafi/Maliki/Sy
 
 ---
 
+### [F1.51] Kisah diperkaya — +20 kisah Qur'ani (total 32) — 2026-07-08
+
+Lanjut isi halaman non-Lab. Agen sumberkan 20 kisah Qur'ani terkenal (Hud/Shaleh/Luth/Musa-Khidr/Dzulqarnain/Luqman/Ashabul Fil/Qarun/Ashabul Ukhdud/Zakariya/sapi betina/Talut-Dawud-Jalut/Syuaib/Habil-Qabil/mukjizat Isa/3 utusan/2 kebun/2:259/Idris) → `kisah-add.json`; aku merge ke kategori qurani, dedup, **verifikasi related refs vs mushaf (0 bad-ref, 0 dupe)** → 32 total. Tanzih dijaga (mukjizat=peristiwa "dengan izin Allah", bukan gambarkan Dzat). Data-only, LIVE.
+
+---
+
 ### [F1.50] ⛔ KOREKSI TANZIH — Allah tak boleh dianalogikan sbg sistem — 2026-07-08
 
 **Koreksi teologis penting dari owner:** ide "silang Asma'ul Husna ↔ Lab (atribut Allah sbg lensa)" SALAH & DIBATALKAN. Allah = Dzat ghaib & transenden; Sifat/Asma-Nya TIDAK boleh ditafsirkan/digambarkan/dibayangkan/dianalogikan sebagai atribut/komponen sistem (tanzih).
