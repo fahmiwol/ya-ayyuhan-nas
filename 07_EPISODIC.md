@@ -113,6 +113,19 @@ Owner minta (catat dulu, belum bangun): (1) **4 mazhab fikih** (Hanafi/Maliki/Sy
 
 ---
 
+### [F1.46] Wave 8 — 3 agen paralel, +15 kajian maks-dimensi (total 78) — 2026-07-08
+
+**North Star:** owner "gas otonom, kamu tentukan" → kupilih Wave 8 (misi inti + pola teraman) dgn arahan baru MAKSIMALKAN DIMENSI.
+**15 kajian (3 tema):**
+- **Kadar/takdir/ukuran:** 54:49 (qadar=kuantisasi/typing/quota — 11L), 25:2 (construct→configure presisi — 10L), 87:1-5 (init→configure→guide lifecycle — 11L), 15:21 (khazanah+qadar=lazy-loading/backpressure — 10L), 65:3 (bounded delegation/timeout+fallback — 10L).
+- **Kosmos lanjutan:** 41:11 (dukhan→struktur=bootstrapping), 21:104 (gulung langit=serialization/teardown), 78:6-7 (gunung-pasak=stabilizer/damper anti-osilasi), 16:15 (rawasi+routing), 51:20-21 (āyāt di bumi&diri=observabilitas).
+- **Manusia/sosial/kapasitas:** 49:13 (li-ta'arafu=handshake/diversity, trust-by-alignment-not-origin — 10L), 13:11 (ubah dari state internal=self-modification bottom-up — 10L), 2:286 (wus'=rate-limit/graceful degradation), 30:21 (pairing komplementer=restoring force), 4:1 (fan-out dari base tunggal+lineage).
+- **Maks-dimensi berhasil:** beberapa kajian 10-11 lensa (bukan 9 kaku). Klaim sains dukhan/gunung-pasak dibingkai "resonansi bounded, BUKAN mukjizat numerik".
+**Derived:** coverage 78 kajian·128 ayat (7.4% kandidat, backlog 50 [x]); graph 106 node/128 edge; corpus **884 chunk**; lab-mine 45 konsep berulang.
+**Test:** lab-validate 78/78; spot-check 54:49 & 49:13 tajam. **Status:** ✅ deploy. **Next:** integrasi analogi baru→prinsip (qadar=quantization, li-ta'arafu=interop, wus'=capacity-limit); domain Belajar (Nabi/Malaikat/Sifat); governance sisa.
+
+---
+
 ### [F1.44] Umpan balik GPT/Gemini + domain baru + governance — 2026-07-08
 
 Owner (sambil sesi limit): diskusi /lab dgn GPT-5 & Gemini (dinilai 9/10 konsep, "beta research platform bukan tafsir AI"); minta baca 2 PDF asbabun nuzul + URL; tambah domain 25 Nabi/Malaikat/Sifat Allah/dasar Islam/Kisah ("kelompokan sendiri"); tegaskan filosofi: sintesis tiap ayat jadi SEBANYAK mungkin dimensi (ia temukan 37 tafsir dari 1 ayat 2:2).

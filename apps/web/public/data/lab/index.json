@@ -506,6 +506,126 @@
       "theme": "Hierarki ilmu, anti-kesombongan, batas pengetahuan, taktik cerdas",
       "lenses": 9,
       "created": "2026-07-07"
+    },
+    {
+      "id": "ala-87-1-5",
+      "title": "Khalaqa–sawwa–qaddara–hada — pipeline lifecycle penciptaan",
+      "ref": "QS 87:1-5",
+      "theme": "Pipeline init→configure→guide→lifecycle; tahap berurutan penciptaan; petunjuk (hidayah) sebagai runtime setelah konfigurasi kadar",
+      "lenses": 11,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "anbiya-21-104",
+      "title": "Menggulung langit — teardown, serialisasi keadaan, dan penciptaan-ulang",
+      "ref": "QS 21:104",
+      "theme": "Eskatologi kosmik, teardown terkendali, reversibilitas, penciptaan-ulang, janji yang pasti dieksekusi",
+      "lenses": 9,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "baqarah-2-286",
+      "title": "Lā yukallifullāhu nafsan illā wusʿahā — beban tak pernah melampaui kapasitas",
+      "ref": "QS 2:286",
+      "theme": "Batas kapasitas, rate-limiting, graceful degradation, akuntabilitas seimbang",
+      "lenses": 9,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "dzariyat-51-20-21",
+      "title": "Tanda di bumi dan di dirimu — observabilitas, introspeksi, dan sinyal bagi yang yakin",
+      "ref": "QS 51:20-21",
+      "theme": "Observabilitas, dua sumber bukti (eksternal & internal), introspeksi, kesiapan pengamat, sinyal",
+      "lenses": 9,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "furqan-25-2-2",
+      "title": "Fa-qaddarahu taqdiran — cipta lalu kalibrasi dengan presisi",
+      "ref": "QS 25:2",
+      "theme": "Dua fase: create → configure (taqdir); kalibrasi presisi; otoritas tunggal atas parameter sistem",
+      "lenses": 10,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "fussilat-41-11",
+      "title": "Dukhan → struktur — dari keadaan tak-terbentuk menuju kosmos yang teratur",
+      "ref": "QS 41:11",
+      "theme": "Kosmogoni, keadaan awal tak-terbentuk, bootstrapping, perintah pembentukan, ketaatan struktural",
+      "lenses": 9,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "hijr-15-21-21",
+      "title": "Khaza'in + qadar ma'lum — gudang tak terbatas, rilis terkendali",
+      "ref": "QS 15:21",
+      "theme": "Supply terkontrol: sumber terpusat (khazanah) + rilis berkuota (qadar ma'lum); lazy-loading, rate-limit, backpressure, provisioning berbatas",
+      "lenses": 10,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "hujurat-49-13",
+      "title": "Li-taʿārafū — keragaman sebagai protokol saling-kenal",
+      "ref": "QS 49:13",
+      "theme": "Keragaman, jaringan sosial, interoperabilitas, meritokrasi takwa",
+      "lenses": 10,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "naba-78-6-7",
+      "title": "Bumi hamparan, gunung pasak — stabilizer, anchor, dan peredam osilasi",
+      "ref": "QS 78:6-7",
+      "theme": "Kestabilan sistem, ground/landasan, anchor, peredam guncangan, prasyarat kelayakhunian",
+      "lenses": 9,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "nahl-16-15",
+      "title": "Rawasi, sungai, dan jalan — stabilizer, aliran, dan routing menuju petunjuk",
+      "ref": "QS 16:15",
+      "theme": "Kestabilan, jaringan aliran, jalur navigasi, keterhubungan, orientasi (tidak tersesat)",
+      "lenses": 9,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "nisa-4-1",
+      "title": "Min nafsin wāhidah — satu asal, keragaman terurai, silaturahim terjaga",
+      "ref": "QS 4:1",
+      "theme": "Asal-tunggal, penyebaran populasi, jejaring kekerabatan, akuntabilitas",
+      "lenses": 9,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "qamar-54-49-49",
+      "title": "Bi-qadar — segala sesuatu lahir dengan parameter terukur",
+      "ref": "QS 54:49",
+      "theme": "Qadar sebagai kuantisasi: segala sesuatu ber-parameter & terukur; determinisme berkadar; spesifikasi ciptaan + ruang ikhtiar",
+      "lenses": 11,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "rad-13-11",
+      "title": "Hattā yughayyirū mā bi-anfusihim — perubahan sistem dimulai dari state internal",
+      "ref": "QS 13:11",
+      "theme": "Perubahan bottom-up, self-modification, kausalitas internal→eksternal",
+      "lenses": 10,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "rum-30-21",
+      "title": "Litaskunū ilayhā — pasangan komplementer sebagai sumber ketenteraman",
+      "ref": "QS 30:21",
+      "theme": "Komplementaritas, pemasangan, stabilitas & ketenteraman sistem",
+      "lenses": 9,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "talaq-65-3-3",
+      "title": "Li-kulli syai'in qadran — tawakal sebagai delegasi setelah ikhtiar berkadar",
+      "ref": "QS 65:3",
+      "theme": "Qadar sebagai ketentuan + jadwal; tawakal = bounded delegation sesudah ikhtiar; pemisahan usaha (yang di tangan agen) dari hasil (di luar kendali)",
+      "lenses": 9,
+      "created": "2026-07-08"
     }
   ]
 }

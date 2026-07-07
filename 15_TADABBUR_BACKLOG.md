@@ -1,8 +1,8 @@
-# 15_TADABBUR_BACKLOG — Peta Tema Hasil Sweep Seluruh Korpus
+# 15_TADABBUR_BACKLOG — Peta Tema Sweep
 
-> Scan seluruh 6236 ayat (Kemenag id) — 2026-07-07. [x] = jadi kajian Lab.
+> [x]=jadi kajian.
 
-## hitung/kadar/ukuran (49 ayat)
+## hitung/kadar/ukuran (49)
 - [ ] 2:194
 - [ ] 2:202
 - [ ] 2:228
@@ -23,7 +23,7 @@
 - [ ] 11:84
 - [ ] 11:85
 - [x] 15:19
-- [ ] 15:21
+- [x] 15:21
 - [ ] 17:12
 - [ ] 19:84
 - [ ] 19:94
@@ -32,7 +32,7 @@
 - [ ] 23:18
 - [ ] 23:102
 - [ ] 24:39
-- [ ] 25:2
+- [x] 25:2
 - [ ] 26:113
 - [ ] 26:182
 - [ ] 28:84
@@ -42,18 +42,18 @@
 - [ ] 41:10
 - [ ] 42:27
 - [ ] 43:11
-- [ ] 54:49
+- [x] 54:49
 - [x] 55:5
 - [x] 55:9
 - [x] 67:3
 - [ ] 73:20
 - [ ] 82:7
 - [ ] 83:3
-- [ ] 87:3
+- [x] 87:3
 - [ ] 101:6
 - [ ] 101:8
 
-## catat/tulis/kitab (36 ayat)
+## catat/tulis/kitab (36)
 - [ ] 2:79
 - [x] 2:282
 - [ ] 3:181
@@ -91,7 +91,7 @@
 - [ ] 82:11
 - [ ] 85:22
 
-## saksi/bukti (115 ayat)
+## saksi/bukti (115)
 - [ ] 2:87
 - [ ] 2:92
 - [x] 2:111
@@ -208,7 +208,7 @@
 - [ ] 98:1
 - [ ] 98:4
 
-## pikir/akal/renung (120 ayat)
+## pikir/akal/renung (120)
 - [ ] 2:44
 - [ ] 2:66
 - [ ] 2:142
@@ -286,7 +286,7 @@
 - [ ] 29:67
 - [x] 30:8
 - [ ] 30:9
-- [ ] 30:21
+- [x] 30:21
 - [ ] 30:22
 - [ ] 30:23
 - [ ] 30:24
@@ -313,7 +313,7 @@
 - [ ] 46:33
 - [ ] 47:10
 - [ ] 47:24
-- [ ] 51:21
+- [x] 51:21
 - [ ] 55:31
 - [ ] 59:11
 - [x] 59:18
@@ -330,7 +330,7 @@
 - [ ] 89:6
 - [ ] 105:1
 
-## ilmu/tahu/ajar (38 ayat)
+## ilmu/tahu/ajar (38)
 - [ ] 2:30
 - [x] 2:31
 - [ ] 2:102
@@ -370,7 +370,7 @@
 - [ ] 58:3
 - [ ] 62:2
 
-## penciptaan bertahap (27 ayat)
+## penciptaan bertahap (27)
 - [ ] 2:66
 - [ ] 2:259
 - [ ] 6:6
@@ -399,7 +399,7 @@
 - [ ] 86:7
 - [x] 96:2
 
-## air & kehidupan (48 ayat)
+## air & kehidupan (48)
 - [ ] 2:60
 - [ ] 2:74
 - [ ] 6:70
@@ -449,7 +449,7 @@
 - [ ] 86:6
 - [ ] 88:12
 
-## berpasangan/duality (10 ayat)
+## berpasangan/duality (10)
 - [ ] 6:143
 - [ ] 11:40
 - [ ] 13:3
@@ -461,7 +461,7 @@
 - [ ] 55:52
 - [ ] 78:8
 
-## perjalanan/eksplorasi (18 ayat)
+## perjalanan/eksplorasi (18)
 - [ ] 3:137
 - [ ] 5:75
 - [ ] 6:11
@@ -481,7 +481,7 @@
 - [ ] 43:25
 - [ ] 67:15
 
-## sembuh/obat/sehat (22 ayat)
+## sembuh/obat/sehat (22)
 - [ ] 2:184
 - [ ] 2:185
 - [ ] 2:196
@@ -505,7 +505,7 @@
 - [ ] 73:20
 - [ ] 75:27
 
-## makan/gizi/batas (40 ayat)
+## makan/gizi/batas (40)
 - [ ] 2:22
 - [ ] 2:25
 - [ ] 2:126
@@ -547,7 +547,7 @@
 - [ ] 77:42
 - [ ] 80:31
 
-## waktu/ajal/jadwal (27 ayat)
+## waktu/ajal/jadwal (27)
 - [ ] 2:36
 - [x] 2:282
 - [ ] 4:18
@@ -576,7 +576,7 @@
 - [ ] 71:4
 - [ ] 77:22
 
-## kerusakan/feedback (22 ayat)
+## kerusakan/feedback (22)
 - [ ] 2:11
 - [ ] 2:27
 - [ ] 5:33
@@ -600,7 +600,7 @@
 - [ ] 47:22
 - [ ] 65:9
 
-## besi/material (12 ayat)
+## besi/material (12)
 - [ ] 13:17
 - [ ] 16:81
 - [ ] 17:50
@@ -614,7 +614,7 @@
 - [ ] 55:35
 - [x] 57:25
 
-## cahaya/optik (7 ayat)
+## cahaya/optik (7)
 - [x] 24:35
 - [ ] 28:43
 - [ ] 71:16
@@ -623,7 +623,7 @@
 - [ ] 86:3
 - [ ] 91:1
 
-## jaringan/semut/hewan sosial (5 ayat)
+## jaringan/semut/hewan sosial (5)
 - [x] 16:68
 - [x] 16:69
 - [ ] 27:18
