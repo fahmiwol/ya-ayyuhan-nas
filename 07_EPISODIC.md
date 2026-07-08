@@ -113,6 +113,16 @@ Owner minta (catat dulu, belum bangun): (1) **4 mazhab fikih** (Hanafi/Maliki/Sy
 
 ---
 
+### [F1.57] Wave 11 — PEDOMAN/ATURAN/WASILAH/SYARIAT (cakupan khalifah), +15 (total 123) — 2026-07-08
+
+Selaras cakupan luas F1.55. 3 agen paralel; **syariat DIBACA STRUKTURNYA, bukan fatwa**; tiap ayat sebut Allah → CATATAN TANZIH; khilaf dicatat (4:59 lingkup ulil amri, 42:38 sifat mengikat syura).
+- **Pedoman/petunjuk:** 2:2 (hudan=guidance-spec bagi muttaqin/opt-in), 6:153 (jalur kanonik tunggal vs fragmentasi), 17:9 (aqwam=optimum+reward-shaping), 16:89 (tibyan=reference-spec, scope bounded), 42:52-53 (nur=sinyal navigasi dari prior kosong).
+- **Aturan/batas/tata-kelola:** 2:229 & 65:1 (hududullah=hard constraint/invariant+penalti terinternalisasi), 4:59 (hierarki otoritas+resolusi konflik=eskalasi ke source-of-truth), 3:159 & 42:38 (syura=konsensus terdistribusi lalu commit/tawakal; netral, bukan fiqh politik).
+- **Wasilah/metode/komunikasi:** 16:125 (strategi komunikasi 3-tingkat adaptif-audiens), 5:35 (wasilah=pathway ke objective), 41:34 (adversary→ally/de-escalation), 3:104 (dedicated monitor+correction service), 20:44 (tone lembut/low-friction bahkan ke pihak keras).
+coverage **123 kajian·229 ayat/11.9% kandidat** (backlog 72 [x]); graph 151 node/208 edge; corpus regen; mine 46 konsep. lab-validate 123/123, tanzih-lint bersih. LIVE.
+
+---
+
 ### [F1.56] Wave 10 — BUSUR KOSMIK (init→run→shutdown→re-instantiate), +15 (total 108) — 2026-07-08
 
 Wave selaras cakupan luas F1.55 + rambu GHAIB. 3 agen paralel, tiap kajian CATATAN TANZIH + (utk akhirat) CATATAN GHAIB; adab dijaga (istiwa tanpa takyif; 56:7 golongan=hak Allah; 75 pakai asbabun nuzul).

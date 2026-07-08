@@ -1,16 +1,16 @@
 {
   "updated": "2026-07-07",
   "total_ayat": 6236,
-  "studies": 108,
+  "studies": 123,
   "principles": 25,
   "frameworks": 3,
-  "direct_ayat": 213,
+  "direct_ayat": 229,
   "cited_ayat": 70,
-  "touched_ayat": 213,
+  "touched_ayat": 229,
   "candidates_total": 596,
-  "candidates_done": 68,
-  "pct_of_total": 3.42,
-  "pct_of_candidates": 11.4,
+  "candidates_done": 71,
+  "pct_of_total": 3.67,
+  "pct_of_candidates": 11.9,
   "by_theme": [
     {
       "theme": "pikir/akal/renung (120)",
@@ -25,7 +25,7 @@
     {
       "theme": "hitung/kadar/ukuran (49)",
       "total": 49,
-      "done": 8
+      "done": 9
     },
     {
       "theme": "air & kehidupan (48)",
@@ -50,7 +50,7 @@
     {
       "theme": "penciptaan bertahap (27)",
       "total": 27,
-      "done": 5
+      "done": 7
     },
     {
       "theme": "waktu/ajal/jadwal (27)",

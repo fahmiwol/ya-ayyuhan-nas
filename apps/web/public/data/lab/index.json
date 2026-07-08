@@ -866,6 +866,126 @@
       "theme": "Kebangkitan, reproducibility dari record, prinsip pencipta-awal-mampu-mengulang, kelengkapan pengetahuan atas ciptaan",
       "lenses": 7,
       "created": "2026-07-08"
+    },
+    {
+      "id": "ali-imran-3-104-104",
+      "title": "Waltakun minkum ummah — golongan khusus penyeru kebajikan sebagai layanan terdedikasi",
+      "ref": "QS 3:104",
+      "theme": "Fungsi terdedikasi, layanan monitoring & koreksi, amar makruf nahi mungkar, spesialisasi peran",
+      "lenses": 8,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "ali-imran-3-159-159",
+      "title": "Syura lalu tawakal — deliberasi banyak pihak, lalu commit",
+      "ref": "QS 3:159",
+      "theme": "Musyawarah (deliberasi terdistribusi) sebelum keputusan; fase commit setelah azam; keamanan psikologis sebagai prasyarat masukan jujur",
+      "lenses": 9,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "an-nisa-4-59-59",
+      "title": "Hierarki otoritas & resolusi konflik — kembalikan ke sumber saat berselisih",
+      "ref": "QS 4:59",
+      "theme": "Arsitektur otoritas berjenjang; delegasi bertingkat; aturan resolusi konflik dengan eskalasi ke sumber kanonik (Al-Qur'an & Sunnah)",
+      "lenses": 9,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "anam-6-153-153",
+      "title": "Sirat mustaqim vs subul — satu jalur kanonik lawan fragmentasi",
+      "ref": "QS 6:153",
+      "theme": "Single canonical path, konvergensi vs divergensi, fragmentasi, standar tunggal",
+      "lenses": 8,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "asy-syura-42-38-38",
+      "title": "Amruhum syura — konsensus sebagai properti tetap komunitas",
+      "ref": "QS 42:38",
+      "theme": "Syura sebagai invariant/protokol default komunitas; keputusan antar-peer ('baynahum'); desentralisasi keputusan berdampingan dengan desentralisasi sumber daya (infak)",
+      "lenses": 9,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "at-talaq-65-1-1",
+      "title": "Melanggar batas = merusak diri sendiri",
+      "ref": "QS 65:1",
+      "theme": "Batas Allah dengan penalti terinternalisasi (pelanggar menzalimi dirinya); precondition & waktu sah operasi; menjaga optionality masa depan",
+      "lenses": 9,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "baqarah-2-2-2",
+      "title": "Hudan lil-muttaqin — spesifikasi petunjuk yang teraktif bagi yang siap",
+      "ref": "QS 2:2",
+      "theme": "Guidance spec, integritas sumber, precondition/opt-in, kesiapan penerima",
+      "lenses": 8,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "baqarah-2-229-229",
+      "title": "Hududullah — batas keras yang tak boleh dilanggar",
+      "ref": "QS 2:229",
+      "theme": "Batas mutlak (hududullah) sebagai hard constraint/invariant; koridor tindakan yang sah; pelanggaran batas = state zalim",
+      "lenses": 10,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "fussilat-41-34-34",
+      "title": "Idfaʿ billatī hiya ahsan — menolak keburukan dengan yang lebih baik",
+      "ref": "QS 41:34",
+      "theme": "Konversi lawan jadi kawan, de-eskalasi, repel-with-better, memutus loop balas-dendam",
+      "lenses": 8,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "isra-17-9-9",
+      "title": "Aqwam — petunjuk ke konfigurasi paling optimal + sinyal reward",
+      "ref": "QS 17:9",
+      "theme": "Optimalitas (aqwam), objective function, reward shaping, penguatan positif",
+      "lenses": 8,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "maidah-5-35-35",
+      "title": "Ittaqū wabtaghū ilayhil-wasīlah — takwa, wasilah, jihad sebagai jalan mendekat",
+      "ref": "QS 5:35",
+      "theme": "Wasilah sebagai pathway/means menuju tujuan, routing ke objective, usaha berkelanjutan, guardrail",
+      "lenses": 8,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "nahl-16-125-125",
+      "title": "Hikmah, mauʿizhah, jidāl-ahsan — strategi komunikasi tiga-tingkat",
+      "ref": "QS 16:125",
+      "theme": "Strategi komunikasi, adaptasi pesan ke audiens, register penyampaian, dakwah sebagai protokol",
+      "lenses": 8,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "nahl-16-89-89",
+      "title": "Tibyan li kulli syai' — spesifikasi rujukan yang komprehensif",
+      "ref": "QS 16:89",
+      "theme": "Reference spec komprehensif, dokumentasi lengkap, multi-fungsi satu artefak, audit/kesaksian",
+      "lenses": 8,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "syura-42-52-53",
+      "title": "Nur — sinyal pemandu navigasi dari keadaan tanpa-peta",
+      "ref": "QS 42:52-53",
+      "theme": "Cahaya sebagai sinyal pemandu, bootstrap dari prior kosong, navigasi ke jalan lurus",
+      "lenses": 8,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "taha-20-44-44",
+      "title": "Qaulan layyinan — kata-kata lembut bahkan kepada pihak yang paling keras",
+      "ref": "QS 20:44",
+      "theme": "Nada & framing lembut, persuasi rendah-friksi, membuka penerimaan, antarmuka yang tak memicu resistensi",
+      "lenses": 8,
+      "created": "2026-07-08"
     }
   ]
 }
