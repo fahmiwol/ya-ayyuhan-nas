@@ -577,6 +577,188 @@
         }
       ],
       "implication": "AI/ML: satu canonical objective / final arbiter untuk tujuan yang bisa bertentangan (hindari split-brain deadlock); consistency-check lintas komponen; kontradiksi = sinyal korupsi state. Integritas layak dipercaya = yang berani diaudit berulang & tetap konsisten (bandingkan falsify-to-trust)."
+    },
+    {
+      "id": "lifecycle-reinstantiation",
+      "cluster": "systems",
+      "title": "Daur hidup penuh: yang membangun pertama, kuasa membangun ulang dari rekaman",
+      "statement": "Sistem punya busur lengkap init→run→shutdown→re-instantiate. Kemampuan membuat pertama kali menjamin kemampuan menyusun ulang; identitas dipulihkan dari rekaman hingga presisi terhalus. (Pola pada ciptaan; CATATAN TANZIH: kuasa Allah = landasan iman, bukan analog.)",
+      "evidence": [
+        {
+          "ref": "2:28",
+          "id": "baqarah-2-28-28",
+          "note": "mati→hidup→mati→hidup = transisi state / re-instansiasi"
+        },
+        {
+          "ref": "36:78-79",
+          "id": "yasin-36-78-79",
+          "note": "Yang mencipta pertama kuasa mengulang = reproducibility"
+        },
+        {
+          "ref": "75:3-4",
+          "id": "al-qiyamah-75-3-4",
+          "note": "menyusun ujung jari = restore presisi identitas"
+        }
+      ],
+      "implication": "AI/ML: rancang sistem yang bisa di-teardown & di-restore dari rekaman (checkpoint/backup-restore, deterministic replay, identity persistence). Yang bisa dibangun sekali, rancang agar bisa dibangun ulang identik."
+    },
+    {
+      "id": "hard-inviolable-bounds",
+      "cluster": "systems",
+      "title": "Batas keras yang tak boleh dilanggar (hard guardrails)",
+      "statement": "Ada batas (hudud) yang bukan preferensi melainkan garis mutlak; melanggarnya = merusak (state corruption), dan penaltinya sering terinternalisasi (merugikan diri sendiri).",
+      "evidence": [
+        {
+          "ref": "2:229",
+          "id": "baqarah-2-229-229",
+          "note": "hududullah — jangan dilanggar; pelanggar=zalim"
+        },
+        {
+          "ref": "65:1",
+          "id": "at-talaq-65-1-1",
+          "note": "melanggar batas = menzalimi diri sendiri (self-harm)"
+        },
+        {
+          "ref": "55:5-9",
+          "id": "mizan-55-5-9",
+          "note": "mīzān — jangan lampaui; pelanggaran invariant=kerusakan"
+        }
+      ],
+      "implication": "AI/ML: pisahkan hard-constraints (guardrails inviolable, fail-closed) dari soft-preferences; pelanggaran batas = corrupt state, bukan sekadar penalti kecil. Bangun penalti yang menyatu dengan sistem, bukan hanya eksternal."
+    },
+    {
+      "id": "deliberate-then-commit",
+      "cluster": "ai-core",
+      "title": "Musyawarah (deliberasi terdistribusi) lalu commit",
+      "statement": "Keputusan penting lewat deliberasi banyak pihak (syura) SEBELUM ditetapkan; setelah tekad bulat, commit penuh (tawakal). Konsensus adalah properti komunitas yang sehat, bukan tambahan.",
+      "evidence": [
+        {
+          "ref": "3:159",
+          "id": "ali-imran-3-159-159",
+          "note": "bermusyawarah dalam urusan, lalu bulat tekad→tawakal"
+        },
+        {
+          "ref": "42:38",
+          "id": "asy-syura-42-38-38",
+          "note": "urusan mereka diputuskan dengan syura"
+        },
+        {
+          "ref": "16:68-69",
+          "id": "nahl-16-68-69",
+          "note": "kecerdasan kawanan = keputusan kolektif terdistribusi"
+        }
+      ],
+      "implication": "AI/ML: multi-agent deliberation (debate/council) sebelum aksi berisiko, lalu commit tegas; pisahkan fase eksplorasi-konsensus dari fase eksekusi. Konsensus antar-peer > keputusan sepihak."
+    },
+    {
+      "id": "objective-driven-run",
+      "cluster": "ai-core",
+      "title": "Run yang digerakkan tujuan + evaluasi eksplisit",
+      "statement": "Kehidupan/proses bukan tanpa arah: ada objektif eksplisit ('siapa terbaik amalnya') yang mendefinisikan run dan menjadi dasar evaluasi akhir. Kualitas (aḥsan) diukur, bukan sekadar kuantitas.",
+      "evidence": [
+        {
+          "ref": "67:2",
+          "id": "mulk-67-2-2",
+          "note": "mati-hidup untuk MENGUJI siapa terbaik amalnya = objective function"
+        },
+        {
+          "ref": "18:7",
+          "id": "kahf-18-7-7",
+          "note": "bumi-perhiasan agar diuji siapa terbaik amalnya"
+        },
+        {
+          "ref": "21:35",
+          "id": "anbiya-21-35-35",
+          "note": "diuji dengan buruk & baik sebagai cobaan"
+        }
+      ],
+      "implication": "AI/ML: definisikan objective & metrik evaluasi di depan (kualitas amal, bukan proxy); run yang tak punya objektif jelas tak bisa dievaluasi jujur. Ukur aḥsan (kualitas), bukan sekadar volume."
+    },
+    {
+      "id": "beware-proxy-reward",
+      "cluster": "ai-core",
+      "title": "Waspadai reward yang memperdaya (proxy/Goodhart)",
+      "statement": "Ada 'perhiasan' & 'kesenangan yang memperdaya' — reward proxy yang tampak baik tapi menyesatkan dari objektif sejati. Mengoptimalkan proxy = tertipu; penyelesaian sejati tertunda.",
+      "evidence": [
+        {
+          "ref": "3:185",
+          "id": "ali-imran-3-185-185",
+          "note": "matāʿ al-ghurūr — dunia = kesenangan yang memperdaya"
+        },
+        {
+          "ref": "18:7",
+          "id": "kahf-18-7-7",
+          "note": "zīnah = distractor reward / honeypot di test environment"
+        }
+      ],
+      "implication": "AI/ML: jangan optimasi proxy-metric (reward hacking / Goodhart's law); bedakan reward tampak vs objektif sejati; sinyal yang menggoda jangka-pendek sering menyesatkan dari tujuan terminal."
+    },
+    {
+      "id": "everything-quantized",
+      "cluster": "systems",
+      "title": "Segala sesuatu ber-ukuran/parameter (qadar)",
+      "statement": "Tiada yang dicipta serampangan: semua dengan qadar (ukuran/kadar tepat), dari khazanah tak terbatas yang dirilis dengan takaran tertentu. Kuantisasi & takaran adalah sifat rancangan.",
+      "evidence": [
+        {
+          "ref": "54:49",
+          "id": "qamar-54-49-49",
+          "note": "segala sesuatu Kami cipta dengan qadar = kuantisasi/typing"
+        },
+        {
+          "ref": "25:2",
+          "id": "furqan-25-2-2",
+          "note": "cipta lalu tetapkan ukurannya (taqdīr) presisi"
+        },
+        {
+          "ref": "15:21",
+          "id": "hijr-15-21-21",
+          "note": "khazanah + rilis dengan ukuran tertentu = quota/backpressure"
+        }
+      ],
+      "implication": "AI/ML: parameter/quota/rate-limit/precision sebagai warga kelas-satu; sumber tak-terbatas dirilis terukur (lazy-loading, backpressure); tak ada nilai 'sembarang' — semua ter-tipe & ter-kalibrasi."
+    },
+    {
+      "id": "audience-adaptive-comms",
+      "cluster": "society",
+      "title": "Komunikasi yang diadaptasi ke penerima",
+      "statement": "Pesan disampaikan dengan register yang disesuaikan: hikmah, nasihat baik, atau argumen terbaik — bahkan ke pihak paling keras pun dengan kata lembut (agar tak memicu reaktansi).",
+      "evidence": [
+        {
+          "ref": "16:125",
+          "id": "nahl-16-125-125",
+          "note": "hikmah / mau'izhah / jidāl-ahsan = 3 register adaptif audiens"
+        },
+        {
+          "ref": "20:44",
+          "id": "taha-20-44-44",
+          "note": "kata lembut bahkan ke Fir'aun = low-friction/anti-reactance"
+        }
+      ],
+      "implication": "AI/ML & desain: adaptasikan framing/tone ke penerima (persona-aware), pilih register sesuai konteks; antarmuka low-friction menurunkan penolakan. Persuasi > paksaan."
+    },
+    {
+      "id": "canonical-guidance-spec",
+      "cluster": "ai-core",
+      "title": "Satu jalur kanonik + spesifikasi petunjuk yang lengkap",
+      "statement": "Petunjuk hadir sebagai satu jalur lurus (vs banyak jalan bercerai), teraktif bagi yang siap (opt-in), dan sebagai spesifikasi rujukan yang menjelaskan hal-hal pokok — mengarah ke konfigurasi paling tepat (aqwam).",
+      "evidence": [
+        {
+          "ref": "6:153",
+          "id": "anam-6-153-153",
+          "note": "satu jalur kanonik vs subul (fragmentasi/divergensi)"
+        },
+        {
+          "ref": "2:2",
+          "id": "baqarah-2-2-2",
+          "note": "hudan bagi muttaqin = guidance-spec ber-precondition"
+        },
+        {
+          "ref": "16:89",
+          "id": "nahl-16-89-89",
+          "note": "tibyan = reference-spec penjelas (scope bounded)"
+        }
+      ],
+      "implication": "AI/ML: satu spesifikasi kanonik (single source of guidance) mengurangi fragmentasi; guidance mengarah ke konfigurasi optimal (aqwam); dokumentasi/spec yang jelas = fondasi keselarasan."
     }
   ],
   "blueprint": {

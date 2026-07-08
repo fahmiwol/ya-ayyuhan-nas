@@ -2,15 +2,15 @@
   "updated": "2026-07-07",
   "total_ayat": 6236,
   "studies": 123,
-  "principles": 25,
+  "principles": 33,
   "frameworks": 3,
   "direct_ayat": 229,
-  "cited_ayat": 70,
+  "cited_ayat": 91,
   "touched_ayat": 229,
   "candidates_total": 596,
-  "candidates_done": 71,
+  "candidates_done": 72,
   "pct_of_total": 3.67,
-  "pct_of_candidates": 11.9,
+  "pct_of_candidates": 12.1,
   "by_theme": [
     {
       "theme": "pikir/akal/renung (120)",
@@ -20,7 +20,7 @@
     {
       "theme": "saksi/bukti (115)",
       "total": 115,
-      "done": 10
+      "done": 11
     },
     {
       "theme": "hitung/kadar/ukuran (49)",
