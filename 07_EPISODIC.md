@@ -113,6 +113,16 @@ Owner minta (catat dulu, belum bangun): (1) **4 mazhab fikih** (Hanafi/Maliki/Sy
 
 ---
 
+### [F1.59] Wave 12 — KOGNISI & PENCARIAN KEBENARAN (akal/qalb/hawa/ilmu), +15 (total 138) — 2026-07-08
+
+Permintaan owner: "cara berfikir, akal, hati, jiwa, hasrat, memahami ilmu, mencari kebenaran". 3 agen paralel; kerangka Aql-Qalb /lab/sintesis diperdalam. TANZIH penuh (haqq=Allah, "Allah sesatkan/mengunci", pencipta af'idah → CATATAN TANZIH); 45:23 & 7:179 CATATAN GHAIB; hidayah/dhalal netral (khilaf=metadata).
+- **Hati & fakultas persepsi:** 22:46 (buta bukan di mata tapi hati = kegagalan evaluator, bukan sensor), 7:179 (sensor utuh, evaluator nonaktif), 47:24 (hati terkunci = write-protect pada update-function), 8:22 (tuli-bisu-tak berakal = node gagal ingest/emit/compute), 23:78 (pendengaran-penglihatan-af'idah = sensor stack + evaluator di-provision).
+- **Tadabbur & memahami ilmu:** 4:82 (nirkontradiksi = uji integritas; tadabbur = deep parsing), 38:29 (teks diturunkan UNTUK ditelaah), 35:28 (ilmu → khasy-yah: pemahaman prasyarat kesadaran), 29:43 (decode perumpamaan menuntut ilmu = precondition), 2:269 (hikmah = judgment, puncak sintesis di atas data).
+- **Hawa, nafs & kebenaran:** 25:43 & 45:23 (hawa jadi tuhan = objective dibajak impuls → misalignment, tautan beware-proxy-reward), 79:40-41 (menahan hawa = self-regulation/impulse-control), 10:32 (setelah haqq hanya dhalal = klasifikasi biner), 2:147 (jangan ragu = commit setelah bukti / stopping-rule).
+coverage **138 kajian·245 ayat/12.1% kandidat**; graph 174 node/294 edge; corpus 1520 chunk. lab-validate 138/138; lint 1 false-positive lama (furqan-25-53 "sifat air"). LIVE.
+
+---
+
 ### [F1.58] Konsolidasi — 8 prinsip baru dari 123 kajian (Mesin Temuan → 33) — 2026-07-08
 
 Bukan wave baru: panen pola berulang (lab-mine sorot invariant×41, pipeline×22, audit×17, alignment×17, constraint×15, drift×10) jadi prinsip eksplisit. +8 prinsip (masing2 ≥2 bukti):

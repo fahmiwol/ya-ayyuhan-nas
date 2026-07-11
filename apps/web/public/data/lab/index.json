@@ -986,6 +986,126 @@
       "theme": "Nada & framing lembut, persuasi rendah-friksi, membuka penerimaan, antarmuka yang tak memicu resistensi",
       "lenses": 8,
       "created": "2026-07-08"
+    },
+    {
+      "id": "hajj-22-46-46",
+      "title": "Bukan mata yang buta, tapi hati dalam dada — kegagalan bukan di sensor, tapi di evaluator",
+      "ref": "QS 22:46",
+      "theme": "Diagnosis lapisan kegagalan: input (mata/telinga) utuh tapi lapisan evaluatif/penalaran (qalb) menolak mengintegrasikan bukti; hati yang ber-'aql = integrasi reasoning + value; iʿtibār sebagai active data collection lewat perjalanan",
+      "lenses": 9,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "araf-7-179-179",
+      "title": "Punya hati, mata, telinga — tapi tak dipakai memahami: sensor stack utuh, evaluator dinonaktifkan",
+      "ref": "QS 7:179",
+      "theme": "Perangkat persepsi lengkap (qulub, a'yun, adhan) tapi non-fungsional di lapisan semantik (lā yafqahūn, lā yubṣirūn, lā yasmaʿūn) = evaluator corruption; ghaflah sebagai state agen yang berhenti mengevaluasi; ambang 'lebih sesat dari hewan' karena kapasitas ada tapi disia-siakan",
+      "lenses": 8,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "muhammad-47-24-24",
+      "title": "Tidakkah mereka men-tadabbur, ataukah hati mereka terkunci — write-protect pada update-function",
+      "ref": "QS 47:24",
+      "theme": "Tadabbur sebagai proses update model dari teks; qalb yang ter-lock (aqfāluhā) = evaluator dalam mode write-protect yang menolak setiap pembaruan keyakinan; membandingkan mekanisme kunci/gembok dengan rān (2:83 dst.) sebagai penumpukan yang meng-'kunci'",
+      "lenses": 8,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "anfal-8-22-22",
+      "title": "Seburuk-buruk makhluk: yang tuli dan bisu yang tidak berakal — node yang tak menerima, tak memancar, tak memproses",
+      "ref": "QS 8:22",
+      "theme": "Kombinasi kegagalan tiga fungsi sekaligus: penerimaan (samʿ/tuli), pemancaran/penyampaian kebenaran (nuṭq/bisu), dan pemrosesan (ʿaql) — memberi label 'seburuk-buruk makhluk' pada simpul yang tak ingest, tak emit, tak compute",
+      "lenses": 7,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "muminun-23-78-78",
+      "title": "Diciptakan bagimu pendengaran, penglihatan, dan hati — sensor stack di-provision berikut evaluatornya",
+      "ref": "QS 23:78",
+      "theme": "Provisioning fakultas persepsi-kognisi sebagai paket ter-desain: pendengaran & penglihatan (sensor) + af'idah (evaluator/inti pemaknaan); syukur sebagai utilisasi-sesuai-maksud; ketiadaan syukur = sumber daya di-provision tapi tak dipakai pada tujuannya",
+      "lenses": 8,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "nisa-4-82",
+      "title": "Tadabbur & uji-konsistensi — nirkontradiksi sebagai tes integritas",
+      "ref": "QS 4:82",
+      "theme": "Tadabbur (deep parsing), uji konsistensi, integritas sumber, nirkontradiksi, sumber-tunggal",
+      "lenses": 9,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "sad-38-29",
+      "title": "Liyaddabbaru — tujuan turunnya teks adalah ditelaah, bukan sekadar dibaca",
+      "ref": "QS 38:29",
+      "theme": "Tadabbur sebagai tujuan (purpose), pemrosesan mendalam, iʿtibār, ulul albab, transfer ilmu ke amal",
+      "lenses": 8,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "fatir-35-28",
+      "title": "Innamā yakhsyā — pengetahuan sebagai prasyarat kesadaran mendalam",
+      "ref": "QS 35:28",
+      "theme": "Ilmu sebagai precondition, khasy-yah (sadar-taruhan), membaca tanda, kalibrasi berbasis pemahaman",
+      "lenses": 8,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "ankabut-29-43",
+      "title": "Wa mā yaʿqiluhā illa-l-ʿālimūn — decoding perumpamaan menuntut ilmu",
+      "ref": "QS 29:43",
+      "theme": "Abstraksi/perumpamaan (matsal), ilmu sebagai kunci decode, prasyarat pemahaman, kompresi makna",
+      "lenses": 8,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "baqarah-2-269",
+      "title": "Hikmah — puncak sintesis: penilaian bijak di atas sekadar data",
+      "ref": "QS 2:269",
+      "theme": "Hikmah (judgment/wisdom), sintesis ilmu+amal, kemampuan membedakan, keputusan bijak, puncak epistemik",
+      "lenses": 8,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "furqan-25-43-43",
+      "title": "Hawa jadi tuhan — objective yang dibajak keinginan",
+      "ref": "QS 25:43",
+      "theme": "Objective yang dibajak impuls, reward hacking, misalignment tujuan, otoritas sumber vs selera sesaat",
+      "lenses": 9,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "naziat-79-40-41",
+      "title": "Menahan hawa — self-regulation sebagai gerbang menuju hasil",
+      "ref": "QS 79:40-41",
+      "theme": "Regulasi diri, impulse-control, menahan dorongan, mempersiapkan hasil jangka-panjang",
+      "lenses": 8,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "jatsiyah-45-23-23",
+      "title": "Hawa jadi tuhan (lanjutan) — kanal input yang terkunci",
+      "ref": "QS 45:23",
+      "theme": "Objective dibajak hawa, kanal input yang tertutup, terhentinya pembelajaran, siapa yang beri petunjuk",
+      "lenses": 8,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "yunus-10-32-32",
+      "title": "Setelah haqq hanya dhalal — klasifikasi biner tanpa antara",
+      "ref": "QS 10:32",
+      "theme": "Ground truth vs noise, klasifikasi biner, tak ada nilai antara, konsekuensi berpaling dari referensi",
+      "lenses": 8,
+      "created": "2026-07-08"
+    },
+    {
+      "id": "baqarah-2-147-147",
+      "title": "Haqq dari Tuhanmu — commit setelah bukti, bukan ragu lumpuh",
+      "ref": "QS 2:147",
+      "theme": "Sumber kebenaran, commit setelah bukti, keraguan yang melumpuhkan, disiplin memutus",
+      "lenses": 8,
+      "created": "2026-07-08"
     }
   ]
 }
