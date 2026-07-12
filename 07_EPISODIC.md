@@ -113,6 +113,15 @@ Owner minta (catat dulu, belum bangun): (1) **4 mazhab fikih** (Hanafi/Maliki/Sy
 
 ---
 
+### [F1.61] Wave 14 — TAKSONOMI NAFS (ammarah/lawwamah/muthmainnah), +5 (total 157) — 2026-07-12
+
+Permintaan owner: taksonomi jiwa muthmainnah/lawwamah/ammarah. Ditulis LANGSUNG (bukan agen) — batch kecil & koheren, lebih aman ditulis satu tangan agar saling bertaut sebagai satu busur, sekaligus kehati-hatian ekstra pada 50:16 (ayat qurb/kedekatan — salah satu titik paling rawan TANZIH di seluruh Qur'an).
+Busur 5 kajian: **12:18** (taswīl — mekanisme nafs membenarkan diri, sebelum diberi nama) → **12:53** (ammārah bis-sūʾ — default eksplisit + klausa pengecualian rahmat; khilaf tafsir penutur dicatat, tak diputuskan) → **75:1-2** (lawwāmah — audit-diri berkelanjutan, TEGAS ditandai belum konvergen/tahap transisi) → **89:27-30** (muthmainnah — status akhir, "rāḍiyatan marḍiyyah" = konvergensi DUA ARAH, bukan tenang sepihak; CATATAN GHAIB momen wafat) → **50:16** (penutup meta — bisikan batin tak pernah benar-benar privat; CATATAN TANZIH terketat: "lebih dekat dari urat leher" = qurb al-'ilm/pengetahuan per Kemenag sendiri, BUKAN spasial/hulul; analogi rekayasa dibatasi HANYA sisi manusia).
+Cross-link eksplisit ke kajian lama: 91:7-10 (taswiyah+tazkiyah), 79:40-41 (nahyu 'an al-hawa), 4:82 (nirkontradiksi), 59:18 (muhasabah) — busur nafs kini terhubung penuh ke kerangka Aql-Qalb.
+157/157 valid; graph 193 node/320 edge; corpus 1702 chunk; coverage 12.1% kandidat. LIVE.
+
+---
+
 ### [F1.60] Wave 13 — ANATOMI/REPRODUKSI/KOSMOGENESIS (kehidupan & kehancuran), +14 (total 152) — 2026-07-12
 
 Permintaan owner: "organ susunan manusia, penciptaan manusia, kelahiran, kembang biak, syaraf, struktur anatomi, penciptaan alam semesta & kehancuran". 3 agen paralel — **2 dari 3 MATI di tengah jalan (sesi API limit, reset 6am WIB)**, tapi sempat menulis 10/15 file ke disk sebelum berhenti (Write tool per-file atomik, tidak korup). Setelah limit reset: audit menyeluruh 10 file (lab-validate + grep TANZIH/GHAIB manual + full-read 1 sampel/haqqah-69-13-16) — semua lolos, kualitas terjaga (agen sempat menuntaskan CATATAN GHAIB/TANZIH sebelum mati). Sisa 4 kajian (bukan 5 — 79:27-33 ternyata sudah ada dari Wave 10, klaim agen 13C diverifikasi benar) ditulis langsung di thread utama (bukan agen baru, demi kehati-hatian pasca-limit).
