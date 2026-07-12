@@ -113,6 +113,16 @@ Owner minta (catat dulu, belum bangun): (1) **4 mazhab fikih** (Hanafi/Maliki/Sy
 
 ---
 
+### [F1.60] Wave 13 — ANATOMI/REPRODUKSI/KOSMOGENESIS (kehidupan & kehancuran), +14 (total 152) — 2026-07-12
+
+Permintaan owner: "organ susunan manusia, penciptaan manusia, kelahiran, kembang biak, syaraf, struktur anatomi, penciptaan alam semesta & kehancuran". 3 agen paralel — **2 dari 3 MATI di tengah jalan (sesi API limit, reset 6am WIB)**, tapi sempat menulis 10/15 file ke disk sebelum berhenti (Write tool per-file atomik, tidak korup). Setelah limit reset: audit menyeluruh 10 file (lab-validate + grep TANZIH/GHAIB manual + full-read 1 sampel/haqqah-69-13-16) — semua lolos, kualitas terjaga (agen sempat menuntaskan CATATAN GHAIB/TANZIH sebelum mati). Sisa 4 kajian (bukan 5 — 79:27-33 ternyata sudah ada dari Wave 10, klaim agen 13C diverifikasi benar) ditulis langsung di thread utama (bukan agen baru, demi kehati-hatian pasca-limit).
+- **Anatomi & organ:** 95:4 (ahsani taqwim), 82:6-8 (khalq→sawwā→'adal→rakkab = pipeline assembly), 90:8-10 (2 mata+lidah+2 bibir = I/O manusia), 80:18-22 (nutfah→qadar→jalan = lifecycle dari spec), 4:56 (kulit diganti — kajian PALING hati-hati, bobot moral azab dijaga, catatan struktural dibatasi ketat).
+- **Reproduksi & tumbuh-kembang:** 53:45-46 (pasangan dari nutfah = diferensiasi seed tunggal), 56:58-59 (manusia operator bukan author proses), 40:67 (state machine turab→nutfah→alaqah→bayi→dewasa→tua+exit point), 30:54 (kurva lemah→kuat→lemah = ramp-up/peak/degradasi), 46:15 (kurhan×2, 30 bulan = investasi asimetris lintas-generasi, pay-it-forward bukan repayment).
+- **Kosmogenesis & kehancuran (GHAIB ketat):** 79:27-33 (sudah ada/Wave10, diverifikasi bukan duplikat), 36:36 (pairing universal termasuk "tak diketahui" = open taxonomy), 39:68 (2 tiupan = shutdown+exemption lalu mass re-instantiation), 69:13-16 (teardown atomik struktur terkokoh, wāhiyah=invariant berbatas-rezim), 84:1-5 (langit&bumi PATUH = graceful-shutdown-by-design + flush storage total).
+coverage **152 kajian·276 ayat/12.1% kandidat**; graph 188 node/320 edge; corpus 1659 chunk. lab-validate 152/152; lint 1 false-positive lama (furqan-25-53). LIVE.
+
+---
+
 ### [F1.59] Wave 12 — KOGNISI & PENCARIAN KEBENARAN (akal/qalb/hawa/ilmu), +15 (total 138) — 2026-07-08
 
 Permintaan owner: "cara berfikir, akal, hati, jiwa, hasrat, memahami ilmu, mencari kebenaran". 3 agen paralel; kerangka Aql-Qalb /lab/sintesis diperdalam. TANZIH penuh (haqq=Allah, "Allah sesatkan/mengunci", pencipta af'idah → CATATAN TANZIH); 45:23 & 7:179 CATATAN GHAIB; hidayah/dhalal netral (khilaf=metadata).

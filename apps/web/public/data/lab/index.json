@@ -1106,6 +1106,118 @@
       "theme": "Sumber kebenaran, commit setelah bukti, keraguan yang melumpuhkan, disiplin memutus",
       "lenses": 8,
       "created": "2026-07-08"
+    },
+    {
+      "id": "tin-95-4-4",
+      "title": "Aḥsani taqwīm — arsitektur optimal by design, lalu entropi vs pemeliharaan",
+      "ref": "QS 95:4",
+      "theme": "Anatomi optimal, baseline terbaik, entropi vs pemeliharaan, potensi vs aktualisasi, homeostasis",
+      "lenses": 8,
+      "created": "2026-07-12"
+    },
+    {
+      "id": "al-infitar-82-6-8",
+      "title": "Khalq → taswiyah → taʿdīl → tarkīb — pipeline manufaktur tubuh yang berurutan",
+      "ref": "QS 82:6-8",
+      "theme": "Anatomi, pipeline manufaktur bertahap, kalibrasi & keseimbangan, simetri tubuh, load balancing, variasi parameter",
+      "lenses": 8,
+      "created": "2026-07-12"
+    },
+    {
+      "id": "balad-90-8-10",
+      "title": "Dua mata, satu lidah, dua bibir, dua jalan — peta I/O manusia dan gate keluaran",
+      "ref": "QS 90:8-10",
+      "theme": "Anatomi indra, peta input-output, sensor & aktuator, gate artikulasi, jalur biner, free will",
+      "lenses": 8,
+      "created": "2026-07-12"
+    },
+    {
+      "id": "abasa-80-18-22",
+      "title": "Dari nuṭfah, ditentukan kadarnya, dimudahkan jalannya — lifecycle penuh dari spec",
+      "ref": "QS 80:18-22",
+      "theme": "Anatomi & reproduksi, lifecycle penuh, parameterisasi genetik, birth canal, terminasi & re-instansiasi",
+      "lenses": 8,
+      "created": "2026-07-12"
+    },
+    {
+      "id": "nisa-4-56-56",
+      "title": "Kulit yang diganti — sinyal yang dijaga agar tak padam",
+      "ref": "QS 4:56",
+      "theme": "Ayat peringatan (indhar) yang berat — dibaca dengan penuh kehati-hatian; catatan struktural dibatasi sempit, tidak mengalihkan bobot moral/teologisnya",
+      "lenses": 7,
+      "created": "2026-07-12"
+    },
+    {
+      "id": "an-najm-53-45-46",
+      "title": "Az-zawjayn adz-dzakara wal-untsa — dua varian terdiferensiasi dari satu sumber benih",
+      "ref": "QS 53:45-46",
+      "theme": "Diferensiasi/keberpasangan dari sumber tunggal, percabangan terdeterminasi, konstruksi dua varian dari satu benih",
+      "lenses": 8,
+      "created": "2026-07-12"
+    },
+    {
+      "id": "al-waqiah-56-58-59",
+      "title": "A-antum takhluqūnahu am naḥnul-khāliqūn — operator memancarkan, tapi bukan penulis prosesnya",
+      "ref": "QS 56:58-59",
+      "theme": "Batas kendali operator vs pencipta proses, pemisahan pemicu-implementasi, kerendahan epistemik",
+      "lenses": 7,
+      "created": "2026-07-12"
+    },
+    {
+      "id": "ghafir-40-67-67",
+      "title": "Turāb → nuṭfah → ʿalaqah → ṭifl → asyudd → syaikh — state machine hayat dengan exit terjadwal & objektif taʿqilūn",
+      "ref": "QS 40:67",
+      "theme": "State machine lifecycle, tahap bernama & berurutan, exit/terminasi terjadwal, objektif kognitif (taʿqilūn)",
+      "lenses": 8,
+      "created": "2026-07-12"
+    },
+    {
+      "id": "rum-30-54-54",
+      "title": "Lemah — kuat — lemah: kurva kapasitas yang tak konstan",
+      "ref": "QS 30:54",
+      "theme": "Kurva kapasitas sepanjang siklus hidup (ramp-up, puncak, penurunan) + jalur pengecualian dari lintasan default",
+      "lenses": 8,
+      "created": "2026-07-12"
+    },
+    {
+      "id": "ahqaf-46-15-15",
+      "title": "Kurhan, kurhan, tiga puluh bulan — investasi yang tak bisa dibayar balik, hanya diteruskan",
+      "ref": "QS 46:15",
+      "theme": "Biaya pengasuhan eksplisit sebagai investasi asimetris lintas generasi; syukur sebagai pengakuan utang yang tak lunas kecuali diteruskan",
+      "lenses": 8,
+      "created": "2026-07-12"
+    },
+    {
+      "id": "yasin-36-36-36",
+      "title": "Pasangan-pasangan semuanya — pola desain universal & taksonomi yang terbuka",
+      "ref": "QS 36:36",
+      "theme": "Pairing sebagai pola universal ciptaan; tiga domain pasangan termasuk yang belum diketahui; open taxonomy & unknown unknowns",
+      "lenses": 9,
+      "created": "2026-07-12"
+    },
+    {
+      "id": "zumar-39-68-68",
+      "title": "Dua tiupan sangkakala — shutdown massal berpengecualian, lalu bangkit serempak menunggu",
+      "ref": "QS 39:68",
+      "theme": "Kiamat & kebangkitan: shutdown dua-fase dengan pengecualian eksplisit, re-instantiation massal serempak, state siap-evaluasi",
+      "lenses": 8,
+      "created": "2026-07-12"
+    },
+    {
+      "id": "haqqah-69-13-16",
+      "title": "Satu tiupan, satu benturan — struktur terkokoh dilebur, langit pun rapuh",
+      "ref": "QS 69:13-16",
+      "theme": "Teardown kosmik: struktur paling stabil dilebur dalam satu operasi; tidak ada infrastruktur abadi; wahiyah = masa rapuh yang tampak permanen",
+      "lenses": 8,
+      "created": "2026-07-12"
+    },
+    {
+      "id": "insyiqaq-84-1-5",
+      "title": "Patuh sejak semula — langit & bumi taat pada perintah pembongkaran",
+      "ref": "QS 84:1-5",
+      "theme": "Teardown kosmik sebagai ketaatan yang built-in sejak penciptaan (bukan resistensi); flush total tanpa sisa tersembunyi",
+      "lenses": 8,
+      "created": "2026-07-12"
     }
   ]
 }
