@@ -113,6 +113,17 @@ Owner minta (catat dulu, belum bangun): (1) **4 mazhab fikih** (Hanafi/Maliki/Sy
 
 ---
 
+### [F1.63] Wave 16 — MIMPI & WAHYU (+9, total 168) — 2026-07-12
+
+Owner: "mimpi & wahyu — 12:4, 12:36, 37:102" + mandat besar: "lanjut pokoknya akhirnya, tiap ayat harus kita nalar. semua ayat." Dicatat sebagai ARAH JANGKA PANJANG (168/6236 = 2.7% total, 12.1% dari 596 kandidat bertema — realistis: progres bertahap berkelanjutan, bukan selesai sekali jalan).
+Agen latar-belakang (siklus mimpi Yusuf) mati 2x berturut — pertama krn ada bug tool-call, kedua krn koneksi API putus di tengah (bukan limit sesi). Audit disk (pola [[agent-session-limit-recovery]]) konfirmasi TIDAK ADA file tertulis sebelum mati — ditulis ulang LANGSUNG oleh parent, bukan agen ke-3, demi keandalan + konsistensi suara di 1 busur naratif.
+- **Wahyu (ditulis parent, sensitivitas tinggi):** 42:51 (taksonomi 3 kanal wahyu — wahyu langsung/di balik tabir/lewat rasul; CATATAN TANZIH terketat krn ayat ini sendiri menutup dgn "Aliyyun Hakim"), 6:93 (klaim wahyu palsu = 2 mode fraud: klaim-terima-palsu vs klaim-mampu-produksi-palsu), 53:10-11 ("hati tak mendustakan" — diklarifikasi eksplisit ini soal melihat JIBRIL bukan Allah, mencegah kesalahpahaman umum).
+- **Ibrahim & putranya (37:102, ditulis parent dgn penghormatan tertinggi):** mimpi sbg kanal perintah terberat; disertakan konteks penebusan 37:103-107 agar tak jadi cliffhanger keliru; analogi rekayasa dibatasi sangat sempit & ditempatkan DI BAWAH bobot teologisnya.
+- **Siklus mimpi Yusuf (5 kajian, 1 busur naratif utuh):** 12:4 (payload simbolik diterima) -> 12:5 (Ya'qub ajarkan need-to-know/threat-modeling atas info prediktif sensitif) -> 12:36 (kredibilitas dibangun SEBELUM delegasi takwil diminta) -> 12:43-44 (pembesar kerajaan JUJUR mengaku tak kompeten, kontras produktif dgn 12:36) -> 12:100 (verifikasi presisi puluhan tahun kemudian, closes loop eksplisit ke 12:4 — "min qablu").
+168/168 valid; graph 204 node; coverage 12.1% kandidat. LIVE.
+
+---
+
 ### [F1.62] Wave 15 — PENYEMBUHAN, kisah Ayyub (+2, total 159) — 2026-07-12
 
 Owner minta lanjut "penyembuhan — asy-syifa 17:82, 10:57, 16:69". Audit dulu: **17:82 & 10:57 sudah ada** (Wave 9, F1.54, pipeline Qur'an=syifa lis-sudur); **16:69** hanya tersentuh 1 klausa di nahl-16-68-69 (fokus kecerdasan-kawanan). Menulis ulang = duplikat, jadi dipilih territory segar & belum tersentuh sama sekali: **kisah Ayyub**, ditulis langsung (bukan agen, batch kecil+naratif).
