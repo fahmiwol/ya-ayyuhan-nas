@@ -113,6 +113,15 @@ Owner minta (catat dulu, belum bangun): (1) **4 mazhab fikih** (Hanafi/Maliki/Sy
 
 ---
 
+### [F1.62] Wave 15 — PENYEMBUHAN, kisah Ayyub (+2, total 159) — 2026-07-12
+
+Owner minta lanjut "penyembuhan — asy-syifa 17:82, 10:57, 16:69". Audit dulu: **17:82 & 10:57 sudah ada** (Wave 9, F1.54, pipeline Qur'an=syifa lis-sudur); **16:69** hanya tersentuh 1 klausa di nahl-16-68-69 (fokus kecerdasan-kawanan). Menulis ulang = duplikat, jadi dipilih territory segar & belum tersentuh sama sekali: **kisah Ayyub**, ditulis langsung (bukan agen, batch kecil+naratif).
+- **21:83-84** — busur insiden penuh: penderitaan berkepanjangan → seruan berbasis pengakuan sifat (bukan tuntutan) → respons eksplisit (istajabna) → remediasi (kashafna) → pemulihan MELAMPAUI kondisi semula (mitslahum ma'ahum) → didokumentasikan sebagai preseden (dzikra). Dibaca berdampingan dgn 26:80 (self-healing built-in) sbg jalur ESKALASI saat proses internal tak cukup.
+- **38:41-44** — dua pola dalam satu narasi: (a) remedi PRESKRIPTIF dua-moda (irkud→mata air utk mandi+minum) yang menuntut tindakan penerima, kontras dgn self-healing otomatis; (b) dispensasi sumpah (istri Ayyub) — "wa la tahnats": constraint-preserving accommodation, kontras produktif dgn prinsip hard-inviolable-bounds (2:229/65:1/55:5-9) yg sudah ada — bukan melanggar batas, tapi jalur pemenuhan alternatif yang sah (rukhsah).
+159/159 valid; graph 195 node; coverage 12.1% kandidat. LIVE.
+
+---
+
 ### [F1.61] Wave 14 — TAKSONOMI NAFS (ammarah/lawwamah/muthmainnah), +5 (total 157) — 2026-07-12
 
 Permintaan owner: taksonomi jiwa muthmainnah/lawwamah/ammarah. Ditulis LANGSUNG (bukan agen) — batch kecil & koheren, lebih aman ditulis satu tangan agar saling bertaut sebagai satu busur, sekaligus kehati-hatian ekstra pada 50:16 (ayat qurb/kedekatan — salah satu titik paling rawan TANZIH di seluruh Qur'an).
