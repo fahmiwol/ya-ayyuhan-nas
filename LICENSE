@@ -19,16 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-CATATAN TENTANG ISI KEAGAMAAN
-
-Lisensi MIT di atas berlaku untuk PERANGKAT LUNAK dalam repositori ini (kode,
-skrip, pipeline, dan dokumentasi teknis).
-
-Teks Al-Qur'an itu sendiri bukan milik siapa pun dan tidak dilisensikan oleh
-proyek ini. Terjemahan, tafsir, dan data pihak ketiga tunduk pada lisensi
-masing-masing pemiliknya — lihat `04_DATA_SOURCES.md` untuk provenance tiap
-sumber. Siapa pun yang menggunakan kembali data dari repositori ini wajib
-memeriksa dan menghormati ketentuan sumber aslinya.
