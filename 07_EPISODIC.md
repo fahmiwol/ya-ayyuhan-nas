@@ -760,7 +760,7 @@ lapisan komputasional = "interpretasi rekayasa / eksperimen berpikir", DITANDAI 
 ### [F1.16] DEPLOY LIVE — https://quran.migancore.com (server bersama, app lain aman) — 2026-07-06
 
 **North Star check:** ✅ align — app publik live; teks kanonik tak tersentuh; app lain TIDAK terganggu.
-**Action:** deploy terpandu per-langkah (bukan autonom membabi-buta) ke server `mix` (72.62.125.6) — server yg sama dgn migancore/ixonomic/miganpro/ado(AI stack).
+**Action:** deploy terpandu per-langkah (bukan autonom membabi-buta) ke server `mix` (<IP-SERVER>) — server yg sama dgn migancore/ixonomic/miganpro/ado(AI stack).
 - **0 snapshot** (8 container baseline) → **deploy key** read-only (`~/.ssh/yan_deploy`, daftar via `gh`) → **clone** `/opt/yaayyuhannas` → **.env** (secret di-generate, perms 600) → **`docker compose up -d --build`** (yan_db+yan_web isolated, 127.0.0.1:3100).
 - **nginx = aaPanel** (`/www/server/nginx`, bukan `/etc/nginx`) — vhost `quran.migancore.com.conf` proxy→3100; **certbot webroot** TLS; fix `http2 on;`→`listen 443 ssl http2;` (nginx 1.24). `/etc/nginx` stray dibersihkan.
 **WHY:** owner minta deploy + repo, pakai server migancore, hati-hati jangan ganggu app lain.

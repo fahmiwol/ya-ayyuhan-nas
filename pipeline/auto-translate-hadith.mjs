@@ -20,7 +20,8 @@ async function translate(text) {
     if (out) return out;
   } catch { /* fallback */ }
   try {
-    const j = await getJSON(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(t.slice(0, 480))}&langpair=en|id&de=fahmiwol@gmail.com`, { tries: 2, timeoutMs: 20000 });
+    const email = process.env.MYMEMORY_EMAIL;
+    const j = await getJSON(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(t.slice(0, 480))}&langpair=en|id${email ? `&de=${encodeURIComponent(email)}` : ''}`, { tries: 2, timeoutMs: 20000 });
     return j.responseData?.translatedText ?? null;
   } catch { return null; }
 }

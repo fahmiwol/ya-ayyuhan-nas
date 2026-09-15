@@ -108,7 +108,7 @@ sudo rm /etc/nginx/sites-enabled/yaayyuhannas && sudo nginx -t && sudo systemctl
 
 ---
 
-## DEPLOY AKTUAL — server `mix` (72.62.125.6), 2026-07-06 ✅
+## DEPLOY AKTUAL — server `mix` (<IP-SERVER>), 2026-07-06 ✅
 
 Live: **https://quran.migancore.com** (TLS Let's Encrypt). Catatan penting server ini:
 - **nginx = aaPanel/BT** di `/www/server/nginx` (BUKAN `/etc/nginx`; `systemctl nginx` inactive).
