@@ -62,3 +62,4 @@ Simpan paling banyak 3 rilis di `rilis/`; hapus yang lebih lama setelah rilis ba
 |---|---|---|---|
 | 13 Nov 2026 | `e76c293` | terbit ulang mode baca-saja | 14/17 (3 halaman tertutup 500 di balik nginx) |
 | 13 Nov 2026 | `6ef967a` | halaman tertutup jawab 404 langsung | 17/17; 70 vhost lain tidak berubah |
+| 13 Nov 2026 | `3c0ea45` | rilis data: +3 kajian harian (171), cakupan 307 ayat | 17/17; 3 kajian baru 200 |
