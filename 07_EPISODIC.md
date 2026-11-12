@@ -113,6 +113,16 @@ Owner minta (catat dulu, belum bangun): (1) **4 mazhab fikih** (Hanafi/Maliki/Sy
 
 ---
 
+### [F1.66] Batch ramping 10 kajian (+10, total 181) — 2026-11-13
+
+**Action:** sesi baru Sonnet/medium, 4–5 lensa, satu G2 per batch (bukan Opus di sesi panjang). QS 2:79, 4:81, 4:82, 27:18-19, 18:96, 7:56, 7:85, 28:77, 3:137, 67:15. Ditolak (tanzih/ghaib/fiqih): 3:181, 5:110, 6:59, 29:41, 7:31.
+**Gerbang:** G1 lab-validate 181 + integritas + 0 huruf Arab. G2 Sonnet: 5/10 REVISI (akhirat terpetakan ke metrik di 28:77; klaim kurs sebagai fakta di 7:85; tambahan di luar tafsir di 3:137; perancang diposisikan seperti pembuat lingkungan di 67:15 = tanzih; 4:82 bisa terbaca menguji teks) → satu revisi → G2 ulang (agen baru kecil) LULUS. G3: Fahmi "Terbit".
+**Biaya:** kuota mingguan 59 % → 59 % (di bawah resolusi 1 %); sesi ~232 ribu token, subagen G2 ~316 ribu token Sonnet. Batas atas 300 ayat ≈ 23 %; belum terbukti muat 4 %.
+**Hasil:** cakupan 307 → 317 ayat (5,08 %), kandidat 14,9 %.
+**Pelajaran:** separuh draf Sonnet butuh revisi tanzih/ghaib/grounding → G2 independen wajib, jangan dihemat. `lab-next.mjs` belum punya daftar tolak (mengusulkan ulang ayat yang ditolak).
+
+---
+
 ### [F1.65] Kajian harian pertama lewat gerbang G1–G3 (+3, total 171) — 2026-11-13
 
 **North Star check:** ✅ align — pola ciptaan/perilaku manusia dibaca sebagai interpretasi rekayasa beratribusi; tanzih + ghaib dijaga.
@@ -1041,7 +1051,7 @@ Cross-source akar konsonan (L3): **Tanzil 100%**, **Kemenag 99.984%** (1 konvens
 
 | Fase | Status | Milestone terakhir | Root hash mushaf |
 |------|--------|--------------------|------------------|
-| 1 | 🏗️ jalan | F1.65: kajian harian pertama lewat G1–G3, 171 kajian | `eb13d58a…8cba7e56` |
+| 1 | 🏗️ jalan | F1.66: batch ramping 10 kajian, 181 kajian | `eb13d58a…8cba7e56` |
 | 2 | ⬜ | — | — |
 | 3 | ⬜ | — | — |
 | 4 | ⬜ | — | — |

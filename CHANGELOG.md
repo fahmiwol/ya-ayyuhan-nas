@@ -2,6 +2,11 @@
 
 Format: semver, tiap entri menulis WHY. Riwayat sebelum Nov 2026 ada di `07_EPISODIC.md` dan `git log`.
 
+## 0.4.0 - 2026-11-13 — batch ramping 10 kajian (181 kajian)
+- +10 kajian lewat G1, G2 (5 revisi satu putaran) dan G3 Fahmi ("Terbit"). WHY: menguji cara hemat
+  (sesi baru, Sonnet, satu G2 per batch) untuk menjawab "300 ayat cukup dengan 4 %?". Biaya < 1 % mingguan.
+- Cakupan 317 ayat, kandidat backlog 14,9 %.
+
 ## 0.3.0 - 2026-11-13 — kajian harian pertama terbit (171 kajian)
 - +3 kajian: QS 2:11-12, QS 6:11, QS 34:10-11. WHY: Fahmi minta tiga ayat yang berguna diproses dengan
   metode yang ada; ketiganya lolos G1, G2 (setelah satu revisi) dan G3 (Fahmi: "Terbit").
