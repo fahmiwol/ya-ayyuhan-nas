@@ -20,11 +20,11 @@ diubah: 2026-11-13
   `/opt/yaayyuhannas`). **Mati ikut VPS-1** (Omiga `L0a9634aeb3`, Agu 2026). Repo GitHub kemudian
   diarsipkan (diperiksa 13 Nov: `isArchived: true`, publik).
 - Keadaan 13 Nov (diperiksa langsung, baca-saja):
-  - DNS `quran.migancore.com` → `187.77.116.139` (VPS-2) **sudah ada**; begitu juga `migancore.com`.
-  - VPS-2 tidak punya vhost untuk `quran.migancore.com`. Host tak dikenal di 443 jatuh ke vhost pertama
-    (`abrabriket.com`), sehingga `https://quran.migancore.com` (abaikan sertifikat) menampilkan **situs
-    ABRA BRIK** dengan sertifikat salah. Ini membocorkan ekosistem yang wajib terisolasi (MiganExp D-027 §5).
-  - VPS-2: disk 64 % (70 GB sisa), RAM 15 GB, 4 CPU, Node 20.20 di host. Port `127.0.0.1:3100` dan `:3110`
+  - DNS `quran.migancore.com` → VPS-2 **sudah ada**; begitu juga `migancore.com`.
+  - VPS-2 tidak punya vhost untuk `quran.migancore.com`. Host tak dikenal di 443 jatuh ke vhost pertama,
+    sehingga `https://quran.migancore.com` menampilkan **situs lain yang menumpang di server yang sama**
+    dengan sertifikat salah. Ini membocorkan ekosistem yang wajib terisolasi (MiganExp D-027 §5).
+  - VPS-2: disk 64 % (70 GB sisa), RAM 15 GB, 4 CPU, Node 20.20 di host. Beberapa port lokal
     sudah dipakai container lain.
   - `migancore.com` = situs statis MiganExp (`/srv/migancore/web/kini`); path `/lab/` sudah dipakai halaman "Lab Migan".
   - Kode: data mushaf + Lab statis (`apps/web/public/data`, 39 MB). Postgres hanya untuk akun, catatan,
@@ -36,8 +36,8 @@ diubah: 2026-11-13
 | Hal | Pilihan | Alasan singkat |
 |---|---|---|
 | Domain | **`quran.migancore.com`** (subdomain) | DNS sudah ada, sama dengan tautan di README/GitHub/skill, dan tidak menyentuh vhost `migancore.com` yang hidup. Path `/lab/` sudah dipakai, dan Next.js di bawah path butuh `basePath` + proxy di vhost utama. |
-| Server | **VPS-2** (`187.77.116.139`), kelompok `/srv/migancore/quran` | MiganExp D-031: VPS-2 untuk layanan hidup MiganExp; pola `rilis/<sha>` + `kini`. Tanpa biaya server baru. |
-| Runtime | Next.js `standalone`, **systemd** `quran-web.service`, pengguna Linux sendiri `quran`, bind `127.0.0.1:3120` | Lebih ringan dari Docker + Postgres; sama dengan pola rilis app lain; port 3100/3110 sudah terpakai. |
+| Server | **VPS-2**, kelompok `/srv/migancore/quran` | MiganExp D-031: VPS-2 untuk layanan hidup MiganExp; pola `rilis/<sha>` + `kini`. Tanpa biaya server baru. |
+| Runtime | Next.js `standalone`, **systemd** `quran-web.service`, pengguna Linux sendiri `quran`, bind `127.0.0.1:3120` | Lebih ringan dari Docker + Postgres; sama dengan pola rilis app lain; port lain sudah terpakai. |
 | Mode | **Baca-saja**: mushaf, integritas, Lab, sintesis, graf. Akun, catatan, admin, `/tinjau` dimatikan lewat flag | Tidak mengumpulkan data pribadi, tidak perlu Postgres, permukaan serangan kecil. Akun bisa dibuka nanti lewat keputusan baru + tinjauan keamanan. |
 | Build | Di laptop/Bmax, bukan di VPS; tarball + sha256 → `rilis/<sha>` | CPU VPS-2 dipakai bersama dan steal-nya tinggi (MiganExp D-049). |
 | nginx | Vhost **baru** `quran.migancore.com` → `127.0.0.1:3120`, `nginx -t`, `reload`, `certbot -d quran.migancore.com` | Hanya menambah; tidak menyunting vhost app lain. |
@@ -57,7 +57,7 @@ diubah: 2026-11-13
    satu kajian, dan app lain di VPS-2 tetap 200/301 seperti sebelumnya.
 
 ## Konsekuensi / batas
-- Selama belum disetujui, `quran.migancore.com` tetap menampilkan ABRA dengan sertifikat salah.
+- Selama belum disetujui, `quran.migancore.com` tetap menampilkan situs lain dengan sertifikat salah.
   **Perbaikan umum** (server bawaan `default_server` yang menjawab 444 untuk host tak dikenal) menyentuh
   semua domain di VPS-2, jadi diajukan sebagai tugas terpisah, bukan bagian D-001.
 - Akun pengguna lama di DB `pg_yan_ALL` (cadangan) tidak dipulihkan pada mode baca-saja.

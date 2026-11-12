@@ -44,7 +44,7 @@
       "id": "EPIC-001",
       "jenis": "epic",
       "judul": "Terbit ulang mushaf dan Lab mode baca-saja",
-      "status": "draft",
+      "status": "selesai",
       "cluster": "inti",
       "terkait": [
         "PRD-001",

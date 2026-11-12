@@ -113,6 +113,20 @@ Owner minta (catat dulu, belum bangun): (1) **4 mazhab fikih** (Hanafi/Maliki/Sy
 
 ---
 
+### [F1.64] Hidup lagi di quran.migancore.com — mode baca-saja (D-001) — 2026-11-13
+
+**North Star check:** ✅ align — mushaf terverifikasi + Lab terbuka lagi; teks kanonik tidak tersentuh.
+**Action:** rencana SPT (North Star, PRD-001, D-001, EPIC-001/002, fungsi gerbang tinjauan) → Fahmi setuju D-001 → `middleware.ts` mode baca-saja (build `NEXT_PUBLIC_MODE_BACA=1`) → build standalone → server ekosistem MiganExp (VPS-2): systemd `quran-web`, rilis `/srv/migancore/quran/rilis/<sha>` + `kini`, vhost baru + certbot.
+**WHY:** app mati sejak VPS-1 mati (Agu 2026); Fahmi 13 Nov minta di-live-kan lagi di ekosistem MiganExp dan ditambah satu kajian ayat per hari. Baca-saja = tidak mengumpulkan data pribadi, tanpa Postgres.
+**Test:** `pipeline/test-mode-baca.mjs` (17 cek): merah 9 gagal sebelum middleware → hijau 17/17. Live: 3 halaman tertutup 500 di balik nginx (rewrite + X-Forwarded-Proto → https://localhost) → tes ditambah header proxy (merah 3) → fix jawab 404 langsung → hijau 17/17 di `https://quran.migancore.com`. `lab-validate` 168 kajian lolos; `test-integrity` 8/8.
+**Review:** 70 vhost lain di server yang sama: kode status sebelum = sesudah (tidak ada beda). Tampilan dicek 375 px + 1280 px.
+**Integritas:** MERKLE ROOT tetap `eb13d58a…8cba7e56` (tampil di /integritas live).
+**Blocker:** —
+**Next:** EPIC-002 — ritme satu kajian/hari lewat gerbang G1–G3; tunggu jawaban Fahmi soal jadwal, jalur G3 (PR), izin rilis data harian.
+**Feeling owner:** "Setuju, jalankan".
+
+---
+
 ### [F1.63] Wave 16 — MIMPI & WAHYU (+9, total 168) — 2026-07-12
 
 Owner: "mimpi & wahyu — 12:4, 12:36, 37:102" + mandat besar: "lanjut pokoknya akhirnya, tiap ayat harus kita nalar. semua ayat." Dicatat sebagai ARAH JANGKA PANJANG (168/6236 = 2.7% total, 12.1% dari 596 kandidat bertema — realistis: progres bertahap berkelanjutan, bukan selesai sekali jalan).
@@ -1016,7 +1030,7 @@ Cross-source akar konsonan (L3): **Tanzil 100%**, **Kemenag 99.984%** (1 konvens
 
 | Fase | Status | Milestone terakhir | Root hash mushaf |
 |------|--------|--------------------|------------------|
-| 1 | 🏗️ jalan | F1.26: menu Kisah (poin 5) — 5 poin data fondasi SELESAI | `eb13d58a…8cba7e56` |
+| 1 | 🏗️ jalan | F1.64: hidup lagi di quran.migancore.com (baca-saja), 168 kajian | `eb13d58a…8cba7e56` |
 | 2 | ⬜ | — | — |
 | 3 | ⬜ | — | — |
 | 4 | ⬜ | — | — |

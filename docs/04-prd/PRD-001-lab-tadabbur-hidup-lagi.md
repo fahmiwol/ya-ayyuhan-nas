@@ -13,7 +13,7 @@ diubah: 2026-11-13
 
 ## Masalah
 - `quran.migancore.com` mati sejak VPS-1 mati (Agu 2026). Hari ini alamat itu malah menampilkan situs
-  ABRA BRIK dengan sertifikat salah (lihat D-001 § Konteks).
+  lain yang menumpang di server yang sama, dengan sertifikat salah (lihat D-001 § Konteks).
 - Lab berhenti di 168 kajian (Wave 16, Jul 2026). Cakupan: 302 ayat tersentuh dari 6.236 (4,8 %);
   72 dari 596 kandidat backlog (12,1 %). Arahan Fahmi 13 Nov 2026: hidupkan lagi sebagai aplikasi dan
   tambah interpretasi ayat **setiap hari** dengan cara yang sekarang.
@@ -27,7 +27,7 @@ diubah: 2026-11-13
 ## Sasaran & metrik keberhasilan
 | Metrik | Sebelum (13 Nov) | Sasaran |
 |---|---|---|
-| `https://quran.migancore.com` | sertifikat salah, isi ABRA | 200, sertifikat sah, isi Ya Ayyuhan Nas |
+| `https://quran.migancore.com` | sertifikat salah, isi situs lain | 200, sertifikat sah, isi Ya Ayyuhan Nas |
 | Halaman inti live (beranda, surah, integritas, lab, sintesis, 1 kajian) | 0/6 | 6/6 |
 | Jumlah kajian | 168 | +1 per hari yang lolos gerbang (≈30/bulan) |
 | Kajian terbit tanpa lolos gerbang | — | 0 |

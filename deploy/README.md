@@ -1,3 +1,5 @@
+> **USANG (13 Nov 2026):** jalur ini untuk server lama yang sudah mati. Pakai `docs/08-ops/DEPLOY.md`.
+
 # Deploy Ya Ayyuhan Nas — aman di server bersama (migancore)
 
 > **Prinsip #1: JANGAN ganggu app lain.** Semua resource stack ini ber-prefix `yan_`

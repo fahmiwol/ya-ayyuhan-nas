@@ -2,7 +2,7 @@
 id: EPIC-001
 jenis: epic
 judul: Terbit ulang mushaf dan Lab mode baca-saja
-status: draft
+status: selesai
 cluster: inti
 terkait: [PRD-001, D-001]
 dibuat: 2026-11-12
@@ -10,6 +10,9 @@ diubah: 2026-11-13
 ---
 
 # EPIC-001 · Terbit ulang mushaf + Lab, mode baca-saja
+
+> **Selesai 13 Nov 2026**: live di `https://quran.migancore.com` (rilis `6ef967a`), `test-mode-baca` 17/17 di live,
+> 70 vhost lain di server yang sama tidak berubah. S3: dicek 375 px + 1280 px. Riwayat: `docs/08-ops/DEPLOY.md`.
 
 ## Tujuan
 `https://quran.migancore.com` hidup lagi di VPS-2 dengan mushaf terverifikasi dan Lab Tadabbur, tanpa akun dan tanpa Postgres.
