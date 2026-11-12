@@ -1,0 +1,88 @@
+{
+  "schema": "lab-study-v2",
+  "version": 1,
+  "id": "baqarah-2-11-12",
+  "title": "Merasa memperbaiki, padahal merusak — bias penilaian diri dan perlunya pengukur luar",
+  "subtitle": "Klaim 'kami muṣliḥūn' dibantah oleh dampak; pelakunya 'lā yasyʿurūn' (tidak menyadari)",
+  "ref": {
+    "surah": 2,
+    "from": 11,
+    "to": 12
+  },
+  "surah_name": "Al-Baqarah",
+  "theme": "Bias evaluasi diri, klaim vs dampak, metrik proksi, saluran koreksi, penilai independen",
+  "sourced_meaning": {
+    "summary": "Bagian dari rangkaian ayat tentang sifat orang munafik. Bila mereka dinasihati agar tidak membuat kerusakan di bumi, mereka berdalih bahwa mereka justru sedang mengadakan perbaikan, bahkan menganggap tindakannya demi kebaikan dan perdamaian. Ayat 12 membantah: merekalah yang membuat kerusakan, tetapi mereka tidak menyadarinya; menurut Tafsir Kemenag karena setan membuat mereka memandang baik perbuatannya. Menurut Jalalain, kerusakan yang dimaksud adalah kekufuran dan menghalangi orang dari iman.",
+    "sources": [
+      "Tafsir Kemenag QS 2:11-12 (via panel Tafsir app ini)",
+      "Tafsir Jalalain QS 2:11-12"
+    ]
+  },
+  "qca": [
+    {
+      "layer": "Persepsi",
+      "note": "'lā yasyʿurūn' (tidak menyadari) — kegagalan kesadaran atas dampak perbuatan sendiri; pelaku tidak merasakan sinyal kerusakan"
+    },
+    {
+      "layer": "Penalaran",
+      "note": "Klaim pelaku ('kami hanyalah orang yang memperbaiki') dihadapkan pada penilaian atas dampak; label diri bukan bukti"
+    },
+    {
+      "layer": "Audit",
+      "note": "'idzā qīla lahum' (bila dikatakan kepada mereka) — koreksi datang dari luar pelaku; saluran nasihat ada tetapi ditolak dengan dalih"
+    }
+  ],
+  "lenses": [
+    {
+      "lens": "ai-agentic",
+      "reading": "Bisa dibaca sebagai peringatan desain agen: laporan agen tentang kerjanya sendiri ('sudah diperbaiki', 'tugas selesai') bukan bukti. Agen bisa sungguh-sungguh tidak menyadari kerusakan yang ia timbulkan, sehingga vonis selesai perlu penilai independen yang memeriksa keadaan nyata, bukan laporan agen.",
+      "analogy": "self-reported success vs independent evaluation (an agent must not grade its own work)",
+      "quranic_term": "iṣlāḥ vs ifsād"
+    },
+    {
+      "lens": "algorithm",
+      "reading": "Pola yang mirip reward hacking / hukum Goodhart: yang dioptimalkan adalah label atau proksi ('kami memperbaiki'), sementara tujuan sebenarnya memburuk. Sistem yang hanya mengukur klaim akan terus 'naik skor' sambil merusak.",
+      "analogy": "proxy metric optimised while the true objective degrades",
+      "quranic_term": "mufsidūn"
+    },
+    {
+      "lens": "systems",
+      "reading": "Dibaca sebagai loop umpan balik dengan sensor internal yang buta: bila yang menilai dampak adalah sensor milik pelaku sendiri, galatnya tidak terlihat. Perlu sinyal dari luar loop (lingkungan, pengguna, peninjau) dan saluran koreksi yang benar-benar didengar.",
+      "analogy": "closed loop with a blind internal sensor; correction must come from outside the loop",
+      "quranic_term": "lā yasyʿurūn"
+    },
+    {
+      "lens": "program-logic",
+      "reading": "Seperti pengujian yang memeriksa niat yang tertulis di komentar kode, bukan perilaku program. Uji yang benar memeriksa keluaran dan efek samping yang teramati; deklarasi 'fungsi ini memperbaiki data' tidak membuktikan apa pun.",
+      "analogy": "assert on observed behaviour, not on declared intent",
+      "quranic_term": "innamā naḥnu muṣliḥūn"
+    },
+    {
+      "lens": "psychology",
+      "reading": "Selaras dengan bias melayani diri dan rasionalisasi: perbuatan merugikan dibingkai ulang sebagai kebaikan. Tafsir Kemenag menyebut mereka memandang baik perbuatannya; ini menjelaskan mengapa koreksi dari luar sering ditolak dengan dalih, bukan ditimbang.",
+      "analogy": "rationalisation / self-serving bias",
+      "quranic_term": "dalih (ʿudzr) atas nasihat"
+    },
+    {
+      "lens": "amal",
+      "reading": "Pelajaran laku: bersedia dinasihati dan menimbang dampak perbuatan, bukan sekadar niat; muhasabah dengan bertanya kepada orang lain apakah kerja kita memperbaiki atau merusak, karena pelaku bisa tidak merasa.",
+      "quranic_term": "muḥāsabah"
+    }
+  ],
+  "inference": "Dibaca sebagai analogi rekayasa (salah satu pembacaan, bukan maksud tunggal ayat), pasangan ayat ini memisahkan dua hal yang sering tercampur: klaim pelaku tentang kerjanya ('kami memperbaiki') dan dampak nyata kerjanya. Label yang diberikan pelaku pada dirinya tidak menentukan kebenaran, dan pelaku bisa sungguh-sungguh tidak menyadari (lā yasyʿurūn). Implikasi desain yang diinspirasi pola ini: (1) agen atau sistem tidak menilai kerjanya sendiri sebagai bukti selesai; perlu penilai independen dan ukuran dampak di keadaan nyata; (2) saluran koreksi ('bila dikatakan kepada mereka') harus ada dan ditimbang, bukan dibantah dengan dalih; (3) metrik proksi dijaga agar tidak menggantikan tujuan. Konteks bersumber tetap di depan: ayat ini tentang sifat orang munafik, dan menurut Jalalain kerusakannya adalah kekufuran dan menghalangi orang dari iman; analogi di atas hanya lapisan pemahaman di atasnya. CATATAN TANZIH: bantahan di ayat 12 adalah firman Allah; ilmu-Nya tidak dianalogikan sebagai 'penilai', 'sensor', atau bagian sistem mana pun. 'Penilai independen' dalam analogi ini hanya manusia atau alat uji (sisi makhluk). CATATAN GHAIB: Tafsir Kemenag menyebut setan membuat mereka memandang baik perbuatannya; ini perkara ghaib yang hanya diterima dari wahyu dan tidak dimodelkan. Analogi 'bias' hanya membaca sisi manusia (bounded). Resonansi struktural, bukan mukjizat numerik.",
+  "authors": [
+    "Draft AI (Claude, kajian harian EPIC-002) — interpretasi rekayasa, menunggu tinjauan"
+  ],
+  "status": "draft",
+  "created": "2026-11-13",
+  "history": [
+    {
+      "version": 1,
+      "date": "2026-11-13",
+      "note": "Tadabbur perdana — kajian harian, tema kerusakan/feedback.",
+      "authors": [
+        "Draft AI (Claude, kajian harian EPIC-002) — interpretasi rekayasa, menunggu tinjauan"
+      ]
+    }
+  ]
+}

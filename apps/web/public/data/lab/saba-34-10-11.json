@@ -1,0 +1,88 @@
+{
+  "schema": "lab-study-v2",
+  "version": 1,
+  "id": "saba-34-10-11",
+  "title": "Ukurlah anyamannya — presisi rekayasa dan modul yang saling mengunci",
+  "subtitle": "Baju besi Nabi Dawud: mata rantai yang serasi, mengikuti gerak pemakai, dan kerja yang saleh",
+  "ref": {
+    "surah": 34,
+    "from": 10,
+    "to": 11
+  },
+  "surah_name": "Saba'",
+  "theme": "Presisi dan toleransi, desain modular, antarmuka seragam, desain berpusat pada pemakai, etika rekayasa",
+  "sourced_meaning": {
+    "summary": "Di antara karunia Allah kepada Nabi Dawud: suara yang merdu; gunung-gunung dan burung-burung diperintah bertasbih bersamanya (Tafsir Kemenag: manusia tidak mengetahui bagaimana alam bertasbih, merujuk QS 17:44); dan besi dilunakkan untuknya. Ayat 11: ia diperintah membuat baju besi yang sempurna dan 'mengukur anyamannya'. Kemenag menjelaskan baju besi pada masa itu dari kepingan besi tipis yang panas dan membatasi gerak, sedangkan buatan Dawud seperti gulungan rantai tersusun rapi sehingga mengikuti gerak badan. Jalalain: 'qaddir fis-sard' artinya jadikan mata rantainya serasi satu sama lain. Ayat ditutup perintah beramal saleh dan penegasan bahwa Allah Maha Melihat apa yang dikerjakan.",
+    "sources": [
+      "Tafsir Kemenag QS 34:10-11 (via panel Tafsir app ini)",
+      "Tafsir Jalalain QS 34:10-11"
+    ]
+  },
+  "qca": [
+    {
+      "layer": "Aksi & transfer",
+      "note": "'iʿmal sābighāt' (buatlah baju besi yang sempurna) — karunia dan ilmu diwujudkan menjadi karya yang dipakai orang"
+    },
+    {
+      "layer": "Penalaran",
+      "note": "'qaddir fis-sard' (ukurlah anyamannya) — menakar proporsi tiap mata rantai; mutu dinyatakan sebagai ukuran"
+    },
+    {
+      "layer": "Alignment",
+      "note": "'waʿmalū ṣāliḥan' — perintah membuat langsung disambung perintah beramal saleh: kemampuan diikat pada tujuan yang baik"
+    }
+  ],
+  "lenses": [
+    {
+      "lens": "artifact",
+      "reading": "Dibaca dari sisi karya: baju rantai dari banyak cincin yang saling mengunci, dibandingkan baju dari kepingan kaku. Menurut Tafsir Kemenag hasilnya mengikuti gerak badan dan tidak panas; perlindungan tetap ada tanpa mengorbankan kelenturan pemakai.",
+      "analogy": "chainmail vs plate armour: flexible interlocking units over rigid slabs",
+      "quranic_term": "sābighāt"
+    },
+    {
+      "lens": "math-physics",
+      "reading": "'Qaddir' bisa dibaca sebagai toleransi ukuran: cincin yang terlalu longgar meloloskan tusukan, yang terlalu rapat membuat baju kaku. Ada rentang proporsi antara ukuran unit dan celahnya yang membuat struktur kuat sekaligus lentur.",
+      "analogy": "dimensional tolerance: the ratio between unit size and gap",
+      "quranic_term": "qaddir"
+    },
+    {
+      "lens": "systems",
+      "reading": "Pola modularitas: banyak unit kecil yang sama, saling mengunci, membagi beban ke banyak titik. Bila satu mata rantai rusak, perbaikannya lokal; sistem tidak runtuh seperti satu kepingan yang retak.",
+      "analogy": "modular, loosely coupled units; load distribution; local repair",
+      "quranic_term": "sard"
+    },
+    {
+      "lens": "program-logic",
+      "reading": "Mata rantai yang dibuat serasi (Jalalain) mirip antarmuka yang seragam: setiap modul memenuhi ukuran sambungan yang sama sehingga bisa disusun dan diganti tanpa menyesuaikan modul lain.",
+      "analogy": "standardised interfaces so units compose and swap",
+      "quranic_term": "qaddir fis-sard"
+    },
+    {
+      "lens": "ai-agentic",
+      "reading": "Untuk desain agen: kumpulan kemampuan kecil yang terukur dan saling bersambung lewat antarmuka yang jelas cenderung lebih tangguh daripada satu monolit kaku. Ayat juga menyandingkan perintah membuat dengan perintah beramal saleh, yang bisa dibaca sebagai pengingat bahwa kapabilitas dirancang bersama batas dan tujuannya.",
+      "analogy": "composable, measured skills; capability designed together with its purpose and limits",
+      "quranic_term": "ʿamal ṣāliḥ"
+    },
+    {
+      "lens": "amal",
+      "reading": "Ihsan dalam kerja tangan: ukuran yang tepat adalah amanah kepada pemakai. Kerja teknis dan amal saleh disebut dalam satu rangkaian, sehingga keahlian menjadi jalan syukur atas karunia, bukan sekadar keterampilan.",
+      "quranic_term": "iḥsān / syukr"
+    }
+  ],
+  "inference": "Dibaca sebagai analogi rekayasa pada sisi kerja Nabi Dawud ('alaihis-salam) (salah satu pembacaan, bukan maksud tunggal ayat): perintahnya bukan sekadar 'buatlah', tetapi 'buatlah … dan ukurlah anyamannya'. Menurut Jalalain, mata rantai dibuat serasi satu sama lain; menurut Tafsir Kemenag, hasilnya baju yang mengikuti gerak badan, berbeda dari kepingan kaku yang panas. Pola yang dibaca: (1) presisi dan toleransi: ukuran unit dan celahnya harus pas; (2) modularitas: banyak unit kecil yang saling mengunci memberi kelenturan tanpa kehilangan perlindungan, dan perbaikannya lokal; (3) desain berpusat pada pemakai; (4) kemampuan diikat pada tujuan baik, karena perintah membuat langsung disambung dengan 'kerjakanlah amal saleh'. Implikasi untuk sistem dan agen: kemampuan kecil yang terukur dengan antarmuka seragam, kriteria mutu ditulis sebagai ukuran, dan batas etis dirancang bersama kapabilitas. CATATAN TANZIH: dilunakkannya besi adalah karunia dan mukjizat dari Allah, bukan proses teknik yang ditiru di sini. Penutup ayat menyebut Allah Maha Melihat; disebut dengan ta'zhim sebagai landasan iman, tidak dianalogikan sebagai pemantauan atau bagian sistem mana pun. CATATAN GHAIB: tasbih gunung dan burung bersama Nabi Dawud adalah perkara yang caranya tidak diketahui manusia (Tafsir Kemenag, merujuk QS 17:44), sehingga tidak dianalogikan. Resonansi struktural, bukan mukjizat numerik.",
+  "authors": [
+    "Draft AI (Claude, kajian harian EPIC-002) — interpretasi rekayasa, menunggu tinjauan"
+  ],
+  "status": "draft",
+  "created": "2026-11-13",
+  "history": [
+    {
+      "version": 1,
+      "date": "2026-11-13",
+      "note": "Tadabbur perdana — kajian harian, tema besi/material.",
+      "authors": [
+        "Draft AI (Claude, kajian harian EPIC-002) — interpretasi rekayasa, menunggu tinjauan"
+      ]
+    }
+  ]
+}
