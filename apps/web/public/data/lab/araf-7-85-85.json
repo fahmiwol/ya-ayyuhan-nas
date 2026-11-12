@@ -62,13 +62,13 @@
   "authors": [
     "Draft AI (Claude Sonnet, batch percobaan) — interpretasi rekayasa, menunggu tinjauan"
   ],
-  "status": "draft",
+  "status": "published",
   "created": "2026-11-13",
   "history": [
     {
       "version": 1,
       "date": "2026-11-13",
-      "note": "Draf perdana — batch percobaan hemat kuota (batch10). Menunggu G2/G3. Direfisi satu putaran setelah tinjauan G2 (batch10).",
+      "note": "Draf perdana — batch percobaan hemat kuota (batch10). Menunggu G2/G3. Direfisi satu putaran setelah tinjauan G2 (batch10). Disetujui terbit oleh Fahmi (G3) 13 Nov 2026; tetap menunggu tinjauan ahli.",
       "authors": [
         "Draft AI (Claude Sonnet, batch percobaan) — interpretasi rekayasa, menunggu tinjauan"
       ]

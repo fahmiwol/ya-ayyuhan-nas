@@ -1041,8 +1041,11 @@ Cross-source akar konsonan (L3): **Tanzil 100%**, **Kemenag 99.984%** (1 konvens
 
 | Fase | Status | Milestone terakhir | Root hash mushaf |
 |------|--------|--------------------|------------------|
-| 1 | 🏗️ jalan | F1.65: kajian harian pertama lewat G1–G3, 171 kajian | `eb13d58a…8cba7e56` |
+| 1 | 🏗️ jalan | F1.66: batch10 lewat G1–G3, 181 kajian | `eb13d58a…8cba7e56` |
 | 2 | ⬜ | — | — |
 | 3 | ⬜ | — | — |
 | 4 | ⬜ | — | — |
 ```
+
+### F1.66 — batch10: 10 kajian hemat kuota (13 Nov 2026)
+- 10 kajian ditulis di sesi baru oleh Sonnet (4-5 lensa), G2 satu subagen per batch (5 revisi, cek ulang lulus), G3 Fahmi. Kuota batch < 1 % (resolusi 1 %). Cakupan 317 ayat.
