@@ -2,6 +2,12 @@
 
 Format: semver, tiap entri menulis WHY. Riwayat sebelum Nov 2026 ada di `07_EPISODIC.md` dan `git log`.
 
+## 0.2.1 - 2026-11-13 — ritme harian "izin dulu"
+- `pipeline/lab-next.mjs`: pilih ayat berikutnya tanpa model (deterministik; kandidat pertama QS 2:11).
+  WHY: langkah pagi harus murah; model besar baru dipakai setelah Fahmi menjawab "tulis".
+- EPIC-002: alur izin dulu + pembagian model hemat (tanya: haiku; tulis: opus/medium; G2: sonnet/medium; turunan: skrip).
+  WHY: Fahmi 13 Nov: "minta izin saya, yg hemat usage jadinya". Tugas terjadwal 05:30 WIB hanya bertanya.
+
 ## 0.2.0 - 2026-11-13 — hidup lagi di quran.migancore.com
 - **Live** di `https://quran.migancore.com`, mode baca-saja (rilis `6ef967a`). WHY: Fahmi menyetujui D-001
   ("Setuju, jalankan"); app mati sejak server lamanya mati (Agu 2026).

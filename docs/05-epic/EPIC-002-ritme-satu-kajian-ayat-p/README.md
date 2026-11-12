@@ -19,9 +19,18 @@ hanya ritme, urutan pilih ayat, dan gerbangnya.
 ## PRD sumber
 PRD-001 · gerbang: `FUNGSI-gerbang-tinjauan-kajian`.
 
+## Keputusan Fahmi 13 Nov 2026: izin dulu, hemat pemakaian
+Kata Fahmi: "minta izin saya, yg hemat usage jadinya". Jadi:
+- **Pagi (05:30 WIB):** tugas terjadwal ringan (haiku, effort rendah) hanya menjalankan `node pipeline/lab-next.mjs`
+  (tanpa model, gratis) lalu **bertanya**: "Kajian hari ini QS x:y (tema …). Tulis?" Tidak menulis apa pun.
+- **Hanya bila Fahmi menjawab "tulis"** (boleh menyebut ayat lain): penulis mengerjakan langkah 3–6 di bawah.
+  Tidak dijawab = hari itu dilewati, tidak menumpuk, tidak ada biaya model besar.
+- **"terbit"** dari Fahmi setelah membaca draf + kartu G2 = persetujuan G3 **dan** izin rilis data hari itu.
+  "revisi …" = satu putaran revisi. Persetujuan lewat PR GitHub tetap boleh, tidak wajib.
+
 ## Alur satu hari
 ```
-05:30 WIB (usulan)  pilih ayat ─► ground ─► tulis draf ─► G1 mesin ─► G2 peninjau AI ─► PR draf
+05:30 WIB  pilih ayat ─► TANYA Fahmi ─(tulis)─► ground ─► tulis draf ─► G1 mesin ─► G2 peninjau AI ─► PR draf
                                                                                    │
                          Fahmi baca kartu + draf ──► G3 setuju ─► terbit (rilis data) ─► verifikasi live ─► catat
                                                  └─► minta revisi ─► penulis revisi (maks. 1x) ─► G1 ─► G2 ─► G3
@@ -50,9 +59,10 @@ yang layak jadi prinsip (≥2 bukti); agen tidak menulis prinsip baru tanpa pili
 ## Pembagian model (skill `router-model-agen`)
 | Peran | Model | Alasan |
 |---|---|---|
-| Penulis kajian | opus / high | domain agama, adab dan batas tanzih; kualitas suara |
-| Peninjau G2 (bukan penulis) | opus / medium | gerbang mutu konten sensitif |
-| Bangkitkan ulang turunan, catatan | haiku / low | mekanis |
+| Tanya pagi (jadwal) | haiku / low | hanya menjalankan skrip + bertanya; biaya sangat kecil |
+| Penulis kajian (setelah "tulis") | opus / medium | domain agama, adab, batas tanzih; medium cukup karena metode + grounding sudah baku |
+| Peninjau G2 (bukan penulis) | sonnet / medium | kartu 10 butir, satu berkas; checklist, bukan menulis |
+| Bangkitkan ulang turunan, rilis data, catatan | skrip (tanpa model) | `lab-coverage`, `lab-graph`, `lab-corpus`, DEPLOY.md |
 
 ## Tempat jalan
 Usulan awal: tugas terjadwal di aplikasi Claude (laptop) karena tidak butuh infra baru. Laptop mati =
@@ -62,11 +72,11 @@ hari itu dilewati, tidak menumpuk. Pindah ke Bmax/antrean VPS (MiganExp D-049) b
 ## Story
 | # | Story | Uji terima |
 |---|---|---|
-| S1 | `pipeline/lab-next.mjs` (urutan di atas) | dua kali jalan → kandidat sama; tes dengan backlog contoh |
+| S1 ✅ | `pipeline/lab-next.mjs` (urutan di atas) | dua kali jalan → kandidat sama (13 Nov: QS 2:11); 302 ayat tercakup = `coverage.json` |
 | S2 | G1 tambahan di `lab-validate`: tolak teks Arab panjang di data Lab (indikasi ayat tersalin), tolak `review` selain `pending` bila tidak ada atribusi manusia | tes merah dengan berkas contoh, lalu hijau |
 | S3 | Templat kartu G2 + prompt peninjau di `.agents/skills/tadabbur-lab/` | dipakai di kajian harian pertama |
 | S4 | Kajian harian pertama lewat G1–G3 dan live | bukti per gerbang di PR + `curl` live |
-| S5 | Tugas terjadwal (setelah izin) | satu jalan terjadwal menghasilkan PR draf |
+| S5 | Tugas terjadwal "tanya dulu" (haiku) | satu jalan terjadwal mengirim pertanyaan dengan kandidat dari `lab-next.mjs` |
 
 ## Definition of Done
 Kajian harian pertama terbit lewat G1–G3 dan terverifikasi live; tugas terjadwal (bila disetujui) menghasilkan
