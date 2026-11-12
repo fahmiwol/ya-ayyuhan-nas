@@ -2,6 +2,11 @@
 
 Format: semver, tiap entri menulis WHY. Riwayat sebelum Nov 2026 ada di `07_EPISODIC.md` dan `git log`.
 
+## 0.3.0 - 2026-11-13 — kajian harian pertama terbit (171 kajian)
+- +3 kajian: QS 2:11-12, QS 6:11, QS 34:10-11. WHY: Fahmi minta tiga ayat yang berguna diproses dengan
+  metode yang ada; ketiganya lolos G1, G2 (setelah satu revisi) dan G3 (Fahmi: "Terbit").
+- coverage/graph/corpus dibangkitkan ulang; backlog dicentang. Cakupan 307 ayat.
+
 ## 0.2.1 - 2026-11-13 — ritme harian "izin dulu"
 - `pipeline/lab-next.mjs`: pilih ayat berikutnya tanpa model (deterministik; kandidat pertama QS 2:11).
   WHY: langkah pagi harus murah; model besar baru dipakai setelah Fahmi menjawab "tulis".

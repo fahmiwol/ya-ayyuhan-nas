@@ -73,13 +73,13 @@
   "authors": [
     "Draft AI (Claude, kajian harian EPIC-002) — interpretasi rekayasa, menunggu tinjauan"
   ],
-  "status": "draft",
+  "status": "published",
   "created": "2026-11-13",
   "history": [
     {
       "version": 1,
       "date": "2026-11-13",
-      "note": "Tadabbur perdana — kajian harian, tema besi/material. Direvisi setelah tinjauan G2 (grounding: 'tidak panas' diganti sesuai Kemenag; klaim teknik ditandai analogi/bounded).",
+      "note": "Tadabbur perdana — kajian harian, tema besi/material. Direvisi setelah tinjauan G2 (grounding: 'tidak panas' diganti sesuai Kemenag; klaim teknik ditandai analogi/bounded). Disetujui terbit oleh Fahmi (G3) 13 Nov 2026; tetap menunggu tinjauan ahli.",
       "authors": [
         "Draft AI (Claude, kajian harian EPIC-002) — interpretasi rekayasa, menunggu tinjauan"
       ]

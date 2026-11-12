@@ -113,6 +113,17 @@ Owner minta (catat dulu, belum bangun): (1) **4 mazhab fikih** (Hanafi/Maliki/Sy
 
 ---
 
+### [F1.65] Kajian harian pertama lewat gerbang G1–G3 (+3, total 171) — 2026-11-13
+
+**North Star check:** ✅ align — pola ciptaan/perilaku manusia dibaca sebagai interpretasi rekayasa beratribusi; tanzih + ghaib dijaga.
+**Action:** Fahmi minta 3 ayat yang berguna. Dipilih dari tema backlog paling tipis: QS 2:11-12 (kerusakan/feedback, klaim vs dampak, penilai dari luar), QS 6:11 (perjalanan, belajar dari akibat pilihan manusia), QS 34:10-11 (besi/material, presisi + modul saling mengunci). Grounding Kemenag + Jalalain (asbab tidak ada di data app).
+**Gerbang:** G1 lab-validate 171 + test-integrity 8/8 + 0 huruf Arab tersalin + tanpa sorotan tanzih baru. G2 peninjau independen (sonnet/medium) → REVISI ketiganya (6:11 kata 'mekanisme' bertentangan dengan catatan tanzih; 2:11-12 analogi bias/sensor perlu `bounded` karena sebab ghaib; 34:10-11 'tidak panas' tidak ada di Kemenag) → satu putaran revisi → G2 ulang LULUS. G3: Fahmi "Terbit".
+**Hasil:** status published, review tetap pending (menunggu tinjauan ahli). Cakupan 302 → 307 ayat; kandidat 72 → 76 (12,8 %). coverage/graph/corpus dibangkitkan ulang.
+**Pelajaran:** penulis sendiri bisa menulis catatan tanzih yang benar tetapi lensa yang bertentangan dengannya; G2 independen menangkapnya. Pertahankan G2 dari model yang tidak menulis.
+**Next:** ritme harian "izin dulu" (tugas `kajian-harian-tanya` 05:30).
+
+---
+
 ### [F1.64] Hidup lagi di quran.migancore.com — mode baca-saja (D-001) — 2026-11-13
 
 **North Star check:** ✅ align — mushaf terverifikasi + Lab terbuka lagi; teks kanonik tidak tersentuh.
@@ -1030,7 +1041,7 @@ Cross-source akar konsonan (L3): **Tanzil 100%**, **Kemenag 99.984%** (1 konvens
 
 | Fase | Status | Milestone terakhir | Root hash mushaf |
 |------|--------|--------------------|------------------|
-| 1 | 🏗️ jalan | F1.64: hidup lagi di quran.migancore.com (baca-saja), 168 kajian | `eb13d58a…8cba7e56` |
+| 1 | 🏗️ jalan | F1.65: kajian harian pertama lewat G1–G3, 171 kajian | `eb13d58a…8cba7e56` |
 | 2 | ⬜ | — | — |
 | 3 | ⬜ | — | — |
 | 4 | ⬜ | — | — |

@@ -1,16 +1,16 @@
 {
   "updated": "2026-07-07",
   "total_ayat": 6236,
-  "studies": 168,
+  "studies": 171,
   "principles": 33,
   "frameworks": 3,
-  "direct_ayat": 302,
+  "direct_ayat": 307,
   "cited_ayat": 91,
-  "touched_ayat": 302,
+  "touched_ayat": 307,
   "candidates_total": 596,
-  "candidates_done": 72,
-  "pct_of_total": 4.84,
-  "pct_of_candidates": 12.1,
+  "candidates_done": 76,
+  "pct_of_total": 4.92,
+  "pct_of_candidates": 12.8,
   "by_theme": [
     {
       "theme": "pikir/akal/renung (120)",
@@ -65,17 +65,17 @@
     {
       "theme": "kerusakan/feedback (22)",
       "total": 22,
-      "done": 1
+      "done": 2
     },
     {
       "theme": "perjalanan/eksplorasi (18)",
       "total": 18,
-      "done": 1
+      "done": 2
     },
     {
       "theme": "besi/material (12)",
       "total": 12,
-      "done": 1
+      "done": 3
     },
     {
       "theme": "berpasangan/duality (10)",
