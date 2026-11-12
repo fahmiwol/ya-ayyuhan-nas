@@ -2,8 +2,8 @@
   "schema": "lab-study-v2",
   "version": 1,
   "id": "baqarah-2-11-12",
-  "title": "Merasa memperbaiki, padahal merusak — bias penilaian diri dan perlunya pengukur luar",
-  "subtitle": "Klaim 'kami muṣliḥūn' dibantah oleh dampak; pelakunya 'lā yasyʿurūn' (tidak menyadari)",
+  "title": "Merasa memperbaiki, padahal merusak — bias penilaian diri dan perlunya peninjau manusia atau alat uji",
+  "subtitle": "Klaim 'kami muṣliḥūn' dibantah dalam ayat 12; dibaca juga sebagai kontras antara klaim dan dampak",
   "ref": {
     "surah": 2,
     "from": 11,
@@ -47,8 +47,8 @@
     },
     {
       "lens": "systems",
-      "reading": "Dibaca sebagai loop umpan balik dengan sensor internal yang buta: bila yang menilai dampak adalah sensor milik pelaku sendiri, galatnya tidak terlihat. Perlu sinyal dari luar loop (lingkungan, pengguna, peninjau) dan saluran koreksi yang benar-benar didengar.",
-      "analogy": "closed loop with a blind internal sensor; correction must come from outside the loop",
+      "reading": "Dibaca sebagai analogi loop umpan balik dengan sensor internal yang buta: bila yang menilai dampak hanya sensor milik pelaku sendiri, galatnya cenderung tidak terlihat, sehingga sistem cenderung perlu sinyal dari luar loop (pengguna, peninjau manusia, alat uji) dan saluran koreksi yang ditimbang. Ini hanya analogi sisi manusia; sebab yang disebut Tafsir Kemenag (setan) tidak dimodelkan.",
+      "analogy": "closed loop with a blind internal sensor; correction from outside the loop (bounded)",
       "quranic_term": "lā yasyʿurūn"
     },
     {
@@ -59,8 +59,8 @@
     },
     {
       "lens": "psychology",
-      "reading": "Selaras dengan bias melayani diri dan rasionalisasi: perbuatan merugikan dibingkai ulang sebagai kebaikan. Tafsir Kemenag menyebut mereka memandang baik perbuatannya; ini menjelaskan mengapa koreksi dari luar sering ditolak dengan dalih, bukan ditimbang.",
-      "analogy": "rationalisation / self-serving bias",
+      "reading": "Selaras dengan pola bias melayani diri dan rasionalisasi: perbuatan merugikan dibingkai ulang sebagai kebaikan. Tafsir Kemenag menyebut mereka memandang baik perbuatannya (dengan sebab ghaib yang tidak dimodelkan di sini); pola ini selaras dengan kenyataan bahwa koreksi dari luar sering dijawab dengan dalih, bukan ditimbang.",
+      "analogy": "rationalisation / self-serving bias (bounded)",
       "quranic_term": "dalih (ʿudzr) atas nasihat"
     },
     {
@@ -69,7 +69,7 @@
       "quranic_term": "muḥāsabah"
     }
   ],
-  "inference": "Dibaca sebagai analogi rekayasa (salah satu pembacaan, bukan maksud tunggal ayat), pasangan ayat ini memisahkan dua hal yang sering tercampur: klaim pelaku tentang kerjanya ('kami memperbaiki') dan dampak nyata kerjanya. Label yang diberikan pelaku pada dirinya tidak menentukan kebenaran, dan pelaku bisa sungguh-sungguh tidak menyadari (lā yasyʿurūn). Implikasi desain yang diinspirasi pola ini: (1) agen atau sistem tidak menilai kerjanya sendiri sebagai bukti selesai; perlu penilai independen dan ukuran dampak di keadaan nyata; (2) saluran koreksi ('bila dikatakan kepada mereka') harus ada dan ditimbang, bukan dibantah dengan dalih; (3) metrik proksi dijaga agar tidak menggantikan tujuan. Konteks bersumber tetap di depan: ayat ini tentang sifat orang munafik, dan menurut Jalalain kerusakannya adalah kekufuran dan menghalangi orang dari iman; analogi di atas hanya lapisan pemahaman di atasnya. CATATAN TANZIH: bantahan di ayat 12 adalah firman Allah; ilmu-Nya tidak dianalogikan sebagai 'penilai', 'sensor', atau bagian sistem mana pun. 'Penilai independen' dalam analogi ini hanya manusia atau alat uji (sisi makhluk). CATATAN GHAIB: Tafsir Kemenag menyebut setan membuat mereka memandang baik perbuatannya; ini perkara ghaib yang hanya diterima dari wahyu dan tidak dimodelkan. Analogi 'bias' hanya membaca sisi manusia (bounded). Resonansi struktural, bukan mukjizat numerik.",
+  "inference": "Dibaca sebagai analogi rekayasa (salah satu pembacaan, bukan maksud tunggal ayat), pasangan ayat ini memisahkan dua hal yang sering tercampur: klaim pelaku tentang kerjanya ('kami memperbaiki') dan dampak nyata kerjanya. Label yang diberikan pelaku pada dirinya tidak menentukan kebenaran, dan pelaku bisa sungguh-sungguh tidak menyadari (lā yasyʿurūn). Implikasi desain yang diinspirasi pola ini: (1) agen atau sistem tidak menilai kerjanya sendiri sebagai bukti selesai; perlu peninjau manusia atau alat uji yang independen dan ukuran dampak di keadaan nyata; (2) saluran koreksi ('bila dikatakan kepada mereka') harus ada dan ditimbang, bukan dibantah dengan dalih; (3) metrik proksi dijaga agar tidak menggantikan tujuan. Konteks bersumber tetap di depan: ayat ini tentang sifat orang munafik, dan menurut Jalalain kerusakannya adalah kekufuran dan menghalangi orang dari iman; analogi di atas hanya lapisan pemahaman di atasnya. CATATAN TANZIH: bantahan di ayat 12 adalah firman Allah; ilmu-Nya tidak dianalogikan sebagai 'penilai', 'sensor', atau bagian sistem mana pun. 'Penilai independen' dalam analogi ini hanya manusia atau alat uji (sisi makhluk). CATATAN GHAIB: Tafsir Kemenag menyebut setan membuat mereka memandang baik perbuatannya; ini perkara ghaib yang hanya diterima dari wahyu dan tidak dimodelkan. Analogi 'bias' hanya membaca sisi manusia (bounded). Resonansi struktural, bukan mukjizat numerik.",
   "authors": [
     "Draft AI (Claude, kajian harian EPIC-002) — interpretasi rekayasa, menunggu tinjauan"
   ],
@@ -79,7 +79,7 @@
     {
       "version": 1,
       "date": "2026-11-13",
-      "note": "Tadabbur perdana — kajian harian, tema kerusakan/feedback.",
+      "note": "Tadabbur perdana — kajian harian, tema kerusakan/feedback. Direvisi setelah tinjauan G2 (ghaib: analogi sistem/psikologi ditandai bounded; subtitle mengikuti sumber; pelunakan).",
       "authors": [
         "Draft AI (Claude, kajian harian EPIC-002) — interpretasi rekayasa, menunggu tinjauan"
       ]

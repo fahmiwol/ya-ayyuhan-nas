@@ -2,7 +2,7 @@
   "schema": "lab-study-v2",
   "version": 1,
   "id": "anam-6-11-11",
-  "title": "Berjalan, lalu perhatikan kesudahannya — belajar dari jejak kegagalan",
+  "title": "Berjalan, lalu perhatikan kesudahannya — belajar dari akibat pilihan manusia",
   "subtitle": "'Sīrū fil-arḍ, tsumma unẓurū': kumpulkan bukti di lapangan, lalu analisis akibat dan sebabnya",
   "ref": {
     "surah": 6,
@@ -10,7 +10,7 @@
     "to": 11
   },
   "surah_name": "Al-An'am",
-  "theme": "Post-mortem, belajar dari data kegagalan, eksplorasi lapangan, bias penyintas, analisis mekanisme",
+  "theme": "Post-mortem, belajar dari data kegagalan, eksplorasi lapangan, bias penyintas, telaah sebab pada pilihan manusia",
   "sourced_meaning": {
     "summary": "Setelah menjelaskan binasanya beberapa kaum terdahulu yang memusuhi para rasul, Nabi Muhammad ﷺ diperintah mengatakan kepada kaumnya agar mengembara di bumi dan mendatangi bekas tempat kaum yang mendustakan itu dibinasakan, menyaksikannya sendiri sebagai bahan renungan: mengapa bangsa yang perkasa dan berkuasa itu binasa. Sesudah itu hendaklah mereka melihat diri sendiri dan membandingkannya. Tafsir Kemenag mencatat kaum Mekah sebenarnya pengembara (pedagang antarwilayah), tetapi tidak memperhatikan bekas peninggalan kaum Nuh, Samud, dan 'Ad. Jalalain: perhatikan kesudahan para pendusta rasul, yaitu kebinasaan mereka dengan azab, agar mereka mengambil pelajaran.",
     "sources": [
@@ -25,7 +25,7 @@
     },
     {
       "layer": "Penalaran",
-      "note": "'tsumma unẓurū kaifa kāna ʿāqibah' — urutan: amati dulu, lalu analisis; kata 'kaifa' (bagaimana) mengarah ke mekanisme, bukan sekadar fakta binasa"
+      "note": "'tsumma unẓurū kaifa kāna ʿāqibah' — urutan: amati dulu, lalu renungkan; 'kaifa' (bagaimana) dibaca sebagai ajakan menelaah sebab pada pilihan manusia (menurut sumber: memusuhi dan mendustakan rasul), bukan menganalisis azabnya"
     },
     {
       "layer": "Pembelajaran",
@@ -35,26 +35,26 @@
   "lenses": [
     {
       "lens": "ai-agentic",
-      "reading": "Bisa dibaca sebagai pola belajar agen dari lintasan yang gagal, bukan hanya yang berhasil: jalankan, simpan jejak, lalu tinjau 'bagaimana' kegagalan terjadi, kemudian ubah kebijakan agen sendiri. Agen yang hanya melihat contoh sukses belajar dari sampel yang bias.",
-      "analogy": "failure-trajectory review / learning from negative examples",
+      "reading": "Ini analogi pada cara manusia belajar, tidak pada peristiwa azabnya. Polanya bisa dibaca sebagai cara agen belajar dari lintasan yang gagal, tidak hanya dari yang berhasil: jalankan, simpan jejak, lalu tinjau 'bagaimana' kegagalan terjadi, kemudian ubah kebijakan agen sendiri. Agen yang hanya melihat contoh sukses belajar dari sampel yang bias.",
+      "analogy": "failure-trajectory review / learning from negative examples (bounded)",
       "quranic_term": "iʿtibār"
     },
     {
       "lens": "systems",
       "reading": "Kemenag mencatat para pedagang Mekah melewati bekas kaum terdahulu tetapi tidak memperhatikannya. Dalam sistem, ini seperti log dan rekaman insiden yang tersimpan tetapi tidak pernah ditinjau: datanya ada, pelajarannya tidak ada. Post-mortem yang dijadwalkan mengubah 'lewat' menjadi 'memperhatikan'.",
-      "analogy": "logs exist but nobody reviews them → no learning; scheduled post-mortems",
+      "analogy": "logs exist but nobody reviews them → no learning; scheduled post-mortems (bounded)",
       "quranic_term": "sīrū fil-arḍ"
     },
     {
       "lens": "inference",
-      "reading": "Penalaran dari akibat ke sebab: pertanyaannya 'bagaimana kesudahannya', bukan hanya 'apa yang terjadi'. Ini dekat dengan analisis akar masalah: dari kondisi akhir yang teramati, telusuri mekanisme yang mengantar ke sana.",
-      "analogy": "root-cause analysis: ask how, not only what",
+      "reading": "Penalaran dari akibat ke sebab pada sisi pilihan manusia: pertanyaannya 'bagaimana kesudahannya', bukan hanya 'apa yang terjadi'. Dekat dengan analisis akar masalah: dari kondisi akhir yang teramati, telusuri keputusan dan perilaku yang mengantar ke sana (sumber menyebut: memusuhi dan mendustakan rasul). Peristiwa azabnya sendiri tidak dianalisis.",
+      "analogy": "root-cause analysis on human choices: ask how, not only what (bounded)",
       "quranic_term": "kaifa kāna ʿāqibah"
     },
     {
       "lens": "history-ummah",
-      "reading": "Sejarah bangsa-bangsa sebagai himpunan data: Kemenag menekankan bahwa yang binasa termasuk bangsa yang perkasa dan berkuasa. Kekuatan masa lalu bukan jaminan; mempelajari hanya yang bertahan menimbulkan bias penyintas.",
-      "analogy": "survivorship bias; study the failed cohort too",
+      "reading": "Sejarah bangsa-bangsa sebagai himpunan data: Kemenag menekankan bahwa yang binasa termasuk bangsa yang perkasa dan berkuasa, dan sebabnya menurut sumber adalah memusuhi dan mendustakan rasul. Kekuatan masa lalu bukan jaminan; mempelajari hanya yang bertahan menimbulkan bias penyintas.",
+      "analogy": "survivorship bias; study the cohort that did not survive too (bounded)",
       "quranic_term": "ʿāqibah"
     },
     {
@@ -69,7 +69,7 @@
       "quranic_term": "iʿtibār"
     }
   ],
-  "inference": "Dibaca sebagai analogi rekayasa (salah satu pembacaan, bukan maksud tunggal ayat), ayat ini memuat urutan dua langkah: 'berjalanlah' (kumpulkan bukti langsung) lalu 'perhatikanlah bagaimana kesudahannya' (analisis akibat dan mekanismenya); Tafsir Kemenag menambahkan langkah membandingkan dengan diri sendiri. Pola ini dekat dengan post-mortem: data kegagalan sering sudah ada di jalan yang dilalui setiap hari (para pedagang Mekah melewati bekas kaum terdahulu), tetapi tanpa 'memperhatikan' ia tidak menjadi pelajaran. Implikasi desain yang diinspirasi pola ini: (1) sistem dan agen menyimpan serta meninjau jejak kegagalan, bukan hanya keberhasilan; (2) analisis bertanya 'bagaimana' (mekanisme), bukan sekadar 'apa'; (3) pelajaran ditarik ke kebijakan sendiri; (4) kekuatan masa lalu bukan jaminan. CATATAN TANZIH: kebinasaan kaum terdahulu adalah ketetapan Allah; ketetapan dan perbuatan-Nya tidak dianalogikan sebagai proses sistem atau 'mekanisme kegagalan'. Yang dibaca polanya hanya cara manusia belajar dari akibat (sisi makhluk). Resonansi struktural, bukan mukjizat numerik.",
+  "inference": "Dibaca sebagai analogi rekayasa (salah satu pembacaan, bukan maksud tunggal ayat), ayat ini memuat urutan dua langkah: 'berjalanlah' (kumpulkan bukti langsung) lalu 'perhatikanlah bagaimana kesudahannya' (renungkan akibat dan sebabnya pada pilihan manusia); Tafsir Kemenag menambahkan langkah membandingkan dengan diri sendiri. Menurut Tafsir Kemenag dan Jalalain, kaum itu dibinasakan karena memusuhi dan mendustakan para rasul. Sebagai analogi pada cara manusia belajar (bukan pada peristiwa azabnya), pola ini dekat dengan post-mortem: data kegagalan sering sudah ada di jalan yang dilalui setiap hari (para pedagang Mekah melewati bekas kaum terdahulu), tetapi tanpa 'memperhatikan' ia tidak menjadi pelajaran. Implikasi desain yang diinspirasi pola ini: (1) sistem dan agen menyimpan serta meninjau jejak kegagalan, bukan hanya keberhasilan; (2) telaah bertanya 'bagaimana' keputusan dan perilaku mengantar ke akibat, bukan sekadar 'apa'; (3) pelajaran ditarik ke kebijakan sendiri; (4) kekuatan masa lalu bukan jaminan. CATATAN TANZIH: kebinasaan kaum terdahulu adalah ketetapan Allah; ketetapan dan perbuatan-Nya tidak dianalogikan sebagai proses sistem atau 'mekanisme kegagalan', dan azab tidak dianalisis. Yang dibaca polanya hanya pilihan manusia dan cara manusia belajar dari akibatnya (sisi makhluk). Resonansi struktural, bukan mukjizat numerik.",
   "authors": [
     "Draft AI (Claude, kajian harian EPIC-002) — interpretasi rekayasa, menunggu tinjauan"
   ],
@@ -79,7 +79,7 @@
     {
       "version": 1,
       "date": "2026-11-13",
-      "note": "Tadabbur perdana — kajian harian, tema perjalanan/eksplorasi.",
+      "note": "Tadabbur perdana — kajian harian, tema perjalanan/eksplorasi. Direvisi setelah tinjauan G2 (tanzih: kata 'mekanisme' dibatasi ke pilihan manusia; sebab bersumber ditulis; analogi ditandai bounded).",
       "authors": [
         "Draft AI (Claude, kajian harian EPIC-002) — interpretasi rekayasa, menunggu tinjauan"
       ]

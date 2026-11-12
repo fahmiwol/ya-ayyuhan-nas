@@ -35,20 +35,20 @@
   "lenses": [
     {
       "lens": "artifact",
-      "reading": "Dibaca dari sisi karya: baju rantai dari banyak cincin yang saling mengunci, dibandingkan baju dari kepingan kaku. Menurut Tafsir Kemenag hasilnya mengikuti gerak badan dan tidak panas; perlindungan tetap ada tanpa mengorbankan kelenturan pemakai.",
+      "reading": "Dibaca dari sisi karya: baju rantai dari banyak cincin yang saling mengunci, dibandingkan baju dari kepingan kaku. Menurut Tafsir Kemenag hasilnya mengikuti gerak badan dan pemakainya bergerak tanpa merasakan gangguan apa pun; perlindungan tetap ada tanpa mengorbankan kelenturan pemakai.",
       "analogy": "chainmail vs plate armour: flexible interlocking units over rigid slabs",
       "quranic_term": "sābighāt"
     },
     {
       "lens": "math-physics",
-      "reading": "'Qaddir' bisa dibaca sebagai toleransi ukuran: cincin yang terlalu longgar meloloskan tusukan, yang terlalu rapat membuat baju kaku. Ada rentang proporsi antara ukuran unit dan celahnya yang membuat struktur kuat sekaligus lentur.",
-      "analogy": "dimensional tolerance: the ratio between unit size and gap",
+      "reading": "Sebagai analogi rekayasa, 'qaddir' bisa dibaca sebagai toleransi ukuran: cincin yang terlalu longgar cenderung meloloskan tusukan, yang terlalu rapat cenderung membuat baju kaku. Ada rentang proporsi antara ukuran unit dan celahnya yang membuat struktur kuat sekaligus lentur.",
+      "analogy": "dimensional tolerance: the ratio between unit size and gap (bounded)",
       "quranic_term": "qaddir"
     },
     {
       "lens": "systems",
-      "reading": "Pola modularitas: banyak unit kecil yang sama, saling mengunci, membagi beban ke banyak titik. Bila satu mata rantai rusak, perbaikannya lokal; sistem tidak runtuh seperti satu kepingan yang retak.",
-      "analogy": "modular, loosely coupled units; load distribution; local repair",
+      "reading": "Secara rekayasa, bisa dibaca sebagai pola modularitas: banyak unit kecil yang sama, saling mengunci, membagi beban ke banyak titik. Dalam analogi ini, bila satu mata rantai rusak, perbaikannya cenderung lokal, berbeda dari satu kepingan yang retak.",
+      "analogy": "modular, loosely coupled units; load distribution; local repair (bounded)",
       "quranic_term": "sard"
     },
     {
@@ -66,7 +66,7 @@
     {
       "lens": "amal",
       "reading": "Ihsan dalam kerja tangan: ukuran yang tepat adalah amanah kepada pemakai. Kerja teknis dan amal saleh disebut dalam satu rangkaian, sehingga keahlian menjadi jalan syukur atas karunia, bukan sekadar keterampilan.",
-      "quranic_term": "iḥsān / syukr"
+      "quranic_term": "ʿamal ṣāliḥ; syukr (Kemenag)"
     }
   ],
   "inference": "Dibaca sebagai analogi rekayasa pada sisi kerja Nabi Dawud ('alaihis-salam) (salah satu pembacaan, bukan maksud tunggal ayat): perintahnya bukan sekadar 'buatlah', tetapi 'buatlah … dan ukurlah anyamannya'. Menurut Jalalain, mata rantai dibuat serasi satu sama lain; menurut Tafsir Kemenag, hasilnya baju yang mengikuti gerak badan, berbeda dari kepingan kaku yang panas. Pola yang dibaca: (1) presisi dan toleransi: ukuran unit dan celahnya harus pas; (2) modularitas: banyak unit kecil yang saling mengunci memberi kelenturan tanpa kehilangan perlindungan, dan perbaikannya lokal; (3) desain berpusat pada pemakai; (4) kemampuan diikat pada tujuan baik, karena perintah membuat langsung disambung dengan 'kerjakanlah amal saleh'. Implikasi untuk sistem dan agen: kemampuan kecil yang terukur dengan antarmuka seragam, kriteria mutu ditulis sebagai ukuran, dan batas etis dirancang bersama kapabilitas. CATATAN TANZIH: dilunakkannya besi adalah karunia dan mukjizat dari Allah, bukan proses teknik yang ditiru di sini. Penutup ayat menyebut Allah Maha Melihat; disebut dengan ta'zhim sebagai landasan iman, tidak dianalogikan sebagai pemantauan atau bagian sistem mana pun. CATATAN GHAIB: tasbih gunung dan burung bersama Nabi Dawud adalah perkara yang caranya tidak diketahui manusia (Tafsir Kemenag, merujuk QS 17:44), sehingga tidak dianalogikan. Resonansi struktural, bukan mukjizat numerik.",
@@ -79,7 +79,7 @@
     {
       "version": 1,
       "date": "2026-11-13",
-      "note": "Tadabbur perdana — kajian harian, tema besi/material.",
+      "note": "Tadabbur perdana — kajian harian, tema besi/material. Direvisi setelah tinjauan G2 (grounding: 'tidak panas' diganti sesuai Kemenag; klaim teknik ditandai analogi/bounded).",
       "authors": [
         "Draft AI (Claude, kajian harian EPIC-002) — interpretasi rekayasa, menunggu tinjauan"
       ]
