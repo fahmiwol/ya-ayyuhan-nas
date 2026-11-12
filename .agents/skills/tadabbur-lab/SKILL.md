@@ -43,6 +43,9 @@ Lab = **maudhu'i** (pilih tema dari backlog) + **tahlili** (bedah per-lensa) + *
 6. **Cek konteks (asbabun nuzul):** bila ayat punya asbabun nuzul (tab Riwayat / `asbab.json`), pahami konteksnya dulu — pembacaan rekayasa tak boleh melantur dari sebab/konteks turunnya (grounding historis; lihat `22_ILMU_HADIS_ASBAB_ARCH.md`).
 > Riset pendukung lengkap: `21_TAFSIR_METHODS_RESEARCH.md` (rambu isyari 6-syarat + hierarki grounding + batas tafsir ilmiah), `22_ILMU_HADIS_ASBAB_ARCH.md` (mustalah → Eval-Gate). RENCANA: validator fail-closed "Kartu Rambu Isyari" + metadata tipologi per kajian (metode/corak/tingkat_grounding/kontroversi) — belum dikodekan.
 
+## Antrean hati-hati
+Ayat rawan tanzih/ghaib/fiqih tidak dikerjakan jalur biasa dan tidak dilewati diam-diam: tambahkan ke `pipeline/lab-hati-hati.json` (ref, kategori, alasan, status `tunda`). Dikerjakan lewat `node pipeline/lab-next.mjs --hati-hati` dengan penulis opus/high, G2 butir H1–H5 (`docs/06-fungsi/FUNGSI-gerbang-tinjauan-kajian.md`), G3 Fahmi per kajian.
+
 ## Alur produksi kajian baru
 1. **Pilih ayat** dari backlog `15_TADABBUR_BACKLOG.md` (hasil sweep 6236 ayat; regenerate = rerun sweep di episodic F1.33). Kandidat = sinyal awal, bukan keputusan.
 2. **Ground dulu** — WAJIB sebelum menulis:

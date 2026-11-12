@@ -31,6 +31,13 @@ for (const s of index.studies) {
 const syn = JSON.parse(read("apps/web/public/data/lab/synthesis.json"));
 const single = (syn.principles || []).filter((p) => p.note_single);
 
+// --- careful queue (tanzih / ghaib / fiqih): pipeline/lab-hati-hati.json ---
+// Not dropped and not skipped silently: excluded from normal picks, always reported,
+// and picked only with --hati-hati (writer opus/high, strict G2, G3 per kajian).
+const carefulItems = JSON.parse(read("pipeline/lab-hati-hati.json")).items
+  .filter((i) => i.status === "tunda" && !covered.has(i.ref));
+const careful = new Set(JSON.parse(read("pipeline/lab-hati-hati.json")).items.map((i) => i.ref));
+
 // --- 2./3. backlog themes ---
 const themes = [];
 let cur = null;
@@ -43,14 +50,22 @@ for (const line of read("15_TADABBUR_BACKLOG.md").split(/\r?\n/)) {
 const ranked = themes
   .map((t, order) => {
     const done = t.items.filter((i) => i.done).length;
-    const open = t.items.filter((i) => !i.done && !covered.has(i.ref));
+    // Careful-queue ayahs never go to the cheap lane; they wait in their own visible queue.
+    const open = t.items.filter((i) => !i.done && !covered.has(i.ref) && !careful.has(i.ref));
     return { ...t, order, done, total: t.items.length, open };
   })
   .filter((t) => t.open.length)
   .sort((a, b) => a.done / a.total - b.done / b.total || b.total - a.total || a.order - b.order);
 
 let pick;
-if (single.length) {
+if (process.argv.includes("--hati-hati")) {
+  const c = carefulItems[0];
+  pick = c
+    ? { reason: "antrean hati-hati", lane: "hati-hati", ref: `QS ${c.ref}`, kategori: c.kategori, alasan: c.alasan,
+        aturan: "penulis opus/high; G2 butir tanzih+ghaib wajib; G3 Fahmi per kajian; tidak terbit otomatis",
+        alternatives: carefulItems.slice(1, 4).map((i) => `QS ${i.ref}`) }
+    : { reason: "antrean hati-hati kosong" };
+} else if (single.length) {
   const p = single[0];
   pick = { reason: "prinsip baru punya 1 bukti", principle: p.id || p.title, candidates: p.candidates || p.note_single };
 } else if (ranked.length) {
@@ -67,9 +82,15 @@ if (single.length) {
   pick = { reason: "backlog habis", note: "jalankan ulang sweep backlog (07_EPISODIC F1.33)" };
 }
 
-const out = { generated: new Date().toISOString(), studies: index.studies.length, covered_ayahs: covered.size, pick };
+const out = {
+  generated: new Date().toISOString(), studies: index.studies.length, covered_ayahs: covered.size, pick,
+  careful_queue: { count: carefulItems.length, refs: carefulItems.map((i) => `QS ${i.ref} (${i.kategori})`) },
+};
 if (!process.argv.includes("--json")) {
-  const p = pick.ref ? `${pick.ref} · tema "${pick.theme}" (${pick.theme_done}/${pick.theme_total}) · cadangan: ${pick.alternatives.join(", ")}` : pick.reason;
+  const p = !pick.ref ? pick.reason
+    : pick.lane === "hati-hati" ? `${pick.ref} · ANTREAN HATI-HATI (${pick.kategori}): ${pick.alasan}`
+    : `${pick.ref} · tema "${pick.theme}" (${pick.theme_done}/${pick.theme_total}) · cadangan: ${pick.alternatives.join(", ")}`;
   console.log(`Kandidat kajian berikutnya: ${p}`);
+  console.log(`Antrean hati-hati: ${carefulItems.length} ayat menunggu (${out.careful_queue.refs.join(", ") || "-"})`);
 }
 console.log(JSON.stringify(out, null, 2));

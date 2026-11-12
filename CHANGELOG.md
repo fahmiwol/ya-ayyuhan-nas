@@ -2,6 +2,12 @@
 
 Format: semver, tiap entri menulis WHY. Riwayat sebelum Nov 2026 ada di `07_EPISODIC.md` dan `git log`.
 
+## 0.4.1 - 2026-11-13 — antrean hati-hati
+- `pipeline/lab-hati-hati.json` + `lab-next.mjs --hati-hati`: ayat rawan tanzih/ghaib/fiqih masuk antrean terlihat
+  (5 ayat dari batch10), jalur biasa tidak pernah mengusulkannya, jumlahnya selalu dicetak. WHY: keputusan pilot atas
+  delegasi Fahmi 13 Nov: jangan dilewati diam-diam; penulis opus, G2 diperketat (butir H1–H5), G3 Fahmi per kajian.
+- Juga memperbaiki `lab-next` yang mengusulkan ulang ayat yang sudah ditolak.
+
 ## 0.4.0 - 2026-11-13 — batch ramping 10 kajian (181 kajian)
 - +10 kajian lewat G1, G2 (5 revisi satu putaran) dan G3 Fahmi ("Terbit"). WHY: menguji cara hemat
   (sesi baru, Sonnet, satu G2 per batch) untuk menjawab "300 ayat cukup dengan 4 %?". Biaya < 1 % mingguan.

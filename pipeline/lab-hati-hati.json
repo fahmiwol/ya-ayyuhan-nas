@@ -1,0 +1,11 @@
+{
+  "schema": "lab-hati-hati-v1",
+  "note": "Antrean hati-hati: ayat yang TIDAK dikerjakan batch murah karena rawan tanzih, ghaib, atau fiqih. Tidak dibuang dan tidak dilewati diam-diam. Jalur: penulis opus/high, G2 dengan butir tanzih+ghaib wajib (FUNGSI-gerbang-tinjauan-kajian § Jalur hati-hati), G3 Fahmi per kajian, tidak pernah terbit otomatis. Status 'tunda' = ditunda, 'lewati-lensa' = Fahmi memutuskan tidak dikaji dengan lensa rekayasa.",
+  "items": [
+    { "ref": "3:181", "kategori": "tanzih", "alasan": "ayat memuat ucapan buruk tentang Allah ('Allah miskin'); sangat mudah tergelincir ke analogi tentang Allah", "status": "tunda", "dari": "batch10 13 Nov 2026" },
+    { "ref": "5:110", "kategori": "ghaib", "alasan": "mukjizat Nabi Isa; analogi rekayasa mudah terbaca mengecilkan mukjizat", "status": "tunda", "dari": "batch10 13 Nov 2026" },
+    { "ref": "6:59", "kategori": "tanzih", "alasan": "Sifat Ilmu Allah (kunci-kunci yang ghaib); godaan menyamakan dengan basis data/pemantauan", "status": "tunda", "dari": "batch10 13 Nov 2026" },
+    { "ref": "29:41", "kategori": "tanzih", "alasan": "perumpamaan rumah laba-laba dalam konteks kecaman syirik; berguna (struktur rapuh) bila konteks ditulis jujur", "status": "tunda", "dari": "batch10 13 Nov 2026" },
+    { "ref": "7:31", "kategori": "fiqih", "alasan": "dekat hukum pakaian/aurat; 'jangan berlebihan' bisa dibaca sebagai batas sumber daya tanpa menetapkan hukum", "status": "tunda", "dari": "batch10 13 Nov 2026" }
+  ]
+}

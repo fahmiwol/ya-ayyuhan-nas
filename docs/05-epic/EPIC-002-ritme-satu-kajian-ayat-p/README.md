@@ -69,6 +69,18 @@ Usulan awal: tugas terjadwal di aplikasi Claude (laptop) karena tidak butuh infr
 hari itu dilewati, tidak menumpuk. Pindah ke Bmax/antrean VPS (MiganExp D-049) bila ritme sudah stabil.
 **Dipasang hanya setelah Fahmi setuju** (PRD-001 pertanyaan 3).
 
+## Jalur hati-hati (keputusan pilot atas delegasi Fahmi, 13 Nov 2026)
+Ayat rawan **tanzih** (menyebut Dzat/Sifat/perbuatan Allah sebagai pokok ayat), **ghaib** (akhirat, ruh, malaikat,
+setan, mukjizat) atau **fiqih** (hukum) tidak dikerjakan jalur biasa, dan **tidak dilewati diam-diam**.
+- Antrean terlihat: `pipeline/lab-hati-hati.json` (ref, kategori, alasan, status `tunda` / `lewati-lensa`).
+  `node pipeline/lab-next.mjs` selalu mencetak jumlahnya; jalur biasa tidak pernah mengusulkan ayat di antrean.
+- Penulis jalur biasa yang menemukan kandidat rawan **wajib menambahkannya ke antrean** (dengan alasan satu baris),
+  lalu mengambil kandidat berikutnya.
+- Mengerjakan antrean: `node pipeline/lab-next.mjs --hati-hati`. Penulis **opus / high**; G2 memakai butir
+  wajib di `FUNGSI-gerbang-tinjauan-kajian` § Jalur hati-hati; **G3 Fahmi per kajian**, tidak pernah terbit
+  otomatis dan tidak dalam batch.
+- Fahmi boleh menandai ayat `lewati-lensa` bila memutuskan ayat itu tidak dikaji dengan lensa rekayasa.
+
 ## Story
 | # | Story | Uji terima |
 |---|---|---|

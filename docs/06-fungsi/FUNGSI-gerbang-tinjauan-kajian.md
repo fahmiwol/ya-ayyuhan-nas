@@ -49,6 +49,17 @@ Vonis: semua lolos → LULUS. Ada yang gagal → REVISI dengan kutipan baris. Ma
 **G3 · Fahmi** membaca ringkasan + kartu G2 + draf, lalu setuju atau minta revisi. Agen tidak pernah
 menganggap diam sebagai setuju.
 
+## Jalur hati-hati (ayat di `pipeline/lab-hati-hati.json`)
+Tambahan wajib di atas kartu 10 butir; satu saja GAGAL = REVISI, dua kali REVISI = tidak diajukan.
+| # | Butir wajib | Lolos bila |
+|---|---|---|
+| H1 | Tanzih eksplisit | ada CATATAN TANZIH; setiap kalimat lensa diperiksa: Allah tidak menjadi subjek, objek, atau padanan analogi mana pun |
+| H2 | Ghaib deskriptif | ada CATATAN GHAIB bila menyentuh ghaib; tidak ada detail di luar tafsir bersumber; tidak ada "mekanisme" ghaib |
+| H3 | Fiqih | tidak ada kalimat yang bisa dibaca sebagai hukum, anjuran ibadah, atau fatwa |
+| H4 | Bukti ganda | `sourced_meaning` dicek kalimat per kalimat terhadap Kemenag DAN Jalalain |
+| H5 | Layak dikaji | peninjau boleh menyarankan `lewati-lensa` bila analogi rekayasa tidak bisa dibuat tanpa melanggar H1–H3 |
+Penulis opus/high; peninjau G2 model lain dari penulis, effort high. G3 Fahmi per kajian, tidak pernah dalam batch.
+
 ## Dependensi
 Skill `tadabbur-lab`; data mushaf + tafsir di `apps/web/public/data`; GitHub (PR) setelah repo dibuka dari arsip.
 
