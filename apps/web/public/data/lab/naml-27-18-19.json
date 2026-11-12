@@ -1,0 +1,78 @@
+{
+  "schema": "lab-study-v2",
+  "version": 1,
+  "id": "naml-27-18-19",
+  "title": "Lembah semut — peringatan dini, komunikasi koloni, dan syukur penguasa",
+  "subtitle": "Semut memberi aba-aba agar tidak terinjak; Sulaiman menjawab dengan senyum dan syukur",
+  "ref": {
+    "surah": 27,
+    "from": 18,
+    "to": 19
+  },
+  "surah_name": "An-Naml",
+  "theme": "Komunikasi koloni, peringatan dini, deteksi niat, kerendahan hati pemilik kekuatan",
+  "sourced_meaning": {
+    "summary": "Ayat 18: ketika Sulaiman dan tentaranya tiba di lembah semut, seekor semut berseru agar semut-semut masuk ke sarang supaya tidak terinjak tanpa disadari. Tafsir Kemenag menyebut ayat ini memperlihatkan adanya komunikasi di antara semut dan kehidupan mereka yang teratur, serta bahwa semut sangat kecil sehingga tidak terlihat; Jalalain menyebut semut itu diberi status orang bijak dalam tutur kata. Ayat 19: Sulaiman tersenyum mendengar perkataan itu dan berdoa agar diberi ilham bersyukur atas nikmat kepadanya dan kedua orang tuanya serta beramal saleh. Kemenag menyebut kemampuan memahami percakapan semut sebagai karunia Allah kepada Sulaiman.",
+    "sources": [
+      "Tafsir Kemenag QS 27:18-19 (data app)",
+      "Tafsir Jalalain QS 27:18-19 (data app)"
+    ]
+  },
+  "qca": [
+    {
+      "layer": "Persepsi",
+      "note": "peringatan dini dari makhluk kecil: sinyal dari pihak yang paling rentan terhadap gerak pihak yang kuat"
+    },
+    {
+      "layer": "Alignment",
+      "note": "doa syukur dan amal saleh sebagai respons atas kemampuan dan kekuasaan"
+    }
+  ],
+  "lenses": [
+    {
+      "lens": "ai-agentic",
+      "reading": "Dibaca sebagai analogi bagi sistem multi-agen: aba-aba pendek dari agen kecil ('masuk sarang') cenderung mencegah kerusakan yang tidak disengaja oleh agen besar. Salah satu pembacaan: sediakan kanal peringatan dari komponen yang paling mudah terdampak, dan agen yang kuat perlu mendengarkan sinyal itu sebelum bertindak.",
+      "analogy": "early-warning channel from vulnerable components; powerful agent checks for low-level signals before acting",
+      "quranic_term": "yā ayyuhan-namlu"
+    },
+    {
+      "lens": "systems",
+      "reading": "Tafsir Kemenag menyebut adanya komunikasi dan kehidupan teratur pada semut. Dalam analogi sistem, koloni bertahan lewat pesan singkat yang diteruskan dan tindakan serentak sederhana (masuk sarang); ini mirip protokol darurat yang ringan dan mudah dijalankan semua anggota.",
+      "analogy": "lightweight broadcast protocol; simple synchronized response (bounded)",
+      "quranic_term": "ādkhulū masākinakum"
+    },
+    {
+      "lens": "inference",
+      "reading": "Perkataan semut memuat dugaan niat: 'tanpa mereka sadari' (Kemenag: tidak sengaja karena tubuh kecil). Sebagai analogi inferensi, membedakan bahaya yang disengaja dari bahaya yang tidak disengaja cenderung mengubah respons: lindungi diri tanpa menuduh.",
+      "analogy": "distinguishing intentional from incidental harm; protect without accusing (bounded)",
+      "quranic_term": "wa hum lā yasy'urūn"
+    },
+    {
+      "lens": "psychology",
+      "reading": "Sulaiman tersenyum dan langsung bersyukur, bukan membanggakan kuasa. Sebagai analogi psikologi kepemimpinan, respons terhadap pengingat dari pihak lemah dibaca sebagai kerendahan hati: kuasa dihubungkan dengan syukur dan amal saleh (Kemenag: kemampuan itu karunia).",
+      "analogy": "humility of the powerful in response to feedback from the weak (bounded)",
+      "quranic_term": "syukr"
+    },
+    {
+      "lens": "amal",
+      "reading": "Bagi pembuat kebijakan dan insinyur, ayat ini bisa dibaca sebagai adab: perhatikan dampak tidak sengaja dari kekuatan kita pada pihak kecil, dan jadikan kemampuan sebagai jalan syukur dan amal saleh.",
+      "quranic_term": "'amal ṣāliḥ"
+    }
+  ],
+  "inference": "Dibaca sebagai analogi rekayasa (salah satu pembacaan, bukan maksud tunggal ayat): ayat ini menggambarkan satu rangkaian: sinyal peringatan dari pihak kecil, respons perlindungan sederhana, lalu sikap syukur dari pihak yang kuat. Pola yang cenderung bisa dipakai: (1) kanal peringatan dini dari komponen yang paling rentan; (2) protokol darurat yang ringan dan serentak; (3) membedakan dampak tidak sengaja dari niat buruk; (4) kekuatan dikaitkan dengan syukur dan batas etis. Implikasi untuk sistem dan agen: agen yang bertindak luas perlu memeriksa sinyal dampak dari pihak yang paling terdampak sebelum eksekusi. CATATAN TANZIH: doa Sulaiman menyebut Allah sebagai Tuhan yang memberi nikmat, ilham, dan rahmat; semuanya disebut dengan ta'zhim sebagai landasan iman dan tidak dianalogikan sebagai komponen atau proses sistem apa pun. CATATAN GHAIB: kemampuan Sulaiman memahami percakapan semut adalah karunia khusus menurut tafsir; caranya tidak diketahui dan tidak dianalogikan. Perilaku semut sungguhan tidak dinyatakan setara dengan hasil ilmiah di sini. Resonansi struktural, bukan mukjizat numerik.",
+  "authors": [
+    "Draft AI (Claude Sonnet, batch percobaan) — interpretasi rekayasa, menunggu tinjauan"
+  ],
+  "status": "draft",
+  "created": "2026-11-13",
+  "history": [
+    {
+      "version": 1,
+      "date": "2026-11-13",
+      "note": "Draf perdana — batch percobaan hemat kuota (batch10). Menunggu G2/G3.",
+      "authors": [
+        "Draft AI (Claude Sonnet, batch percobaan) — interpretasi rekayasa, menunggu tinjauan"
+      ]
+    }
+  ]
+}

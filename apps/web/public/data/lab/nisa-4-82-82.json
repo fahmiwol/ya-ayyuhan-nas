@@ -1,0 +1,78 @@
+{
+  "schema": "lab-study-v2",
+  "version": 1,
+  "id": "nisa-4-82-82",
+  "title": "Periksa dengan saksama — membaca teliti dan konsistensi aturan",
+  "subtitle": "Ajakan memperhatikan Al-Qur'an dan tanda ketiadaan pertentangan; analogi hanya untuk aturan buatan manusia",
+  "ref": {
+    "surah": 4,
+    "from": 82,
+    "to": 82
+  },
+  "surah_name": "An-Nisa'",
+  "theme": "Konsistensi internal, uji pertentangan, membaca dengan teliti",
+  "sourced_meaning": {
+    "summary": "Ayat ini bertanya apakah mereka tidak memperhatikan Al-Qur'an; kalau kiranya bukan dari sisi Allah tentulah mereka mendapat banyak pertentangan di dalamnya. Tafsir Kemenag menyebut orang kafir dan munafik dicela karena tidak mau memahami Al-Qur'an; jika mau memperhatikan, mereka akan mengetahui bahwa ia dari Tuhan. Jalalain menjelaskan ajakan memikirkan Al-Qur'an dan makna-maknanya yang indah, dan bahwa jika dari selain Tuhan niscaya ditemukan banyak perbedaan, yaitu kontradiksi makna dan perbedaan sistemnya.",
+    "sources": [
+      "Tafsir Kemenag QS 4:82 (data app)",
+      "Tafsir Jalalain QS 4:82 (data app)"
+    ]
+  },
+  "qca": [
+    {
+      "layer": "Penalaran",
+      "note": "'afalā yatadabbarūn' — membaca teliti dengan menguji konsistensi"
+    },
+    {
+      "layer": "Grounding",
+      "note": "ajakan memeriksa sumber, bukan sekadar menerima"
+    }
+  ],
+  "lenses": [
+    {
+      "lens": "inference",
+      "reading": "Ayat menjadikan ketiadaan pertentangan sebagai tanda (Kemenag, Jalalain). Analogi di sini hanya untuk validasi aturan buatan manusia dan tidak dipakai untuk menguji teks.",
+      "analogy": "consistency checking of human-made rule sets only (bounded)",
+      "quranic_term": "yatadabbarūn"
+    },
+    {
+      "lens": "program-logic",
+      "reading": "Bila banyak aturan ditulis, pemeriksaan konsistensi (tidak ada dua aturan yang saling bertentangan) adalah langkah dasar validasi. Analogi ini hanya tentang praktik rekayasa aturan, bukan tentang status teks mana pun.",
+      "analogy": "rule-set consistency checking; contradiction detection (bounded)",
+      "quranic_term": "ikhtilāfan katsīran"
+    },
+    {
+      "lens": "ai-agentic",
+      "reading": "Untuk agen yang memakai banyak sumber dan instruksi: cek kontradiksi antar-sumber sebelum bertindak, tandai bila dua instruksi bertentangan, dan minta klarifikasi manusia. Salah satu pembacaan: 'tadabbur' dipakai sebagai kebiasaan membaca teliti sebelum eksekusi.",
+      "analogy": "cross-source contradiction detection; escalate conflicting instructions to humans",
+      "quranic_term": "tadabbur"
+    },
+    {
+      "lens": "pedagogy",
+      "reading": "Pertanyaan retoris ayat mendorong pembaca aktif, bukan penerima pasif. Sebagai analogi pendidikan, siswa yang diajak memeriksa dan mengajukan pertanyaan cenderung memahami lebih dalam.",
+      "analogy": "active reading and questioning (bounded)",
+      "quranic_term": "afalā yatadabbarūn"
+    },
+    {
+      "lens": "amal",
+      "reading": "Bagi pembaca dan peneliti: membaca dengan teliti, menguji, dan tidak tergesa-gesa menyimpulkan adalah adab ilmu. Pembacaan ini tidak menetapkan hukum dan tidak menilai orang atau kelompok.",
+      "quranic_term": "tadabbur"
+    }
+  ],
+  "inference": "Dibaca sebagai analogi rekayasa (salah satu pembacaan, bukan maksud tunggal ayat): ayat ini menekankan membaca dengan teliti dan memeriksa ada tidaknya pertentangan. Menurut Tafsir Kemenag, konteksnya celaan bagi yang tidak mau memahami; menurut Jalalain, pertentangan yang dimaksud adalah kontradiksi makna dan perbedaan sistem. Pola yang cenderung bisa dipakai: (1) uji konsistensi aturan buatan manusia sebagai salah satu validasi; (2) baca teliti sebelum menyimpulkan; (3) tandai dan eskalasi kontradiksi. Implikasi untuk sistem dan agen: deteksi kontradiksi antar-sumber dan antar-aturan, lalu tanyakan kepada manusia. Kajian ini tidak menghakimi kelompok mana pun dan tidak memakai analogi sebagai bukti tentang teks. CATATAN TANZIH: ayat menyebut Al-Qur'an 'dari sisi Allah'; hal itu disebut dengan ta'zhim sebagai landasan iman dan tidak dianalogikan; Allah tidak dijadikan sumber data atau komponen sistem. Analogi hanya pada sisi pembaca dan praktik validasi. Resonansi struktural, bukan mukjizat numerik.",
+  "authors": [
+    "Draft AI (Claude Sonnet, batch percobaan) — interpretasi rekayasa, menunggu tinjauan"
+  ],
+  "status": "draft",
+  "created": "2026-11-13",
+  "history": [
+    {
+      "version": 1,
+      "date": "2026-11-13",
+      "note": "Draf perdana — batch percobaan hemat kuota (batch10). Menunggu G2/G3. Direfisi satu putaran setelah tinjauan G2 (batch10).",
+      "authors": [
+        "Draft AI (Claude Sonnet, batch percobaan) — interpretasi rekayasa, menunggu tinjauan"
+      ]
+    }
+  ]
+}

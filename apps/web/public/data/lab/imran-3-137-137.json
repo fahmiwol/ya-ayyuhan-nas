@@ -1,0 +1,78 @@
+{
+  "schema": "lab-study-v2",
+  "version": 1,
+  "id": "imran-3-137-137",
+  "title": "Berjalan dan perhatikan akibatnya — belajar dari pola yang berulang",
+  "subtitle": "Ketentuan yang berlaku sebelum kita, dan ajakan memeriksa akibatnya di bumi",
+  "ref": {
+    "surah": 3,
+    "from": 137,
+    "to": 137
+  },
+  "surah_name": "Ali 'Imran",
+  "theme": "Belajar dari data historis, pola sebab-akibat yang berulang, kesabaran setelah kegagalan",
+  "sourced_meaning": {
+    "summary": "Ayat ini menyebut telah berlalu sebelum kamu sunnah-sunnah Allah, maka berjalanlah di bumi dan perhatikan akibat orang-orang yang mendustakan. Tafsir Kemenag mengartikan sunatullah sebagai ketentuan yang berlaku bahwa yang hak pada akhirnya menang dan yang batil kalah; ayat ini dalam rangkaian uraian tentang Perang Uhud, dengan kemenangan mukmin berkat iman dan kesabaran menghadapi bahaya dan rintangan. Jalalain mengaitkannya dengan kekalahan Uhud dan menyebut ketentuan-ketentuan sebelum mereka serta ajakan melihat kesudahan orang yang mengingkari.",
+    "sources": [
+      "Tafsir Kemenag QS 3:137 (data app)",
+      "Tafsir Jalalain QS 3:137 (data app)"
+    ]
+  },
+  "qca": [
+    {
+      "layer": "Persepsi",
+      "note": "'berjalanlah dan perhatikan' — observasi langsung terhadap akibat peristiwa terdahulu"
+    },
+    {
+      "layer": "Penalaran",
+      "note": "'sunan' (pola ketentuan yang berulang) — mengambil pelajaran dari keteraturan lintas generasi"
+    }
+  ],
+  "lenses": [
+    {
+      "lens": "inference",
+      "reading": "Perintah 'berjalan dan perhatikan' bisa dibaca sebagai ajakan induksi: kumpulkan banyak kasus, perhatikan akibatnya, lalu cari keteraturan. Kemenag menyebut pola umum bahwa yang hak akhirnya menang. Sebagai analogi, kesimpulan dari kasus historis tetap hipotesis yang perlu diuji ulang terhadap kasus baru.",
+      "analogy": "induction from historical cases; hypotheses revalidated on new cases (bounded)",
+      "quranic_term": "sunan; fanẓurū"
+    },
+    {
+      "lens": "history-ummah",
+      "reading": "Konteksnya pasca-Uhud (Kemenag, Jalalain); pembacaan tanpa menyalahkan adalah analogi kajian ini, bukan isi tafsir. Sebagai analogi organisasi, tinjauan pasca-kejadian cenderung berguna bila fokus pada pola dan perbaikan, bukan pada kesalahan individu.",
+      "analogy": "blameless post-incident review (bounded)",
+      "quranic_term": "'āqibah"
+    },
+    {
+      "lens": "ai-agentic",
+      "reading": "Untuk agen: simpan jejak kejadian dan hasilnya, ringkas pola kegagalan dan keberhasilan, lalu gunakan sebagai konteks keputusan berikutnya. Salah satu pembacaan: memori agen yang menyimpan akibat tindakan terdahulu cenderung lebih berguna daripada yang hanya menyimpan instruksi.",
+      "analogy": "outcome-annotated episodic memory; post-hoc analysis feeding future decisions",
+      "quranic_term": "kayfa kāna 'āqibah"
+    },
+    {
+      "lens": "psychology",
+      "reading": "Menurut Kemenag, kemenangan terkait iman dan kesabaran dalam menghadapi bahaya dan rintangan. Sebagai analogi, ketahanan setelah kegagalan cenderung dibangun lewat penafsiran yang melihat kegagalan sebagai bagian dari pola yang lebih besar, bukan akhir.",
+      "analogy": "resilience via pattern-framing of setbacks (bounded)",
+      "quranic_term": "ṣabr"
+    },
+    {
+      "lens": "amal",
+      "reading": "Bagi tim dan pribadi, ayat ini bisa dibaca sebagai ajakan belajar dari pengalaman orang lain dengan melihat langsung, mencatat akibatnya, dan bersabar. Tidak ada penetapan hukum dari pembacaan ini.",
+      "quranic_term": "sayr fil-arḍ"
+    }
+  ],
+  "inference": "Dibaca sebagai analogi rekayasa (salah satu pembacaan, bukan maksud tunggal ayat): ayat ini mengajak mengamati pola akibat dari peristiwa yang telah lalu. Menurut Tafsir Kemenag, konteksnya pasca-Perang Uhud; menurut Jalalain, ketentuan sebelum mereka juga mengajarkan kesudahan orang yang mengingkari. Pola yang cenderung bisa dipakai: (1) kumpulkan banyak kasus sebelum menyimpulkan; (2) simpan akibat, bukan hanya tindakan; (3) tinjau kegagalan tanpa menyalahkan; (4) kesabaran sebagai bagian dari proses belajar. Implikasi untuk sistem dan agen: rancang memori ber-label hasil, tinjauan pasca-kejadian rutin, dan uji ulang pola pada data baru. Kajian ini tidak menghakimi kelompok mana pun. CATATAN TANZIH: 'sunnah Allah' disebut dengan ta'zhim sebagai ketentuan-Nya yang berlaku pada ciptaan; hal itu tidak dianalogikan sebagai algoritma atau komponen sistem, dan Jalalain yang menyebut Allah 'mengambil' kaum yang diberi kelonggaran hanya dicatat deskriptif. Analogi hanya pada sisi manusia (mengamati, mencatat, belajar). CATATAN GHAIB: akibat orang-orang terdahulu dibaca sebagai peristiwa sejarah menurut tafsir, tanpa merinci perkara akhirat. Resonansi struktural, bukan mukjizat numerik.",
+  "authors": [
+    "Draft AI (Claude Sonnet, batch percobaan) — interpretasi rekayasa, menunggu tinjauan"
+  ],
+  "status": "draft",
+  "created": "2026-11-13",
+  "history": [
+    {
+      "version": 1,
+      "date": "2026-11-13",
+      "note": "Draf perdana — batch percobaan hemat kuota (batch10). Menunggu G2/G3. Direfisi satu putaran setelah tinjauan G2 (batch10).",
+      "authors": [
+        "Draft AI (Claude Sonnet, batch percobaan) — interpretasi rekayasa, menunggu tinjauan"
+      ]
+    }
+  ]
+}

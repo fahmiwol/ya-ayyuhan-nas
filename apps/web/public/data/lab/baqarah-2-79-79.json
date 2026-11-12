@@ -1,0 +1,77 @@
+{
+  "schema": "lab-study-v2",
+  "version": 1,
+  "id": "baqarah-2-79-79",
+  "title": "Jejak asal-usul — provenans dan integritas teks",
+  "subtitle": "Peringatan atas penulisan yang disandarkan pada sumber yang tidak sah demi keuntungan kecil",
+  "ref": {
+    "surah": 2,
+    "from": 79,
+    "to": 79
+  },
+  "surah_name": "Al-Baqarah",
+  "theme": "Provenans data, integritas sumber, atribusi, insentif yang merusak kejujuran",
+  "sourced_meaning": {
+    "summary": "Ayat ini memperingatkan orang-orang yang menulis kitab dengan tangan sendiri lalu berkata 'ini dari Allah' demi keuntungan duniawi yang sedikit. Tafsir Kemenag menjelaskan ayat ini tentang pemalsuan kitab suci: pendeta yang menulis menuruti kemauan sendiri lalu mengatakan kepada orang awam bahwa itulah yang sebenarnya, demi pangkat, kedudukan, dan harta; keuntungan itu amat sedikit dibanding kebenaran yang dijual. Menurut Jalalain, mereka mengubah gambaran Nabi dalam Taurat dan ayat tentang rajam, lalu menukarnya dengan harga yang sedikit dari dunia.",
+    "sources": [
+      "Tafsir Kemenag QS 2:79 (data app)",
+      "Tafsir Jalalain QS 2:79 (data app)"
+    ]
+  },
+  "qca": [
+    {
+      "layer": "Grounding",
+      "note": "'ini dari Allah' — penyandaran sumber; klaim asal-usul harus sesuai asal-usul sebenarnya"
+    },
+    {
+      "layer": "Alignment",
+      "note": "'harga yang sedikit' — insentif kecil yang menggeser kejujuran"
+    }
+  ],
+  "lenses": [
+    {
+      "lens": "ai-agentic",
+      "reading": "Dibaca sebagai pengingat bagi desain agen: setiap keluaran yang diberi label 'bersumber' perlu rantai asal-usul yang bisa diperiksa. Agen yang menulis sendiri lalu menempelkan label sumber yang tidak ia miliki cenderung merusak kepercayaan pemakai pada seluruh keluarannya. Salah satu pembacaan: pisahkan 'dikutip dari sumber' dan 'disusun sendiri', dan tolak keluaran yang atribusinya tidak bisa diperiksa.",
+      "analogy": "citation provenance; separating quoted vs generated text; refuse unverifiable attribution",
+      "quranic_term": "yaktubūna bi-aydīhim"
+    },
+    {
+      "lens": "computational",
+      "reading": "Sebagai analogi rekayasa data, penyandaran 'ini dari sumber X' mirip metadata asal-usul. Bila metadata dapat ditulis siapa pun tanpa pemeriksaan, nilai tandanya hilang. Pola yang cenderung membantu: tanda tangan atau hash yang dicocokkan, dan sumber kanonik yang hanya bisa dibaca.",
+      "analogy": "provenance metadata; hash/signature verification; read-only canonical store (bounded)",
+      "quranic_term": "yaktubūna"
+    },
+    {
+      "lens": "systems",
+      "reading": "Ayat menautkan kerusakan pada insentif: 'harga yang sedikit'. Dalam analogi sistem, bila ada imbalan kecil untuk memalsukan atribusi dan biaya ketahuannya rendah, sistem cenderung condong ke pemalsuan. Salah satu pembacaan: rancang agar memalsukan lebih mahal daripada jujur, misalnya dengan audit independen.",
+      "analogy": "incentive design; cost of detection vs payoff of fraud (bounded)",
+      "quranic_term": "tsamanan qalīlā"
+    },
+    {
+      "lens": "economy",
+      "reading": "Tafsir Kemenag menyebut keuntungan yang diambil amat sedikit dibanding kebenaran yang dijual. Sebagai analogi ekonomi, ini seperti menukar aset bernilai tinggi yang sulit dipulihkan (kepercayaan) dengan keuntungan jangka pendek; kerugian reputasi cenderung lebih besar dari selisih harga.",
+      "analogy": "trust as a hard-to-recover asset traded for short-term gain (bounded)",
+      "quranic_term": "tsamanan qalīlā"
+    },
+    {
+      "lens": "amal",
+      "reading": "Bagi pekerja pengetahuan, ayat ini bisa dibaca sebagai adab: menulis jujur tentang sumber, membedakan 'ini kata saya' dari 'ini dari sumber', dan menolak menyandarkan karya sendiri pada otoritas yang tidak sah. Ini adab penulis dan peneliti, bukan penetapan hukum atas siapa pun."
+    }
+  ],
+  "inference": "Dibaca sebagai analogi rekayasa (salah satu pembacaan, bukan maksud tunggal ayat): ayat ini mengaitkan tiga hal, yaitu penulisan dengan tangan sendiri, penyandaran pada sumber yang tidak sah, dan imbalan kecil. Menurut Tafsir Kemenag dan Jalalain, konteksnya adalah pemalsuan kitab demi kedudukan dan harta. Pola yang cenderung bisa dipakai: (1) atribusi harus bisa diperiksa, bukan sekadar diklaim; (2) sumber kanonik dijaga tetap tidak berubah, dan perubahan hanya lewat proses yang tercatat; (3) insentif kecil perlu diimbangi pemeriksaan independen. Implikasi untuk sistem dan agen: pisahkan teks kutipan dan teks hasil susunan, catat provenans tiap keluaran, dan tolak label sumber yang tidak bisa diverifikasi. CATATAN TANZIH: kata 'dari Allah' di sini adalah klaim palsu yang dicela; Allah tidak dianalogikan sebagai sumber data, server, atau komponen sistem mana pun. Kajian ini hanya membaca sisi perbuatan manusia. CATATAN GHAIB: kata 'celaka' dibaca deskriptif sebagai peringatan menurut tafsir; tidak dirinci dan tidak dianalogikan. Kajian ini tidak menghakimi pihak tertentu. Resonansi struktural, bukan mukjizat numerik.",
+  "authors": [
+    "Draft AI (Claude Sonnet, batch percobaan) — interpretasi rekayasa, menunggu tinjauan"
+  ],
+  "status": "draft",
+  "created": "2026-11-13",
+  "history": [
+    {
+      "version": 1,
+      "date": "2026-11-13",
+      "note": "Draf perdana — batch percobaan hemat kuota (batch10). Menunggu G2/G3.",
+      "authors": [
+        "Draft AI (Claude Sonnet, batch percobaan) — interpretasi rekayasa, menunggu tinjauan"
+      ]
+    }
+  ]
+}

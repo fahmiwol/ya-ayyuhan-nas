@@ -1,0 +1,77 @@
+{
+  "schema": "lab-study-v2",
+  "version": 1,
+  "id": "qasas-28-77-77",
+  "title": "Dua bagian yang dijaga — keseimbangan akhirat dan dunia dalam mengelola karunia",
+  "subtitle": "Nasihat kepada Karun: cari akhirat, jangan lupakan bagian dunia, berbuat baik, jangan merusak",
+  "ref": {
+    "surah": 28,
+    "from": 77,
+    "to": 77
+  },
+  "surah_name": "Al-Qasas",
+  "theme": "Keseimbangan tujuan jangka panjang dan kebutuhan kini, pengelolaan kekayaan, kebaikan berbalas",
+  "sourced_meaning": {
+    "summary": "Ayat ini berisi nasihat kaum Karun kepadanya: carilah negeri akhirat dengan apa yang dianugerahkan Allah, jangan lupakan bagianmu dari dunia, berbuat baiklah sebagaimana Allah telah berbuat baik kepadamu, dan jangan berbuat kerusakan di bumi. Tafsir Kemenag menyebut empat macam nasihat bagi pemilik kekayaan, antara lain memanfaatkannya di jalan Allah, dan menyertakan hadis tentang memanfaatkan lima perkara sebelum datang lawannya. Jalalain: mencari akhirat dengan menafkahkan harta dalam ketaatan, bagian dunia adalah bekerja di dalamnya untuk akhirat, dan berbuat baik kepada manusia dengan bersedekah.",
+    "sources": [
+      "Tafsir Kemenag QS 28:77 (data app)",
+      "Tafsir Jalalain QS 28:77 (data app)"
+    ]
+  },
+  "qca": [
+    {
+      "layer": "Alignment",
+      "note": "dua tujuan yang dijaga bersama: akhirat dan bagian dunia"
+    },
+    {
+      "layer": "Aksi & transfer",
+      "note": "kekayaan sebagai sarana: dimanfaatkan, tidak ditimbun, tanpa merusak"
+    }
+  ],
+  "lenses": [
+    {
+      "lens": "economy",
+      "reading": "Dibaca sebagai analogi pola dua horizon waktu: sebagian sumber daya untuk tujuan jauh, sebagian tetap untuk kebutuhan kini. Ayat tidak menyuruh membuang bagian dunia; Jalalain menyebutnya bekerja di dunia. Akhirat itu sendiri tidak dipetakan ke aset atau metrik; ini kerangka alokasi saja, bukan nasihat keuangan.",
+      "analogy": "two time-horizon allocation pattern only; the hereafter is not mapped to an asset (bounded)",
+      "quranic_term": "nashībaka minad-dunyā"
+    },
+    {
+      "lens": "ai-agentic",
+      "reading": "Untuk agen: fungsi tujuan dengan satu metrik jangka pendek cenderung merusak; agen perlu dua horizon waktu (jangka panjang dan kebutuhan kini) serta batas 'jangan merusak' sebagai kendala keras. Pola ini hanya analogi horizon waktu; akhirat tidak dipetakan ke metrik.",
+      "analogy": "two time horizons plus hard no-harm constraint (bounded; no mapping of the hereafter)",
+      "quranic_term": "lā tabghi al-fasād"
+    },
+    {
+      "lens": "systems",
+      "reading": "Kemenag mengaitkan empat nasihat dengan kesejahteraan dunia dan akhirat. Dalam analogi sistem, mengejar satu variabel secara ekstrem (menimbun) cenderung merusak keseimbangan sistem; aliran (infak, sedekah) menjaga sirkulasi.",
+      "analogy": "circulation vs hoarding; stability through flow (bounded)",
+      "quranic_term": "aḥsin"
+    },
+    {
+      "lens": "psychology",
+      "reading": "Ayat menyebut berbuat baik 'sebagaimana kebaikan yang telah diterima'. Sebagai analogi psikologi, rasa terima kasih atas apa yang dimiliki cenderung mendorong perilaku berbagi dan mengurangi sikap merasa cukup oleh diri sendiri.",
+      "analogy": "gratitude as a driver of generosity (bounded)",
+      "quranic_term": "aḥsin kamā aḥsanallāh"
+    },
+    {
+      "lens": "amal",
+      "reading": "Bagi pekerja dan pemilik usaha, ayat ini bisa dibaca sebagai adab: bekerja tekun, tidak melupakan hak diri, berbagi, dan tidak merusak. Tidak ada fatwa dari pembacaan ini."
+    }
+  ],
+  "inference": "Dibaca sebagai analogi rekayasa (salah satu pembacaan, bukan maksud tunggal ayat): ayat ini menyusun empat nasihat sekaligus, yaitu mencari tujuan jauh dengan karunia, tidak melupakan bagian kini, berbuat baik, dan tidak merusak. Menurut Tafsir Kemenag dan Jalalain, konteksnya nasihat kepada pemilik kekayaan. Pola yang cenderung bisa dipakai: (1) dua horizon waktu, jangka panjang dan kini; (2) kendala keras 'jangan merusak'; (3) sirkulasi lebih sehat daripada penimbunan; (4) rasa syukur dan berbagi. Implikasi untuk sistem dan agen: rancang fungsi tujuan dua horizon dengan kendala tidak-merusak, dan jangan mengorbankan kebutuhan operasional demi satu metrik. CATATAN TANZIH: ayat menyebut karunia Allah, kebaikan-Nya kepada hamba, dan bahwa Allah tidak menyukai perusak; semuanya disebut dengan ta'zhim sebagai landasan iman dan tidak dianalogikan sebagai komponen atau fungsi sistem. CATATAN GHAIB: 'negeri akhirat' dibaca deskriptif menurut tafsir (nafkah harta dalam ketaatan dan jalan Allah) tanpa merinci keadaannya; analogi hanya pada pola dua horizon waktu, akhirat itu sendiri tidak dipetakan ke metrik atau alokasi aset. Resonansi struktural, bukan mukjizat numerik.",
+  "authors": [
+    "Draft AI (Claude Sonnet, batch percobaan) — interpretasi rekayasa, menunggu tinjauan"
+  ],
+  "status": "draft",
+  "created": "2026-11-13",
+  "history": [
+    {
+      "version": 1,
+      "date": "2026-11-13",
+      "note": "Draf perdana — batch percobaan hemat kuota (batch10). Menunggu G2/G3. Direfisi satu putaran setelah tinjauan G2 (batch10).",
+      "authors": [
+        "Draft AI (Claude Sonnet, batch percobaan) — interpretasi rekayasa, menunggu tinjauan"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": "lab-study-v2",
+  "version": 1,
+  "id": "araf-7-56-56",
+  "title": "Jangan merusak setelah diperbaiki — pemeliharaan lingkungan dan sumber penghidupan",
+  "subtitle": "Larangan membuat kerusakan di bumi, disertai doa dengan takut dan harap",
+  "ref": {
+    "surah": 7,
+    "from": 56,
+    "to": 56
+  },
+  "surah_name": "Al-A'raf",
+  "theme": "Pemeliharaan sistem, kerusakan setelah perbaikan, keseimbangan takut dan harap",
+  "sourced_meaning": {
+    "summary": "Ayat ini melarang membuat kerusakan di bumi setelah Allah memperbaikinya, serta memerintahkan berdoa dengan rasa takut dan harap. Tafsir Kemenag menyebut larangan itu mencakup semua bidang: pergaulan, jasmani dan rohani orang lain, sumber penghidupan seperti pertanian dan perdagangan, dan lingkungan; bumi dengan gunung, lembah, sungai, lautan, daratan, dan hutan diciptakan untuk diolah dan dimanfaatkan bagi kesejahteraan manusia. Jalalain menjelaskan kerusakan itu berupa kemusyrikan dan pelanggaran setelah rasul diutus.",
+    "sources": [
+      "Tafsir Kemenag QS 7:56 (data app)",
+      "Tafsir Jalalain QS 7:56 (data app)"
+    ]
+  },
+  "qca": [
+    {
+      "layer": "Alignment",
+      "note": "larangan merusak yang mencakup banyak ranah: lingkungan, penghidupan, hubungan sosial"
+    },
+    {
+      "layer": "Aksi & transfer",
+      "note": "doa dengan takut dan harap — keseimbangan kewaspadaan dan optimisme"
+    }
+  ],
+  "lenses": [
+    {
+      "lens": "systems",
+      "reading": "Tafsir Kemenag mencakup kerusakan lingkungan, penghidupan, dan pergaulan. Sebagai analogi sistem, kerusakan pada satu lapisan cenderung merambat ke lapisan lain; pemeliharaan sistem yang sudah baik biasanya lebih murah daripada pemulihan setelah rusak.",
+      "analogy": "maintenance vs recovery cost; cascading failure across layers (bounded)",
+      "quranic_term": "ifsād"
+    },
+    {
+      "lens": "earth-cosmos",
+      "reading": "Kemenag menyebut bumi dengan gunung, sungai, laut, dan hutan sebagai kelengkapan untuk dimanfaatkan sebaik-baiknya. Sebagai analogi ekologi, pemanfaatan sumber daya yang terjaga daya dukungnya cenderung berkelanjutan.",
+      "analogy": "carrying capacity; sustainable resource use (bounded)",
+      "quranic_term": "al-arḍ"
+    },
+    {
+      "lens": "ai-agentic",
+      "reading": "Untuk agen yang bertindak di lingkungan nyata: tindakan yang menurunkan keadaan sistem yang sudah baik (hapus data, ubah konfigurasi produksi) perlu pagar tambahan. Salah satu pembacaan: tetapkan prinsip 'jangan merusak yang sudah diperbaiki' sebagai batas default agen, dengan cadangan dan opsi pembatalan.",
+      "analogy": "do-no-harm default; backups and reversible actions for production state",
+      "quranic_term": "lā tufsidū"
+    },
+    {
+      "lens": "psychology",
+      "reading": "Ayat menyandingkan takut dan harap dalam berdoa. Sebagai analogi, sikap yang seimbang antara waspada terhadap risiko dan berharap pada perbaikan cenderung lebih sehat daripada salah satu saja.",
+      "analogy": "balanced risk-awareness and hope (bounded)",
+      "quranic_term": "khawfan wa ṭama'an"
+    },
+    {
+      "lens": "amal",
+      "reading": "Bagi individu dan organisasi, ayat ini bisa dibaca sebagai ajakan merawat lingkungan, usaha, dan hubungan yang sudah baik, dan berbuat baik (ihsan) dalam memanfaatkannya. Tidak ada penetapan hukum dari pembacaan ini.",
+      "quranic_term": "muḥsinīn"
+    }
+  ],
+  "inference": "Dibaca sebagai analogi rekayasa (salah satu pembacaan, bukan maksud tunggal ayat): ayat ini menempatkan larangan merusak setelah perbaikan, bersama doa dengan takut dan harap. Menurut Tafsir Kemenag, cakupan kerusakan luas: lingkungan, penghidupan, dan pergaulan. Pola yang cenderung bisa dipakai: (1) merawat lebih murah daripada memulihkan; (2) kerusakan satu lapisan merambat ke lapisan lain; (3) default 'jangan merusak' untuk tindakan agen; (4) keseimbangan waspada dan harap. Implikasi untuk sistem dan agen: pagar untuk tindakan destruktif, cadangan sebelum perubahan, dan pembatalan yang mudah. CATATAN TANZIH: ayat menyebut perbaikan oleh Allah, doa kepada-Nya, dan rahmat-Nya yang dekat; semuanya disebut dengan ta'zhim sebagai landasan iman. Perbuatan, rahmat, dan Sifat Allah tidak dianalogikan sebagai komponen sistem; analogi hanya pada sisi manusia. CATATAN GHAIB: rujukan Jalalain pada azab hanya dicatat deskriptif dan tidak dirinci. Resonansi struktural, bukan mukjizat numerik.",
+  "authors": [
+    "Draft AI (Claude Sonnet, batch percobaan) — interpretasi rekayasa, menunggu tinjauan"
+  ],
+  "status": "draft",
+  "created": "2026-11-13",
+  "history": [
+    {
+      "version": 1,
+      "date": "2026-11-13",
+      "note": "Draf perdana — batch percobaan hemat kuota (batch10). Menunggu G2/G3.",
+      "authors": [
+        "Draft AI (Claude Sonnet, batch percobaan) — interpretasi rekayasa, menunggu tinjauan"
+      ]
+    }
+  ]
+}

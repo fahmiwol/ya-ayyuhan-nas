@@ -1,0 +1,77 @@
+{
+  "schema": "lab-study-v2",
+  "version": 1,
+  "id": "araf-7-85-85",
+  "title": "Sempurnakan takaran dan timbangan — integritas alat ukur",
+  "subtitle": "Dari kaum Madyan: kecurangan dalam penakaran dan kepercayaan transaksi (kurs: menurut suatu riwayat)",
+  "ref": {
+    "surah": 7,
+    "from": 85,
+    "to": 85
+  },
+  "surah_name": "Al-A'raf",
+  "theme": "Integritas pengukuran, kalibrasi, kepercayaan dalam pertukaran, kerusakan yang menjalar",
+  "sourced_meaning": {
+    "summary": "Ayat ini mengisahkan Nabi Syu'aib kepada kaum Madyan: sempurnakanlah takaran dan timbangan, jangan kurangi hak orang, dan jangan berbuat kerusakan di bumi setelah diperbaiki. Tafsir Kemenag menyebut akhlak kaum itu buruk sehingga kehidupan mereka penuh penipuan dalam tukar-menukar dan timbang-menimbang; menurut suatu riwayat, bila ada orang asing datang mereka bersepakat menuduh uangnya palsu lalu menukarnya dengan kurs yang sangat rendah. Jalalain: penuhi takaran dan timbangan, jangan kurangi hak orang.",
+    "sources": [
+      "Tafsir Kemenag QS 7:85 (data app)",
+      "Tafsir Jalalain QS 7:85 (data app)"
+    ]
+  },
+  "qca": [
+    {
+      "layer": "Grounding",
+      "note": "takaran dan timbangan sebagai alat ukur bersama yang harus jujur"
+    },
+    {
+      "layer": "Alignment",
+      "note": "larangan mengurangi hak orang dan berbuat kerusakan"
+    }
+  ],
+  "lenses": [
+    {
+      "lens": "math-physics",
+      "reading": "Takaran dan timbangan adalah alat ukur bersama. Sebagai analogi metrologi, alat ukur yang dikalibrasi terhadap standar yang sama cenderung membuat pertukaran dapat dipercaya; alat yang bias sistematis merusak semua keputusan yang bergantung padanya.",
+      "analogy": "calibration to a shared standard; systematic bias (bounded)",
+      "quranic_term": "al-kayl wal-mīzān"
+    },
+    {
+      "lens": "ai-agentic",
+      "reading": "Untuk agen dan evaluasi: benchmark, skor, dan metrik adalah 'timbangan'. Salah satu pembacaan: jaga agar alat ukur tidak bias terhadap pihak tertentu, publikasikan cara mengukur, dan periksa ulang secara berkala dengan data pembanding.",
+      "analogy": "evaluation metric integrity; unbiased scoring; periodic recalibration with held-out data",
+      "quranic_term": "awfū"
+    },
+    {
+      "lens": "economy",
+      "reading": "Menurut suatu riwayat yang dikutip Kemenag, kaum itu menurunkan kurs secara sepihak terhadap pendatang. Sebagai analogi ekonomi, ketidakadilan dalam harga dan kurs merusak kepercayaan pasar; pasar cenderung sehat bila aturan ukur dan harga berlaku sama bagi semua pihak.",
+      "analogy": "uniform pricing rules; market trust (bounded)",
+      "quranic_term": "lā tabkhasū"
+    },
+    {
+      "lens": "systems",
+      "reading": "Ayat menyambungkan kecurangan ukur dengan 'kerusakan di bumi'. Sebagai analogi, kecurangan kecil yang berulang cenderung menggerus kepercayaan seluruh jaringan sehingga biaya verifikasi naik bagi semua.",
+      "analogy": "small repeated defection raising system-wide verification cost (bounded)",
+      "quranic_term": "lā tufsidū"
+    },
+    {
+      "lens": "amal",
+      "reading": "Bagi pedagang, insinyur, dan penilai: bersikap jujur dalam mengukur dan melaporkan hasil adalah adab kerja. Pembacaan ini tidak menetapkan hukum muamalat tertentu."
+    }
+  ],
+  "inference": "Dibaca sebagai analogi rekayasa (salah satu pembacaan, bukan maksud tunggal ayat): ayat ini memusatkan perhatian pada kejujuran alat ukur dalam pertukaran dan menghubungkannya dengan kerusakan yang lebih luas. Menurut Tafsir Kemenag, konteksnya adalah kecurangan timbangan oleh kaum Madyan, dan menurut suatu riwayat juga dalam kurs. Pola yang cenderung bisa dipakai: (1) alat ukur dikalibrasi pada standar bersama; (2) aturan ukur sama bagi semua pihak; (3) kecurangan kecil yang berulang meningkatkan biaya kepercayaan; (4) ukur dan lapor dengan jujur. Implikasi untuk sistem dan agen: publikasikan metode evaluasi, uji bias skor, dan pisahkan pihak yang mengukur dari pihak yang diukur. Kajian ini tidak menghakimi kelompok mana pun. CATATAN TANZIH: ayat menyebut penyembahan kepada Allah dan perbaikan oleh Allah; semuanya disebut dengan ta'zhim sebagai landasan iman dan tidak dianalogikan sebagai komponen sistem. Analogi hanya pada sisi manusia (takaran, timbangan, transaksi). Resonansi struktural, bukan mukjizat numerik.",
+  "authors": [
+    "Draft AI (Claude Sonnet, batch percobaan) — interpretasi rekayasa, menunggu tinjauan"
+  ],
+  "status": "draft",
+  "created": "2026-11-13",
+  "history": [
+    {
+      "version": 1,
+      "date": "2026-11-13",
+      "note": "Draf perdana — batch percobaan hemat kuota (batch10). Menunggu G2/G3. Direfisi satu putaran setelah tinjauan G2 (batch10).",
+      "authors": [
+        "Draft AI (Claude Sonnet, batch percobaan) — interpretasi rekayasa, menunggu tinjauan"
+      ]
+    }
+  ]
+}

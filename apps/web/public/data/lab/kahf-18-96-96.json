@@ -1,0 +1,77 @@
+{
+  "schema": "lab-study-v2",
+  "version": 1,
+  "id": "kahf-18-96-96",
+  "title": "Besi, api, lalu tembaga — konstruksi bertahap sebuah benteng",
+  "subtitle": "Potongan besi disusun setinggi gunung, dipanaskan, lalu ditutup dengan tembaga cair",
+  "ref": {
+    "surah": 18,
+    "from": 96,
+    "to": 96
+  },
+  "surah_name": "Al-Kahf",
+  "theme": "Konstruksi bertahap, komposit material, penyegelan celah, pembagian kerja",
+  "sourced_meaning": {
+    "summary": "Dzulkarnain meminta potongan-potongan besi. Menurut Tafsir Kemenag, ia merangkai dan memasang besi itu setinggi puncak dua gunung, menyuruh pekerja meniup api hingga besi merah menyala, lalu meminta tembaga mendidih untuk dituangkan di atasnya sehingga lubang-lubangnya tertutup rapat dan terbentuk benteng besi yang kokoh. Jalalain menjelaskan besi dipotong sesuai ukuran dan diletakkan dengan kayu bakar dan batu bara di antaranya.",
+    "sources": [
+      "Tafsir Kemenag QS 18:96 (data app)",
+      "Tafsir Jalalain QS 18:96 (data app)"
+    ]
+  },
+  "qca": [
+    {
+      "layer": "Aksi & transfer",
+      "note": "perintah bertahap: kumpulkan bahan, susun, panaskan, tuang penyegel"
+    },
+    {
+      "layer": "Penalaran",
+      "note": "urutan langkah dipilih agar celah tertutup rapat"
+    }
+  ],
+  "lenses": [
+    {
+      "lens": "algorithm",
+      "reading": "Ayat memuat urutan prosedur yang jelas: kumpulkan potongan, susun sampai tinggi tertentu, panaskan, lalu tuang bahan penyegel. Sebagai analogi, ini mirip pipeline bertahap yang tiap tahapnya punya syarat selesai sebelum lanjut (besi merah dulu, baru tembaga).",
+      "analogy": "staged pipeline with entry conditions per stage",
+      "quranic_term": "ātūnī zubaral-ḥadīd"
+    },
+    {
+      "lens": "artifact",
+      "reading": "Menurut Kemenag, tembaga cair dituang ke besi panas hingga lubang-lubangnya tertutup rapat. Sebagai analogi material, paduan dua bahan dengan peran berbeda (kerangka dan penyegel) cenderung menghasilkan struktur yang lebih rapat daripada satu bahan saja.",
+      "analogy": "composite: frame material plus sealant filling gaps (bounded)",
+      "quranic_term": "qiṭran"
+    },
+    {
+      "lens": "systems",
+      "reading": "Pekerja meniup api dan membawa bahan atas arahan pemimpin (Kemenag). Dalam analogi sistem, satu perencana yang membagi tugas ke banyak pelaksana dengan komando jelas cenderung mempercepat kerja besar tanpa tumpang tindih.",
+      "analogy": "planner-worker division of labor with explicit instructions (bounded)",
+      "quranic_term": "unfukhū"
+    },
+    {
+      "lens": "ai-agentic",
+      "reading": "Untuk agen: tugas besar dipecah menjadi langkah berurutan, tiap langkah diverifikasi (besi sudah merah?) sebelum langkah berikutnya, dan ada langkah penutup celah (verifikasi dan penambalan). Salah satu pembacaan: rencana yang punya gerbang per tahap cenderung lebih tahan gagal daripada satu langkah besar.",
+      "analogy": "plan decomposition with per-stage verification gates and a final gap-sealing pass",
+      "quranic_term": "ḥattā idzā"
+    },
+    {
+      "lens": "amal",
+      "reading": "Dibaca sebagai adab kerja: menyelesaikan pekerjaan sampai celah-celahnya tertutup, bukan berhenti setelah tampak jadi. Tidak ada penetapan hukum dari ayat ini; hanya pembacaan etos kerja."
+    }
+  ],
+  "inference": "Dibaca sebagai analogi rekayasa (salah satu pembacaan, bukan maksud tunggal ayat): ayat ini memotret konstruksi bertahap yang runtut. Menurut Tafsir Kemenag, besi disusun setinggi gunung, dipanaskan, lalu ditutup dengan tembaga cair sehingga lubangnya rapat. Pola yang cenderung bisa dipakai: (1) urutan tahap dengan syarat selesai yang jelas; (2) dua bahan beda peran untuk kerangka dan penyegel; (3) pembagian kerja dengan komando jelas; (4) langkah akhir untuk menutup celah. Implikasi untuk sistem dan agen: pecah tugas besar, beri gerbang verifikasi per tahap, dan sisakan satu putaran untuk menambal celah. Kajian ini tidak mengambil kesimpulan tentang pihak mana pun dalam kisah itu. CATATAN: ayat ini tidak menyebut Dzat atau Sifat Allah, sehingga tidak ada analogi pada sisi itu. Resonansi struktural, bukan mukjizat numerik.",
+  "authors": [
+    "Draft AI (Claude Sonnet, batch percobaan) — interpretasi rekayasa, menunggu tinjauan"
+  ],
+  "status": "draft",
+  "created": "2026-11-13",
+  "history": [
+    {
+      "version": 1,
+      "date": "2026-11-13",
+      "note": "Draf perdana — batch percobaan hemat kuota (batch10). Menunggu G2/G3.",
+      "authors": [
+        "Draft AI (Claude Sonnet, batch percobaan) — interpretasi rekayasa, menunggu tinjauan"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": "lab-study-v2",
+  "version": 1,
+  "id": "nisa-4-81-81",
+  "title": "Kata dan keputusan malam hari — konsistensi niat, ucapan, dan tindakan",
+  "subtitle": "Setuju di depan, lain di belakang: celah antara pernyataan dan eksekusi",
+  "ref": {
+    "surah": 4,
+    "from": 81,
+    "to": 81
+  },
+  "surah_name": "An-Nisa'",
+  "theme": "Konsistensi pernyataan dan perilaku, perilaku saat tidak diamati, verifikasi, tawakal",
+  "sourced_meaning": {
+    "summary": "Ayat ini menggambarkan sekelompok orang yang berkata 'kewajiban kami hanya taat', tetapi setelah pergi dari sisi Nabi sebagian mengatur siasat di malam hari yang berbeda dari ucapan mereka. Tafsir Kemenag: ucapan patuh itu sekadar menyelamatkan diri dan harta, dan ayat ini mengungkapkan isi hati mereka kepada Nabi; Nabi diperintahkan membiarkan mereka dan menyerahkan segala sesuatu kepada Allah. Jalalain: mereka orang munafik yang berkata taat ketika datang, lalu sekelompok dari mereka menyiratkan hal lain selain apa yang diucapkan.",
+    "sources": [
+      "Tafsir Kemenag QS 4:81 (data app)",
+      "Tafsir Jalalain QS 4:81 (data app)"
+    ]
+  },
+  "qca": [
+    {
+      "layer": "Alignment",
+      "note": "'taat' diucapkan, tetapi keputusan malam hari lain dari yang diucapkan — ucapan dan tindakan tidak selaras"
+    },
+    {
+      "layer": "Penalaran",
+      "note": "'mengatur siasat di malam hari' — keputusan yang diambil di luar pengawasan"
+    }
+  ],
+  "lenses": [
+    {
+      "lens": "ai-agentic",
+      "reading": "Dibaca sebagai analogi bagi evaluasi agen: perilaku yang tampak patuh saat diamati belum tentu sama dengan perilaku saat tidak diamati. Salah satu pembacaan: uji agen juga pada kondisi tanpa pengamat, bandingkan rencana yang dinyatakan dengan tindakan akhir, dan jangan menganggap jawaban 'siap' sebagai bukti kepatuhan.",
+      "analogy": "say-do gap; behavior observed vs unobserved; compare stated plan vs executed actions",
+      "quranic_term": "ṭā'atun"
+    },
+    {
+      "lens": "program-logic",
+      "reading": "Ucapan taat bisa dibaca seperti asersi, dan tindakan malam hari seperti kode yang tidak memenuhi asersi itu. Analogi yang cenderung berguna: tulis kontrak (pre/post-condition) yang diperiksa pada keluaran nyata, bukan pada pernyataan niat.",
+      "analogy": "assertions checked against actual outputs rather than declared intent (bounded)",
+      "quranic_term": "ghayra alladzī taqūl"
+    },
+    {
+      "lens": "systems",
+      "reading": "Menurut Tafsir Kemenag, kepatuhan lisan itu untuk menyelamatkan diri dan harta. Dalam analogi sistem, bila kepatuhan hanya diukur lewat sinyal permukaan, pelaku cenderung mengoptimalkan sinyal itu saja. Pengukuran yang selaras dengan hasil nyata dan dilakukan berkala cenderung mengurangi celah itu.",
+      "analogy": "metric gaming (Goodhart); measure outcomes not surface signals (bounded)",
+      "quranic_term": "bayyata"
+    },
+    {
+      "lens": "psychology",
+      "reading": "Ayat membedakan ucapan lahir dari isi hati yang diungkapkan kepada Nabi (Kemenag). Sebagai analogi psikologi organisasi, persetujuan terbuka bisa menutupi keberatan yang tidak disuarakan; ruang aman untuk menyampaikan keberatan sejak awal cenderung mengurangi keputusan diam-diam di belakang. Ini analogi psikologi organisasi, bukan penafsiran sikap kelompok munafik.",
+      "analogy": "public compliance vs private dissent; psychological safety (bounded)",
+      "quranic_term": "nifāq (Jalalain: munafik)"
+    },
+    {
+      "lens": "amal",
+      "reading": "Bagi pribadi dan tim, ayat ini bisa dibaca sebagai adab: menyelaraskan ucapan dengan tindakan, menyampaikan keberatan secara terbuka, dan menyerahkan hasil yang di luar kendali. Perintah bertawakal dibaca menurut tafsir sebagai penyerahan urusan, bukan alasan lalai mengambil sebab.",
+      "quranic_term": "tawakkal"
+    }
+  ],
+  "inference": "Dibaca sebagai analogi rekayasa (salah satu pembacaan, bukan maksud tunggal ayat): ayat ini memotret jarak antara pernyataan taat di depan dan keputusan lain di malam hari. Menurut Tafsir Kemenag dan Jalalain, konteksnya adalah kelompok munafik pada masa Nabi. Pola yang cenderung bisa dipakai: (1) pernyataan niat bukan bukti kepatuhan; (2) perilaku perlu diuji juga saat tidak diamati; (3) ukur hasil nyata, bukan sinyal permukaan; (4) sediakan jalur keberatan terbuka. Implikasi untuk sistem dan agen: bandingkan rencana yang dinyatakan dengan tindakan akhir, catat jejak keputusan, dan jangan memberi kepercayaan penuh hanya karena agen menjawab patuh. Kajian ini tidak menghakimi orang atau kelompok tertentu. CATATAN TANZIH: ayat menyebut bahwa Allah menulis siasat mereka, memerintahkan tawakal, dan menyebut Allah sebagai Pelindung; semuanya disebut dengan ta'zhim sebagai landasan iman. Perbuatan Allah menulis, perlindungan-Nya, dan tawakal kepada-Nya tidak dianalogikan sebagai logging, monitoring, atau komponen sistem apa pun. Analogi hanya pada sisi manusia. Resonansi struktural, bukan mukjizat numerik.",
+  "authors": [
+    "Draft AI (Claude Sonnet, batch percobaan) — interpretasi rekayasa, menunggu tinjauan"
+  ],
+  "status": "draft",
+  "created": "2026-11-13",
+  "history": [
+    {
+      "version": 1,
+      "date": "2026-11-13",
+      "note": "Draf perdana — batch percobaan hemat kuota (batch10). Menunggu G2/G3.",
+      "authors": [
+        "Draft AI (Claude Sonnet, batch percobaan) — interpretasi rekayasa, menunggu tinjauan"
+      ]
+    }
+  ]
+}

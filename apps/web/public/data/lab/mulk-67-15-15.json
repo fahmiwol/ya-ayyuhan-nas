@@ -1,0 +1,78 @@
+{
+  "schema": "lab-study-v2",
+  "version": 1,
+  "id": "mulk-67-15-15",
+  "title": "Bumi dimudahkan, berjalanlah — eksplorasi dengan tanggung jawab",
+  "subtitle": "Bumi yang dapat dijelajahi dan dimanfaatkan, disertai pengingat tentang kembali",
+  "ref": {
+    "surah": 67,
+    "from": 15,
+    "to": 15
+  },
+  "surah_name": "Al-Mulk",
+  "theme": "Eksplorasi, pemanfaatan sumber daya, lingkungan yang dapat dipelajari, akuntabilitas",
+  "sourced_meaning": {
+    "summary": "Ayat ini menyebut bahwa Dia menjadikan bumi mudah bagi manusia, maka berjalanlah di segala penjurunya dan makanlah sebagian rezeki-Nya, dan kepada-Nya kebangkitan. Tafsir Kemenag menyebut nikmat Allah berupa bumi yang dimudahkan sehingga manusia dapat mengambil manfaat untuk kehidupan; ia menguraikan bumi berputar sehingga terjadi malam dan siang, agar manusia berusaha di siang hari dan beristirahat di malam hari. Jalalain: bumi mudah dilalui, berjalan di sisi-sisinya, makan rezeki yang diciptakan, dan kebangkitan dari kubur sebagai balasan.",
+    "sources": [
+      "Tafsir Kemenag QS 67:15 (data app)",
+      "Tafsir Jalalain QS 67:15 (data app)"
+    ]
+  },
+  "qca": [
+    {
+      "layer": "Persepsi",
+      "note": "bumi yang dapat dijelajahi: lingkungan yang bisa diamati dan dipelajari"
+    },
+    {
+      "layer": "Aksi & transfer",
+      "note": "'berjalanlah dan makanlah' — eksplorasi dan pemanfaatan sebagai satu rangkaian"
+    }
+  ],
+  "lenses": [
+    {
+      "lens": "ai-agentic",
+      "reading": "Untuk agen: lingkungan yang tertata dan mudah dilalui (API rapi, data terstruktur, alat tersedia) membuat eksplorasi aman dan produktif. Salah satu pembacaan: sediakan lingkungan yang dapat dijelajahi dengan batas jelas dan akuntabilitas atas hasil tindakan. Ini analogi tentang praktik rekayasa manusia, bukan tentang tindakan Allah.",
+      "analogy": "tractable environment; bounded exploration with accountability",
+      "quranic_term": "fam-syū"
+    },
+    {
+      "lens": "earth-cosmos",
+      "reading": "Kemenag menguraikan bumi berputar sehingga terjadi siang dan malam untuk berusaha dan beristirahat. Sebagai analogi jadwal kerja, siklus alami cenderung mendukung ritme kerja dan istirahat yang teratur. Uraian ilmiah itu adalah penjelasan penafsir, bukan bukti kebenaran teks.",
+      "analogy": "natural cycle as work/rest scheduling (bounded)",
+      "quranic_term": "dzalūl"
+    },
+    {
+      "lens": "systems",
+      "reading": "Rangkaian 'berjalan' lalu 'makan' bisa dibaca sebagai aliran: eksplorasi menghasilkan sumber daya, sumber daya mendukung eksplorasi lanjutan. Ayat tidak mengajarkan eksploitasi tanpa batas; keberlanjutan perlu dijaga.",
+      "analogy": "explore-exploit loop with sustainability limits (bounded)",
+      "quranic_term": "rizq"
+    },
+    {
+      "lens": "algorithm",
+      "reading": "Menjelajahi 'segala penjuru' dapat dibaca sebagai cakupan pencarian yang luas, bukan hanya jalur yang sudah dikenal. Sebagai analogi algoritma, eksplorasi yang cukup luas cenderung menemukan opsi yang tidak terlihat dari satu titik awal.",
+      "analogy": "broad search coverage vs local optimum (bounded)",
+      "quranic_term": "manākibihā"
+    },
+    {
+      "lens": "amal",
+      "reading": "Bagi pekerja dan peneliti: bekerja, menjelajah, dan mencari rezeki adalah anjuran yang disebut dalam ayat; disertai kesadaran bahwa hasil kerja dipertanggungjawabkan. Tidak ada penetapan hukum.",
+      "quranic_term": "kulū min rizqih"
+    }
+  ],
+  "inference": "Dibaca sebagai analogi rekayasa (salah satu pembacaan, bukan maksud tunggal ayat): ayat ini menyandingkan bumi yang dimudahkan, ajakan menjelajah dan memanfaatkan rezeki, serta pengingat tentang kembali. Menurut Tafsir Kemenag, bumi dimudahkan bagi manusia; menurut Jalalain, bumi mudah dilalui. Pola yang cenderung bisa dipakai: (1) lingkungan yang dapat dijelajahi mendukung kerja produktif; (2) eksplorasi luas menghindari optimum lokal; (3) pemanfaatan disertai akuntabilitas; (4) ritme kerja dan istirahat. Implikasi untuk sistem dan agen: rancang lingkungan agen yang bisa dijelajahi dengan batas jelas dan catatan pertanggungjawaban. CATATAN TANZIH: ayat menyebut perbuatan Allah menjadikan bumi mudah dan memberi rezeki; semuanya disebut dengan ta'zhim sebagai landasan iman dan tidak dianalogikan sebagai pembuat lingkungan atau komponen sistem. Analogi hanya pada sisi manusia (menjelajah, memanfaatkan). CATATAN GHAIB: kebangkitan dari kubur dibaca deskriptif menurut tafsir sebagai pengingat tentang pertanggungjawaban; tidak dirinci dan tidak dianalogikan. Resonansi struktural, bukan mukjizat numerik.",
+  "authors": [
+    "Draft AI (Claude Sonnet, batch percobaan) — interpretasi rekayasa, menunggu tinjauan"
+  ],
+  "status": "draft",
+  "created": "2026-11-13",
+  "history": [
+    {
+      "version": 1,
+      "date": "2026-11-13",
+      "note": "Draf perdana — batch percobaan hemat kuota (batch10). Menunggu G2/G3. Direfisi satu putaran setelah tinjauan G2 (batch10).",
+      "authors": [
+        "Draft AI (Claude Sonnet, batch percobaan) — interpretasi rekayasa, menunggu tinjauan"
+      ]
+    }
+  ]
+}

@@ -1370,6 +1370,86 @@
       "theme": "Presisi dan toleransi, desain modular, antarmuka seragam, desain berpusat pada pemakai, etika rekayasa",
       "lenses": 6,
       "created": "2026-11-13"
+    },
+    {
+      "id": "baqarah-2-79-79",
+      "title": "Jejak asal-usul — provenans dan integritas teks",
+      "ref": "QS 2:79",
+      "theme": "Provenans data, integritas sumber, atribusi, insentif yang merusak kejujuran",
+      "lenses": 5,
+      "created": "2026-11-13"
+    },
+    {
+      "id": "nisa-4-81-81",
+      "title": "Kata dan keputusan malam hari — konsistensi niat, ucapan, dan tindakan",
+      "ref": "QS 4:81",
+      "theme": "Konsistensi pernyataan dan perilaku, perilaku saat tidak diamati, verifikasi, tawakal",
+      "lenses": 5,
+      "created": "2026-11-13"
+    },
+    {
+      "id": "naml-27-18-19",
+      "title": "Lembah semut — peringatan dini, komunikasi koloni, dan syukur penguasa",
+      "ref": "QS 27:18-19",
+      "theme": "Komunikasi koloni, peringatan dini, deteksi niat, kerendahan hati pemilik kekuatan",
+      "lenses": 5,
+      "created": "2026-11-13"
+    },
+    {
+      "id": "kahf-18-96-96",
+      "title": "Besi, api, lalu tembaga — konstruksi bertahap sebuah benteng",
+      "ref": "QS 18:96",
+      "theme": "Konstruksi bertahap, komposit material, penyegelan celah, pembagian kerja",
+      "lenses": 5,
+      "created": "2026-11-13"
+    },
+    {
+      "id": "araf-7-56-56",
+      "title": "Jangan merusak setelah diperbaiki — pemeliharaan lingkungan dan sumber penghidupan",
+      "ref": "QS 7:56",
+      "theme": "Pemeliharaan sistem, kerusakan setelah perbaikan, keseimbangan takut dan harap",
+      "lenses": 5,
+      "created": "2026-11-13"
+    },
+    {
+      "id": "qasas-28-77-77",
+      "title": "Dua bagian yang dijaga — keseimbangan akhirat dan dunia dalam mengelola karunia",
+      "ref": "QS 28:77",
+      "theme": "Keseimbangan tujuan jangka panjang dan kebutuhan kini, pengelolaan kekayaan, kebaikan berbalas",
+      "lenses": 5,
+      "created": "2026-11-13"
+    },
+    {
+      "id": "araf-7-85-85",
+      "title": "Sempurnakan takaran dan timbangan — integritas alat ukur",
+      "ref": "QS 7:85",
+      "theme": "Integritas pengukuran, kalibrasi, kepercayaan dalam pertukaran, kerusakan yang menjalar",
+      "lenses": 5,
+      "created": "2026-11-13"
+    },
+    {
+      "id": "imran-3-137-137",
+      "title": "Berjalan dan perhatikan akibatnya — belajar dari pola yang berulang",
+      "ref": "QS 3:137",
+      "theme": "Belajar dari data historis, pola sebab-akibat yang berulang, kesabaran setelah kegagalan",
+      "lenses": 5,
+      "created": "2026-11-13"
+    },
+    {
+      "id": "mulk-67-15-15",
+      "title": "Bumi dimudahkan, berjalanlah — eksplorasi dengan tanggung jawab",
+      "ref": "QS 67:15",
+      "theme": "Eksplorasi, pemanfaatan sumber daya, lingkungan yang dapat dipelajari, akuntabilitas",
+      "lenses": 5,
+      "created": "2026-11-13"
+    },
+    {
+      "id": "nisa-4-82-82",
+      "title": "Periksa dengan saksama — membaca teliti dan konsistensi aturan",
+      "ref": "QS 4:82",
+      "theme": "Konsistensi internal, uji pertentangan, membaca dengan teliti",
+      "lenses": 5,
+      "created": "2026-11-13"
     }
   ]
 }
