@@ -47,7 +47,8 @@ export function Header() {
         >
           {LOCALES.map((l) => <option key={l.code} value={l.code}>{l.label}</option>)}
         </select>
-        <AuthButton />
+        {/* Read-only mode (D-001): no sign-in surface on the public deployment. */}
+        {process.env.NEXT_PUBLIC_MODE_BACA !== "1" && <AuthButton />}
         <button
           onClick={() => set({ theme: theme === "dark" ? "light" : "dark" })}
           className="rounded-lg border px-3 py-1.5 text-sm"

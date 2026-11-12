@@ -26,3 +26,7 @@ npm-debug.log*
 .DS_Store
 Thumbs.db
 scratchpad/
+
+# SPT: catatan kerja privat (repo publik)
+/docs/09-log/HANDOFF.md
+/docs/09-log/LIVING_LOG.md

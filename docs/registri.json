@@ -1,0 +1,134 @@
+{
+  "standar": "SPT v1.0.0",
+  "catatan": "DIBANGKITKAN oleh buat.mjs indeks — jangan sunting tangan",
+  "dokumen": [
+    {
+      "id": "ARS-000",
+      "jenis": "arsitektur",
+      "judul": "Arsitektur Ya Ayyuhan Nas (gambaran besar)",
+      "status": "draft",
+      "cluster": "inti",
+      "terkait": [
+        "NORTH-STAR"
+      ],
+      "dibuat": "2026-11-12",
+      "diubah": "2026-11-12",
+      "path": "docs/02-arsitektur/ARSITEKTUR.md"
+    },
+    {
+      "id": "CLUSTER-inti",
+      "jenis": "cluster",
+      "judul": "Inti",
+      "status": "aktif",
+      "cluster": "inti",
+      "terkait": [],
+      "dibuat": "2026-11-12",
+      "diubah": "2026-11-12",
+      "path": "docs/03-cluster/CLUSTER-inti.md"
+    },
+    {
+      "id": "D-001",
+      "jenis": "keputusan",
+      "judul": "Rute live quran.migancore.com di VPS-2 mode baca-saja",
+      "status": "aktif",
+      "cluster": "inti",
+      "terkait": [
+        "PRD-001",
+        "EPIC-001"
+      ],
+      "dibuat": "2026-11-12",
+      "diubah": "2026-11-13",
+      "path": "docs/07-keputusan/D-001-rute-live-quran-migancor.md"
+    },
+    {
+      "id": "EPIC-001",
+      "jenis": "epic",
+      "judul": "Terbit ulang mushaf dan Lab mode baca-saja",
+      "status": "draft",
+      "cluster": "inti",
+      "terkait": [
+        "PRD-001",
+        "D-001"
+      ],
+      "dibuat": "2026-11-12",
+      "diubah": "2026-11-13",
+      "path": "docs/05-epic/EPIC-001-terbit-ulang-mushaf-dan/README.md"
+    },
+    {
+      "id": "EPIC-002",
+      "jenis": "epic",
+      "judul": "Ritme satu kajian ayat per hari",
+      "status": "draft",
+      "cluster": "inti",
+      "terkait": [
+        "PRD-001",
+        "FUNGSI-gerbang-tinjauan-kajian"
+      ],
+      "dibuat": "2026-11-12",
+      "diubah": "2026-11-13",
+      "path": "docs/05-epic/EPIC-002-ritme-satu-kajian-ayat-p/README.md"
+    },
+    {
+      "id": "FUNGSI-gerbang-tinjauan-kajian",
+      "jenis": "fungsi",
+      "judul": "Gerbang tinjauan kajian sebelum terbit",
+      "status": "draft",
+      "cluster": "inti",
+      "terkait": [
+        "PRD-001",
+        "EPIC-002"
+      ],
+      "dibuat": "2026-11-12",
+      "diubah": "2026-11-13",
+      "path": "docs/06-fungsi/FUNGSI-gerbang-tinjauan-kajian.md"
+    },
+    {
+      "id": "NORTH-STAR",
+      "jenis": "north-star",
+      "judul": "Ya Ayyuhan Nas",
+      "status": "draft",
+      "cluster": "inti",
+      "terkait": [
+        "PRD-001",
+        "D-001"
+      ],
+      "dibuat": "2026-11-12",
+      "diubah": "2026-11-13",
+      "path": "docs/00-NORTH-STAR.md"
+    },
+    {
+      "id": "PRD-001",
+      "jenis": "prd",
+      "judul": "Lab Tadabbur hidup lagi dan ritme kajian harian",
+      "status": "draft",
+      "cluster": "inti",
+      "terkait": [
+        "NORTH-STAR",
+        "D-001",
+        "EPIC-001",
+        "EPIC-002",
+        "FUNGSI-gerbang-tinjauan-kajian"
+      ],
+      "dibuat": "2026-11-12",
+      "diubah": "2026-11-13",
+      "path": "docs/04-prd/PRD-001-lab-tadabbur-hidup-lagi.md"
+    },
+    {
+      "id": "SKILL-tadabbur-lab",
+      "jenis": "skill",
+      "judul": "Tadabbur Lab — metode interpretasi rekayasa",
+      "status": "aktif",
+      "cluster": "inti",
+      "terkait": [
+        "PRD-001",
+        "EPIC-002",
+        "FUNGSI-gerbang-tinjauan-kajian"
+      ],
+      "dibuat": "2026-07-07",
+      "diubah": "2026-11-13",
+      "name": "tadabbur-lab",
+      "description": "Metode lengkap memproduksi kajian Lab Tadabbur (interpretasi rekayasa ayat Al-Qur'an) untuk quran.migancore.com — dari pemilihan ayat, grounding tafsir, penulisan multi-lensa, validasi fail-closed, sampai sintesis prinsip & deploy. Pakai saat: menambah kajian baru, re-tadabbur (revisi), menambah lensa/prinsip/framework, atau menjalankan wave sintesis massal.",
+      "path": ".agents/skills/tadabbur-lab/SKILL.md"
+    }
+  ]
+}
