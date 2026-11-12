@@ -35,7 +35,7 @@ PORT=3459 HOSTNAME=127.0.0.1 node server.js &                             # uji 
 node ../../../../pipeline/test-mode-baca.mjs http://127.0.0.1:3459        # harus 17/17
 tar --force-local -czf quran-<sha>.tgz . && sha256sum quran-<sha>.tgz     # <sha> = git rev-parse --short HEAD (sudah di-commit)
 ```
-Catatan: jalankan perintah build dari luar folder `.next/standalone`; shell yang berdiri di dalamnya mengunci folder di Windows.
+Catatan: bila build gagal dengan "build worker exited with code 3221226505" atau ENOTEMPTY, itu galat Windows sementara (memori sesak / folder dikunci): hapus `.next` lalu ulangi. Jalankan perintah build dari luar folder `.next/standalone`; shell yang berdiri di dalamnya mengunci folder di Windows.
 
 ## Rilis & verifikasi live
 ```bash
@@ -63,3 +63,4 @@ Simpan paling banyak 3 rilis di `rilis/`; hapus yang lebih lama setelah rilis ba
 | 13 Nov 2026 | `e76c293` | terbit ulang mode baca-saja | 14/17 (3 halaman tertutup 500 di balik nginx) |
 | 13 Nov 2026 | `6ef967a` | halaman tertutup jawab 404 langsung | 17/17; 70 vhost lain tidak berubah |
 | 13 Nov 2026 | `3c0ea45` | rilis data: +3 kajian harian (171), cakupan 307 ayat | 17/17; 3 kajian baru 200 |
+| 13 Nov 2026 | `c037691` | rilis data: +10 kajian batch ramping (181), cakupan 317 ayat; rilis `e76c293` dihapus | 17/17; 10 kajian baru 200 |
