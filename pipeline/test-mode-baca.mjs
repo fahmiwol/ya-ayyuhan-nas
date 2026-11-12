@@ -32,7 +32,9 @@ const checks = [
 
 let fail = 0;
 for (const c of checks) {
-  const init = { method: c.method || "GET", redirect: "manual", headers: {} };
+  // Mimic the nginx proxy in production (it sends X-Forwarded-Proto: https); without it a local
+  // run missed a 500 that only appeared behind the proxy (13 Nov 2026).
+  const init = { method: c.method || "GET", redirect: "manual", headers: { "X-Forwarded-Proto": "https" } };
   if (c.body) { init.headers["Content-Type"] = "application/json"; init.body = JSON.stringify(c.body); }
   let got = "ERR", ok = false, why = "";
   try {
